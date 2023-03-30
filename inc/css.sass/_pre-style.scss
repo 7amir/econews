@@ -1,0 +1,63 @@
+body {
+  direction: rtl;
+  background: #f2f2f2;
+}
+.container {
+  // max-width: 82.5%;
+  max-width: 1269px;
+}
+
+@font-face {
+  font-family: fa-solid;
+  src: url(../font/fa-solid-900.ttf);
+}
+@font-face {
+  font-family: fontawesome;
+  src: url(../font/fontawesome-webfont.ttf);
+}
+@font-face {
+  font-family: nassim-bold;
+  src: url(../font/nassim-bold.ttf);
+}
+@font-face {
+  font-family: nassim;
+  src: url(../font/nassim-normal.ttf);
+}
+@font-face {
+  font-family: yekan;
+  src: url(../font/yekan-normal.ttf);
+}
+
+i {
+  font: normal normal normal 14px/1 fontawesome;
+  font-size: 11px;
+  font-family: fontawesome;
+  position: relative;
+  bottom: -1px;
+}
+a {
+  text-decoration: none;
+}
+#world-img {
+  padding-right: 5.3%;
+  height: 80px;
+  margin-bottom: 1px;
+}
+.container-floid {
+  background: #fff;
+}
+.dropdown-row {
+  margin: 0px;
+  padding: 0px 13px 0 0px;
+  margin-left: -3px;
+}
+.dropdown-col-4 {
+  padding: 10px;
+}
+.mix-padding-right {
+  padding-right: 2.5%;
+}
+
+.no-padding {
+  padding: 0;
+}

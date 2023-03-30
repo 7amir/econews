@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.3.0-alpha2-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./inc/css.sass/style.css" />
+    <title>econews</title>
+  </head>
+  <body>
+    <header class="sticky-top">
+      <div class="container-floid">
+        <div class="container">
+          <div class="header-1">
+            <!-- right box of header -->
+            <div class="right-header">
+              <div class="date">
+                <div class="day">
+                  <i class="fa fa-calendar"></i>
+                  <span>دوشنبه ۷ فروردین ۱۴۰۲</span>
+                </div>
+                <div class="clock">
+                  <i class="fa fa-clock-o"></i>
+                  <span>۱۴:۱۵:۱۷</span>
+                </div>
+
+                <!-- login or sign up -->
+                <a class="login" onclick="openLoginForm()">
+                  <i class="fa fa-user"></i> ورود / عضویت
+                  <i class="fa fa-chevron-down"></i>
+
+                  <!-- form login -->
+                  <div class="form-login" id="form-login">
+                    <form action="/">
+                      <div class="input-groups">
+                        <input
+                          type="text"
+                          class="input-login"
+                          placeholder="نام کاربری یا آدرس ایمیل"
+                        /><br />
+                        <input
+                          type="password"
+                          class="input-login"
+                          id="input-border"
+                          placeholder="کلمه عبور"
+                        />
+                      </div>
+                      <div class="form-check logeform">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          مرا به خاطر بسپار
+                        </label>
+                      </div>
+
+                      <div class="login-group">
+                        <button type="button" class="btn btn-danger log">
+                          ورود
+                        </button>
+                        <button type="button" class="btn btn-light sign-up">
+                          عضویت
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- header nav bar -->
+            <div class="left-header">
+              <nav class="navbar-1">
+                <ul class="ul-1">
+                  <li class="list-items-1">
+                    <i class="fas fa-coins"></i>
+                    <a href="#">قیمت طلا و سکه</a>
+                  </li>
+
+                  <li class="list-items-1">
+                    <i class="fas fa-burn"></i>
+                    <a href="#">نفت و سوخت</a>
+                  </li>
+
+                  <li class="list-items-1">
+                    <i class="fas fa-database"></i>
+                    <a href="#">فلزات پایه</a>
+                  </li>
+
+                  <li class="list-items-1">
+                    <i class="fas fa-globe-asia"></i>
+                    <a href="#">کالاهای جهانی</a>
+                  </li>
+
+                  <li class="list-items-1">
+                    <i class="fa fa-globe"></i>
+                    <a href="#">بورس جهانی</a>
+                  </li>
+
+                  <li class="list-items-1">
+                    <i class="fa fa-archive"></i>
+                    <a href="#">آرشیو</a>
+                  </li>
+                </ul>
+              </nav>
+
+              <!-- search form in header -->
+              <form action="/" class="form-nav">
+                <i class="search-addon fa fa-search"></i>
+                <div class="search">
+                  <input
+                    type="text"
+                    class="search-input"
+                    placeholder="جستجو ..."
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- the red header -->
+      <div class="header-2">
+        <div class="container">
+          <div class="logo-and-nav">
+            <div class="row align-items-center">
+              <div class="col-2">
+                <div class="header-logo">
+                  <img src="./inc/img/logo.png" alt="logo" />
+                </div>
+              </div>
+
+              <!-- navbar red header-->
+              <div class="col-7" id="world-img">
+                <div class="background-img">
+                  <nav class="navbar-2">
+                    <ul class="ul-2">
+                      <li class="list-item-2">
+                        <a href="#" class="link-red-header">
+                          اخبار و رویدادها
+                          <i class="fa fa-caret-down"></i>
+                        </a>
+                        <!-- hover news box -->
+                        <nav class="navbar-hover">
+                          <div class="container">
+                            <div class="row dropdown-row">
+                              <div class="col-4 dropdown-col-4">
+                                <div class="dropdown">
+                                  <a href="#" class="dropdown-heading">
+                                    دسته‌ بندی‌ عمومی
+                                  </a>
+                                  <a href="#" class="link-dropdown-hover">
+                                    عناوین کل سرویس
+                                  </a>
+                                  <a href="#" class="link-dropdown-hover">
+                                    سیاست
+                                  </a>
+                                  <a href="#" class="link-dropdown-hover">
+                                    فرهنگ
+                                  </a>
+                                  <a href="#" class="link-dropdown-hover">
+                                    ورزش
+                                  </a>
+                                  <a href="#" class="link-dropdown-hover">
+                                    جامعه
+                                  </a>
+                                  <a href="#" class="link-dropdown-hover">
+                                    فناوری
+                                  </a>
+                                  <a href="#" class="link-dropdown-hover">
+                                    سلامت
+                                  </a>
+                                  <a href="#" class="link-dropdown-hover">
+                                    استانها
+                                  </a>
+                                  <a href="#" class="link-dropdown-hover">
+                                    گفتگو
+                                  </a>
+                                  <a href="#" class="link-dropdown-hover">
+                                    یادداشت
+                                  </a>
+                                  <a href="#" class="link-dropdown-hover">
+                                    تو‌ئیت
+                                  </a>
+                                  <a href="#" class="link-dropdown-hover">
+                                    اینستاگرام
+                                  </a>
+                                  <a href="#" class="link-dropdown-hover">
+                                    پژوهش
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="col-4 dropdown-col-4">
+                                <div class="dropdown">
+                                  <a href="#" class="dropdown-heading">
+                                    دسته بندی تخصصی اقتصاد
+                                  </a>
+                                  <a
+                                    href="#"
+                                    class="link-dropdown-hover container-3"
+                                  >
+                                    عناوین کل سرویس
+                                  </a>
+                                  <a
+                                    href="#"
+                                    class="link-dropdown-hover container-3"
+                                  >
+                                    اکو
+                                  </a>
+                                  <a
+                                    href="#"
+                                    class="link-dropdown-hover container-3"
+                                  >
+                                    کلان‌ و بودجه
+                                  </a>
+                                  <a
+                                    href="#"
+                                    class="link-dropdown-hover container-3"
+                                  >
+                                    بانک
+                                  </a>
+                                  <a
+                                    href="#"
+                                    class="link-dropdown-hover container-3"
+                                  >
+                                    بیمه
+                                  </a>
+                                  <a
+                                    href="#"
+                                    class="link-dropdown-hover container-3"
+                                  >
+                                    بورس
+                                  </a>
+                                  <a
+                                    href="#"
+                                    class="link-dropdown-hover container-3"
+                                  >
+                                    نفت‌ و گاز
+                                  </a>
+                                  <a
+                                    href="#"
+                                    class="link-dropdown-hover container-3"
+                                  >
+                                    پتروشیمی
+                                  </a>
+                                  <a
+                                    href="#"
+                                    class="link-dropdown-hover container-3"
+                                  >
+                                    صنعت‌آب‌ و برق
+                                  </a>
+                                  <a
+                                    href="#"
+                                    class="link-dropdown-hover container-3"
+                                  >
+                                    صنایع‌ و معادن
+                                  </a>
+                                  <a
+                                    href="#"
+                                    class="link-dropdown-hover container-3"
+                                  >
+                                    تجارت‌ و بازرگانی
+                                  </a>
+                                  <a
+                                    href="#"
+                                    class="link-dropdown-hover container-3"
+                                  >
+                                    کار و تعاون
+                                  </a>
+                                  <a
+                                    href="#"
+                                    class="link-dropdown-hover container-3"
+                                  >
+                                    اقتصاد شهری
+                                  </a>
+                                  <a
+                                    href="#"
+                                    class="link-dropdown-hover container-3"
+                                  >
+                                    اقتصاد دیجیتالی
+                                  </a>
+                                  <a
+                                    href="#"
+                                    class="link-dropdown-hover container-3"
+                                  >
+                                    کشاورزی‌ و دامپروری
+                                  </a>
+                                  <a
+                                    href="#"
+                                    class="link-dropdown-hover container-3"
+                                  >
+                                    اخبارشرکت ها
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="col-4 dropdown-col-4">
+                                <div class="dropdown">
+                                  <a href="#" class="dropdown-heading">
+                                    دسته‌ بندی‌ ویژه
+                                  </a>
+                                  <a href="#" class="link-dropdown-hover">
+                                    عناوین کل سرویس
+                                  </a>
+                                  <a href="#" class="link-dropdown-hover">
+                                    بازار سرمایه
+                                  </a>
+                                  <a href="#" class="link-dropdown-hover">
+                                    چهره های شاخص
+                                  </a>
+                                  <a href="#" class="link-dropdown-hover">
+                                    اقتصاد دانش بنیان
+                                  </a>
+                                  <a href="#" class="link-dropdown-hover">
+                                    اقتصاد فرهنگ و هنر
+                                  </a>
+                                  <a href="#" class="link-dropdown-hover">
+                                    اقتصاد ورزش
+                                  </a>
+                                  <a href="#" class="link-dropdown-hover">
+                                    خودرو
+                                  </a>
+                                  <a href="#" class="link-dropdown-hover">
+                                    راه و شهرسازی
+                                  </a>
+                                  <a href="#" class="link-dropdown-hover">
+                                    اقتصاد سبز
+                                  </a>
+                                  <a href="#" class="link-dropdown-hover">
+                                    توریسم و گردشگری
+                                  </a>
+                                  <a href="#" class="link-dropdown-hover">
+                                    سبک زندگی
+                                  </a>
+                                  <a href="#" class="link-dropdown-hover">
+                                    راهنمای بازار
+                                  </a>
+                                  <a href="#" class="link-dropdown-hover">
+                                    اقتصاد سلامت
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </nav>
+                      </li>
+
+                      <li class="list-item-2">
+                        <a href="#" class="link-red-header">
+                          نرخ ها و داده ها
+                          <i class="fa fa-caret-down"></i>
+                        </a>
+                        <!-- hover rate -->
+                        <div class="navbar-hover">
+                          <div class="container">
+                            <div class="row">
+                              <ul class="rate-hover">
+                                <li class="list-item-rate">
+                                  <a href="#" class="link-rate">
+                                    ارزها
+                                    <i class="fa fa-chevron-left"></i>
+                                  </a>
+                                </li>
+                                <li class="list-item-rate">
+                                  <a href="#" class="link-rate">
+                                    قیمت طلا و سکه
+                                    <i class="fa fa-chevron-left"></i>
+                                  </a>
+                                </li>
+                                <li class="list-item-rate">
+                                  <a href="#" class="link-rate">
+                                    نفت و سوخت
+                                    <i class="fa fa-chevron-left"></i>
+                                  </a>
+                                </li>
+                                <li class="list-item-rate">
+                                  <a href="#" class="link-rate">
+                                    فلزات پایه
+                                    <i class="fa fa-chevron-left"></i>
+                                  </a>
+                                </li>
+                                <li class="list-item-rate">
+                                  <a href="#" class="link-rate">
+                                    کالاهای جهانی
+                                    <i class="fa fa-chevron-left"></i>
+                                  </a>
+                                </li>
+                                <li class="list-item-rate">
+                                  <a href="#" class="link-rate border-none"
+                                    >بورس جهانی
+                                    <i class="fa fa-chevron-left"></i>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-item-2">
+                        <a href="#" class="link-red-header">
+                          استان‌ها
+                          <i class="fa fa-caret-down"></i>
+                        </a>
+                      </li>
+                      <li class="list-item-2">
+                        <a href="#" class="link-red-header">
+                          مناطق‌ آزاد
+                          <i class="fa fa-caret-down"></i>
+                        </a>
+                      </li>
+                      <li class="list-item-2">
+                        <a href="#" class="link-red-header">
+                          چندرسانه‌ای
+                          <i class="fa fa-caret-down"></i>
+                        </a>
+                      </li>
+                      <li class="list-item-2">
+                        <a href="#" class="link-red-header">نیازمندی ها</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="danesh-logo">
+                  <a href="#" class="link-danesh-logo">
+                    <img
+                      src="./inc/img/tolid-danesh-bonyan-1649067784.png"
+                      alt="تولید , دانش‌ بنیان "
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- last of header -->
+      <div class="header-3">
+        <div class="container">
+          <nav class="navbar-3">
+            <ul class="ul-3">
+              <li class="fa fa-bars">
+                <a href="#"></a>
+              </li>
+              <li class="list-item-3">
+                <a href="#" class="a1">جهان</a>
+              </li>
+              <li class="list-item-3">
+                <a href="#" class="a2">اکو</a>
+              </li>
+              <li class="list-item-3">
+                <a href="#" class="a3">کلان و بودجه</a>
+              </li>
+              <li class="list-item-3">
+                <a href="#" class="a4">بانک</a>
+              </li>
+              <li class="list-item-3">
+                <a href="#" class="a5">بیمه</a>
+              </li>
+              <li class="list-item-3">
+                <a href="#" class="a6">بورس</a>
+              </li>
+              <li class="list-item-3">
+                <a href="#" class="a7">نفت و گاز</a>
+              </li>
+              <li class="list-item-3">
+                <a href="#" class="a8">پتروشیمی</a>
+              </li>
+              <li class="list-item-3">
+                <a href="#" class="a9">صنعت آب و برق</a>
+              </li>
+              <li class="list-item-3">
+                <a href="#" class="a10">صنایع و معادن</a>
+              </li>
+              <li class="list-item-3">
+                <a href="#" class="a11">تجارت و بازرگانی</a>
+              </li>
+              <li class="list-item-3">
+                <a href="#" class="a12">کار و تعاون</a>
+              </li>
+              <li class="list-item-3">
+                <a href="#" class="a13">اقتصاد شهری</a>
+              </li>
+              <li class="list-item-3">
+                <a href="#" class="a14">اقتصاددیجیتالی</a>
+              </li>
+              <li class="list-item-3">
+                <a href="#" class="a15">کشاورزی و دامپروری</a>
+              </li>
+              <li class="list-item-3">
+                <a href="#" class="a16">اخبارشرکت ها</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- main -->
+    <div class="main">
+      <div class="container mix-padding-right">
+        <div class="row">
+          <div class="col-6 no-padding">6</div>
+          <div class="col-3 no-padding">
+            <div class="tittle-main">
+              <div class="tab">
+                <i class="fa fa-bookmark"></i>
+                <a href="#" class="link-tittle-main">
+                 <p>تازه های </p>
+                  <p style="color: #0040AD;">فرهنگ</p>
+                </a>
+              </div>
+            </div>
+            <div class="noroz">
+              <a href="#" class="link-noroz">
+                <img src="./inc/img/noroz-farhang.jpg" alt="نوروز" />
+              </a>
+            </div>
+          </div>
+          <div class="col-3 no-padding">
+            <div class="tittle-main">
+              <div class="tab">
+                <i class="fa fa-columns"></i>
+                <a href="#" class="link-tittle-main">
+                  <p>تبلیغات در سایت :</p>
+                  <span>۸۸۹۳۰۲۷۰</span>
+                </a>
+              </div>
+            </div>
+            <div class="noroz">
+              <a href="#" class="link-noroz">
+                <img src="./inc/img/noroz-farhang.jpg" alt="نوروز" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./bootstrap-5.3.0-alpha2-dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a87e3d09e9.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./inc/js/init.js"></script>
+  </body>
+</html>

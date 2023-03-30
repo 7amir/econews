@@ -1,0 +1,44 @@
+.main {
+    .tittle-main {
+        width: 95%;
+        .tab {
+            margin: 3px 0 7px 0; 
+            i {
+                font-size: 15px;
+                color: #444;
+                margin-left: 7px;
+            }
+            .fa.fa-bookmark {
+                font-size: 13px;
+            }
+            .link-tittle-main {
+                font-size: 15px;
+                font-family: nassim-bold;
+                color: #666;
+
+                p {
+                    display: inline-block;
+                }
+                span{
+                    float: left;
+                    margin-top: 1px;
+                    font-size: 20px;
+                }
+
+                &:hover {
+                    color: #b71818;
+                }
+            } 
+        }
+
+    }
+
+    .noroz {
+        .link-noroz {
+            img{
+                height: 525px;
+                width: 296px ;
+            }
+        }
+    }
+}
