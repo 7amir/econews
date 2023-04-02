@@ -9,6 +9,7 @@
       href="./bootstrap-5.3.0-alpha2-dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="./inc/css.sass/style.css" />
+    <link rel="stylesheet" href="./fontawesome-free-6.3.0-web/css/all.min.css">
     <title>econews</title>
   </head>
   <body>
@@ -32,46 +33,46 @@
                 <a class="login" onclick="openLoginForm()">
                   <i class="fa fa-user"></i> ورود / عضویت
                   <i class="fa fa-chevron-down"></i>
-
-                  <!-- form login -->
-                  <div class="form-login" id="form-login">
-                    <form action="/">
-                      <div class="input-groups">
-                        <input
-                          type="text"
-                          class="input-login"
-                          placeholder="نام کاربری یا آدرس ایمیل"
-                        /><br />
-                        <input
-                          type="password"
-                          class="input-login"
-                          id="input-border"
-                          placeholder="کلمه عبور"
-                        />
-                      </div>
-                      <div class="form-check logeform">
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          value=""
-                          id="flexCheckDefault"
-                        />
-                        <label class="form-check-label" for="flexCheckDefault">
-                          مرا به خاطر بسپار
-                        </label>
-                      </div>
-
-                      <div class="login-group">
-                        <button type="button" class="btn btn-danger log">
-                          ورود
-                        </button>
-                        <button type="button" class="btn btn-light sign-up">
-                          عضویت
-                        </button>
-                      </div>
-                    </form>
-                  </div>
                 </a>
+
+                <!-- form login -->
+                <div class="form-login" id="form-login">
+                  <form action="/">
+                    <div class="input-groups">
+                      <input
+                        type="text"
+                        class="input-login"
+                        placeholder="نام کاربری یا آدرس ایمیل"
+                      /><br />
+                      <input
+                        type="password"
+                        class="input-login"
+                        id="input-border"
+                        placeholder="کلمه عبور"
+                      />
+                    </div>
+                    <div class="form-check logeform">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                      />
+                      <label class="form-check-label" for="flexCheckDefault">
+                        مرا به خاطر بسپار
+                      </label>
+                    </div>
+
+                    <div class="login-group">
+                      <button type="button" class="btn btn-danger log">
+                        ورود
+                      </button>
+                      <button type="button" class="btn btn-light sign-up">
+                        عضویت
+                      </button>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
 
@@ -508,38 +509,157 @@
     <!-- main -->
     <div class="main">
       <div class="container mix-padding-right">
-        <div class="row">
-          <div class="col-6 no-padding">6</div>
+        <div class="row" align="center">
+          <div class="col-6 no-padding"></div>
+
           <div class="col-3 no-padding">
-            <div class="tittle-main">
-              <div class="tab">
-                <i class="fa fa-bookmark"></i>
-                <a href="#" class="link-tittle-main">
-                 <p>تازه های </p>
-                  <p style="color: #0040AD;">فرهنگ</p>
-                </a>
+            <div class="all-box">
+              <div class="tittle-main">
+                <div class="tab" id="tab">
+                  <i class="fa fa-bookmark"></i>
+                  <a href="#" class="link-tittle-main">
+                    <p>تازه های</p>
+                    <p style="color: #0040ad">فرهنگ</p>
+                  </a>
+                </div>
               </div>
-            </div>
-            <div class="noroz">
-              <a href="#" class="link-noroz">
-                <img src="./inc/img/noroz-farhang.jpg" alt="نوروز" />
-              </a>
+              <div class="box-news">
+                <ul class="ul-box-news">
+                  <li class="list-item-box-news">
+                    <a href="#" class="link-box-news">
+                      <div class="contact-info">
+                        <h3>رضا رویگری در نقش‌هایی که کمتر دیده‌اید! +فیلم</h3>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="list-item-box-news">
+                    <a href="#" class="link-box-news">
+                      <div class="contact-info">
+                        <h3>
+                          انگیزه احسان علیخانی و امثالِ او از اجرا در رادیو
+                        </h3>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="list-item-box-news">
+                    <a href="#" class="link-box-news">
+                      <div class="contact-info">
+                        <h3>فراخوان جشنواره ماهور تا 14 فروردین تمدید شد</h3>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="list-item-box-news">
+                    <a href="#" class="link-box-news">
+                      <div class="contact-info">
+                        <h3>
+                          سی‌امین نمایشگاه بین‌المللی قرآن کریم افتتاح میشود
+                        </h3>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="list-item-box-news">
+                    <a href="#" class="link-box-news">
+                      <div class="contact-info">
+                        <h3>اکران فیلم‌های جشنواره فجر با «گربه چکمه‌پوش»</h3>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="list-item-box-news">
+                    <a href="#" class="link-box-news">
+                      <div class="contact-info">
+                        <h3>برگزاری نخستین کنسرت خواننده برگزیده «عصر جدید»</h3>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="list-item-box-news">
+                    <a href="#" class="link-box-news">
+                      <div class="contact-info">
+                        <h3>پشت صحنه سریال «سلمان فارسی» پخش می‌شود+فیلم</h3>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="list-item-box-news">
+                    <a href="#" class="link-box-news">
+                      <div class="contact-info">
+                        <h3>
+                          پخش فیلم‌های جشنواره فجر در روزهای پایانی عید نوروز
+                        </h3>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="list-item-box-news">
+                    <a href="#" class="link-box-news">
+                      <div class="contact-info">
+                        <h3>علت تأخیر پرداخت حقوق شب عید معلمان چه بود؟</h3>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="list-item-box-news">
+                    <a href="#" class="link-box-news">
+                      <div class="contact-info">
+                        <h3>
+                          رونمایی ۴۰ هزار نفری از جدیدترین اثر سالار عقیلی
+                        </h3>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="list-item-box-news">
+                    <a href="#" class="link-box-news">
+                      <div class="contact-info">
+                        <h3>رکورد روزانه مخاطبین سینمای ایران شکست</h3>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="list-item-box-news">
+                    <a href="#" class="link-box-news">
+                      <div class="contact-info">
+                        <h3>رفع مشکلات مسکن و اشتغال دانشجویان دکتری+فیلم</h3>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="list-item-box-news">
+                    <a href="#" class="link-box-news">
+                      <div class="contact-info">
+                        <h3>دولت قبل برای "برادران لیلا" مجوز صادر کرد</h3>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="list-item-box-news">
+                    <a href="#" class="link-box-news">
+                      <div class="contact-info">
+                        <h3>دعای کوتاهی که از دعاهای بلند بهتر است</h3>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="list-item-box-news">
+                    <a href="#" class="link-box-news">
+                      <div class="contact-info">
+                        <h3>
+                          درد دل های مدیرعامل مؤسسه هنرمندان پیشکسوت+ فیلم
+                        </h3>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
           <div class="col-3 no-padding">
-            <div class="tittle-main">
-              <div class="tab">
-                <i class="fa fa-columns"></i>
-                <a href="#" class="link-tittle-main">
-                  <p>تبلیغات در سایت :</p>
-                  <span>۸۸۹۳۰۲۷۰</span>
+            <div class="all-box">
+              <div class="tittle-main">
+                <div class="tab">
+                  <i class="fa fa-columns"></i>
+                  <a href="#" class="link-tittle-main">
+                    <p>تبلیغات در سایت :</p>
+                    <span>۸۸۹۳۰۲۷۰</span>
+                  </a>
+                </div>
+              </div>
+              <div class="noroz">
+                <a href="#" class="link-noroz">
+                  <img src="./inc/img/noroz-farhang.jpg" alt="نوروز" />
                 </a>
               </div>
-            </div>
-            <div class="noroz">
-              <a href="#" class="link-noroz">
-                <img src="./inc/img/noroz-farhang.jpg" alt="نوروز" />
-              </a>
             </div>
           </div>
         </div>

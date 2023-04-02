@@ -117,6 +117,7 @@ a {
 
 .no-padding {
   padding: 0;
+  margin-left: -2px;
 }
 
 header {
@@ -141,6 +142,7 @@ header .header-1 .right-header .date {
   padding-right: 25px;
   line-height: 22px;
   /* login or sign up */
+  /* form login */
 }
 header .header-1 .right-header .date .day .fa.fa-calendar {
   bottom: 0;
@@ -175,24 +177,23 @@ header .header-1 .right-header .date .login .fa.fa-chevron-down {
   margin-left: 1px;
   font-family: fontawesome;
 }
-header .header-1 .right-header .date .login .form-login {
+header .header-1 .right-header .date .form-login {
   position: absolute;
   background: #fff;
   padding: 15px;
   z-index: 1;
-  right: 23.7%;
-  margin-top: 2px;
+  right: 24.3%;
+  top: 19%;
   border: 1px solid #ccc;
   padding-left: 13px;
   display: none;
 }
-header .header-1 .right-header .date .login .form-login form {
+header .header-1 .right-header .date .form-login form {
   color: #444;
   font-size: 13px;
   font-family: nassim;
-  /* form login */
 }
-header .header-1 .right-header .date .login .form-login form .input-groups .input-login {
+header .header-1 .right-header .date .form-login form .input-groups .input-login {
   border: 1px solid #ccc;
   width: 160px;
   font-size: 13px;
@@ -200,43 +201,42 @@ header .header-1 .right-header .date .login .form-login form .input-groups .inpu
   padding: 5.3px 12px;
   color: #555;
 }
-header .header-1 .right-header .date .login .form-login form .input-groups .input-login:focus {
+header .header-1 .right-header .date .form-login form .input-groups .input-login:focus {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(146, 19, 19, 0.6);
   border: 1px solid #921313;
   outline: none;
 }
-header .header-1 .right-header .date .login .form-login form .input-groups #input-border {
+header .header-1 .right-header .date .form-login form .input-groups #input-border {
   border-top: 0;
 }
-header .header-1 .right-header .date .login .form-login form .form-check.logeform {
+header .header-1 .right-header .date .form-login form .form-check.logeform {
   margin: 7px 0;
 }
-header .header-1 .right-header .date .login .form-login form .form-check.logeform .form-check-input {
+header .header-1 .right-header .date .form-login form .form-check.logeform .form-check-input {
   float: right;
   margin-left: 5px;
   width: 16px;
   height: 16px;
+  font: 11px tahoma;
   box-shadow: none;
 }
-header .header-1 .right-header .date .login .form-login form .form-check.logeform .form-check-input:hover {
+header .header-1 .right-header .date .form-login form .form-check.logeform .form-check-input:hover {
   background: linear-gradient(#fff, #e6e6e6);
-  font: 11px tahoma;
   text-shadow: 0 1px 0 #fff;
 }
-header .header-1 .right-header .date .login .form-login form .form-check.logeform .form-check-input[type=checkbox]:checked {
+header .header-1 .right-header .date .form-login form .form-check.logeform .form-check-input[type=checkbox]:checked {
   background: none;
   box-shadow: inset 0 1px 2px #fff, 0 1px 2px rgba(0, 0, 0, 0.2);
   color: #808080;
   content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAKCAYAAABi8KSDAAAAmElEQVR42nXQMQ6EIBAFUI5OQ6TwHibacAIaIx4AbbiAtQGk429wg8lEKX4xzJswwAA0s64rpmlCrZvQGAPO+Z1xHPFgay1Ks8JlWQp6IqWEcw5s33cIIe7DeZ5LXvA4DqSUwPq+J80veF3Xf41t29B1XRPGGOkDtdafMIRwQ4LLNcMwEOi9J5B8Xc4ZSqkmrJgMnOdZ4Ss/HaFLUf+pI9MAAAAASUVORK5CYII=");
-  height: 16px;
 }
-header .header-1 .right-header .date .login .form-login form .form-check.logeform .form-check-label {
+header .header-1 .right-header .date .form-login form .form-check.logeform .form-check-label {
   display: block;
 }
-header .header-1 .right-header .date .login .form-login form .login-group {
+header .header-1 .right-header .date .form-login form .login-group {
   display: flex;
 }
-header .header-1 .right-header .date .login .form-login form .login-group .btn.btn-danger.log {
+header .header-1 .right-header .date .form-login form .login-group .btn.btn-danger.log {
   width: 100%;
   border-radius: 0 4px 4px 0;
   border: 1px solid #ccc;
@@ -244,10 +244,10 @@ header .header-1 .right-header .date .login .form-login form .login-group .btn.b
   background: #b71818;
   font-size: 14px;
 }
-header .header-1 .right-header .date .login .form-login form .login-group .btn.btn-danger.log:hover {
+header .header-1 .right-header .date .form-login form .login-group .btn.btn-danger.log:hover {
   background: #991313;
 }
-header .header-1 .right-header .date .login .form-login form .login-group .btn.btn-light.sign-up {
+header .header-1 .right-header .date .form-login form .login-group .btn.btn-light.sign-up {
   width: 100%;
   border-radius: 4px 0 0 4px;
   border: 1px solid #ccc;
@@ -556,37 +556,87 @@ header .header-3 .navbar-3 .ul-3 .list-item-3 .a16:hover {
   color: #fff;
 }
 
-.main .tittle-main {
+.main .all-box {
   width: 95%;
+  /* box news */
 }
-.main .tittle-main .tab {
+.main .all-box .tittle-main {
+  text-align: right;
+}
+.main .all-box .tittle-main .tab {
   margin: 3px 0 7px 0;
+  transition: all 0.3s ease-in-out;
 }
-.main .tittle-main .tab i {
+.main .all-box .tittle-main .tab i {
   font-size: 15px;
   color: #444;
   margin-left: 7px;
 }
-.main .tittle-main .tab .fa.fa-bookmark {
+.main .all-box .tittle-main .tab .fa.fa-bookmark {
   font-size: 13px;
 }
-.main .tittle-main .tab .link-tittle-main {
+.main .all-box .tittle-main .tab .link-tittle-main {
   font-size: 15px;
   font-family: nassim-bold;
   color: #666;
 }
-.main .tittle-main .tab .link-tittle-main p {
+.main .all-box .tittle-main .tab .link-tittle-main p {
   display: inline-block;
 }
-.main .tittle-main .tab .link-tittle-main span {
+.main .all-box .tittle-main .tab .link-tittle-main span {
   float: left;
   margin-top: 1px;
   font-size: 20px;
 }
-.main .tittle-main .tab .link-tittle-main:hover {
+.main .all-box .tittle-main .tab .link-tittle-main:hover {
   color: #b71818;
 }
-.main .noroz .link-noroz img {
+.main .all-box .tittle-main #tab:hover {
+  padding-right: 6px;
+}
+.main .all-box .tittle-main #tab:hover .fa.fa-bookmark {
+  color: #b71818;
+}
+.main .all-box .noroz .link-noroz img {
   height: 525px;
   width: 296px;
+}
+.main .all-box .box-news {
+  text-align: right;
+}
+.main .all-box .box-news .ul-box-news {
+  border: solid #dfdfdd;
+  border-width: 0 0 1px 1px;
+  background: #fff;
+  border-top: 3px solid #0040ad;
+}
+.main .all-box .box-news .ul-box-news .list-item-box-news {
+  border-bottom: 1px solid #dfdfdd;
+  margin: 0px 12px;
+  overflow: hidden;
+  padding: 7px 0px;
+}
+.main .all-box .box-news .ul-box-news .list-item-box-news .link-box-news {
+  padding-top: 7px;
+}
+.main .all-box .box-news .ul-box-news .list-item-box-news .link-box-news .contact-info {
+  color: #222;
+}
+.main .all-box .box-news .ul-box-news .list-item-box-news .link-box-news .contact-info h3 {
+  font-weight: normal;
+  font-size: 15px;
+  font-family: "nassim";
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.main .all-box .box-news .ul-box-news .list-item-box-news .link-box-news .contact-info h3::before {
+  color: #0040ad;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f111";
+  font-size: 9px;
+  line-height: 1;
+  position: relative;
+  margin-left: 5px;
 }/*# sourceMappingURL=style.css.map */
