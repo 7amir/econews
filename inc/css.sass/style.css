@@ -120,6 +120,13 @@ a {
   margin-left: -2px;
 }
 
+.no-padding-little-box {
+  padding: 0;
+  width: 46.5%;
+  margin-right: 15px;
+  margin-top: 7px;
+}
+
 header {
   /* the red header */
   /* last of header */
@@ -335,7 +342,7 @@ header .header-2 .logo-and-nav .background-img .navbar-2 .ul-2 .list-item-2 {
 header .header-2 .logo-and-nav .background-img .navbar-2 .ul-2 .list-item-2 .link-red-header {
   color: #fff;
   font-size: 18px;
-  padding: 26px 10px;
+  padding: 26px 10px 28px;
   line-height: 77px;
   font-family: nassim-bold;
   transition: all ease-in-out 0.15s;
@@ -558,37 +565,58 @@ header .header-3 .navbar-3 .ul-3 .list-item-3 .a16:hover {
 
 .main .all-box {
   width: 95%;
+  /* slide show */
   /* box news */
 }
 .main .all-box .tittle-main {
   text-align: right;
 }
+.main .all-box .tittle-main #tab {
+  margin-right: -6px;
+}
 .main .all-box .tittle-main .tab {
-  margin: 3px 0 7px 0;
+  margin: 8px 0 7px 0;
   transition: all 0.3s ease-in-out;
 }
 .main .all-box .tittle-main .tab i {
   font-size: 15px;
   color: #444;
-  margin-left: 7px;
+  margin-left: 5px;
 }
 .main .all-box .tittle-main .tab .fa.fa-bookmark {
   font-size: 13px;
+  margin-right: 4px;
 }
 .main .all-box .tittle-main .tab .link-tittle-main {
   font-size: 15px;
   font-family: nassim-bold;
   color: #666;
 }
-.main .all-box .tittle-main .tab .link-tittle-main p {
+.main .all-box .tittle-main .tab .link-tittle-main .strong-sar {
+  font-size: 16px;
+  font-family: nassim-bold;
+  color: #0040ad;
+}
+.main .all-box .tittle-main .tab .link-tittle-main .p-style-3 {
+  color: #333;
+  font-family: "nassim";
+  font-size: 17px;
+}
+.main .all-box .tittle-main .tab .link-tittle-main .p-style-3:hover {
+  color: #b71818;
+}
+.main .all-box .tittle-main .tab p {
   display: inline-block;
 }
-.main .all-box .tittle-main .tab .link-tittle-main span {
+.main .all-box .tittle-main .tab span {
   float: left;
   margin-top: 1px;
   font-size: 20px;
 }
-.main .all-box .tittle-main .tab .link-tittle-main:hover {
+.main .all-box .tittle-main .p-style {
+  color: #444;
+}
+.main .all-box .tittle-main .p-style:hover {
   color: #b71818;
 }
 .main .all-box .tittle-main #tab:hover {
@@ -597,18 +625,116 @@ header .header-3 .navbar-3 .ul-3 .list-item-3 .a16:hover {
 .main .all-box .tittle-main #tab:hover .fa.fa-bookmark {
   color: #b71818;
 }
+.main .all-box .slideshow {
+  width: 606px;
+  height: 390px;
+  margin-right: -14px;
+  /* little box in main */
+}
+.main .all-box .slideshow .link-content-box {
+  display: block;
+  position: relative;
+  border: 1px solid #dfdfdd;
+  border-right: none;
+  background: #fff;
+  padding: 3px;
+}
+.main .all-box .slideshow .link-content-box .content-box-img {
+  position: relative;
+}
+.main .all-box .slideshow .link-content-box .content-box-img .content-image {
+  width: 100%;
+}
+.main .all-box .slideshow .link-content-box .content-box-img::before {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.95) 30%, rgba(0, 0, 0, 0) 100%);
+  content: "";
+  height: 83px;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  bottom: 0;
+}
+.main .all-box .slideshow .link-content-box .content-box-info {
+  position: absolute;
+  bottom: 3px;
+  left: 3px;
+  right: 3px;
+  color: #fff;
+  padding: 20px;
+  z-index: 1;
+  text-align: right;
+  font-family: nassim;
+}
+.main .all-box .slideshow .link-content-box .content-box-info h3 {
+  padding: 0;
+  margin: 0 0 6px;
+  font-size: 17px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.main .all-box .slideshow .link-content-box .content-box-info h2 {
+  padding: 0;
+  margin: 0;
+  font-size: 30px;
+  font-weight: bold;
+  border-bottom: 2px solid transparent;
+  display: inline-block;
+}
+.main .all-box .slideshow .link-content-little-box {
+  display: flex;
+  background: #fff;
+  align-items: center;
+  padding: 12px;
+  max-height: 100px;
+  overflow: hidden;
+  border: 1px solid #dfdfdd;
+  border-right: none;
+  border-top: none;
+  background: #fff;
+}
+.main .all-box .slideshow .link-content-little-box .content-box-info {
+  color: #222;
+  padding-right: 8px;
+  text-align: right;
+  font-family: nassim;
+}
+.main .all-box .slideshow .link-content-little-box .content-box-info h3 {
+  padding: 0;
+  margin: 0 0 6px;
+  font-size: 15px;
+  color: #555;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.main .all-box .slideshow .link-content-little-box .content-box-info h2 {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: nassim;
+  border-bottom: 2px solid transparent;
+}
+.main .all-box .noroz {
+  max-height: 497px;
+  overflow: hidden;
+}
 .main .all-box .noroz .link-noroz img {
   height: 525px;
   width: 296px;
 }
 .main .all-box .box-news {
   text-align: right;
+  width: 101.8%;
+  margin-right: -4px;
 }
 .main .all-box .box-news .ul-box-news {
   border: solid #dfdfdd;
   border-width: 0 0 1px 1px;
   background: #fff;
   border-top: 3px solid #0040ad;
+  margin-left: 3px;
 }
 .main .all-box .box-news .ul-box-news .list-item-box-news {
   border-bottom: 1px solid #dfdfdd;
@@ -639,4 +765,11 @@ header .header-3 .navbar-3 .ul-3 .list-item-3 .a16:hover {
   line-height: 1;
   position: relative;
   margin-left: 5px;
+  font-size: 8px;
+}
+.main .all-box .box-news .ul-box-news .list-item-box-news .link-box-news .contact-info h3:hover {
+  color: #b71818;
+}
+.main .all-box .box-news .ul-box-news .list-item-box-news:last-child {
+  border-bottom: none;
 }/*# sourceMappingURL=style.css.map */
