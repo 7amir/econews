@@ -221,9 +221,12 @@ header .header-1 .right-header .date .form-login form .form-check.logeform {
 }
 header .header-1 .right-header .date .form-login form .form-check.logeform .form-check-input {
   float: right;
+  background: linear-gradient(#fafafa, #dcdcdc);
+  border: 1px solid #a0a0a0;
   margin-left: 5px;
   width: 16px;
   height: 16px;
+  padding: 1.5px;
   font: 11px tahoma;
   box-shadow: none;
 }
@@ -231,9 +234,13 @@ header .header-1 .right-header .date .form-login form .form-check.logeform .form
   background: linear-gradient(#fff, #e6e6e6);
   text-shadow: 0 1px 0 #fff;
 }
-header .header-1 .right-header .date .form-login form .form-check.logeform .form-check-input[type=checkbox]:checked {
+header .header-1 .right-header .date .form-login form .form-check.logeform .form-check-input:focus {
+  border-color: #4080fa;
+  outline: none;
+  box-shadow: inset 0 1px 2px #fff, 0 1px 2px rgba(0, 0, 0, 0.2), 0 0 1px #c0c0c0, 0 0 1px #c0c0c0, 0 0 1px #c0c0c0;
+}
+header .header-1 .right-header .date .form-login form .form-check.logeform .form-check-input[type=checkbox]:checked::before {
   background: none;
-  box-shadow: inset 0 1px 2px #fff, 0 1px 2px rgba(0, 0, 0, 0.2);
   color: #808080;
   content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAKCAYAAABi8KSDAAAAmElEQVR42nXQMQ6EIBAFUI5OQ6TwHibacAIaIx4AbbiAtQGk429wg8lEKX4xzJswwAA0s64rpmlCrZvQGAPO+Z1xHPFgay1Ks8JlWQp6IqWEcw5s33cIIe7DeZ5LXvA4DqSUwPq+J80veF3Xf41t29B1XRPGGOkDtdafMIRwQ4LLNcMwEOi9J5B8Xc4ZSqkmrJgMnOdZ4Ss/HaFLUf+pI9MAAAAASUVORK5CYII=");
 }
@@ -563,6 +570,10 @@ header .header-3 .navbar-3 .ul-3 .list-item-3 .a16:hover {
   color: #fff;
 }
 
+.main {
+  /* slide show wrapper (the last) */
+  /* All secend main */
+}
 .main .all-box {
   width: 95%;
   /* slide show */
@@ -575,7 +586,7 @@ header .header-3 .navbar-3 .ul-3 .list-item-3 .a16:hover {
   margin-right: -6px;
 }
 .main .all-box .tittle-main .tab {
-  margin: 8px 0 7px 0;
+  margin: 4px 0 7px 0;
   transition: all 0.3s ease-in-out;
 }
 .main .all-box .tittle-main .tab i {
@@ -610,7 +621,7 @@ header .header-3 .navbar-3 .ul-3 .list-item-3 .a16:hover {
 }
 .main .all-box .tittle-main .tab span {
   float: left;
-  margin-top: 1px;
+  margin-top: 2px;
   font-size: 20px;
 }
 .main .all-box .tittle-main .p-style {
@@ -641,9 +652,14 @@ header .header-3 .navbar-3 .ul-3 .list-item-3 .a16:hover {
 }
 .main .all-box .slideshow .link-content-box .content-box-img {
   position: relative;
+  overflow: hidden;
 }
 .main .all-box .slideshow .link-content-box .content-box-img .content-image {
   width: 100%;
+  transition: all 0.9s ease-in-out;
+}
+.main .all-box .slideshow .link-content-box .content-box-img .content-image:hover {
+  transform: scale(1.02);
 }
 .main .all-box .slideshow .link-content-box .content-box-img::before {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.95) 30%, rgba(0, 0, 0, 0) 100%);
@@ -681,6 +697,18 @@ header .header-3 .navbar-3 .ul-3 .list-item-3 .a16:hover {
   border-bottom: 2px solid transparent;
   display: inline-block;
 }
+.main .all-box .slideshow .link-content-box .badge-style {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  border-radius: 0;
+  padding: 5px 8px 4px;
+  z-index: 2;
+  font-family: nassim-bold;
+  font-size: 13px;
+  color: #fff;
+  background: #0040ad;
+}
 .main .all-box .slideshow .link-content-little-box {
   display: flex;
   background: #fff;
@@ -692,6 +720,14 @@ header .header-3 .navbar-3 .ul-3 .list-item-3 .a16:hover {
   border-right: none;
   border-top: none;
   background: #fff;
+}
+.main .all-box .slideshow .link-content-little-box .content-little-box-img {
+  overflow: hidden;
+  width: 55%;
+}
+.main .all-box .slideshow .link-content-little-box .content-little-box-img .content-image {
+  width: 100%;
+  transition: all 0.9s ease-in-out;
 }
 .main .all-box .slideshow .link-content-little-box .content-box-info {
   color: #222;
@@ -715,6 +751,18 @@ header .header-3 .navbar-3 .ul-3 .list-item-3 .a16:hover {
   font-weight: bold;
   font-family: nassim;
   border-bottom: 2px solid transparent;
+}
+.main .all-box .slideshow .link-content-little-box .content-box-info .n-margin-h2 {
+  margin-top: -30px;
+}
+.main .all-box .slideshow .link-content-little-box:hover h3 {
+  color: #b71818;
+}
+.main .all-box .slideshow .link-content-little-box:hover h2 {
+  color: #b71818;
+}
+.main .all-box .slideshow .link-content-little-box:hover .content-image {
+  transform: scale(1.03);
 }
 .main .all-box .noroz {
   max-height: 497px;
@@ -772,4 +820,139 @@ header .header-3 .navbar-3 .ul-3 .list-item-3 .a16:hover {
 }
 .main .all-box .box-news .ul-box-news .list-item-box-news:last-child {
   border-bottom: none;
+}
+.main .slideshow-wrapper {
+  margin-right: -8px;
+}
+.main .slideshow-wrapper .navbar-wrapper {
+  margin: 17px 0;
+}
+.main .slideshow-wrapper .navbar-wrapper .ul-wrapper .list-item-wrapper {
+  width: 1%;
+  display: table-cell;
+  /* hover span and ::befor */
+}
+.main .slideshow-wrapper .navbar-wrapper .ul-wrapper .list-item-wrapper span {
+  color: #777;
+  font-size: 19px;
+  font-family: "nassim-bold";
+  padding-top: 0;
+  margin: 0 5px;
+  display: block;
+  cursor: pointer;
+}
+.main .slideshow-wrapper .navbar-wrapper .ul-wrapper .list-item-wrapper span::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 6px;
+  background: rgb(197, 197, 197);
+  margin-bottom: 9px;
+}
+.main .slideshow-wrapper .navbar-wrapper .ul-wrapper .list-item-wrapper .span-1:hover {
+  color: #b22222;
+}
+.main .slideshow-wrapper .navbar-wrapper .ul-wrapper .list-item-wrapper .span-1:hover::before {
+  background: #b22222;
+}
+.main .slideshow-wrapper .navbar-wrapper .ul-wrapper .list-item-wrapper .span-2:hover {
+  color: #3300cc;
+}
+.main .slideshow-wrapper .navbar-wrapper .ul-wrapper .list-item-wrapper .span-2:hover::before {
+  background: #3300cc;
+}
+.main .slideshow-wrapper .navbar-wrapper .ul-wrapper .list-item-wrapper .span-3:hover {
+  color: #0040ad;
+}
+.main .slideshow-wrapper .navbar-wrapper .ul-wrapper .list-item-wrapper .span-3:hover::before {
+  background: #0040ad;
+}
+.main .slideshow-wrapper .navbar-wrapper .ul-wrapper .list-item-wrapper .span-4:hover {
+  color: #7b68ee;
+}
+.main .slideshow-wrapper .navbar-wrapper .ul-wrapper .list-item-wrapper .span-4:hover::before {
+  background: #7b68ee;
+}
+.main .slideshow-wrapper .navbar-wrapper .ul-wrapper .list-item-wrapper .span-5:hover {
+  color: #ba55d3;
+}
+.main .slideshow-wrapper .navbar-wrapper .ul-wrapper .list-item-wrapper .span-5:hover::before {
+  background: #ba55d3;
+}
+.main .slideshow-wrapper .navbar-wrapper .ul-wrapper .list-item-wrapper .span-6:hover {
+  color: #ff8c00;
+}
+.main .slideshow-wrapper .navbar-wrapper .ul-wrapper .list-item-wrapper .span-6:hover::before {
+  background: #ff8c00;
+}
+.main .slideshow-wrapper .navbar-wrapper .ul-wrapper .list-item-wrapper .span-7:hover {
+  color: #f08080;
+}
+.main .slideshow-wrapper .navbar-wrapper .ul-wrapper .list-item-wrapper .span-7:hover::before {
+  background: #f08080;
+}
+.main .slideshow-wrapper .navbar-wrapper .ul-wrapper .list-item-wrapper .span-8:hover {
+  color: #006600;
+}
+.main .slideshow-wrapper .navbar-wrapper .ul-wrapper .list-item-wrapper .span-8:hover::before {
+  background: #006600;
+}
+.main .row-gold-price {
+  /* the right box of gold , price and news */
+}
+.main .row-gold-price .section-group .section-tittle {
+  margin-bottom: 7px;
+}
+.main .row-gold-price .section-group .section-tittle .link-section-left {
+  border-radius: 0 0 2px 2px;
+  background-color: #e8e8e8;
+  color: #666;
+  font-family: yekan;
+  font-size: 11px;
+  line-height: 1;
+  padding: 2px 10px 5px;
+  margin-bottom: -2px;
+  float: left;
+  position: relative;
+  bottom: -4px;
+}
+.main .row-gold-price .section-group .section-tittle h3 {
+  color: #444;
+  margin: 0;
+  font-size: 15px;
+}
+.main .row-gold-price .section-group .section-tittle h3 .link-section-right {
+  color: #444;
+  font-size: 15px;
+  font-family: nassim-bold;
+}
+.main .row-gold-price .section-group .section-tittle h3 .link-section-right .fa.fa-diamond {
+  margin-left: 7px;
+  font-size: 16px;
+  top: 2px;
+  position: relative;
+}
+.main .row-gold-price .section-group .tabpanel .ul-panel {
+  padding: 0;
+}
+.main .row-gold-price .section-group .tabpanel .ul-panel .list-item-tabpanel {
+  width: 50%;
+}
+.main .row-gold-price .section-group .tabpanel .ul-panel .list-item-tabpanel .link-panel-2, .main .row-gold-price .section-group .tabpanel .ul-panel .list-item-tabpanel .link-panel-1 {
+  display: inline-block;
+  font-size: 16px;
+  font-family: nassim;
+  color: #4e4e4e;
+  padding: 10.5px 0px;
+  border-radius: 0;
+  background: #f8f8f8;
+  border-top: 3px solid #c00;
+  box-shadow: inset 0 0 1px 0 rgba(0, 0, 0, 0.36), inset 0 0 8px 1px rgba(165, 164, 164, 0.5);
+  width: 100%;
+  text-align: center;
+}
+.main .row-gold-price .section-group .tabpanel .ul-panel .list-item-tabpanel .link-panel-1 {
+  border-color: #ff3131;
+  box-shadow: none;
+  background: #f2f2f2;
 }/*# sourceMappingURL=style.css.map */

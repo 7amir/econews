@@ -7,7 +7,7 @@
         margin-right: -6px;
       }
       .tab {
-        margin: 8px 0 7px 0;
+        margin: 4px 0 7px 0;
         transition: all 0.3s ease-in-out;
         i {
           font-size: 15px;
@@ -42,7 +42,7 @@
         }
         span {
           float: left;
-          margin-top: 1px;
+          margin-top: 2px;
           font-size: 20px;
         }
       }
@@ -75,9 +75,15 @@
 
         .content-box-img {
           position: relative;
+          overflow: hidden;
 
           .content-image {
             width: 100%;
+            transition: all 0.9s ease-in-out;
+
+            &:hover {
+              transform: scale(1.02);
+            }
           }
 
           &::before {
@@ -142,6 +148,18 @@
             display: inline-block;
           }
         }
+        .badge-style {
+          position: absolute;
+          top: 13px;
+          right: 13px;
+          border-radius: 0;
+          padding: 5px 8px 4px;
+          z-index: 2;
+          font-family: nassim-bold;
+          font-size: 13px;
+          color: #fff;
+          background: #0040ad;
+        }
       }
 
       /* little box in main */
@@ -157,8 +175,11 @@
         border-top: none;
         background: #fff;
         .content-little-box-img {
+          overflow: hidden;
+          width: 55%;
           .content-image {
-
+            width: 100%;
+            transition: all 0.9s ease-in-out;
           }
         }
         .content-box-info {
@@ -179,13 +200,24 @@
           h2 {
             padding: 0;
             margin: 0;
-
             font-size: 16px;
             font-weight: bold;
             font-family: nassim;
             border-bottom: 2px solid transparent;
-
           }
+          .n-margin-h2 {
+            margin-top: -30px;
+          }
+        }
+
+        &:hover h3 {
+          color: #b71818;
+        }
+        &:hover h2 {
+          color: #b71818;
+        }
+        &:hover .content-image {
+          transform: scale(1.03);
         }
       }
     }
@@ -254,4 +286,158 @@
       }
     }
   }
+
+  /* slide show wrapper (the last) */
+  .slideshow-wrapper {
+    margin-right: -8px;
+
+    .navbar-wrapper {
+      // margin-bottom: 5px;
+      margin: 17px 0;
+      .ul-wrapper {
+        .list-item-wrapper {
+          width: 1%;
+          display: table-cell;
+          span {
+            color: #777;
+            font-size: 19px;
+            font-family: "nassim-bold";
+            padding-top: 0;
+            margin: 0 5px;
+            display: block;
+            cursor: pointer;
+
+            &::before {
+              content: "";
+              display: block;
+              width: 100%;
+              height: 6px;
+              background: rgb(197, 197, 197);
+              margin-bottom: 9px;
+            }
+          }
+
+          /* hover span and ::befor */
+          .span-1:hover {
+            color: #b22222;
+          }
+          .span-1:hover::before {
+            background: #b22222;
+          }
+          .span-2:hover {
+            color: #3300cc;
+          }
+          .span-2:hover::before {
+            background: #3300cc;
+          }
+          .span-3:hover {
+            color: #0040ad;
+          }
+          .span-3:hover::before {
+            background: #0040ad;
+          }
+          .span-4:hover {
+            color: #7b68ee;
+          }
+          .span-4:hover::before {
+            background: #7b68ee;
+          }
+          .span-5:hover {
+            color: #ba55d3;
+          }
+          .span-5:hover::before {
+            background: #ba55d3;
+          }
+          .span-6:hover {
+            color: #ff8c00;
+          }
+          .span-6:hover::before {
+            background: #ff8c00;
+          }
+          .span-7:hover {
+            color: #f08080;
+          }
+          .span-7:hover::before {
+            background: #f08080;
+          }
+          .span-8:hover {
+            color: #006600;
+          }
+          .span-8:hover::before {
+            background: #006600;
+          }
+        }
+      }
+    }
+  }
+
+  /* All secend main */
+  .row-gold-price {
+
+    /* the right box of gold , price and news */
+    .section-group {
+      .section-tittle {
+        margin-bottom: 7px;
+
+        .link-section-left {
+          border-radius: 0 0 2px 2px;
+          background-color: #e8e8e8;
+          color: #666;
+          font-family: yekan;
+          font-size: 11px;
+          line-height: 1;
+          padding: 2px 10px 5px;
+          margin-bottom: -2px;
+          float: left;
+          position: relative;
+          bottom: -4px;
+        }
+        h3 {
+          color: #444;
+          margin: 0;
+          font-size: 15px;          
+          .link-section-right {
+            color: #444;
+            font-size: 15px;
+            font-family: nassim-bold;
+            .fa.fa-diamond {
+              margin-left: 7px;
+              font-size: 16px;
+              top: 2px;
+              position: relative;              
+            }
+          }
+        }
+      }
+
+      .tabpanel {
+        .ul-panel {
+
+          padding: 0;
+          .list-item-tabpanel {
+            width: 50%;
+            .link-panel-2 , .link-panel-1{
+              display: inline-block;
+              font-size: 16px;
+              font-family: nassim;
+              color: #4e4e4e;
+              padding: 10.5px 0px;
+              border-radius: 0;
+              background: #f8f8f8;
+              border-top: 3px solid #c00 ;
+              box-shadow: inset 0 0 1px 0 rgba(0, 0, 0, 0.36), inset 0 0 8px 1px rgba(165, 164, 164, 0.5);
+              width: 100%;
+              text-align: center;
+            }
+            .link-panel-1 {
+              border-color: #ff3131 ;
+              box-shadow: none;
+              background: #f2f2f2;
+            }
+          }
+        }
+      }
+    }
+  }
+  
 }
