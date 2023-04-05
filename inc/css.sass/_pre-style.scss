@@ -31,19 +31,19 @@ body {
 i {
   font: normal normal normal 14px/1 fontawesome;
   font-size: 11px;
-  font-family: fontawesome;
+  font-family: 'FontAwesome';
   position: relative;
   bottom: -1px;
 }
 a {
   text-decoration: none;
 }
-#world-img {
+.world-img {
   padding-right: 5.3%;
   height: 80px;
   margin-bottom: 1px;
 }
-.container-floid {
+.container-fluid {
   background: #fff;
 }
 .dropdown-row {

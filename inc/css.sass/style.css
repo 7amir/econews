@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -82,7 +83,7 @@ body {
 i {
   font: normal normal normal 14px/1 fontawesome;
   font-size: 11px;
-  font-family: fontawesome;
+  font-family: "FontAwesome";
   position: relative;
   bottom: -1px;
 }
@@ -91,13 +92,13 @@ a {
   text-decoration: none;
 }
 
-#world-img {
+.world-img {
   padding-right: 5.3%;
   height: 80px;
   margin-bottom: 1px;
 }
 
-.container-floid {
+.container-fluid {
   background: #fff;
 }
 
@@ -128,41 +129,41 @@ a {
 }
 
 header {
-  /* the red header */
-  /* last of header */
+  /* هدر با لوگوی خبرگذاری اقتصاد ایران */
+  /* آخرین هدر همراه لینک های رنگی  */
 }
-header .header-1 {
+header .header-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 34.5px;
   background: #fff;
-  /* right box of header */
-  /* header nav bar */
+  /* باکس سمت راست هدر  */
+  /* منو هدر اول  */
 }
-header .header-1 .right-header span {
+header .header-top .header-clock span {
   font-size: 12px;
   font-family: yekan;
 }
-header .header-1 .right-header .date {
+header .header-top .header-clock .date {
   display: flex;
   padding-right: 25px;
   line-height: 22px;
-  /* login or sign up */
-  /* form login */
+  /* دکمه ثبت نام یا ورود  */
+  /* فرم ثبت نام */
 }
-header .header-1 .right-header .date .day .fa.fa-calendar {
+header .header-top .header-clock .date .day .fa.fa-calendar {
   bottom: 0;
   font-size: 12px;
 }
-header .header-1 .right-header .date .clock i {
+header .header-top .header-clock .date .clock i {
   margin-right: 8px;
   bottom: 0;
   font-family: fontawesome;
   font-size: 10px;
   font-weight: 900;
 }
-header .header-1 .right-header .date .login {
+header .header-top .header-clock .date .login {
   padding: 2px 6px 0px 8px;
   font-size: 13px;
   border-radius: 2px;
@@ -174,17 +175,17 @@ header .header-1 .right-header .date .login {
   text-decoration: none;
   cursor: pointer;
 }
-header .header-1 .right-header .date .login .fa.fa-user {
+header .header-top .header-clock .date .login .fa.fa-user {
   font-size: 13px;
   margin-left: 2px;
   font-family: fontawesome;
 }
-header .header-1 .right-header .date .login .fa.fa-chevron-down {
+header .header-top .header-clock .date .login .fa.fa-chevron-down {
   font-size: 12px;
   margin-left: 1px;
   font-family: fontawesome;
 }
-header .header-1 .right-header .date .form-login {
+header .header-top .header-clock .date .form-login {
   position: absolute;
   background: #fff;
   padding: 15px;
@@ -195,12 +196,12 @@ header .header-1 .right-header .date .form-login {
   padding-left: 13px;
   display: none;
 }
-header .header-1 .right-header .date .form-login form {
+header .header-top .header-clock .date .form-login form {
   color: #444;
   font-size: 13px;
   font-family: nassim;
 }
-header .header-1 .right-header .date .form-login form .input-groups .input-login {
+header .header-top .header-clock .date .form-login form .input-groups .input-email, header .header-top .header-clock .date .form-login form .input-groups .input-password {
   border: 1px solid #ccc;
   width: 160px;
   font-size: 13px;
@@ -208,18 +209,18 @@ header .header-1 .right-header .date .form-login form .input-groups .input-login
   padding: 5.3px 12px;
   color: #555;
 }
-header .header-1 .right-header .date .form-login form .input-groups .input-login:focus {
+header .header-top .header-clock .date .form-login form .input-groups .input-email:focus, header .header-top .header-clock .date .form-login form .input-groups .input-password:focus {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(146, 19, 19, 0.6);
   border: 1px solid #921313;
   outline: none;
 }
-header .header-1 .right-header .date .form-login form .input-groups #input-border {
+header .header-top .header-clock .date .form-login form .input-groups .input-password {
   border-top: 0;
 }
-header .header-1 .right-header .date .form-login form .form-check.logeform {
+header .header-top .header-clock .date .form-login form .form-check.loginform {
   margin: 7px 0;
 }
-header .header-1 .right-header .date .form-login form .form-check.logeform .form-check-input {
+header .header-top .header-clock .date .form-login form .form-check.loginform .form-check-input {
   float: right;
   background: linear-gradient(#fafafa, #dcdcdc);
   border: 1px solid #a0a0a0;
@@ -230,27 +231,27 @@ header .header-1 .right-header .date .form-login form .form-check.logeform .form
   font: 11px tahoma;
   box-shadow: none;
 }
-header .header-1 .right-header .date .form-login form .form-check.logeform .form-check-input:hover {
+header .header-top .header-clock .date .form-login form .form-check.loginform .form-check-input:hover {
   background: linear-gradient(#fff, #e6e6e6);
   text-shadow: 0 1px 0 #fff;
 }
-header .header-1 .right-header .date .form-login form .form-check.logeform .form-check-input:focus {
+header .header-top .header-clock .date .form-login form .form-check.loginform .form-check-input:focus {
   border-color: #4080fa;
   outline: none;
   box-shadow: inset 0 1px 2px #fff, 0 1px 2px rgba(0, 0, 0, 0.2), 0 0 1px #c0c0c0, 0 0 1px #c0c0c0, 0 0 1px #c0c0c0;
 }
-header .header-1 .right-header .date .form-login form .form-check.logeform .form-check-input[type=checkbox]:checked::before {
+header .header-top .header-clock .date .form-login form .form-check.loginform .form-check-input[type=checkbox]:checked::before {
   background: none;
   color: #808080;
   content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAKCAYAAABi8KSDAAAAmElEQVR42nXQMQ6EIBAFUI5OQ6TwHibacAIaIx4AbbiAtQGk429wg8lEKX4xzJswwAA0s64rpmlCrZvQGAPO+Z1xHPFgay1Ks8JlWQp6IqWEcw5s33cIIe7DeZ5LXvA4DqSUwPq+J80veF3Xf41t29B1XRPGGOkDtdafMIRwQ4LLNcMwEOi9J5B8Xc4ZSqkmrJgMnOdZ4Ss/HaFLUf+pI9MAAAAASUVORK5CYII=");
 }
-header .header-1 .right-header .date .form-login form .form-check.logeform .form-check-label {
+header .header-top .header-clock .date .form-login form .form-check.loginform .form-check-label {
   display: block;
 }
-header .header-1 .right-header .date .form-login form .login-group {
+header .header-top .header-clock .date .form-login form .login-group {
   display: flex;
 }
-header .header-1 .right-header .date .form-login form .login-group .btn.btn-danger.log {
+header .header-top .header-clock .date .form-login form .login-group .btn.btn-danger.login {
   width: 100%;
   border-radius: 0 4px 4px 0;
   border: 1px solid #ccc;
@@ -258,45 +259,45 @@ header .header-1 .right-header .date .form-login form .login-group .btn.btn-dang
   background: #b71818;
   font-size: 14px;
 }
-header .header-1 .right-header .date .form-login form .login-group .btn.btn-danger.log:hover {
+header .header-top .header-clock .date .form-login form .login-group .btn.btn-danger.login:hover {
   background: #991313;
 }
-header .header-1 .right-header .date .form-login form .login-group .btn.btn-light.sign-up {
+header .header-top .header-clock .date .form-login form .login-group .btn.btn-light.sign-up {
   width: 100%;
   border-radius: 4px 0 0 4px;
   border: 1px solid #ccc;
   border-right: none;
   font-size: 14px;
 }
-header .header-1 .left-header {
+header .header-top .header-top-nav-left {
   display: flex;
   align-items: center;
-  /* search form in header */
+  /* فرم جست و جو در هدر  */
 }
-header .header-1 .left-header .navbar-1 .ul-1 {
+header .header-top .header-top-nav-left .nav__header-top .ul__header-top {
   display: flex;
   border-right: 1px solid #ddd;
 }
-header .header-1 .left-header .navbar-1 .ul-1 .list-items-1 {
+header .header-top .header-top-nav-left .nav__header-top .ul__header-top .list-items__header-top {
   font-family: nassim-bold;
   font-size: 13px;
   padding: 10.5px 6px;
   margin-left: 6px;
   cursor: pointer;
 }
-header .header-1 .left-header .navbar-1 .ul-1 .list-items-1 i {
+header .header-top .header-top-nav-left .nav__header-top .ul__header-top .list-items__header-top i {
   margin-left: 2px;
 }
-header .header-1 .left-header .navbar-1 .ul-1 .list-items-1 a {
+header .header-top .header-top-nav-left .nav__header-top .ul__header-top .list-items__header-top a {
   color: #222;
 }
-header .header-1 .left-header .navbar-1 .ul-1 .list-items-1:hover {
+header .header-top .header-top-nav-left .nav__header-top .ul__header-top .list-items__header-top:hover {
   background: #e8e8e8;
 }
-header .header-1 .left-header .form-nav {
+header .header-top .header-top-nav-left .search-form {
   position: relative;
 }
-header .header-1 .left-header .form-nav .search-addon.fa.fa-search {
+header .header-top .header-top-nav-left .search-form .search-addon.fa.fa-search {
   position: absolute;
   color: #b01927;
   font-size: 13.19px;
@@ -305,7 +306,7 @@ header .header-1 .left-header .form-nav .search-addon.fa.fa-search {
   left: 4%;
   font-family: fontawesome;
 }
-header .header-1 .left-header .form-nav .search-input {
+header .header-top .header-top-nav-left .search-form .input__search-form {
   background: #e4e4e4;
   border: none;
   font-size: 12px;
@@ -313,40 +314,40 @@ header .header-1 .left-header .form-nav .search-input {
   font-size: 12px;
   padding: 5px 26px 9px 29px;
 }
-header .header-1 .left-header .form-nav .search-input:focus {
+header .header-top .header-top-nav-left .search-form .input__search-form:focus {
   outline: none;
 }
-header .header-2 {
+header .header__iran-news {
   background-color: #b71818;
   height: 80px;
 }
-header .header-2 .logo-and-nav {
+header .header__iran-news .logo-and-nav__iran-news {
   margin-right: -1.5%;
   display: flex;
   justify-content: space-around;
 }
-header .header-2 .logo-and-nav .header-logo {
+header .header__iran-news .logo-and-nav__iran-news .logo__iran-news {
   padding-left: 34px;
   margin-bottom: 3px;
 }
-header .header-2 .logo-and-nav .background-img {
+header .header__iran-news .logo-and-nav__iran-news .background-img-world {
   background-image: url(../img/header-overlay.png);
   background-position: center;
   background-size: cover;
   width: 156%;
-  /* navbar red header */
+  /* منوی هدر خبرگذاری اقتصاد ایران  */
 }
-header .header-2 .logo-and-nav .background-img .navbar-2 {
+header .header__iran-news .logo-and-nav__iran-news .background-img-world .nav__iran-news {
   margin-right: -7%;
 }
-header .header-2 .logo-and-nav .background-img .navbar-2 .ul-2 {
+header .header__iran-news .logo-and-nav__iran-news .background-img-world .nav__iran-news .ul__iran-news {
   display: flex;
   margin-right: 6px;
 }
-header .header-2 .logo-and-nav .background-img .navbar-2 .ul-2 .list-item-2 {
-  /* hover news box */
+header .header__iran-news .logo-and-nav__iran-news .background-img-world .nav__iran-news .ul__iran-news .list-item__iran-news {
+  /* هاور آیتم اخبار و رویداد ها */
 }
-header .header-2 .logo-and-nav .background-img .navbar-2 .ul-2 .list-item-2 .link-red-header {
+header .header__iran-news .logo-and-nav__iran-news .background-img-world .nav__iran-news .ul__iran-news .list-item__iran-news .link__iran-news {
   color: #fff;
   font-size: 18px;
   padding: 26px 10px 28px;
@@ -354,18 +355,18 @@ header .header-2 .logo-and-nav .background-img .navbar-2 .ul-2 .list-item-2 .lin
   font-family: nassim-bold;
   transition: all ease-in-out 0.15s;
 }
-header .header-2 .logo-and-nav .background-img .navbar-2 .ul-2 .list-item-2 .link-red-header i {
+header .header__iran-news .logo-and-nav__iran-news .background-img-world .nav__iran-news .ul__iran-news .list-item__iran-news .link__iran-news i {
   font-family: fontawesome;
   font-size: 16px;
   margin-right: 2px;
   position: relative;
   bottom: -0.5px;
 }
-header .header-2 .logo-and-nav .background-img .navbar-2 .ul-2 .list-item-2 .link-red-header:hover {
+header .header__iran-news .logo-and-nav__iran-news .background-img-world .nav__iran-news .ul__iran-news .list-item__iran-news .link__iran-news:hover {
   background: #92191f;
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3) inset;
 }
-header .header-2 .logo-and-nav .background-img .navbar-2 .ul-2 .list-item-2 .navbar-hover {
+header .header__iran-news .logo-and-nav__iran-news .background-img-world .nav__iran-news .ul__iran-news .list-item__iran-news .navbar-hover__list-item__iran-news {
   background: #111;
   position: absolute;
   width: 100%;
@@ -381,12 +382,13 @@ header .header-2 .logo-and-nav .background-img .navbar-2 .ul-2 .list-item-2 .nav
   min-height: 72px;
   display: flex;
   align-items: center;
+  /* هاور آیتم نرخ ها و داده ها */
 }
-header .header-2 .logo-and-nav .background-img .navbar-2 .ul-2 .list-item-2 .navbar-hover .dropdown {
+header .header__iran-news .logo-and-nav__iran-news .background-img-world .nav__iran-news .ul__iran-news .list-item__iran-news .navbar-hover__list-item__iran-news .dropdown {
   background: #1b1b1b;
   min-height: 215px;
 }
-header .header-2 .logo-and-nav .background-img .navbar-2 .ul-2 .list-item-2 .navbar-hover .dropdown .dropdown-heading {
+header .header__iran-news .logo-and-nav__iran-news .background-img-world .nav__iran-news .ul__iran-news .list-item__iran-news .navbar-hover__list-item__iran-news .dropdown .dropdown-heading {
   color: #fff;
   font-size: 16px;
   display: block;
@@ -398,11 +400,11 @@ header .header-2 .logo-and-nav .background-img .navbar-2 .ul-2 .list-item-2 .nav
   margin-bottom: 7px;
   transition: all 0.3s ease-in-out;
 }
-header .header-2 .logo-and-nav .background-img .navbar-2 .ul-2 .list-item-2 .navbar-hover .dropdown .dropdown-heading:hover {
+header .header__iran-news .logo-and-nav__iran-news .background-img-world .nav__iran-news .ul__iran-news .list-item__iran-news .navbar-hover__list-item__iran-news .dropdown .dropdown-heading:hover {
   padding-left: 6px;
   background: #b71818;
 }
-header .header-2 .logo-and-nav .background-img .navbar-2 .ul-2 .list-item-2 .navbar-hover .dropdown .link-dropdown-hover {
+header .header__iran-news .logo-and-nav__iran-news .background-img-world .nav__iran-news .ul__iran-news .list-item__iran-news .navbar-hover__list-item__iran-news .dropdown .link-dropdown-hover {
   display: inline-block;
   width: 48%;
   color: #fff;
@@ -413,22 +415,22 @@ header .header-2 .logo-and-nav .background-img .navbar-2 .ul-2 .list-item-2 .nav
   margin-bottom: 4.6px;
   margin-left: 1.2%;
 }
-header .header-2 .logo-and-nav .background-img .navbar-2 .ul-2 .list-item-2 .navbar-hover .dropdown .link-dropdown-hover:hover {
+header .header__iran-news .logo-and-nav__iran-news .background-img-world .nav__iran-news .ul__iran-news .list-item__iran-news .navbar-hover__list-item__iran-news .dropdown .link-dropdown-hover:hover {
   padding-right: 6px;
   background: #b71818;
 }
-header .header-2 .logo-and-nav .background-img .navbar-2 .ul-2 .list-item-2 .navbar-hover .dropdown .container-3 {
+header .header__iran-news .logo-and-nav__iran-news .background-img-world .nav__iran-news .ul__iran-news .list-item__iran-news .navbar-hover__list-item__iran-news .dropdown .container-3 {
   width: 31%;
 }
-header .header-2 .logo-and-nav .background-img .navbar-2 .ul-2 .list-item-2 .navbar-hover .rate-hover {
+header .header__iran-news .logo-and-nav__iran-news .background-img-world .nav__iran-news .ul__iran-news .list-item__iran-news .navbar-hover__list-item__iran-news .rate-hover {
   padding-right: 31px;
   background-image: url(../img/header-overlay.png);
 }
-header .header-2 .logo-and-nav .background-img .navbar-2 .ul-2 .list-item-2 .navbar-hover .rate-hover .list-item-rate {
+header .header__iran-news .logo-and-nav__iran-news .background-img-world .nav__iran-news .ul__iran-news .list-item__iran-news .navbar-hover__list-item__iran-news .rate-hover .list-item-rate {
   display: inline-block;
   width: 16.4%;
 }
-header .header-2 .logo-and-nav .background-img .navbar-2 .ul-2 .list-item-2 .navbar-hover .rate-hover .list-item-rate .fa.fa-chevron-left {
+header .header__iran-news .logo-and-nav__iran-news .background-img-world .nav__iran-news .ul__iran-news .list-item__iran-news .navbar-hover__list-item__iran-news .rate-hover .list-item-rate .fa.fa-chevron-left {
   float: right;
   position: relative;
   bottom: -2px;
@@ -437,7 +439,7 @@ header .header-2 .logo-and-nav .background-img .navbar-2 .ul-2 .list-item-2 .nav
   color: #b71818;
   font-family: fontawesome;
 }
-header .header-2 .logo-and-nav .background-img .navbar-2 .ul-2 .list-item-2 .navbar-hover .rate-hover .list-item-rate .link-rate {
+header .header__iran-news .logo-and-nav__iran-news .background-img-world .nav__iran-news .ul__iran-news .list-item__iran-news .navbar-hover__list-item__iran-news .rate-hover .list-item-rate .link-rate {
   text-align: right;
   padding: 6px 13px 10px;
   width: 97%;
@@ -447,46 +449,49 @@ header .header-2 .logo-and-nav .background-img .navbar-2 .ul-2 .list-item-2 .nav
   border-radius: 0;
   display: inline-block;
 }
-header .header-2 .logo-and-nav .background-img .navbar-2 .ul-2 .list-item-2 .navbar-hover .rate-hover .list-item-rate .link-rate:hover {
+header .header__iran-news .logo-and-nav__iran-news .background-img-world .nav__iran-news .ul__iran-news .list-item__iran-news .navbar-hover__list-item__iran-news .rate-hover .list-item-rate .link-rate:hover {
   background: #b71818;
   color: #fff;
 }
-header .header-2 .logo-and-nav .background-img .navbar-2 .ul-2 .list-item-2 .navbar-hover .rate-hover .list-item-rate .link-rate:hover i {
+header .header__iran-news .logo-and-nav__iran-news .background-img-world .nav__iran-news .ul__iran-news .list-item__iran-news .navbar-hover__list-item__iran-news .rate-hover .list-item-rate .link-rate:hover i {
   color: #fff;
 }
-header .header-2 .logo-and-nav .background-img .navbar-2 .ul-2 .list-item-2 .navbar-hover .rate-hover .list-item-rate .border-none {
+header .header__iran-news .logo-and-nav__iran-news .background-img-world .nav__iran-news .ul__iran-news .list-item__iran-news .navbar-hover__list-item__iran-news .rate-hover .list-item-rate .border-none {
   border: none;
 }
-header .header-2 .logo-and-nav .background-img .navbar-2 .ul-2 .list-item-2:hover .navbar-hover {
+header .header__iran-news .logo-and-nav__iran-news .background-img-world .nav__iran-news .ul__iran-news .list-item__iran-news:hover .navbar-hover__list-item__iran-news {
   opacity: 1;
   visibility: initial;
 }
-header .header-2 .logo-and-nav .danesh-logo {
+header .header__iran-news .logo-and-nav__iran-news .danesh-logo {
   margin-right: 14px;
 }
-header .header-2 .logo-and-nav .danesh-logo .link-danesh-logo {
+header .header__iran-news .logo-and-nav__iran-news .danesh-logo .link-danesh-logo {
   display: table-cell;
   height: 76px;
 }
-header .header-3 {
+header .sub-header {
   background: #dedede;
   height: 36px;
 }
-header .header-3 .navbar-3 {
+header .sub-header .nav__sub-header {
   margin-right: 4px;
   line-height: 28px;
 }
-header .header-3 .navbar-3 .ul-3 {
+header .sub-header .nav__sub-header .ul__sub-header {
   display: flex;
 }
-header .header-3 .navbar-3 .ul-3 .fa.fa-bars {
+header .sub-header .nav__sub-header .ul__sub-header .fa.fa-bars {
   color: #b01927;
   position: relative;
   bottom: -10px;
   left: 6px;
   font-family: fontawesome;
 }
-header .header-3 .navbar-3 .ul-3 .list-item-3::after {
+header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header {
+  /* هاور های لینک 1 تا 16 */
+}
+header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header::after {
   width: 1px;
   content: "";
   display: inline-block;
@@ -496,88 +501,86 @@ header .header-3 .navbar-3 .ul-3 .list-item-3::after {
   bottom: -5px;
   margin-left: 0.7px;
 }
-header .header-3 .navbar-3 .ul-3 .list-item-3:last-child::after {
+header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header:last-child::after {
   border: none;
 }
-header .header-3 .navbar-3 .ul-3 .list-item-3 a {
-  padding: 6px 4px;
+header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header a {
+  padding: 6.2px 4px;
   color: #111;
   font-family: nassim;
   font-size: 16px;
 }
-header .header-3 .navbar-3 .ul-3 .list-item-3 .a1:hover {
+header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a1:hover {
   background: #483d8b;
   color: #fff;
 }
-header .header-3 .navbar-3 .ul-3 .list-item-3 .a2:hover {
+header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a2:hover {
   background: #006666;
   color: #fff;
 }
-header .header-3 .navbar-3 .ul-3 .list-item-3 .a3:hover {
+header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a3:hover {
   background: #dc143c;
   color: #fff;
 }
-header .header-3 .navbar-3 .ul-3 .list-item-3 .a4:hover {
+header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a4:hover {
   background: #483d8b;
   color: #fff;
 }
-header .header-3 .navbar-3 .ul-3 .list-item-3 .a5:hover {
+header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a5:hover {
   background: #0099cc;
   color: #fff;
 }
-header .header-3 .navbar-3 .ul-3 .list-item-3 .a6:hover {
+header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a6:hover {
   background: #08bf11;
   color: #fff;
 }
-header .header-3 .navbar-3 .ul-3 .list-item-3 .a7:hover {
+header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a7:hover {
   background: #336699;
   color: #fff;
 }
-header .header-3 .navbar-3 .ul-3 .list-item-3 .a8:hover {
+header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a8:hover {
   background: #cc00cc;
   color: #fff;
 }
-header .header-3 .navbar-3 .ul-3 .list-item-3 .a9:hover {
+header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a9:hover {
   background: #0066ff;
   color: #fff;
 }
-header .header-3 .navbar-3 .ul-3 .list-item-3 .a10:hover {
+header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a10:hover {
   background: #daa520;
   color: #fff;
 }
-header .header-3 .navbar-3 .ul-3 .list-item-3 .a11:hover {
+header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a11:hover {
   background: #8b0000;
   color: #fff;
 }
-header .header-3 .navbar-3 .ul-3 .list-item-3 .a12:hover {
+header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a12:hover {
   background: #483d8b;
   color: #fff;
 }
-header .header-3 .navbar-3 .ul-3 .list-item-3 .a13:hover {
+header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a13:hover {
   background: #228b22;
   color: #fff;
 }
-header .header-3 .navbar-3 .ul-3 .list-item-3 .a14:hover {
+header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a14:hover {
   background: #1e90ff;
   color: #fff;
 }
-header .header-3 .navbar-3 .ul-3 .list-item-3 .a15:hover {
+header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a15:hover {
   background: #228b22;
   color: #fff;
 }
-header .header-3 .navbar-3 .ul-3 .list-item-3 .a16:hover {
+header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a16:hover {
   background: #bb0000;
   color: #fff;
 }
 
 .main {
-  /* slide show wrapper (the last) */
-  /* All secend main */
+  /* قسمت دوم بدنه سایت و قیمت طلا وسکه  */
 }
 .main .all-box {
   width: 95%;
-  /* slide show */
-  /* box news */
+  /* باکس حاوی اخبار فرهنگ */
 }
 .main .all-box .tittle-main {
   text-align: right;
@@ -603,17 +606,20 @@ header .header-3 .navbar-3 .ul-3 .list-item-3 .a16:hover {
   font-family: nassim-bold;
   color: #666;
 }
-.main .all-box .tittle-main .tab .link-tittle-main .strong-sar {
+.main .all-box .tittle-main .tab .link-tittle-main .strong-news {
   font-size: 16px;
   font-family: nassim-bold;
   color: #0040ad;
 }
-.main .all-box .tittle-main .tab .link-tittle-main .p-style-3 {
+.main .all-box .tittle-main .tab .link-tittle-main .p-style {
   color: #333;
   font-family: "nassim";
   font-size: 17px;
 }
-.main .all-box .tittle-main .tab .link-tittle-main .p-style-3:hover {
+.main .all-box .tittle-main .tab .link-tittle-main .p-style:hover {
+  color: #b71818;
+}
+.main .all-box .tittle-main .tab .link-tittle-main:hover {
   color: #b71818;
 }
 .main .all-box .tittle-main .tab p {
@@ -640,9 +646,9 @@ header .header-3 .navbar-3 .ul-3 .list-item-3 .a16:hover {
   width: 606px;
   height: 390px;
   margin-right: -14px;
-  /* little box in main */
+  /* دو باکس کوچک زیر عکس فرهنگ  */
 }
-.main .all-box .slideshow .link-content-box {
+.main .all-box .slideshow .link__slideshow {
   display: block;
   position: relative;
   border: 1px solid #dfdfdd;
@@ -650,18 +656,18 @@ header .header-3 .navbar-3 .ul-3 .list-item-3 .a16:hover {
   background: #fff;
   padding: 3px;
 }
-.main .all-box .slideshow .link-content-box .content-box-img {
+.main .all-box .slideshow .link__slideshow .box-img-slideshow-content {
   position: relative;
   overflow: hidden;
 }
-.main .all-box .slideshow .link-content-box .content-box-img .content-image {
+.main .all-box .slideshow .link__slideshow .box-img-slideshow-content .image-slideshow-content {
   width: 100%;
   transition: all 0.9s ease-in-out;
 }
-.main .all-box .slideshow .link-content-box .content-box-img .content-image:hover {
+.main .all-box .slideshow .link__slideshow .box-img-slideshow-content .image-slideshow-content:hover {
   transform: scale(1.02);
 }
-.main .all-box .slideshow .link-content-box .content-box-img::before {
+.main .all-box .slideshow .link__slideshow .box-img-slideshow-content::before {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.95) 30%, rgba(0, 0, 0, 0) 100%);
   content: "";
   height: 83px;
@@ -670,7 +676,7 @@ header .header-3 .navbar-3 .ul-3 .list-item-3 .a16:hover {
   z-index: 1;
   bottom: 0;
 }
-.main .all-box .slideshow .link-content-box .content-box-info {
+.main .all-box .slideshow .link__slideshow .box-info-slideshow-content {
   position: absolute;
   bottom: 3px;
   left: 3px;
@@ -681,7 +687,7 @@ header .header-3 .navbar-3 .ul-3 .list-item-3 .a16:hover {
   text-align: right;
   font-family: nassim;
 }
-.main .all-box .slideshow .link-content-box .content-box-info h3 {
+.main .all-box .slideshow .link__slideshow .box-info-slideshow-content h3 {
   padding: 0;
   margin: 0 0 6px;
   font-size: 17px;
@@ -689,7 +695,7 @@ header .header-3 .navbar-3 .ul-3 .list-item-3 .a16:hover {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.main .all-box .slideshow .link-content-box .content-box-info h2 {
+.main .all-box .slideshow .link__slideshow .box-info-slideshow-content h2 {
   padding: 0;
   margin: 0;
   font-size: 30px;
@@ -697,7 +703,7 @@ header .header-3 .navbar-3 .ul-3 .list-item-3 .a16:hover {
   border-bottom: 2px solid transparent;
   display: inline-block;
 }
-.main .all-box .slideshow .link-content-box .badge-style {
+.main .all-box .slideshow .link__slideshow .badge-style {
   position: absolute;
   top: 13px;
   right: 13px;
@@ -709,7 +715,7 @@ header .header-3 .navbar-3 .ul-3 .list-item-3 .a16:hover {
   color: #fff;
   background: #0040ad;
 }
-.main .all-box .slideshow .link-content-little-box {
+.main .all-box .slideshow .link__little-box {
   display: flex;
   background: #fff;
   align-items: center;
@@ -721,21 +727,21 @@ header .header-3 .navbar-3 .ul-3 .list-item-3 .a16:hover {
   border-top: none;
   background: #fff;
 }
-.main .all-box .slideshow .link-content-little-box .content-little-box-img {
+.main .all-box .slideshow .link__little-box .img-box-little-box-content {
   overflow: hidden;
   width: 55%;
 }
-.main .all-box .slideshow .link-content-little-box .content-little-box-img .content-image {
+.main .all-box .slideshow .link__little-box .img-box-little-box-content .image-little-box {
   width: 100%;
   transition: all 0.9s ease-in-out;
 }
-.main .all-box .slideshow .link-content-little-box .content-box-info {
+.main .all-box .slideshow .link__little-box .box-info-content {
   color: #222;
   padding-right: 8px;
   text-align: right;
   font-family: nassim;
 }
-.main .all-box .slideshow .link-content-little-box .content-box-info h3 {
+.main .all-box .slideshow .link__little-box .box-info-content h3 {
   padding: 0;
   margin: 0 0 6px;
   font-size: 15px;
@@ -744,7 +750,7 @@ header .header-3 .navbar-3 .ul-3 .list-item-3 .a16:hover {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.main .all-box .slideshow .link-content-little-box .content-box-info h2 {
+.main .all-box .slideshow .link__little-box .box-info-content h2 {
   padding: 0;
   margin: 0;
   font-size: 16px;
@@ -752,16 +758,16 @@ header .header-3 .navbar-3 .ul-3 .list-item-3 .a16:hover {
   font-family: nassim;
   border-bottom: 2px solid transparent;
 }
-.main .all-box .slideshow .link-content-little-box .content-box-info .n-margin-h2 {
+.main .all-box .slideshow .link__little-box .box-info-content .h2__margin-top {
   margin-top: -30px;
 }
-.main .all-box .slideshow .link-content-little-box:hover h3 {
+.main .all-box .slideshow .link__little-box:hover h3 {
   color: #b71818;
 }
-.main .all-box .slideshow .link-content-little-box:hover h2 {
+.main .all-box .slideshow .link__little-box:hover h2 {
   color: #b71818;
 }
-.main .all-box .slideshow .link-content-little-box:hover .content-image {
+.main .all-box .slideshow .link__little-box:hover .image-little-box {
   transform: scale(1.03);
 }
 .main .all-box .noroz {
@@ -772,39 +778,34 @@ header .header-3 .navbar-3 .ul-3 .list-item-3 .a16:hover {
   height: 525px;
   width: 296px;
 }
-.main .all-box .box-news {
+.main .all-box .news-box {
   text-align: right;
   width: 101.8%;
   margin-right: -4px;
 }
-.main .all-box .box-news .ul-box-news {
+.main .all-box .news-box .ul__news-box {
   border: solid #dfdfdd;
   border-width: 0 0 1px 1px;
   background: #fff;
   border-top: 3px solid #0040ad;
   margin-left: 3px;
 }
-.main .all-box .box-news .ul-box-news .list-item-box-news {
+.main .all-box .news-box .ul__news-box .list-item__news-box {
   border-bottom: 1px solid #dfdfdd;
   margin: 0px 12px;
   overflow: hidden;
-  padding: 7px 0px;
+  padding: 6.6px 0px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
-.main .all-box .box-news .ul-box-news .list-item-box-news .link-box-news {
+.main .all-box .news-box .ul__news-box .list-item__news-box .link__news-box {
   padding-top: 7px;
-}
-.main .all-box .box-news .ul-box-news .list-item-box-news .link-box-news .contact-info {
   color: #222;
-}
-.main .all-box .box-news .ul-box-news .list-item-box-news .link-box-news .contact-info h3 {
   font-weight: normal;
   font-size: 15px;
   font-family: "nassim";
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
-.main .all-box .box-news .ul-box-news .list-item-box-news .link-box-news .contact-info h3::before {
+.main .all-box .news-box .ul__news-box .list-item__news-box .link__news-box::before {
   color: #0040ad;
   font-family: FontAwesome;
   display: inline-block;
@@ -815,24 +816,24 @@ header .header-3 .navbar-3 .ul-3 .list-item-3 .a16:hover {
   margin-left: 5px;
   font-size: 8px;
 }
-.main .all-box .box-news .ul-box-news .list-item-box-news .link-box-news .contact-info h3:hover {
+.main .all-box .news-box .ul__news-box .list-item__news-box .link__news-box:hover {
   color: #b71818;
 }
-.main .all-box .box-news .ul-box-news .list-item-box-news:last-child {
+.main .all-box .news-box .ul__news-box .list-item__news-box:last-child {
   border-bottom: none;
 }
 .main .slideshow-wrapper {
   margin-right: -8px;
 }
-.main .slideshow-wrapper .navbar-wrapper {
+.main .slideshow-wrapper .navــslideshow-wrapper {
   margin: 17px 0;
 }
-.main .slideshow-wrapper .navbar-wrapper .ul-wrapper .list-item-wrapper {
+.main .slideshow-wrapper .navــslideshow-wrapper .ulــslideshow-wrapper .list-itemــslideshow-wrapper {
   width: 1%;
   display: table-cell;
   /* hover span and ::befor */
 }
-.main .slideshow-wrapper .navbar-wrapper .ul-wrapper .list-item-wrapper span {
+.main .slideshow-wrapper .navــslideshow-wrapper .ulــslideshow-wrapper .list-itemــslideshow-wrapper span {
   color: #777;
   font-size: 19px;
   font-family: "nassim-bold";
@@ -841,7 +842,7 @@ header .header-3 .navbar-3 .ul-3 .list-item-3 .a16:hover {
   display: block;
   cursor: pointer;
 }
-.main .slideshow-wrapper .navbar-wrapper .ul-wrapper .list-item-wrapper span::before {
+.main .slideshow-wrapper .navــslideshow-wrapper .ulــslideshow-wrapper .list-itemــslideshow-wrapper span::before {
   content: "";
   display: block;
   width: 100%;
@@ -849,61 +850,58 @@ header .header-3 .navbar-3 .ul-3 .list-item-3 .a16:hover {
   background: rgb(197, 197, 197);
   margin-bottom: 9px;
 }
-.main .slideshow-wrapper .navbar-wrapper .ul-wrapper .list-item-wrapper .span-1:hover {
+.main .slideshow-wrapper .navــslideshow-wrapper .ulــslideshow-wrapper .list-itemــslideshow-wrapper .span-1:hover {
   color: #b22222;
 }
-.main .slideshow-wrapper .navbar-wrapper .ul-wrapper .list-item-wrapper .span-1:hover::before {
+.main .slideshow-wrapper .navــslideshow-wrapper .ulــslideshow-wrapper .list-itemــslideshow-wrapper .span-1:hover::before {
   background: #b22222;
 }
-.main .slideshow-wrapper .navbar-wrapper .ul-wrapper .list-item-wrapper .span-2:hover {
+.main .slideshow-wrapper .navــslideshow-wrapper .ulــslideshow-wrapper .list-itemــslideshow-wrapper .span-2:hover {
   color: #3300cc;
 }
-.main .slideshow-wrapper .navbar-wrapper .ul-wrapper .list-item-wrapper .span-2:hover::before {
+.main .slideshow-wrapper .navــslideshow-wrapper .ulــslideshow-wrapper .list-itemــslideshow-wrapper .span-2:hover::before {
   background: #3300cc;
 }
-.main .slideshow-wrapper .navbar-wrapper .ul-wrapper .list-item-wrapper .span-3:hover {
+.main .slideshow-wrapper .navــslideshow-wrapper .ulــslideshow-wrapper .list-itemــslideshow-wrapper .span-3:hover {
   color: #0040ad;
 }
-.main .slideshow-wrapper .navbar-wrapper .ul-wrapper .list-item-wrapper .span-3:hover::before {
+.main .slideshow-wrapper .navــslideshow-wrapper .ulــslideshow-wrapper .list-itemــslideshow-wrapper .span-3:hover::before {
   background: #0040ad;
 }
-.main .slideshow-wrapper .navbar-wrapper .ul-wrapper .list-item-wrapper .span-4:hover {
+.main .slideshow-wrapper .navــslideshow-wrapper .ulــslideshow-wrapper .list-itemــslideshow-wrapper .span-4:hover {
   color: #7b68ee;
 }
-.main .slideshow-wrapper .navbar-wrapper .ul-wrapper .list-item-wrapper .span-4:hover::before {
+.main .slideshow-wrapper .navــslideshow-wrapper .ulــslideshow-wrapper .list-itemــslideshow-wrapper .span-4:hover::before {
   background: #7b68ee;
 }
-.main .slideshow-wrapper .navbar-wrapper .ul-wrapper .list-item-wrapper .span-5:hover {
+.main .slideshow-wrapper .navــslideshow-wrapper .ulــslideshow-wrapper .list-itemــslideshow-wrapper .span-5:hover {
   color: #ba55d3;
 }
-.main .slideshow-wrapper .navbar-wrapper .ul-wrapper .list-item-wrapper .span-5:hover::before {
+.main .slideshow-wrapper .navــslideshow-wrapper .ulــslideshow-wrapper .list-itemــslideshow-wrapper .span-5:hover::before {
   background: #ba55d3;
 }
-.main .slideshow-wrapper .navbar-wrapper .ul-wrapper .list-item-wrapper .span-6:hover {
+.main .slideshow-wrapper .navــslideshow-wrapper .ulــslideshow-wrapper .list-itemــslideshow-wrapper .span-6:hover {
   color: #ff8c00;
 }
-.main .slideshow-wrapper .navbar-wrapper .ul-wrapper .list-item-wrapper .span-6:hover::before {
+.main .slideshow-wrapper .navــslideshow-wrapper .ulــslideshow-wrapper .list-itemــslideshow-wrapper .span-6:hover::before {
   background: #ff8c00;
 }
-.main .slideshow-wrapper .navbar-wrapper .ul-wrapper .list-item-wrapper .span-7:hover {
+.main .slideshow-wrapper .navــslideshow-wrapper .ulــslideshow-wrapper .list-itemــslideshow-wrapper .span-7:hover {
   color: #f08080;
 }
-.main .slideshow-wrapper .navbar-wrapper .ul-wrapper .list-item-wrapper .span-7:hover::before {
+.main .slideshow-wrapper .navــslideshow-wrapper .ulــslideshow-wrapper .list-itemــslideshow-wrapper .span-7:hover::before {
   background: #f08080;
 }
-.main .slideshow-wrapper .navbar-wrapper .ul-wrapper .list-item-wrapper .span-8:hover {
+.main .slideshow-wrapper .navــslideshow-wrapper .ulــslideshow-wrapper .list-itemــslideshow-wrapper .span-8:hover {
   color: #006600;
 }
-.main .slideshow-wrapper .navbar-wrapper .ul-wrapper .list-item-wrapper .span-8:hover::before {
+.main .slideshow-wrapper .navــslideshow-wrapper .ulــslideshow-wrapper .list-itemــslideshow-wrapper .span-8:hover::before {
   background: #006600;
-}
-.main .row-gold-price {
-  /* the right box of gold , price and news */
 }
 .main .row-gold-price .section-group .section-tittle {
   margin-bottom: 7px;
 }
-.main .row-gold-price .section-group .section-tittle .link-section-left {
+.main .row-gold-price .section-group .section-tittle .link__section-tittle {
   border-radius: 0 0 2px 2px;
   background-color: #e8e8e8;
   color: #666;
@@ -921,24 +919,25 @@ header .header-3 .navbar-3 .ul-3 .list-item-3 .a16:hover {
   margin: 0;
   font-size: 15px;
 }
-.main .row-gold-price .section-group .section-tittle h3 .link-section-right {
+.main .row-gold-price .section-group .section-tittle h3 .link-h3__section-tittle {
   color: #444;
   font-size: 15px;
   font-family: nassim-bold;
 }
-.main .row-gold-price .section-group .section-tittle h3 .link-section-right .fa.fa-diamond {
+.main .row-gold-price .section-group .section-tittle h3 .link-h3__section-tittle .fa.fa-diamond {
   margin-left: 7px;
   font-size: 16px;
   top: 2px;
   position: relative;
 }
-.main .row-gold-price .section-group .tabpanel .ul-panel {
+.main .row-gold-price .section-group .tabpanel .ul__tabpanel {
   padding: 0;
 }
-.main .row-gold-price .section-group .tabpanel .ul-panel .list-item-tabpanel {
+.main .row-gold-price .section-group .tabpanel .ul__tabpanel .list-item__tabpanel {
   width: 50%;
 }
-.main .row-gold-price .section-group .tabpanel .ul-panel .list-item-tabpanel .link-panel-2, .main .row-gold-price .section-group .tabpanel .ul-panel .list-item-tabpanel .link-panel-1 {
+.main .row-gold-price .section-group .tabpanel .ul__tabpanel .list-item__tabpanel .link__tabpanel-left,
+.main .row-gold-price .section-group .tabpanel .ul__tabpanel .list-item__tabpanel .link__tabpanel-right {
   display: inline-block;
   font-size: 16px;
   font-family: nassim;
@@ -951,7 +950,7 @@ header .header-3 .navbar-3 .ul-3 .list-item-3 .a16:hover {
   width: 100%;
   text-align: center;
 }
-.main .row-gold-price .section-group .tabpanel .ul-panel .list-item-tabpanel .link-panel-1 {
+.main .row-gold-price .section-group .tabpanel .ul__tabpanel .list-item__tabpanel .link__tabpanel-right {
   border-color: #ff3131;
   box-shadow: none;
   background: #f2f2f2;

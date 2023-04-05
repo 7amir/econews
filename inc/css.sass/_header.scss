@@ -1,13 +1,13 @@
 header {
-  .header-1 {
+  .header-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 34.5px;
     background: #fff;
 
-    /* right box of header */
-    .right-header {
+    /* باکس سمت راست هدر  */
+    .header-clock {
       span {
         font-size: 12px;
         font-family: yekan;
@@ -32,7 +32,7 @@ header {
           }
         }
 
-        /* login or sign up */
+        /* دکمه ثبت نام یا ورود  */
         .login {
           padding: 2px 6px 0px 8px;
           font-size: 13px;
@@ -57,7 +57,7 @@ header {
           }
         }
 
-        /* form login */
+        /* فرم ثبت نام */
         .form-login {
           position: absolute;
           background: #fff;
@@ -75,7 +75,7 @@ header {
             font-family: nassim;
 
             .input-groups {
-              .input-login {
+              .input-email , .input-password {
                 border: 1px solid #ccc;
                 width: 160px;
                 font-size: 13px;
@@ -90,12 +90,12 @@ header {
                   outline: none;
                 }
               }
-              #input-border {
+              .input-password {
                 border-top: 0;
               }
             }
 
-            .form-check.logeform {
+            .form-check.loginform {
               margin: 7px 0;
               .form-check-input {
                 float: right;
@@ -131,7 +131,7 @@ header {
 
             .login-group {
               display: flex;
-              .btn.btn-danger.log {
+              .btn.btn-danger.login {
                 width: 100%;
                 border-radius: 0 4px 4px 0;
                 border: 1px solid #ccc;
@@ -155,16 +155,16 @@ header {
       }
     }
 
-    /* header nav bar */
-    .left-header {
+    /* منو هدر اول  */
+    .header-top-nav-left {
       display: flex;
       align-items: center;
 
-      .navbar-1 {
-        .ul-1 {
+      .nav__header-top {
+        .ul__header-top {
           display: flex;
           border-right: 1px solid #ddd;
-          .list-items-1 {
+          .list-items__header-top {
             font-family: nassim-bold;
             font-size: 13px;
             padding: 10.5px 6px;
@@ -184,8 +184,8 @@ header {
         }
       }
 
-      /* search form in header */
-      .form-nav {
+      /* فرم جست و جو در هدر  */
+      .search-form {
         position: relative;
         .search-addon.fa.fa-search {
           position: absolute;
@@ -196,7 +196,7 @@ header {
           left: 4%;
           font-family: fontawesome;
         }
-        .search-input {
+        .input__search-form {
           background: #e4e4e4;
           border: none;
           font-size: 12px;
@@ -212,34 +212,34 @@ header {
     }
   }
 
-  /* the red header */
-  .header-2 {
+  /* هدر با لوگوی خبرگذاری اقتصاد ایران */
+  .header__iran-news {
     background-color: #b71818;
     height: 80px;
 
-    .logo-and-nav {
+    .logo-and-nav__iran-news {
       margin-right: -1.5%;
       display: flex;
       justify-content: space-around;
-      .header-logo {
+      .logo__iran-news {
         padding-left: 34px;
         margin-bottom: 3px;
       }
 
-      .background-img {
+      .background-img-world {
         background-image: url(../img/header-overlay.png);
         background-position: center;
         background-size: cover;
         width: 156%;
 
-        /* navbar red header */
-        .navbar-2 {
+        /* منوی هدر خبرگذاری اقتصاد ایران  */
+        .nav__iran-news {
           margin-right: -7%;
-          .ul-2 {
+          .ul__iran-news {
             display: flex;
             margin-right: 6px;
-            .list-item-2 {
-              .link-red-header {
+            .list-item__iran-news {
+              .link__iran-news {
                 color: #fff;
                 font-size: 18px;
                 padding: 26px 10px 28px;
@@ -259,8 +259,8 @@ header {
                 }
               }
 
-              /* hover news box */
-              .navbar-hover {
+              /* هاور آیتم اخبار و رویداد ها */
+              .navbar-hover__list-item__iran-news {
                 background: #111;
                 position: absolute;
                 width: 100%;
@@ -304,7 +304,6 @@ header {
                     padding: 5px 10px;
                     transition: all 0.3s ease-in-out;
                     font-size: 15px;
-                    // margin-top: 4px;
                     margin-bottom: 4.6px;
                     margin-left: 1.2%;
                     &:hover {
@@ -317,6 +316,7 @@ header {
                   }
                 }
 
+                /* هاور آیتم نرخ ها و داده ها */
                 .rate-hover {
                   padding-right: 31px;
                   background-image: url(../img/header-overlay.png);
@@ -360,7 +360,7 @@ header {
                   }
                 }
               }
-              &:hover .navbar-hover {
+              &:hover .navbar-hover__list-item__iran-news {
                 opacity: 1;
                 visibility: initial;
               }
@@ -379,14 +379,14 @@ header {
     }
   }
 
-  /* last of header */
-  .header-3 {
+  /* آخرین هدر همراه لینک های رنگی  */
+  .sub-header {
     background: #dedede;
     height: 36px;
-    .navbar-3 {
+    .nav__sub-header {
       margin-right: 4px;
       line-height: 28px;
-      .ul-3 {
+      .ul__sub-header {
         display: flex;
         .fa.fa-bars {
           color: #b01927;
@@ -395,7 +395,7 @@ header {
           left: 6px;
           font-family: fontawesome;
         }
-        .list-item-3 {
+        .list-item__sub-header {
           &::after {
             width: 1px;
             content: "";
@@ -411,11 +411,13 @@ header {
             border: none;
           }
           a {
-            padding: 6px 4px;
+            padding: 6.2px 4px;
             color: #111;
             font-family: nassim;
             font-size: 16px;
           }
+
+          /* هاور های لینک 1 تا 16 */
           .a1:hover {
             background: #483d8b;
             color: #fff;

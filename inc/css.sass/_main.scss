@@ -22,18 +22,21 @@
           font-size: 15px;
           font-family: nassim-bold;
           color: #666;
-          .strong-sar {
+          .strong-news {
             font-size: 16px;
             font-family: nassim-bold;
             color: #0040ad;
           }
-          .p-style-3 {
+          .p-style {
             color: #333;
             font-family: "nassim";
             font-size: 17px;
             &:hover {
               color: #b71818;
             }
+          }
+          &:hover {
+            color: #b71818;
           }
         }
 
@@ -60,12 +63,11 @@
       }
     }
 
-    /* slide show */
     .slideshow {
       width: 606px;
       height: 390px;
       margin-right: -14px;
-      .link-content-box {
+      .link__slideshow {
         display: block;
         position: relative;
         border: 1px solid #dfdfdd;
@@ -73,11 +75,11 @@
         background: #fff;
         padding: 3px;
 
-        .content-box-img {
+        .box-img-slideshow-content {
           position: relative;
           overflow: hidden;
 
-          .content-image {
+          .image-slideshow-content {
             width: 100%;
             transition: all 0.9s ease-in-out;
 
@@ -87,26 +89,6 @@
           }
 
           &::before {
-            background: -webkit-linear-gradient(
-              90deg,
-              rgba(0, 0, 0, 0.95) 30%,
-              rgba(0, 0, 0, 0) 100%
-            );
-            background: -moz-linear-gradient(
-              90deg,
-              rgba(0, 0, 0, 0.95) 30%,
-              rgba(0, 0, 0, 0) 100%
-            );
-            background: -o-linear-gradient(
-              90deg,
-              rgba(0, 0, 0, 0.95) 30%,
-              rgba(0, 0, 0, 0) 100%
-            );
-            background: -ms-linear-gradient(
-              90deg,
-              rgba(0, 0, 0, 0.95) 30%,
-              rgba(0, 0, 0, 0) 100%
-            );
             background: linear-gradient(
               0deg,
               rgba(0, 0, 0, 0.95) 30%,
@@ -120,7 +102,7 @@
             bottom: 0;
           }
         }
-        .content-box-info {
+        .box-info-slideshow-content {
           position: absolute;
           bottom: 3px;
           left: 3px;
@@ -162,8 +144,8 @@
         }
       }
 
-      /* little box in main */
-      .link-content-little-box {
+      /* دو باکس کوچک زیر عکس فرهنگ  */
+      .link__little-box {
         display: flex;
         background: #fff;
         align-items: center;
@@ -174,15 +156,15 @@
         border-right: none;
         border-top: none;
         background: #fff;
-        .content-little-box-img {
+        .img-box-little-box-content {
           overflow: hidden;
           width: 55%;
-          .content-image {
+          .image-little-box {
             width: 100%;
             transition: all 0.9s ease-in-out;
           }
         }
-        .content-box-info {
+        .box-info-content {
           color: #222;
           padding-right: 8px;
           text-align: right;
@@ -205,7 +187,7 @@
             font-family: nassim;
             border-bottom: 2px solid transparent;
           }
-          .n-margin-h2 {
+          .h2__margin-top {
             margin-top: -30px;
           }
         }
@@ -216,7 +198,7 @@
         &:hover h2 {
           color: #b71818;
         }
-        &:hover .content-image {
+        &:hover .image-little-box {
           transform: scale(1.03);
         }
       }
@@ -232,51 +214,45 @@
       }
     }
 
-    /* box news */
-    .box-news {
+    /* باکس حاوی اخبار فرهنگ */
+    .news-box {
       text-align: right;
       width: 101.8%;
       margin-right: -4px;
-      .ul-box-news {
+      .ul__news-box {
         border: solid #dfdfdd;
         border-width: 0 0 1px 1px;
         background: #fff;
         border-top: 3px solid #0040ad;
         margin-left: 3px;
-        .list-item-box-news {
+        .list-item__news-box {
           border-bottom: 1px solid #dfdfdd;
           margin: 0px 12px;
           overflow: hidden;
-          padding: 7px 0px;
+          padding: 6.6px 0px;
+          text-overflow: ellipsis;
+          white-space: nowrap;
 
-          .link-box-news {
+          .link__news-box {
             padding-top: 7px;
+            color: #222;
+            font-weight: normal;
+            font-size: 15px;
+            font-family: "nassim";
 
-            .contact-info {
-              color: #222;
-              h3 {
-                font-weight: normal;
-                font-size: 15px;
-                font-family: "nassim";
-                white-space: nowrap;
-                text-overflow: ellipsis;
-                overflow: hidden;
-
-                &::before {
-                  color: #0040ad;
-                  font-family: FontAwesome;
-                  display: inline-block;
-                  content: "\f111";
-                  font-size: 9px;
-                  line-height: 1;
-                  position: relative;
-                  margin-left: 5px;
-                  font-size: 8px;
-                }
-                &:hover {
-                  color: #b71818;
-                }
-              }
+            &::before {
+              color: #0040ad;
+              font-family: FontAwesome;
+              display: inline-block;
+              content: "\f111";
+              font-size: 9px;
+              line-height: 1;
+              position: relative;
+              margin-left: 5px;
+              font-size: 8px;
+            }
+            &:hover {
+              color: #b71818;
             }
           }
           &:last-child {
@@ -287,15 +263,13 @@
     }
   }
 
-  /* slide show wrapper (the last) */
   .slideshow-wrapper {
     margin-right: -8px;
 
-    .navbar-wrapper {
-      // margin-bottom: 5px;
+    .navــslideshow-wrapper {
       margin: 17px 0;
-      .ul-wrapper {
-        .list-item-wrapper {
+      .ulــslideshow-wrapper {
+        .list-itemــslideshow-wrapper {
           width: 1%;
           display: table-cell;
           span {
@@ -371,15 +345,13 @@
     }
   }
 
-  /* All secend main */
+  /* قسمت دوم بدنه سایت و قیمت طلا وسکه  */
   .row-gold-price {
-
-    /* the right box of gold , price and news */
     .section-group {
       .section-tittle {
         margin-bottom: 7px;
 
-        .link-section-left {
+        .link__section-tittle {
           border-radius: 0 0 2px 2px;
           background-color: #e8e8e8;
           color: #666;
@@ -395,8 +367,8 @@
         h3 {
           color: #444;
           margin: 0;
-          font-size: 15px;          
-          .link-section-right {
+          font-size: 15px;
+          .link-h3__section-tittle {
             color: #444;
             font-size: 15px;
             font-family: nassim-bold;
@@ -404,19 +376,19 @@
               margin-left: 7px;
               font-size: 16px;
               top: 2px;
-              position: relative;              
+              position: relative;
             }
           }
         }
       }
 
       .tabpanel {
-        .ul-panel {
-
+        .ul__tabpanel {
           padding: 0;
-          .list-item-tabpanel {
+          .list-item__tabpanel {
             width: 50%;
-            .link-panel-2 , .link-panel-1{
+            .link__tabpanel-left ,
+            .link__tabpanel-right {
               display: inline-block;
               font-size: 16px;
               font-family: nassim;
@@ -424,13 +396,14 @@
               padding: 10.5px 0px;
               border-radius: 0;
               background: #f8f8f8;
-              border-top: 3px solid #c00 ;
-              box-shadow: inset 0 0 1px 0 rgba(0, 0, 0, 0.36), inset 0 0 8px 1px rgba(165, 164, 164, 0.5);
+              border-top: 3px solid #c00;
+              box-shadow: inset 0 0 1px 0 rgba(0, 0, 0, 0.36),
+                inset 0 0 8px 1px rgba(165, 164, 164, 0.5);
               width: 100%;
               text-align: center;
             }
-            .link-panel-1 {
-              border-color: #ff3131 ;
+            .link__tabpanel-right {
+              border-color: #ff3131;
               box-shadow: none;
               background: #f2f2f2;
             }
@@ -439,5 +412,4 @@
       }
     }
   }
-  
 }

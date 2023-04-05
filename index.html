@@ -1,27 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
       rel="stylesheet"
-      href="./bootstrap-5.3.0-alpha2-dist/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="./inc/css.sass/style.css" />
-    <link
-      rel="stylesheet"
-      href="./fontawesome-free-6.3.0-web/css/all.min.css"
-    />
+      href="./bootstrap-5.3.0-alpha2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./inc/css.sass/style.css">
+    <link rel="stylesheet" href="./inc/fontawesome-free-5.1.1-web/css/all.min.css">
     <title>econews</title>
   </head>
   <body>
     <header class="sticky-top">
-      <div class="container-floid">
+      <div class="container-fluid">
         <div class="container">
-          <div class="header-1">
-            <!-- right box of header -->
-            <div class="right-header">
+          <div class="header-top">
+
+            <!-- باکس سمت راست هدر -->
+            <div class="header-clock">
               <div class="date">
                 <div class="day">
                   <i class="fa fa-calendar"></i>
@@ -32,29 +29,28 @@
                   <span>۱۴:۱۵:۱۷</span>
                 </div>
 
-                <!-- login or sign up -->
+                <!-- دکمه ثبت نام یا ورود -->
                 <a class="login" onclick="openLoginForm()">
                   <i class="fa fa-user"></i> ورود / عضویت
                   <i class="fa fa-chevron-down"></i>
                 </a>
 
-                <!-- form login -->
+                <!-- فرم ثبت نام -->
                 <div class="form-login" id="form-login">
                   <form action="/">
                     <div class="input-groups">
                       <input
                         type="text"
-                        class="input-login"
+                        class="input-email"
                         placeholder="نام کاربری یا آدرس ایمیل"
-                      /><br />
+                      /><br/>
                       <input
                         type="password"
-                        class="input-login"
-                        id="input-border"
+                        class="input-password"
                         placeholder="کلمه عبور"
                       />
                     </div>
-                    <div class="form-check logeform">
+                    <div class="form-check loginform">
                       <input
                         class="form-check-input"
                         type="checkbox"
@@ -67,7 +63,7 @@
                     </div>
 
                     <div class="login-group">
-                      <button type="button" class="btn btn-danger log">
+                      <button type="button" class="btn btn-danger login">
                         ورود
                       </button>
                       <button type="button" class="btn btn-light sign-up">
@@ -79,81 +75,74 @@
               </div>
             </div>
 
-            <!-- header nav bar -->
-            <div class="left-header">
-              <nav class="navbar-1">
-                <ul class="ul-1">
-                  <li class="list-items-1">
+            <!-- منوی هدر اول  -->
+            <div class="header-top-nav-left">
+              <nav class="nav__header-top">
+                <ul class="ul__header-top">
+                  <li class="list-items__header-top">
                     <i class="fas fa-coins"></i>
                     <a href="#">قیمت طلا و سکه</a>
                   </li>
-
-                  <li class="list-items-1">
+                  <li class="list-items__header-top">
                     <i class="fas fa-burn"></i>
                     <a href="#">نفت و سوخت</a>
                   </li>
-
-                  <li class="list-items-1">
+                  <li class="list-items__header-top">
                     <i class="fas fa-database"></i>
                     <a href="#">فلزات پایه</a>
                   </li>
-
-                  <li class="list-items-1">
+                  <li class="list-items__header-top">
                     <i class="fas fa-globe-asia"></i>
                     <a href="#">کالاهای جهانی</a>
                   </li>
-
-                  <li class="list-items-1">
+                  <li class="list-items__header-top">
                     <i class="fa fa-globe"></i>
                     <a href="#">بورس جهانی</a>
                   </li>
-
-                  <li class="list-items-1">
+                  <li class="list-items__header-top">
                     <i class="fa fa-archive"></i>
                     <a href="#">آرشیو</a>
                   </li>
                 </ul>
               </nav>
 
-              <!-- search form in header -->
-              <form action="/" class="form-nav">
+              <!-- فرم جست و جو در هدر  -->
+              <form action="/" class="search-form">
                 <i class="search-addon fa fa-search"></i>
-                <div class="search">
-                  <input
-                    type="text"
-                    class="search-input"
-                    placeholder="جستجو ..."
-                  />
-                </div>
+                <input
+                type="text"
+                class="input__search-form"
+                placeholder="جستجو ..."
+                />
               </form>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- the red header -->
-      <div class="header-2">
+      <!-- هدر با لوگوی خبرگذاری اقتصاد ایران -->
+      <div class="header__iran-news">
         <div class="container">
-          <div class="logo-and-nav">
+          <div class="logo-and-nav__iran-news">
             <div class="row align-items-center">
               <div class="col-2">
-                <div class="header-logo">
+                <div class="logo__iran-news">
                   <img src="./inc/img/logo.png" alt="logo" />
                 </div>
               </div>
 
-              <!-- navbar red header-->
-              <div class="col-7" id="world-img">
-                <div class="background-img">
-                  <nav class="navbar-2">
-                    <ul class="ul-2">
-                      <li class="list-item-2">
-                        <a href="#" class="link-red-header">
+              <!-- منوی هدر خبرگذاری اقتصاد ایران -->
+              <div class="col-7 world-img">
+                <div class="background-img-world">
+                  <nav class="nav__iran-news">
+                    <ul class="ul__iran-news">
+                      <li class="list-item__iran-news">
+                        <a href="#" class="link__iran-news">
                           اخبار و رویدادها
                           <i class="fa fa-caret-down"></i>
                         </a>
-                        <!-- hover news box -->
-                        <nav class="navbar-hover">
+                        <!-- هاور آیتم اخبار و رویداد ها -->
+                        <nav class="navbar-hover__list-item__iran-news">
                           <div class="container">
                             <div class="row dropdown-row">
                               <div class="col-4 dropdown-col-4">
@@ -356,13 +345,14 @@
                         </nav>
                       </li>
 
-                      <li class="list-item-2">
-                        <a href="#" class="link-red-header">
+                      <li class="list-item__iran-news">
+                        <a href="#" class="link__iran-news">
                           نرخ ها و داده ها
                           <i class="fa fa-caret-down"></i>
                         </a>
-                        <!-- hover rate -->
-                        <div class="navbar-hover">
+
+                        <!-- هاور آیتم نرخ ها و داده ها -->
+                        <div class="navbar-hover__list-item__iran-news">
                           <div class="container">
                             <div class="row">
                               <ul class="rate-hover">
@@ -407,26 +397,26 @@
                           </div>
                         </div>
                       </li>
-                      <li class="list-item-2">
-                        <a href="#" class="link-red-header">
+                      <li class="list-item__iran-news">
+                        <a href="#" class="link__iran-news">
                           استان‌ها
                           <i class="fa fa-caret-down"></i>
                         </a>
                       </li>
-                      <li class="list-item-2">
-                        <a href="#" class="link-red-header">
+                      <li class="list-item__iran-news">
+                        <a href="#" class="link__iran-news">
                           مناطق‌ آزاد
                           <i class="fa fa-caret-down"></i>
                         </a>
                       </li>
-                      <li class="list-item-2">
-                        <a href="#" class="link-red-header">
+                      <li class="list-item__iran-news">
+                        <a href="#" class="link__iran-news">
                           چندرسانه‌ای
                           <i class="fa fa-caret-down"></i>
                         </a>
                       </li>
-                      <li class="list-item-2">
-                        <a href="#" class="link-red-header">نیازمندی ها</a>
+                      <li class="list-item__iran-news">
+                        <a href="#" class="link__iran-news">نیازمندی ها</a>
                       </li>
                     </ul>
                   </nav>
@@ -447,60 +437,58 @@
         </div>
       </div>
 
-      <!-- last of header -->
-      <div class="header-3">
+      <!-- آخرین هدر همراه لینک های رنگی -->
+      <div class="sub-header">
         <div class="container">
-          <nav class="navbar-3">
-            <ul class="ul-3">
-              <li class="fa fa-bars">
-                <a href="#"></a>
-              </li>
-              <li class="list-item-3">
+          <nav class="nav__sub-header">
+            <ul class="ul__sub-header">
+              <li class="fa fa-bars"></li>
+              <li class="list-item__sub-header">
                 <a href="#" class="a1">جهان</a>
               </li>
-              <li class="list-item-3">
+              <li class="list-item__sub-header">
                 <a href="#" class="a2">اکو</a>
               </li>
-              <li class="list-item-3">
+              <li class="list-item__sub-header">
                 <a href="#" class="a3">کلان و بودجه</a>
               </li>
-              <li class="list-item-3">
+              <li class="list-item__sub-header">
                 <a href="#" class="a4">بانک</a>
               </li>
-              <li class="list-item-3">
+              <li class="list-item__sub-header">
                 <a href="#" class="a5">بیمه</a>
               </li>
-              <li class="list-item-3">
+              <li class="list-item__sub-header">
                 <a href="#" class="a6">بورس</a>
               </li>
-              <li class="list-item-3">
+              <li class="list-item__sub-header">
                 <a href="#" class="a7">نفت و گاز</a>
               </li>
-              <li class="list-item-3">
+              <li class="list-item__sub-header">
                 <a href="#" class="a8">پتروشیمی</a>
               </li>
-              <li class="list-item-3">
+              <li class="list-item__sub-header">
                 <a href="#" class="a9">صنعت آب و برق</a>
               </li>
-              <li class="list-item-3">
+              <li class="list-item__sub-header">
                 <a href="#" class="a10">صنایع و معادن</a>
               </li>
-              <li class="list-item-3">
+              <li class="list-item__sub-header">
                 <a href="#" class="a11">تجارت و بازرگانی</a>
               </li>
-              <li class="list-item-3">
+              <li class="list-item__sub-header">
                 <a href="#" class="a12">کار و تعاون</a>
               </li>
-              <li class="list-item-3">
+              <li class="list-item__sub-header">
                 <a href="#" class="a13">اقتصاد شهری</a>
               </li>
-              <li class="list-item-3">
+              <li class="list-item__sub-header">
                 <a href="#" class="a14">اقتصاددیجیتالی</a>
               </li>
-              <li class="list-item-3">
+              <li class="list-item__sub-header">
                 <a href="#" class="a15">کشاورزی و دامپروری</a>
               </li>
-              <li class="list-item-3">
+              <li class="list-item__sub-header">
                 <a href="#" class="a16">اخبارشرکت ها</a>
               </li>
             </ul>
@@ -509,7 +497,7 @@
       </div>
     </header>
 
-    <!-- main -->
+    <!-- بدنه اصلی -->
     <div class="main">
       <div class="container mix-padding-right">
         <div class="row" align="center">
@@ -518,8 +506,8 @@
               <div class="tittle-main">
                 <div class="tab" id="tab">
                   <a href="#" class="link-tittle-main">
-                    <strong class="strong-sar">سرخط اخبار :</strong>
-                    <p class="p-style-3">
+                    <strong class="strong-news">سرخط اخبار :</strong>
+                    <p class="p-style">
                       نامزد جمهوریخواه: ترامپ باید از رقابت ریاست جمهوری کنار
                       برود
                     </p>
@@ -527,50 +515,49 @@
                 </div>
               </div>
 
-              <!-- slide show -->
               <div class="slideshow">
-                <a href="#" class="link-content-box">
-                  <div class="content-box-img">
+                <a href="#" class="link__slideshow">
+                  <div class="box-img-slideshow-content">
                     <img
                       src="./inc/img/child.jpg"
                       alt="دانش آموز"
-                      class="content-image"
-                    />
+                      class="image-slideshow-content">
                   </div>
-                  <div class="content-box-info">
+                  <div class="box-info-slideshow-content">
                     <h3>گلایه تند معلمان قراردادی از وزیر آموزش و پرورش؛</h3>
                     <h2>6 ماه حقوق نگرفته ایم چرا پاسخگو نیستید؟</h2>
                   </div>
                   <p class="badge badge-style">فرهنگ</p>
                 </a>
 
+                <!-- دو باکس کوچک زیر عکس فرهنگ -->
                 <div class="row">
                   <div class="col-6 no-padding-little-box">
-                    <a href="#" class="link-content-little-box">
-                      <div class="content-little-box-img">
+                    <a href="#" class="link__little-box">
+                      <div class="img-box-little-box-content">
                         <img
                           src="./inc/img/namaz.jpg"
                           alt="شکاف عمیقی میان صنعت و دانشگاه وجود دارد"
-                          class="content-image"
+                          class="image-little-box"
                         />
                       </div>
-                      <div class="content-box-info">
+                      <div class="box-info-content">
                         <h3>کارشناس مد و لباس :</h3>
                         <h2>شکاف عمیقی میان صنعت و دانشگاه وجود دارد</h2>
                       </div>
                     </a>
                   </div>
                   <div class="col-6 no-padding-little-box">
-                    <a href="#" class="link-content-little-box">
-                      <div class="content-little-box-img">
+                    <a href="#" class="link__little-box">
+                      <div class="img-box-little-box-content">
                         <img
                           src="./inc/img/konkor.jpg"
-                          alt=""
-                          class="content-image"
+                          alt="جزئیات مهم کنکور"
+                          class="image-little-box"
                         />
                       </div>
-                      <div class="content-box-info">
-                        <h2 class="n-margin-h2">
+                      <div class="box-info-content">
+                        <h2 class="h2__margin-top">
                           جزئیات مهم ثبت نام کنکور سراسری ۱۴۰۲ +فیلم
                         </h2>
                       </div>
@@ -591,127 +578,91 @@
                   </a>
                 </div>
               </div>
-              <div class="box-news">
-                <ul class="ul-box-news">
-                  <li class="list-item-box-news">
-                    <a href="#" class="link-box-news">
-                      <div class="contact-info">
-                        <h3>رضا رویگری در نقش‌هایی که کمتر دیده‌اید! +فیلم</h3>
-                      </div>
+
+              <!-- باکس حاوی اخبار فرهنگ -->
+              <div class="news-box">
+                <ul class="ul__news-box">
+                  <li class="list-item__news-box">
+                    <a href="#" class="link__news-box">
+                      رضا رویگری در نقش‌هایی که کمتر دیده‌اید! +فیلم
                     </a>
                   </li>
-                  <li class="list-item-box-news">
-                    <a href="#" class="link-box-news">
-                      <div class="contact-info">
-                        <h3>
-                          انگیزه احسان علیخانی و امثالِ او از اجرا در رادیو
-                        </h3>
-                      </div>
+                  <li class="list-item__news-box">
+                    <a href="#" class="link__news-box">
+                      انگیزه احسان علیخانی و امثالِ او از اجرا در رادیو
                     </a>
                   </li>
-                  <li class="list-item-box-news">
-                    <a href="#" class="link-box-news">
-                      <div class="contact-info">
-                        <h3>فراخوان جشنواره ماهور تا 14 فروردین تمدید شد</h3>
-                      </div>
+                  <li class="list-item__news-box">
+                    <a href="#" class="link__news-box">
+                      فراخوان جشنواره ماهور تا 14 فروردین تمدید شد
                     </a>
                   </li>
-                  <li class="list-item-box-news">
-                    <a href="#" class="link-box-news">
-                      <div class="contact-info">
-                        <h3>
-                          سی‌امین نمایشگاه بین‌المللی قرآن کریم افتتاح میشود
-                        </h3>
-                      </div>
+                  <li class="list-item__news-box">
+                    <a href="#" class="link__news-box">
+                      سی‌امین نمایشگاه بین‌المللی قرآن کریم افتتاح میشود
                     </a>
                   </li>
-                  <li class="list-item-box-news">
-                    <a href="#" class="link-box-news">
-                      <div class="contact-info">
-                        <h3>اکران فیلم‌های جشنواره فجر با «گربه چکمه‌پوش»</h3>
-                      </div>
+                  <li class="list-item__news-box">
+                    <a href="#" class="link__news-box">
+                      اکران فیلم‌های جشنواره فجر با «گربه چکمه‌پوش»
                     </a>
                   </li>
-                  <li class="list-item-box-news">
-                    <a href="#" class="link-box-news">
-                      <div class="contact-info">
-                        <h3>برگزاری نخستین کنسرت خواننده برگزیده «عصر جدید»</h3>
-                      </div>
+                  <li class="list-item__news-box">
+                    <a href="#" class="link__news-box">
+                      برگزاری نخستین کنسرت خواننده برگزیده «عصر جدید»
                     </a>
                   </li>
-                  <li class="list-item-box-news">
-                    <a href="#" class="link-box-news">
-                      <div class="contact-info">
-                        <h3>پشت صحنه سریال «سلمان فارسی» پخش می‌شود+فیلم</h3>
-                      </div>
+                  <li class="list-item__news-box">
+                    <a href="#" class="link__news-box">
+                      پشت صحنه سریال «سلمان فارسی» پخش می‌شود+فیلم
                     </a>
                   </li>
-                  <li class="list-item-box-news">
-                    <a href="#" class="link-box-news">
-                      <div class="contact-info">
-                        <h3>
-                          پخش فیلم‌های جشنواره فجر در روزهای پایانی عید نوروز
-                        </h3>
-                      </div>
+                  <li class="list-item__news-box">
+                    <a href="#" class="link__news-box">
+                      پخش فیلم‌های جشنواره فجر در روزهای پایانی عید نوروز
                     </a>
                   </li>
-                  <li class="list-item-box-news">
-                    <a href="#" class="link-box-news">
-                      <div class="contact-info">
-                        <h3>علت تأخیر پرداخت حقوق شب عید معلمان چه بود؟</h3>
-                      </div>
+                  <li class="list-item__news-box">
+                    <a href="#" class="link__news-box">
+                      علت تأخیر پرداخت حقوق شب عید معلمان چه بود؟
                     </a>
                   </li>
-                  <li class="list-item-box-news">
-                    <a href="#" class="link-box-news">
-                      <div class="contact-info">
-                        <h3>
-                          رونمایی ۴۰ هزار نفری از جدیدترین اثر سالار عقیلی
-                        </h3>
-                      </div>
+                  <li class="list-item__news-box">
+                    <a href="#" class="link__news-box">
+                      رونمایی ۴۰ هزار نفری از جدیدترین اثر سالار عقیلی
                     </a>
                   </li>
-                  <li class="list-item-box-news">
-                    <a href="#" class="link-box-news">
-                      <div class="contact-info">
-                        <h3>رکورد روزانه مخاطبین سینمای ایران شکست</h3>
-                      </div>
+                  <li class="list-item__news-box">
+                    <a href="#" class="link__news-box">
+                      رکورد روزانه مخاطبین سینمای ایران شکست
                     </a>
                   </li>
-                  <li class="list-item-box-news">
-                    <a href="#" class="link-box-news">
-                      <div class="contact-info">
-                        <h3>رفع مشکلات مسکن و اشتغال دانشجویان دکتری+فیلم</h3>
-                      </div>
+                  <li class="list-item__news-box">
+                    <a href="#" class="link__news-box">
+                      رفع مشکلات مسکن و اشتغال دانشجویان دکتری+فیلم
                     </a>
                   </li>
-                  <li class="list-item-box-news">
-                    <a href="#" class="link-box-news">
-                      <div class="contact-info">
-                        <h3>دولت قبل برای "برادران لیلا" مجوز صادر کرد</h3>
-                      </div>
+                  <li class="list-item__news-box">
+                    <a href="#" class="link__news-box">
+                      دولت قبل برای "برادران لیلا" مجوز صادر کرد
                     </a>
                   </li>
-                  <li class="list-item-box-news">
-                    <a href="#" class="link-box-news">
-                      <div class="contact-info">
-                        <h3>دعای کوتاهی که از دعاهای بلند بهتر است</h3>
-                      </div>
+                  <li class="list-item__news-box">
+                    <a href="#" class="link__news-box">
+                      دعای کوتاهی که از دعاهای بلند بهتر است
                     </a>
                   </li>
-                  <li class="list-item-box-news">
-                    <a href="#" class="link-box-news">
-                      <div class="contact-info">
-                        <h3>
-                          درد دل های مدیرعامل مؤسسه هنرمندان پیشکسوت+ فیلم
-                        </h3>
-                      </div>
+                  <li class="list-item__news-box">
+                    <a href="#" class="link__news-box">
+                      درد دل های مدیرعامل مؤسسه هنرمندان پیشکسوت+ فیلم
                     </a>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
+
+          <!-- عکس نوروز خجسته باد -->
           <div class="col-3 no-padding">
             <div class="all-box">
               <div class="tittle-main">
@@ -731,33 +682,32 @@
             </div>
           </div>
 
-          <!-- slide show wrapper (the last) -->
           <div class="col-12">
             <div class="slideshow-wrapper">
-              <nav class="navbar-wrapper">
-                <ul class="ul-wrapper">
-                  <li class="list-item-wrapper">
+              <nav class="navــslideshow-wrapper">
+                <ul class="ulــslideshow-wrapper">
+                  <li class="list-itemــslideshow-wrapper">
                     <span class="span-1">اقتصاد</span>
                   </li>
-                  <li class="list-item-wrapper">
+                  <li class="list-itemــslideshow-wrapper">
                     <span class="span-2">سیاست</span>
                   </li>
-                  <li class="list-item-wrapper">
+                  <li class="list-itemــslideshow-wrapper">
                     <span class="span-3">فرهنگ</span>
                   </li>
-                  <li class="list-item-wrapper">
+                  <li class="list-itemــslideshow-wrapper">
                     <span class="span-4">فناوری</span>
                   </li>
-                  <li class="list-item-wrapper">
+                  <li class="list-itemــslideshow-wrapper">
                     <span class="span-5">جامعه</span>
                   </li>
-                  <li class="list-item-wrapper">
+                  <li class="list-itemــslideshow-wrapper">
                     <span class="span-6">ورزش</span>
                   </li>
-                  <li class="list-item-wrapper">
+                  <li class="list-itemــslideshow-wrapper">
                     <span class="span-7">سلامت</span>
                   </li>
-                  <li class="list-item-wrapper">
+                  <li class="list-itemــslideshow-wrapper">
                     <span class="span-8">استان‌ها</span>
                   </li>
                 </ul>
@@ -766,29 +716,29 @@
           </div>
         </div>
 
-        <!-- All secend main -->
+        <!-- قسمت دوم بدنه سایت و قیمت طلا وسکه  -->
         <div class="row row-gold-price">
-          <!-- the right box of gold , price and news -->
+          <!-- باکس های قیمت و نرخ و مبدل ارز -->
           <div class="col-9">
             <div class="row">
               <div class="col-4">
                 <section class="section-group">
                   <div class="section-tittle">
-                    <a href="#" class="link-section-left">اطلاعات بیشتر </a>
+                    <a href="#" class="link__section-tittle">اطلاعات بیشتر</a>
                     <h3>
-                      <a href="#" class="link-section-right">
+                      <a href="#" class="link-h3__section-tittle">
                         <i class="fa fa-diamond"></i>
-                        قیمت طلا و سکه 
+                        قیمت طلا و سکه
                       </a>
                     </h3>
                   </div>
                   <div class="tabpanel">
-                    <ul class="ul-panel navbar">
-                      <li class="list-item-tabpanel">
-                        <a href="#" class="link-panel-1">قیمت طلا </a>
+                    <ul class="ul__tabpanel navbar">
+                      <li class="list-item__tabpanel">
+                        <a href="#" class="link__tabpanel-right">قیمت طلا </a>
                       </li>
-                      <li class="list-item-tabpanel">
-                        <a href="#" class="link-panel-2">قیمت سکه</a>
+                      <li class="list-item__tabpanel">
+                        <a href="#" class="link__tabpanel-left">قیمت سکه</a>
                       </li>
                     </ul>
                   </div>
@@ -803,7 +753,6 @@
           <div class="col-3"></div>
         </div>
       </div>
-
     </div>
 
     <script src="./bootstrap-5.3.0-alpha2-dist/js/bootstrap.bundle.min.js"></script>
