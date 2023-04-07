@@ -383,11 +383,14 @@
       }
 
       .tabpanel {
+        border: solid #dfdfdd;
+        border-width: 0 0 1px 1px;
+
         .ul__tabpanel {
           padding: 0;
           .list-item__tabpanel {
             width: 50%;
-            .link__tabpanel-left ,
+            .link__tabpanel-left,
             .link__tabpanel-right {
               display: inline-block;
               font-size: 16px;
@@ -406,6 +409,68 @@
               border-color: #ff3131;
               box-shadow: none;
               background: #f2f2f2;
+            }
+          }
+        }
+
+        .tabpanel-content {
+          background: #fff;
+          .tabel__tabpanel {
+            width: 100%;
+            font-size: 16px;
+            font-family: nassim;
+            thead {
+              background: #f2f2f2;
+              color: #717171;
+              font-weight: 400;
+              tr {
+                th {
+                  padding: 4px 8px;
+                  font-weight: 400;
+                  line-height: 23px;
+                }
+                .chart {
+                  padding: 4px 0 4px 2px;
+                }
+              }
+            }
+            tbody {
+              td {
+                padding: 8px 8px 8px 0;
+                border-top: 1px solid #ddd;
+                font-size: 12px;
+                font-family: yekan;
+
+                .low {
+                  color: #bd0a0a;
+                  &::after {
+                    content: "\f0d7";
+                    font-family: FontAwesome;
+                    margin-right: 3px;
+                    display: inline-block;
+                  }
+                }
+              }
+              .tittle-td {
+                font-family: nassim;
+                font-size: 16px;
+                a {
+                  color: #333;
+                }
+              }
+
+              .chart {
+                padding: 8px 0 8px 2px;
+                a {
+                  padding: 3px 4px 3px 5px;
+                  font-size: 16px;
+                  display: block;
+                  margin: 0 auto;
+                  width: 27px;
+                  box-shadow: inset 0 0 0 1px #d4d4d4;
+                  color: #b71818;
+                }
+              }
             }
           }
         }
