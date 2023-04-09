@@ -128,6 +128,10 @@ a {
   margin-top: 7px;
 }
 
+.padding-gold-rice {
+  padding: 0 8px;
+}
+
 header {
   /* هدر با لوگوی خبرگذاری اقتصاد ایران */
   /* آخرین هدر همراه لینک های رنگی  */
@@ -791,19 +795,20 @@ header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a16:
   margin-left: 3px;
 }
 .main .all-box .news-box .ul__news-box .list-item__news-box {
-  border-bottom: 1px solid #dfdfdd;
   margin: 0px 12px;
   overflow: hidden;
-  padding: 6.6px 0px;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 .main .all-box .news-box .ul__news-box .list-item__news-box .link__news-box {
-  padding-top: 7px;
   color: #222;
   font-weight: normal;
   font-size: 15px;
   font-family: "nassim";
+  border-bottom: 1px solid #dfdfdd;
+  display: inline-block;
+  padding: 8.5px 0;
+  width: 100%;
 }
 .main .all-box .news-box .ul__news-box .list-item__news-box .link__news-box::before {
   color: #0040ad;
@@ -819,7 +824,7 @@ header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a16:
 .main .all-box .news-box .ul__news-box .list-item__news-box .link__news-box:hover {
   color: #b71818;
 }
-.main .all-box .news-box .ul__news-box .list-item__news-box:last-child {
+.main .all-box .news-box .ul__news-box .list-item__news-box:last-child .link__news-box {
   border-bottom: none;
 }
 .main .slideshow-wrapper {
@@ -898,6 +903,10 @@ header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a16:
 .main .slideshow-wrapper .navــslideshow-wrapper .ulــslideshow-wrapper .list-itemــslideshow-wrapper .span-8:hover::before {
   background: #006600;
 }
+.main .row-gold-price {
+  /* تبدیل نمودار */
+  /* کل باکس عکس ها در سمت چپ */
+}
 .main .row-gold-price .section-group .section-tittle {
   margin-bottom: 7px;
 }
@@ -914,6 +923,10 @@ header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a16:
   position: relative;
   bottom: -4px;
 }
+.main .row-gold-price .section-group .section-tittle .link__section-tittle:hover {
+  background: #555;
+  color: #fff;
+}
 .main .row-gold-price .section-group .section-tittle h3 {
   color: #444;
   margin: 0;
@@ -923,8 +936,12 @@ header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a16:
   color: #444;
   font-size: 15px;
   font-family: nassim-bold;
+  transition: all 0.3s ease-in-out;
 }
-.main .row-gold-price .section-group .section-tittle h3 .link-h3__section-tittle .fa.fa-diamond {
+.main .row-gold-price .section-group .section-tittle h3 .link-h3__section-tittle:hover {
+  margin-right: 5px;
+}
+.main .row-gold-price .section-group .section-tittle h3 .link-h3__section-tittle i {
   margin-left: 7px;
   font-size: 16px;
   top: 2px;
@@ -961,6 +978,7 @@ header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a16:
 }
 .main .row-gold-price .section-group .tabpanel .tabpanel-content {
   background: #fff;
+  /* جدول قیمت طلا و سکه  */
 }
 .main .row-gold-price .section-group .tabpanel .tabpanel-content .tabel__tabpanel {
   width: 100%;
@@ -979,6 +997,9 @@ header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a16:
 }
 .main .row-gold-price .section-group .tabpanel .tabpanel-content .tabel__tabpanel thead tr .chart {
   padding: 4px 0 4px 2px;
+}
+.main .row-gold-price .section-group .tabpanel .tabpanel-content .tabel__tabpanel tbody {
+  /* عکس کوچیک شده پرچم کشورها */
 }
 .main .row-gold-price .section-group .tabpanel .tabpanel-content .tabel__tabpanel tbody td {
   padding: 8px 8px 8px 0;
@@ -1002,6 +1023,30 @@ header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a16:
 .main .row-gold-price .section-group .tabpanel .tabpanel-content .tabel__tabpanel tbody .tittle-td a {
   color: #333;
 }
+.main .row-gold-price .section-group .tabpanel .tabpanel-content .tabel__tabpanel tbody .before__data-market::before {
+  content: "";
+  margin-left: 5px;
+  position: relative;
+  bottom: -2px;
+  display: inline-block;
+  width: 16px;
+  height: 11px;
+}
+.main .row-gold-price .section-group .tabpanel .tabpanel-content .tabel__tabpanel tbody .before-dollar::before {
+  background: url("http://econews.ir/themes/frontend/econews/img/flag-sm.png") no-repeat;
+  background-position-x: 0%;
+  background-position-y: 0%;
+}
+.main .row-gold-price .section-group .tabpanel .tabpanel-content .tabel__tabpanel tbody .before-euro::before {
+  background: url("http://econews.ir/themes/frontend/econews/img/flag-sm.png") no-repeat;
+  background-position-x: 0%;
+  background-position-y: 0%;
+}
+.main .row-gold-price .section-group .tabpanel .tabpanel-content .tabel__tabpanel tbody .before-AED::before {
+  background: url("http://econews.ir/themes/frontend/econews/img/flag-sm.png") no-repeat;
+  background-position-x: 0%;
+  background-position-y: 0%;
+}
 .main .row-gold-price .section-group .tabpanel .tabpanel-content .tabel__tabpanel tbody .chart {
   padding: 8px 0 8px 2px;
 }
@@ -1013,4 +1058,146 @@ header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a16:
   width: 27px;
   box-shadow: inset 0 0 0 1px #d4d4d4;
   color: #b71818;
+}
+.main .row-gold-price .convertor .section-tittle {
+  margin-bottom: 7px;
+}
+.main .row-gold-price .convertor .section-tittle .link__section-tittle {
+  border-radius: 0 0 2px 2px;
+  background-color: #e8e8e8;
+  color: #666;
+  font-family: yekan;
+  font-size: 11px;
+  line-height: 1;
+  padding: 2px 10px 5px;
+  margin-bottom: -2px;
+  float: left;
+  position: relative;
+  bottom: -4px;
+}
+.main .row-gold-price .convertor .section-tittle .link__section-tittle:hover {
+  background: #555;
+  color: #fff;
+}
+.main .row-gold-price .convertor .section-tittle h3 {
+  color: #444;
+  margin: 0;
+  font-size: 15px;
+}
+.main .row-gold-price .convertor .section-tittle h3 .link-h3__section-tittle {
+  color: #444;
+  font-size: 15px;
+  font-family: nassim-bold;
+  transition: all 0.3s ease-in-out;
+}
+.main .row-gold-price .convertor .section-tittle h3 .link-h3__section-tittle:hover {
+  margin-right: 5px;
+}
+.main .row-gold-price .convertor .section-tittle h3 .link-h3__section-tittle i {
+  margin-left: 7px;
+  font-size: 16px;
+  top: 2px;
+  position: relative;
+}
+.main .row-gold-price .convertor .convert-chart {
+  width: 100%;
+  border-top: 3px solid #a4171e;
+}
+.main .row-gold-price .convertor .convert-chart .convert-chart-value .input__convert-chart-value {
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+  height: 52px;
+  font-family: yekan;
+  width: 100%;
+  border: 1px solid #921313;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(146, 19, 19, 0.6);
+  color: #555;
+}
+.main .row-gold-price .convertor .convert-chart .convert-chart-value .input__convert-chart-value:focus {
+  border-color: #921313;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(146, 19, 19, 0.6);
+}
+.main .row-gold-price .convertor .convert-chart .clear-fix .convert-chart-from {
+  position: relative;
+}
+.main .row-gold-price .convertor .convert-chart .clear-fix .convert-chart-from::after {
+  content: "\f078";
+  font-family: FontAwesome;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  color: #999;
+  font-size: 15px;
+  font-weight: bold;
+}
+.main .row-gold-price .convertor .convert-chart .clear-fix .convert-chart-to {
+  position: relative;
+}
+.main .row-gold-price .convertor .convert-chart .clear-fix .convert-chart-to::after {
+  content: "\f078";
+  font-family: FontAwesome;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  color: #999;
+  font-size: 15px;
+  font-weight: bold;
+}
+.main .row-gold-price .convertor .convert-chart .clear-fix select {
+  width: 100%;
+  border-radius: 0;
+  padding-top: 18.5px;
+  padding-bottom: 18.5px;
+  text-align: center;
+  font-size: 17px;
+  font-family: nassim-bold;
+  background: #f5f5f5;
+  box-shadow: inset 0 0 6px #bbb;
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.main .row-gold-price .convertor .convert-chart .convert-chart-result {
+  background: #383838;
+  padding: 17.5px 10px;
+  text-align: center;
+  color: #fff;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: yekan;
+}
+.main .row-gold-price .convertor .convert-chart .convert-chart-calculator .btn.btn-danger.link__calulator {
+  width: 100%;
+  border-radius: 0;
+  padding: 15px 10px;
+  background: #b71818;
+  border: none;
+  font-family: nassim-bold;
+  font-size: 17px;
+}
+.main .row-gold-price .convertor .convert-chart .convert-chart-calculator .btn.btn-danger.link__calulator i {
+  font-size: 15px;
+  font-family: fontawesome;
+  margin-right: 10px;
+  position: relative;
+  bottom: -2px;
+}
+.main .row-gold-price .convertor .convert-chart .convert-chart-calculator .btn.btn-danger.link__calulator:hover {
+  background: #a51616;
+}
+.main .row-gold-price .ul__all-img-left {
+  margin-top: 28px;
+}
+.main .row-gold-price .ul__all-img-left .list-items__all-img-left {
+  margin-bottom: 10px;
+}
+.main .row-gold-price .ul__all-img-left .list-items__all-img-left .link__all-img-left {
+  display: block;
+}
+.main .row-gold-price .ul__all-img-left .list-items__all-img-left .link__all-img-left img {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

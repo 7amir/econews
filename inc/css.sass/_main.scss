@@ -35,6 +35,7 @@
               color: #b71818;
             }
           }
+
           &:hover {
             color: #b71818;
           }
@@ -55,6 +56,7 @@
           color: #b71818;
         }
       }
+
       #tab:hover {
         padding-right: 6px;
       }
@@ -226,19 +228,20 @@
         border-top: 3px solid #0040ad;
         margin-left: 3px;
         .list-item__news-box {
-          border-bottom: 1px solid #dfdfdd;
           margin: 0px 12px;
           overflow: hidden;
-          padding: 6.6px 0px;
           text-overflow: ellipsis;
           white-space: nowrap;
 
           .link__news-box {
-            padding-top: 7px;
             color: #222;
             font-weight: normal;
             font-size: 15px;
             font-family: "nassim";
+            border-bottom: 1px solid #dfdfdd;
+            display: inline-block;
+            padding: 8.5px 0;
+            width: 100%;
 
             &::before {
               color: #0040ad;
@@ -255,7 +258,7 @@
               color: #b71818;
             }
           }
-          &:last-child {
+          &:last-child .link__news-box {
             border-bottom: none;
           }
         }
@@ -363,16 +366,25 @@
           float: left;
           position: relative;
           bottom: -4px;
+          &:hover {
+            background: #555;
+            color: #fff;            
+          }
         }
         h3 {
           color: #444;
           margin: 0;
           font-size: 15px;
+
           .link-h3__section-tittle {
             color: #444;
             font-size: 15px;
             font-family: nassim-bold;
-            .fa.fa-diamond {
+            transition: all 0.3s ease-in-out;
+            &:hover {
+              margin-right: 5px;
+            }
+            i {
               margin-left: 7px;
               font-size: 16px;
               top: 2px;
@@ -415,6 +427,8 @@
 
         .tabpanel-content {
           background: #fff;
+
+          /* جدول قیمت طلا و سکه  */
           .tabel__tabpanel {
             width: 100%;
             font-size: 16px;
@@ -459,6 +473,38 @@
                 }
               }
 
+              /* عکس کوچیک شده پرچم کشورها */
+              .before__data-market {
+                &::before {
+                  content: "";
+                  margin-left: 5px;
+                  position: relative;
+                  bottom: -2px;
+                  display: inline-block;
+                  width: 16px;
+                  height: 11px;
+                }
+              }
+              .before-dollar::before {
+                background: url("http://econews.ir/themes/frontend/econews/img/flag-sm.png")
+                  no-repeat;
+                background-position-x: 0%;
+                background-position-y: 0%;
+              }
+
+              .before-euro::before {
+                background: url("http://econews.ir/themes/frontend/econews/img/flag-sm.png")
+                  no-repeat;
+                background-position-x: 0%;
+                background-position-y: 0%;
+              }
+              .before-AED::before {
+                background: url("http://econews.ir/themes/frontend/econews/img/flag-sm.png")
+                  no-repeat;
+                background-position-x: 0%;
+                background-position-y: 0%;
+              }
+
               .chart {
                 padding: 8px 0 8px 2px;
                 a {
@@ -472,6 +518,171 @@
                 }
               }
             }
+          }
+        }
+      }
+    }
+
+    /* تبدیل نمودار */
+    .convertor {
+      .section-tittle {
+        margin-bottom: 7px;
+        .link__section-tittle {
+          border-radius: 0 0 2px 2px;
+          background-color: #e8e8e8;
+          color: #666;
+          font-family: yekan;
+          font-size: 11px;
+          line-height: 1;
+          padding: 2px 10px 5px;
+          margin-bottom: -2px;
+          float: left;
+          position: relative;
+          bottom: -4px;
+          &:hover {
+            background: #555;
+            color: #fff;            
+          }
+        }
+        h3 {
+          color: #444;
+          margin: 0;
+          font-size: 15px;
+          .link-h3__section-tittle {
+            color: #444;
+            font-size: 15px;
+            font-family: nassim-bold;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+              margin-right: 5px;
+            }
+
+            i {
+              margin-left: 7px;
+              font-size: 16px;
+              top: 2px;
+              position: relative;
+            }
+          }
+        }
+      }
+
+      .convert-chart {
+        width: 100%;
+        border-top: 3px solid #a4171e;
+        .convert-chart-value {
+          .input__convert-chart-value {
+            text-align: center;
+            font-size: 17px;
+            font-weight: bold;
+            height: 52px;
+            font-family: yekan;
+            width: 100%;
+            border: 1px solid #921313;
+            outline: 0;
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+              0 0 8px rgba(146, 19, 19, 0.6);
+              color: #555;
+
+            &:focus {
+              border-color: #921313;
+              outline: 0;
+              box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+                0 0 8px rgba(146, 19, 19, 0.6);
+            }
+          }
+        }
+
+        .clear-fix {
+          .convert-chart-from {
+            position: relative;
+            &::after {
+              content: "\f078";
+              font-family: FontAwesome;
+              position: absolute;
+              left: 15px;
+              top: 15px;
+              color: #999;
+              font-size: 15px;
+              font-weight: bold;
+            }
+          }
+          .convert-chart-to {
+            position: relative;
+            &::after {
+              content: "\f078";
+              font-family: FontAwesome;
+              position: absolute;
+              left: 15px;
+              top: 15px;
+              color: #999;
+              font-size: 15px;
+              font-weight: bold;
+            }
+          }
+          select {
+            width: 100%;
+            border-radius: 0;
+            padding-top: 18.5px;
+            padding-bottom: 18.5px;
+            text-align: center;
+            font-size: 17px;
+            font-family: nassim-bold;
+            background: #f5f5f5;
+            box-shadow: inset 0 0 6px #bbb;
+            border: none;
+            appearance: none;
+          }
+        }
+
+        .convert-chart-result {
+          background: #383838;
+          padding: 17.5px 10px;
+          text-align: center;
+          color: #fff;
+          font-size: 17px;
+          font-weight: bold;
+          font-family: yekan; 
+        }
+
+        .convert-chart-calculator {
+          .btn.btn-danger.link__calulator {
+            width: 100%;
+            border-radius: 0;
+            padding: 15px 10px;
+            background: #b71818; 
+            border: none;
+            font-family: nassim-bold;
+            font-size: 17px;
+
+            i {
+              font-size: 15px;
+              font-family: fontawesome;
+              margin-right: 10px;
+              position: relative;
+              bottom: -2px; 
+            }
+
+            &:hover {
+              background: #a51616;
+            }
+          }
+        }
+      }
+    }
+
+    /* کل باکس عکس ها در سمت چپ */
+    .ul__all-img-left {
+      margin-top: 28px;
+
+      .list-items__all-img-left {
+        margin-bottom: 10px;
+
+        .link__all-img-left {
+          display: block;
+
+          img {
+            width: 100%;
           }
         }
       }
