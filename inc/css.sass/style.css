@@ -132,6 +132,116 @@ a {
   padding: 0 8px;
 }
 
+/*شروع عنوان باکس های کوچیک */
+.section-tittle {
+  margin-bottom: 7px;
+}
+.section-tittle .link__section-tittle {
+  border-radius: 0 0 2px 2px;
+  background-color: #e8e8e8;
+  color: #666;
+  font-family: yekan;
+  font-size: 11px;
+  line-height: 1;
+  padding: 2px 10px 5px;
+  margin-bottom: -2px;
+  float: left;
+  position: relative;
+  bottom: -4px;
+}
+.section-tittle .link__section-tittle:hover {
+  background: #555;
+  color: #fff;
+}
+.section-tittle h3 {
+  color: #444;
+  margin: 0;
+  font-size: 15px;
+}
+.section-tittle h3 .link-h3__section-tittle {
+  color: #444;
+  font-size: 15px;
+  font-family: nassim-bold;
+  transition: all 0.3s ease-in-out;
+}
+.section-tittle h3 .link-h3__section-tittle:hover {
+  margin-right: 5px;
+}
+.section-tittle h3 .link-h3__section-tittle i {
+  margin-left: 7px;
+  font-size: 16px;
+  top: 2px;
+  position: relative;
+}
+
+/* پایان عنوان باکس های کوچیک */
+/* دو باکس کوچک زیر عکس فرهنگ  */
+.little-box-info {
+  display: flex;
+  background: #fff;
+  align-items: center;
+  padding: 12px;
+  max-height: 100px;
+  overflow: hidden;
+  border: 1px solid #dfdfdd;
+  border-right: none;
+  border-top: none;
+  background: #fff;
+  position: relative;
+}
+.little-box-info .link__little-box-info {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0;
+}
+.little-box-info .img-little-box-content {
+  overflow: hidden;
+  width: 52%;
+  height: 72px;
+  cursor: pointer;
+}
+.little-box-info .img-little-box-content .image-little-box {
+  width: 100%;
+  transition: all 0.9s ease-in-out;
+}
+.little-box-info .box-info-content {
+  color: #222;
+  padding-right: 8px;
+  text-align: right;
+  font-family: nassim;
+  overflow: hidden;
+}
+.little-box-info .box-info-content h3 {
+  padding: 0;
+  margin: 0 0 6px;
+  font-size: 15px;
+  color: #555;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.little-box-info .box-info-content h2 {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: nassim;
+  border-bottom: 2px solid transparent;
+}
+.little-box-info .box-info-content .h2__padding-top {
+  padding-bottom: 22px;
+}
+.little-box-info:hover h3 {
+  color: #b71818;
+}
+.little-box-info:hover h2 {
+  color: #b71818;
+}
+.little-box-info:hover .image-little-box {
+  transform: scale(1.03);
+}
+
 header {
   /* هدر با لوگوی خبرگذاری اقتصاد ایران */
   /* آخرین هدر همراه لینک های رنگی  */
@@ -650,7 +760,7 @@ header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a16:
   width: 606px;
   height: 390px;
   margin-right: -14px;
-  /* دو باکس کوچک زیر عکس فرهنگ  */
+  position: relative;
 }
 .main .all-box .slideshow .link__slideshow {
   display: block;
@@ -718,61 +828,6 @@ header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a16:
   font-size: 13px;
   color: #fff;
   background: #0040ad;
-}
-.main .all-box .slideshow .link__little-box {
-  display: flex;
-  background: #fff;
-  align-items: center;
-  padding: 12px;
-  max-height: 100px;
-  overflow: hidden;
-  border: 1px solid #dfdfdd;
-  border-right: none;
-  border-top: none;
-  background: #fff;
-}
-.main .all-box .slideshow .link__little-box .img-box-little-box-content {
-  overflow: hidden;
-  width: 55%;
-}
-.main .all-box .slideshow .link__little-box .img-box-little-box-content .image-little-box {
-  width: 100%;
-  transition: all 0.9s ease-in-out;
-}
-.main .all-box .slideshow .link__little-box .box-info-content {
-  color: #222;
-  padding-right: 8px;
-  text-align: right;
-  font-family: nassim;
-}
-.main .all-box .slideshow .link__little-box .box-info-content h3 {
-  padding: 0;
-  margin: 0 0 6px;
-  font-size: 15px;
-  color: #555;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.main .all-box .slideshow .link__little-box .box-info-content h2 {
-  padding: 0;
-  margin: 0;
-  font-size: 16px;
-  font-weight: bold;
-  font-family: nassim;
-  border-bottom: 2px solid transparent;
-}
-.main .all-box .slideshow .link__little-box .box-info-content .h2__margin-top {
-  margin-top: -30px;
-}
-.main .all-box .slideshow .link__little-box:hover h3 {
-  color: #b71818;
-}
-.main .all-box .slideshow .link__little-box:hover h2 {
-  color: #b71818;
-}
-.main .all-box .slideshow .link__little-box:hover .image-little-box {
-  transform: scale(1.03);
 }
 .main .all-box .noroz {
   max-height: 497px;
@@ -907,46 +962,6 @@ header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a16:
   /* تبدیل نمودار */
   /* کل باکس عکس ها در سمت چپ */
 }
-.main .row-gold-price .section-group .section-tittle {
-  margin-bottom: 7px;
-}
-.main .row-gold-price .section-group .section-tittle .link__section-tittle {
-  border-radius: 0 0 2px 2px;
-  background-color: #e8e8e8;
-  color: #666;
-  font-family: yekan;
-  font-size: 11px;
-  line-height: 1;
-  padding: 2px 10px 5px;
-  margin-bottom: -2px;
-  float: left;
-  position: relative;
-  bottom: -4px;
-}
-.main .row-gold-price .section-group .section-tittle .link__section-tittle:hover {
-  background: #555;
-  color: #fff;
-}
-.main .row-gold-price .section-group .section-tittle h3 {
-  color: #444;
-  margin: 0;
-  font-size: 15px;
-}
-.main .row-gold-price .section-group .section-tittle h3 .link-h3__section-tittle {
-  color: #444;
-  font-size: 15px;
-  font-family: nassim-bold;
-  transition: all 0.3s ease-in-out;
-}
-.main .row-gold-price .section-group .section-tittle h3 .link-h3__section-tittle:hover {
-  margin-right: 5px;
-}
-.main .row-gold-price .section-group .section-tittle h3 .link-h3__section-tittle i {
-  margin-left: 7px;
-  font-size: 16px;
-  top: 2px;
-  position: relative;
-}
 .main .row-gold-price .section-group .tabpanel {
   border: solid #dfdfdd;
   border-width: 0 0 1px 1px;
@@ -1051,53 +1066,13 @@ header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a16:
   padding: 8px 0 8px 2px;
 }
 .main .row-gold-price .section-group .tabpanel .tabpanel-content .tabel__tabpanel tbody .chart a {
-  padding: 3px 4px 3px 5px;
+  padding: 3px 5px 3px 5px;
   font-size: 16px;
   display: block;
   margin: 0 auto;
   width: 27px;
   box-shadow: inset 0 0 0 1px #d4d4d4;
   color: #b71818;
-}
-.main .row-gold-price .convertor .section-tittle {
-  margin-bottom: 7px;
-}
-.main .row-gold-price .convertor .section-tittle .link__section-tittle {
-  border-radius: 0 0 2px 2px;
-  background-color: #e8e8e8;
-  color: #666;
-  font-family: yekan;
-  font-size: 11px;
-  line-height: 1;
-  padding: 2px 10px 5px;
-  margin-bottom: -2px;
-  float: left;
-  position: relative;
-  bottom: -4px;
-}
-.main .row-gold-price .convertor .section-tittle .link__section-tittle:hover {
-  background: #555;
-  color: #fff;
-}
-.main .row-gold-price .convertor .section-tittle h3 {
-  color: #444;
-  margin: 0;
-  font-size: 15px;
-}
-.main .row-gold-price .convertor .section-tittle h3 .link-h3__section-tittle {
-  color: #444;
-  font-size: 15px;
-  font-family: nassim-bold;
-  transition: all 0.3s ease-in-out;
-}
-.main .row-gold-price .convertor .section-tittle h3 .link-h3__section-tittle:hover {
-  margin-right: 5px;
-}
-.main .row-gold-price .convertor .section-tittle h3 .link-h3__section-tittle i {
-  margin-left: 7px;
-  font-size: 16px;
-  top: 2px;
-  position: relative;
 }
 .main .row-gold-price .convertor .convert-chart {
   width: 100%;
@@ -1120,31 +1095,19 @@ header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a16:
   outline: 0;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(146, 19, 19, 0.6);
 }
-.main .row-gold-price .convertor .convert-chart .clear-fix .convert-chart-from {
-  position: relative;
-}
-.main .row-gold-price .convertor .convert-chart .clear-fix .convert-chart-from::after {
-  content: "\f078";
-  font-family: FontAwesome;
-  position: absolute;
-  left: 15px;
-  top: 15px;
-  color: #999;
-  font-size: 15px;
-  font-weight: bold;
-}
+.main .row-gold-price .convertor .convert-chart .clear-fix .convert-chart-from,
 .main .row-gold-price .convertor .convert-chart .clear-fix .convert-chart-to {
   position: relative;
 }
+.main .row-gold-price .convertor .convert-chart .clear-fix .convert-chart-from::after,
 .main .row-gold-price .convertor .convert-chart .clear-fix .convert-chart-to::after {
   content: "\f078";
   font-family: FontAwesome;
   position: absolute;
   left: 15px;
-  top: 15px;
+  top: 19px;
   color: #999;
   font-size: 15px;
-  font-weight: bold;
 }
 .main .row-gold-price .convertor .convert-chart .clear-fix select {
   width: 100%;
@@ -1188,6 +1151,12 @@ header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a16:
 }
 .main .row-gold-price .convertor .convert-chart .convert-chart-calculator .btn.btn-danger.link__calulator:hover {
   background: #a51616;
+}
+.main .row-gold-price .all-section-box-news {
+  margin-top: 10px;
+}
+.main .row-gold-price .all-section-box-news .section__box-news {
+  margin-top: 10px;
 }
 .main .row-gold-price .ul__all-img-left {
   margin-top: 28px;

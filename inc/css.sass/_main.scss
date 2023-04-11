@@ -69,6 +69,7 @@
       width: 606px;
       height: 390px;
       margin-right: -14px;
+      position: relative;
       .link__slideshow {
         display: block;
         position: relative;
@@ -143,65 +144,6 @@
           font-size: 13px;
           color: #fff;
           background: #0040ad;
-        }
-      }
-
-      /* دو باکس کوچک زیر عکس فرهنگ  */
-      .link__little-box {
-        display: flex;
-        background: #fff;
-        align-items: center;
-        padding: 12px;
-        max-height: 100px;
-        overflow: hidden;
-        border: 1px solid #dfdfdd;
-        border-right: none;
-        border-top: none;
-        background: #fff;
-        .img-box-little-box-content {
-          overflow: hidden;
-          width: 55%;
-          .image-little-box {
-            width: 100%;
-            transition: all 0.9s ease-in-out;
-          }
-        }
-        .box-info-content {
-          color: #222;
-          padding-right: 8px;
-          text-align: right;
-          font-family: nassim;
-
-          h3 {
-            padding: 0;
-            margin: 0 0 6px;
-            font-size: 15px;
-            color: #555;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-          }
-          h2 {
-            padding: 0;
-            margin: 0;
-            font-size: 16px;
-            font-weight: bold;
-            font-family: nassim;
-            border-bottom: 2px solid transparent;
-          }
-          .h2__margin-top {
-            margin-top: -30px;
-          }
-        }
-
-        &:hover h3 {
-          color: #b71818;
-        }
-        &:hover h2 {
-          color: #b71818;
-        }
-        &:hover .image-little-box {
-          transform: scale(1.03);
         }
       }
     }
@@ -351,49 +293,6 @@
   /* قسمت دوم بدنه سایت و قیمت طلا وسکه  */
   .row-gold-price {
     .section-group {
-      .section-tittle {
-        margin-bottom: 7px;
-
-        .link__section-tittle {
-          border-radius: 0 0 2px 2px;
-          background-color: #e8e8e8;
-          color: #666;
-          font-family: yekan;
-          font-size: 11px;
-          line-height: 1;
-          padding: 2px 10px 5px;
-          margin-bottom: -2px;
-          float: left;
-          position: relative;
-          bottom: -4px;
-          &:hover {
-            background: #555;
-            color: #fff;            
-          }
-        }
-        h3 {
-          color: #444;
-          margin: 0;
-          font-size: 15px;
-
-          .link-h3__section-tittle {
-            color: #444;
-            font-size: 15px;
-            font-family: nassim-bold;
-            transition: all 0.3s ease-in-out;
-            &:hover {
-              margin-right: 5px;
-            }
-            i {
-              margin-left: 7px;
-              font-size: 16px;
-              top: 2px;
-              position: relative;
-            }
-          }
-        }
-      }
-
       .tabpanel {
         border: solid #dfdfdd;
         border-width: 0 0 1px 1px;
@@ -508,7 +407,7 @@
               .chart {
                 padding: 8px 0 8px 2px;
                 a {
-                  padding: 3px 4px 3px 5px;
+                  padding: 3px 5px 3px 5px;
                   font-size: 16px;
                   display: block;
                   margin: 0 auto;
@@ -525,48 +424,6 @@
 
     /* تبدیل نمودار */
     .convertor {
-      .section-tittle {
-        margin-bottom: 7px;
-        .link__section-tittle {
-          border-radius: 0 0 2px 2px;
-          background-color: #e8e8e8;
-          color: #666;
-          font-family: yekan;
-          font-size: 11px;
-          line-height: 1;
-          padding: 2px 10px 5px;
-          margin-bottom: -2px;
-          float: left;
-          position: relative;
-          bottom: -4px;
-          &:hover {
-            background: #555;
-            color: #fff;            
-          }
-        }
-        h3 {
-          color: #444;
-          margin: 0;
-          font-size: 15px;
-          .link-h3__section-tittle {
-            color: #444;
-            font-size: 15px;
-            font-family: nassim-bold;
-            transition: all 0.3s ease-in-out;
-            &:hover {
-              margin-right: 5px;
-            }
-
-            i {
-              margin-left: 7px;
-              font-size: 16px;
-              top: 2px;
-              position: relative;
-            }
-          }
-        }
-      }
-
       .convert-chart {
         width: 100%;
         border-top: 3px solid #a4171e;
@@ -582,7 +439,7 @@
             outline: 0;
             box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
               0 0 8px rgba(146, 19, 19, 0.6);
-              color: #555;
+            color: #555;
 
             &:focus {
               border-color: #921313;
@@ -594,19 +451,7 @@
         }
 
         .clear-fix {
-          .convert-chart-from {
-            position: relative;
-            &::after {
-              content: "\f078";
-              font-family: FontAwesome;
-              position: absolute;
-              left: 15px;
-              top: 15px;
-              color: #999;
-              font-size: 15px;
-              font-weight: bold;
-            }
-          }
+          .convert-chart-from,
           .convert-chart-to {
             position: relative;
             &::after {
@@ -614,12 +459,12 @@
               font-family: FontAwesome;
               position: absolute;
               left: 15px;
-              top: 15px;
+              top: 19px;
               color: #999;
               font-size: 15px;
-              font-weight: bold;
             }
           }
+
           select {
             width: 100%;
             border-radius: 0;
@@ -642,7 +487,7 @@
           color: #fff;
           font-size: 17px;
           font-weight: bold;
-          font-family: yekan; 
+          font-family: yekan;
         }
 
         .convert-chart-calculator {
@@ -650,7 +495,7 @@
             width: 100%;
             border-radius: 0;
             padding: 15px 10px;
-            background: #b71818; 
+            background: #b71818;
             border: none;
             font-family: nassim-bold;
             font-size: 17px;
@@ -660,7 +505,7 @@
               font-family: fontawesome;
               margin-right: 10px;
               position: relative;
-              bottom: -2px; 
+              bottom: -2px;
             }
 
             &:hover {
@@ -670,6 +515,15 @@
         }
       }
     }
+
+    .all-section-box-news {
+      margin-top: 10px;
+      .section__box-news {
+
+        margin-top: 10px;
+      }
+    }
+
 
     /* کل باکس عکس ها در سمت چپ */
     .ul__all-img-left {
