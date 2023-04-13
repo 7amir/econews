@@ -129,7 +129,7 @@ a {
 }
 
 .padding-gold-rice {
-  padding: 0 8px;
+  padding-right: 3px;
 }
 
 /*شروع عنوان باکس های کوچیک */
@@ -164,9 +164,6 @@ a {
   font-family: nassim-bold;
   transition: all 0.3s ease-in-out;
 }
-.section-tittle h3 .link-h3__section-tittle:hover {
-  margin-right: 5px;
-}
 .section-tittle h3 .link-h3__section-tittle i {
   margin-left: 7px;
   font-size: 16px;
@@ -175,7 +172,7 @@ a {
 }
 
 /* پایان عنوان باکس های کوچیک */
-/* دو باکس کوچک زیر عکس فرهنگ  */
+/* شروع دو باکس کوچک زیر عکس فرهنگ  */
 .little-box-info {
   display: flex;
   background: #fff;
@@ -194,15 +191,16 @@ a {
   width: 100%;
   height: 100%;
   right: 0;
+  z-index: 1;
 }
 .little-box-info .img-little-box-content {
   overflow: hidden;
   width: 52%;
-  height: 72px;
   cursor: pointer;
 }
 .little-box-info .img-little-box-content .image-little-box {
-  width: 100%;
+  width: 100px;
+  height: 75px;
   transition: all 0.9s ease-in-out;
 }
 .little-box-info .box-info-content {
@@ -242,6 +240,94 @@ a {
   transform: scale(1.03);
 }
 
+/* پایان دو باکس کوچک زیر عکس فرهنگ */
+/*  شروع باکس خبری حاوی منو */
+.news-menu-box .news-menu-box-header {
+  border-top: 3px solid #555;
+  padding: 1px 0 10px;
+  display: flex;
+  justify-content: space-between;
+  /* ایکون تنظیمات */
+}
+.news-menu-box .news-menu-box-header .news-box-right {
+  display: flex;
+  align-items: center;
+  /* منو باکس خبری */
+}
+.news-menu-box .news-menu-box-header .news-box-right .news-menu-box-header-tittle .link__news-menu-box-tittle {
+  color: #483d8b;
+  font-family: nassim-bold;
+  font-size: 20px;
+}
+.news-menu-box .news-menu-box-header .news-box-right .news-menu-box-header-tittle .link__news-menu-box-tittle i {
+  font-size: 16px;
+  margin-left: 8px;
+  position: relative;
+  bottom: -2px;
+}
+.news-menu-box .news-menu-box-header .news-box-right .news-menu-box-header-tittle i {
+  font-size: 14px;
+  margin: 0 7px;
+  position: relative;
+  bottom: -2px;
+  color: #483d8b;
+}
+.news-menu-box .news-menu-box-header .news-box-right .ul__news-menu-box-header .list-items__news-menu-box-header .link__news-menu-box-header {
+  color: #333;
+  font-size: 17px;
+  font-family: "nassim";
+  padding: 10px 8px;
+}
+.news-menu-box .news-menu-box-header .sittings {
+  display: flex;
+  margin-top: 5px;
+}
+.news-menu-box .news-menu-box-header .sittings .sitting-box a {
+  color: #666;
+  padding: 6px 14.5px 8px;
+  background: #e0e0e0;
+  margin-right: 6px;
+  display: inline-block;
+}
+.news-menu-box .news-menu-box-header .sittings .sitting-box a i {
+  font-size: 16px;
+}
+.news-menu-box .news-menu-box-default-right {
+  position: relative;
+  border: solid #dfdfdd;
+  border-width: 0 0 0.1rem 0.1rem;
+  background: #fff;
+  padding: 3px;
+  position: relative;
+}
+.news-menu-box .news-menu-box-default-right a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.news-menu-box .news-menu-box-default-right .default-right-img {
+  overflow: hidden;
+}
+.news-menu-box .news-menu-box-default-right .default-right-img img {
+  transition: all 0.9s ease-in-out;
+  width: 100%;
+}
+.news-menu-box .news-menu-box-default-right .default-right-img img:hover {
+  transform: scale(1.02);
+}
+.news-menu-box .news-menu-box-default-right .content-box-info {
+  color: #222;
+  padding: 10px;
+  height: 97px;
+  overflow: hidden;
+}
+.news-menu-box .news-menu-box-default-right .content-box-info h2 {
+  margin: 0;
+  font-size: 23px;
+  font-family: nassim-bold;
+}
+
+/*  پایان باکس خبری حاوی منو */
 header {
   /* هدر با لوگوی خبرگذاری اقتصاد ایران */
   /* آخرین هدر همراه لینک های رنگی  */
@@ -758,7 +844,6 @@ header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a16:
 }
 .main .all-box .slideshow {
   width: 606px;
-  height: 390px;
   margin-right: -14px;
   position: relative;
 }
@@ -959,6 +1044,7 @@ header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a16:
   background: #006600;
 }
 .main .row-gold-price {
+  margin-top: 10px;
   /* تبدیل نمودار */
   /* کل باکس عکس ها در سمت چپ */
 }
@@ -990,6 +1076,11 @@ header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a16:
   border-color: #ff3131;
   box-shadow: none;
   background: #f2f2f2;
+  color: #b71818;
+}
+.main .row-gold-price .section-group .tabpanel .ul__tabpanel .list-item__tabpanel .link__tabpanel-left:hover {
+  background: #eee;
+  box-shadow: 0 0 13px #c0c0c0 inset;
 }
 .main .row-gold-price .section-group .tabpanel .tabpanel-content {
   background: #fff;
@@ -1013,32 +1104,33 @@ header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a16:
 .main .row-gold-price .section-group .tabpanel .tabpanel-content .tabel__tabpanel thead tr .chart {
   padding: 4px 0 4px 2px;
 }
-.main .row-gold-price .section-group .tabpanel .tabpanel-content .tabel__tabpanel tbody {
+.main .row-gold-price .section-group .tabpanel .tabpanel-content .tabel__tabpanel tbody tr {
+  color: #bd0a0a;
   /* عکس کوچیک شده پرچم کشورها */
 }
-.main .row-gold-price .section-group .tabpanel .tabpanel-content .tabel__tabpanel tbody td {
+.main .row-gold-price .section-group .tabpanel .tabpanel-content .tabel__tabpanel tbody tr td {
   padding: 8px 8px 8px 0;
   border-top: 1px solid #ddd;
   font-size: 12px;
   font-family: yekan;
 }
-.main .row-gold-price .section-group .tabpanel .tabpanel-content .tabel__tabpanel tbody td .low {
-  color: #bd0a0a;
-}
-.main .row-gold-price .section-group .tabpanel .tabpanel-content .tabel__tabpanel tbody td .low::after {
+.main .row-gold-price .section-group .tabpanel .tabpanel-content .tabel__tabpanel tbody tr td .low::after {
   content: "\f0d7";
   font-family: FontAwesome;
   margin-right: 3px;
   display: inline-block;
 }
-.main .row-gold-price .section-group .tabpanel .tabpanel-content .tabel__tabpanel tbody .tittle-td {
+.main .row-gold-price .section-group .tabpanel .tabpanel-content .tabel__tabpanel tbody tr td .percent {
+  color: #333;
+}
+.main .row-gold-price .section-group .tabpanel .tabpanel-content .tabel__tabpanel tbody tr .tittle-td {
   font-family: nassim;
   font-size: 16px;
 }
-.main .row-gold-price .section-group .tabpanel .tabpanel-content .tabel__tabpanel tbody .tittle-td a {
+.main .row-gold-price .section-group .tabpanel .tabpanel-content .tabel__tabpanel tbody tr .tittle-td a {
   color: #333;
 }
-.main .row-gold-price .section-group .tabpanel .tabpanel-content .tabel__tabpanel tbody .before__data-market::before {
+.main .row-gold-price .section-group .tabpanel .tabpanel-content .tabel__tabpanel tbody tr .before__data-market::before {
   content: "";
   margin-left: 5px;
   position: relative;
@@ -1047,25 +1139,25 @@ header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a16:
   width: 16px;
   height: 11px;
 }
-.main .row-gold-price .section-group .tabpanel .tabpanel-content .tabel__tabpanel tbody .before-dollar::before {
+.main .row-gold-price .section-group .tabpanel .tabpanel-content .tabel__tabpanel tbody tr .before-dollar::before {
   background: url("http://econews.ir/themes/frontend/econews/img/flag-sm.png") no-repeat;
   background-position-x: 0%;
   background-position-y: 0%;
 }
-.main .row-gold-price .section-group .tabpanel .tabpanel-content .tabel__tabpanel tbody .before-euro::before {
+.main .row-gold-price .section-group .tabpanel .tabpanel-content .tabel__tabpanel tbody tr .before-euro::before {
   background: url("http://econews.ir/themes/frontend/econews/img/flag-sm.png") no-repeat;
   background-position-x: 0%;
   background-position-y: 0%;
 }
-.main .row-gold-price .section-group .tabpanel .tabpanel-content .tabel__tabpanel tbody .before-AED::before {
+.main .row-gold-price .section-group .tabpanel .tabpanel-content .tabel__tabpanel tbody tr .before-AED::before {
   background: url("http://econews.ir/themes/frontend/econews/img/flag-sm.png") no-repeat;
   background-position-x: 0%;
   background-position-y: 0%;
 }
-.main .row-gold-price .section-group .tabpanel .tabpanel-content .tabel__tabpanel tbody .chart {
+.main .row-gold-price .section-group .tabpanel .tabpanel-content .tabel__tabpanel tbody tr .chart {
   padding: 8px 0 8px 2px;
 }
-.main .row-gold-price .section-group .tabpanel .tabpanel-content .tabel__tabpanel tbody .chart a {
+.main .row-gold-price .section-group .tabpanel .tabpanel-content .tabel__tabpanel tbody tr .chart a {
   padding: 3px 5px 3px 5px;
   font-size: 16px;
   display: block;
@@ -1073,6 +1165,16 @@ header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a16:
   width: 27px;
   box-shadow: inset 0 0 0 1px #d4d4d4;
   color: #b71818;
+}
+.main .row-gold-price .section-group .tabpanel .tabpanel-content .tabel__tabpanel tbody tr .chart a:hover {
+  color: #fff;
+  background: #b71818;
+}
+.main .row-gold-price .section-group .tabpanel .tabpanel-content .tabel__tabpanel tbody tr:hover {
+  background: #fff0e5;
+}
+.main .row-gold-price .section-group:hover .link-h3__section-tittle {
+  margin-right: 5px;
 }
 .main .row-gold-price .convertor .convert-chart {
   width: 100%;
@@ -1152,17 +1254,62 @@ header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a16:
 .main .row-gold-price .convertor .convert-chart .convert-chart-calculator .btn.btn-danger.link__calulator:hover {
   background: #a51616;
 }
+.main .row-gold-price .convertor:hover .link-h3__section-tittle {
+  margin-right: 5px;
+}
 .main .row-gold-price .all-section-box-news {
   margin-top: 10px;
 }
 .main .row-gold-price .all-section-box-news .section__box-news {
   margin-top: 10px;
 }
+.main .row-gold-price .all-section-box-news .section__box-news .little-box-info {
+  border-top: 3px solid #b71818;
+}
+.main .row-gold-price .all-section-box-news .section__box-news .border-top-info-1 {
+  border-top-color: #444;
+}
+.main .row-gold-price .all-section-box-news .section__box-news .border-top-info-1:hover h2, .main .row-gold-price .all-section-box-news .section__box-news .border-top-info-1:hover h3 {
+  color: #444;
+}
+.main .row-gold-price .all-section-box-news .section__box-news .border-top-info-2 {
+  border-top-color: #6a5acd;
+}
+.main .row-gold-price .all-section-box-news .section__box-news .border-top-info-2:hover h2, .main .row-gold-price .all-section-box-news .section__box-news .border-top-info-2:hover h3 {
+  color: #6a5acd;
+}
+.main .row-gold-price .all-section-box-news .section__box-news .border-top-info-3 {
+  border-top-color: #00bfff;
+}
+.main .row-gold-price .all-section-box-news .section__box-news .border-top-info-3:hover h2, .main .row-gold-price .all-section-box-news .section__box-news .border-top-info-3:hover h3 {
+  color: #00bfff;
+}
+.main .row-gold-price .all-section-box-news .section__box-news .border-top-info-4 {
+  border-top-color: #dc143c;
+}
+.main .row-gold-price .all-section-box-news .section__box-news .border-top-info-4:hover h2, .main .row-gold-price .all-section-box-news .section__box-news .border-top-info-4:hover h3 {
+  color: #dc143c;
+}
+.main .row-gold-price .all-section-box-news .section__box-news .border-top-info-5 {
+  border-top-color: #ba55d3;
+}
+.main .row-gold-price .all-section-box-news .section__box-news .border-top-info-5:hover h2, .main .row-gold-price .all-section-box-news .section__box-news .border-top-info-5:hover h3 {
+  color: #ba55d3;
+}
+.main .row-gold-price .all-section-box-news .section__box-news .border-top-info-6 {
+  border-top-color: #228b22;
+}
+.main .row-gold-price .all-section-box-news .section__box-news .border-top-info-6:hover h2, .main .row-gold-price .all-section-box-news .section__box-news .border-top-info-6:hover h3 {
+  color: #228b22;
+}
+.main .row-gold-price .all-section-box-news .section__box-news:hover .link-h3__section-tittle {
+  margin-right: 5px;
+}
 .main .row-gold-price .ul__all-img-left {
   margin-top: 28px;
 }
 .main .row-gold-price .ul__all-img-left .list-items__all-img-left {
-  margin-bottom: 10px;
+  margin-bottom: 13px;
 }
 .main .row-gold-price .ul__all-img-left .list-items__all-img-left .link__all-img-left {
   display: block;

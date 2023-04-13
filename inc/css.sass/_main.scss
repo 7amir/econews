@@ -67,7 +67,6 @@
 
     .slideshow {
       width: 606px;
-      height: 390px;
       margin-right: -14px;
       position: relative;
       .link__slideshow {
@@ -292,6 +291,7 @@
 
   /* قسمت دوم بدنه سایت و قیمت طلا وسکه  */
   .row-gold-price {
+    margin-top: 10px;
     .section-group {
       .tabpanel {
         border: solid #dfdfdd;
@@ -320,6 +320,12 @@
               border-color: #ff3131;
               box-shadow: none;
               background: #f2f2f2;
+              color: #b71818;
+            }
+
+            .link__tabpanel-left:hover {
+              background: #eee;
+              box-shadow: 0 0 13px #c0c0c0 inset;
             }
           }
         }
@@ -348,77 +354,92 @@
               }
             }
             tbody {
-              td {
-                padding: 8px 8px 8px 0;
-                border-top: 1px solid #ddd;
-                font-size: 12px;
-                font-family: yekan;
+              tr {
+                color: #bd0a0a;
+                td {
+                  padding: 8px 8px 8px 0;
+                  border-top: 1px solid #ddd;
+                  font-size: 12px;
+                  font-family: yekan;
 
-                .low {
-                  color: #bd0a0a;
-                  &::after {
+                  .low::after {
                     content: "\f0d7";
                     font-family: FontAwesome;
                     margin-right: 3px;
                     display: inline-block;
                   }
-                }
-              }
-              .tittle-td {
-                font-family: nassim;
-                font-size: 16px;
-                a {
-                  color: #333;
-                }
-              }
 
-              /* عکس کوچیک شده پرچم کشورها */
-              .before__data-market {
-                &::before {
-                  content: "";
-                  margin-left: 5px;
-                  position: relative;
-                  bottom: -2px;
-                  display: inline-block;
-                  width: 16px;
-                  height: 11px;
+                  .percent {
+                    color: #333;
+                  }
                 }
-              }
-              .before-dollar::before {
-                background: url("http://econews.ir/themes/frontend/econews/img/flag-sm.png")
-                  no-repeat;
-                background-position-x: 0%;
-                background-position-y: 0%;
-              }
-
-              .before-euro::before {
-                background: url("http://econews.ir/themes/frontend/econews/img/flag-sm.png")
-                  no-repeat;
-                background-position-x: 0%;
-                background-position-y: 0%;
-              }
-              .before-AED::before {
-                background: url("http://econews.ir/themes/frontend/econews/img/flag-sm.png")
-                  no-repeat;
-                background-position-x: 0%;
-                background-position-y: 0%;
-              }
-
-              .chart {
-                padding: 8px 0 8px 2px;
-                a {
-                  padding: 3px 5px 3px 5px;
+                .tittle-td {
+                  font-family: nassim;
                   font-size: 16px;
-                  display: block;
-                  margin: 0 auto;
-                  width: 27px;
-                  box-shadow: inset 0 0 0 1px #d4d4d4;
-                  color: #b71818;
+                  a {
+                    color: #333;
+                  }
+                }
+
+                /* عکس کوچیک شده پرچم کشورها */
+                .before__data-market {
+                  &::before {
+                    content: "";
+                    margin-left: 5px;
+                    position: relative;
+                    bottom: -2px;
+                    display: inline-block;
+                    width: 16px;
+                    height: 11px;
+                  }
+                }
+                .before-dollar::before {
+                  background: url("http://econews.ir/themes/frontend/econews/img/flag-sm.png")
+                    no-repeat;
+                  background-position-x: 0%;
+                  background-position-y: 0%;
+                }
+
+                .before-euro::before {
+                  background: url("http://econews.ir/themes/frontend/econews/img/flag-sm.png")
+                    no-repeat;
+                  background-position-x: 0%;
+                  background-position-y: 0%;
+                }
+                .before-AED::before {
+                  background: url("http://econews.ir/themes/frontend/econews/img/flag-sm.png")
+                    no-repeat;
+                  background-position-x: 0%;
+                  background-position-y: 0%;
+                }
+
+                .chart {
+                  padding: 8px 0 8px 2px;
+                  a {
+                    padding: 3px 5px 3px 5px;
+                    font-size: 16px;
+                    display: block;
+                    margin: 0 auto;
+                    width: 27px;
+                    box-shadow: inset 0 0 0 1px #d4d4d4;
+                    color: #b71818;
+                    &:hover {
+                      color: #fff;
+                      background: #b71818;
+                    }
+                  }
+                }
+                &:hover {
+                  background: #fff0e5;
                 }
               }
             }
           }
         }
+      }
+
+      &:hover .link-h3__section-tittle {
+        margin-right: 5px;
       }
     }
 
@@ -514,23 +535,75 @@
           }
         }
       }
+      &:hover .link-h3__section-tittle {
+        margin-right: 5px;
+      }
     }
 
     .all-section-box-news {
       margin-top: 10px;
       .section__box-news {
-
         margin-top: 10px;
+
+        .little-box-info {
+          border-top: 3px solid #b71818;
+        }
+
+        .border-top-info-1 {
+          border-top-color: #444;
+          &:hover h2,
+          &:hover h3 {
+            color: #444;
+          }
+        }
+        .border-top-info-2 {
+          border-top-color: #6a5acd;
+          &:hover h2,
+          &:hover h3 {
+            color: #6a5acd;
+          }
+        }
+        .border-top-info-3 {
+          border-top-color: #00bfff;
+          &:hover h2,
+          &:hover h3 {
+            color: #00bfff;
+          }
+        }
+        .border-top-info-4 {
+          border-top-color: #dc143c;
+          &:hover h2,
+          &:hover h3 {
+            color: #dc143c;
+          }
+        }
+        .border-top-info-5 {
+          border-top-color: #ba55d3;
+          &:hover h2,
+          &:hover h3 {
+            color: #ba55d3;
+          }
+        }
+        .border-top-info-6 {
+          border-top-color: #228b22;
+          &:hover h2,
+          &:hover h3 {
+            color: #228b22;
+          }
+        }
+
+        &:hover .link-h3__section-tittle {
+          margin-right: 5px;
+        }
       }
     }
-
 
     /* کل باکس عکس ها در سمت چپ */
     .ul__all-img-left {
       margin-top: 28px;
 
       .list-items__all-img-left {
-        margin-bottom: 10px;
+        margin-bottom: 13px;
 
         .link__all-img-left {
           display: block;
@@ -542,4 +615,6 @@
       }
     }
   }
+
+
 }
