@@ -116,9 +116,9 @@ a {
   padding-left: 1.3%;
 }
 
-.no-padding {
-  padding: 0;
-  margin-left: -2px;
+.col-4, .col-3, .col-6 {
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .no-padding-little-box {
@@ -128,10 +128,52 @@ a {
   margin-top: 7px;
 }
 
-.padding-gold-rice {
-  padding-right: 3px;
+/* شروع باکس حاوی اخبار فرهنگ */
+.news-box {
+  text-align: right;
+}
+.news-box .ul__news-box {
+  border: solid #dfdfdd;
+  border-width: 0 0 1px 1px;
+  background: #fff;
+  border-top: 3px solid #0040ad;
+  margin-left: 3px;
+}
+.news-box .ul__news-box .list-item__news-box {
+  margin: 0px 12px;
+}
+.news-box .ul__news-box .list-item__news-box .link__news-box {
+  color: #222;
+  font-weight: normal;
+  font-size: 15px;
+  font-family: "nassim";
+  border-bottom: 1px solid #dfdfdd;
+  display: inline-block;
+  padding: 7.7px 0;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.news-box .ul__news-box .list-item__news-box .link__news-box::before {
+  color: #0040ad;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f111";
+  font-size: 9px;
+  line-height: 1;
+  position: relative;
+  margin-left: 5px;
+  font-size: 8px;
+}
+.news-box .ul__news-box .list-item__news-box .link__news-box:hover {
+  color: #b71818;
+}
+.news-box .ul__news-box .list-item__news-box:last-child .link__news-box {
+  border-bottom: none;
 }
 
+/* پایان باکس حاوی اخبار فرهنگ */
 /*شروع عنوان باکس های کوچیک */
 .section-tittle {
   margin-bottom: 7px;
@@ -196,7 +238,6 @@ a {
 .little-box-info .img-little-box-content {
   overflow: hidden;
   width: 52%;
-  cursor: pointer;
 }
 .little-box-info .img-little-box-content .image-little-box {
   width: 100px;
@@ -242,6 +283,12 @@ a {
 
 /* پایان دو باکس کوچک زیر عکس فرهنگ */
 /*  شروع باکس خبری حاوی منو */
+.news-menu-box {
+  margin-top: 18px;
+  /* اولین و آخرین ستون حاوی یک عکس با یک متن در زیر آن */
+  /* سه باکس خبری در یک ستون */
+  /* باکس حاوی خبرهای تک خطی */
+}
 .news-menu-box .news-menu-box-header {
   border-top: 3px solid #555;
   padding: 1px 0 10px;
@@ -252,6 +299,7 @@ a {
 .news-menu-box .news-menu-box-header .news-box-right {
   display: flex;
   align-items: center;
+  transition: all 0.3s ease-in-out;
   /* منو باکس خبری */
 }
 .news-menu-box .news-menu-box-header .news-box-right .news-menu-box-header-tittle .link__news-menu-box-tittle {
@@ -292,39 +340,85 @@ a {
 .news-menu-box .news-menu-box-header .sittings .sitting-box a i {
   font-size: 16px;
 }
-.news-menu-box .news-menu-box-default-right {
+.news-menu-box .news-menu-box-header .sittings .sitting-box a:hover {
+  background: #333;
+  color: #fff;
+}
+.news-menu-box .news-menu-box-header .sittings .sitting-box .rss-orang-color:hover {
+  background: #f90;
+}
+.news-menu-box .news-menu-box-default-right-or-left {
   position: relative;
   border: solid #dfdfdd;
-  border-width: 0 0 0.1rem 0.1rem;
+  border-width: 0 0 1px 1px;
   background: #fff;
   padding: 3px;
   position: relative;
 }
-.news-menu-box .news-menu-box-default-right a {
+.news-menu-box .news-menu-box-default-right-or-left a {
   position: absolute;
   width: 100%;
   height: 100%;
 }
-.news-menu-box .news-menu-box-default-right .default-right-img {
+.news-menu-box .news-menu-box-default-right-or-left .default-right-img {
   overflow: hidden;
 }
-.news-menu-box .news-menu-box-default-right .default-right-img img {
+.news-menu-box .news-menu-box-default-right-or-left .default-right-img img {
   transition: all 0.9s ease-in-out;
   width: 100%;
 }
-.news-menu-box .news-menu-box-default-right .default-right-img img:hover {
-  transform: scale(1.02);
-}
-.news-menu-box .news-menu-box-default-right .content-box-info {
+.news-menu-box .news-menu-box-default-right-or-left .content-box-info {
   color: #222;
   padding: 10px;
   height: 97px;
   overflow: hidden;
 }
-.news-menu-box .news-menu-box-default-right .content-box-info h2 {
+.news-menu-box .news-menu-box-default-right-or-left .content-box-info h3 {
+  margin: 0 0 3px;
+  padding: 0;
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: nassim;
+  color: #555;
+}
+.news-menu-box .news-menu-box-default-right-or-left .content-box-info h2 {
   margin: 0;
   font-size: 23px;
   font-family: nassim-bold;
+}
+.news-menu-box .news-menu-box-default-right-or-left:hover img {
+  transform: scale(1.02);
+}
+.news-menu-box .ul__little-box-info {
+  background: #fff;
+  border: solid #dfdfdd;
+  border-width: 0 0 1px 1px;
+}
+.news-menu-box .ul__little-box-info .list-items__little-box-info {
+  padding: 0 12px;
+}
+.news-menu-box .ul__little-box-info .list-items__little-box-info .little-box-info {
+  border-left: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+.news-menu-box .ul__little-box-info .list-items__little-box-info .little-box-info .image-little-box {
+  transform: scale(1);
+}
+.news-menu-box .ul__little-box-info .list-items__little-box-info .the-last-little-box {
+  border: none;
+}
+.news-menu-box .ul__news-box {
+  border-top: none;
+  margin: 0;
+}
+.news-menu-box .ul__news-box .link__news-box {
+  padding: 8px 0 !important;
+}
+.news-menu-box:hover .news-box-right {
+  margin-right: 5px;
 }
 
 /*  پایان باکس خبری حاوی منو */
@@ -777,10 +871,9 @@ header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a16:
 
 .main {
   /* قسمت دوم بدنه سایت و قیمت طلا وسکه  */
-}
-.main .all-box {
-  width: 95%;
-  /* باکس حاوی اخبار فرهنگ */
+  /* هاور های باکس خبری حاوی منو از 1 تا 10 */
+  /* هاورهای باکس خبری پولی- مالی */
+  /* هاورهای باکس خبری بازار سزمایه */
 }
 .main .all-box .tittle-main {
   text-align: right;
@@ -843,8 +936,7 @@ header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a16:
   color: #b71818;
 }
 .main .all-box .slideshow {
-  width: 606px;
-  margin-right: -14px;
+  margin-right: -7px;
   position: relative;
 }
 .main .all-box .slideshow .link__slideshow {
@@ -921,54 +1013,6 @@ header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a16:
 .main .all-box .noroz .link-noroz img {
   height: 525px;
   width: 296px;
-}
-.main .all-box .news-box {
-  text-align: right;
-  width: 101.8%;
-  margin-right: -4px;
-}
-.main .all-box .news-box .ul__news-box {
-  border: solid #dfdfdd;
-  border-width: 0 0 1px 1px;
-  background: #fff;
-  border-top: 3px solid #0040ad;
-  margin-left: 3px;
-}
-.main .all-box .news-box .ul__news-box .list-item__news-box {
-  margin: 0px 12px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.main .all-box .news-box .ul__news-box .list-item__news-box .link__news-box {
-  color: #222;
-  font-weight: normal;
-  font-size: 15px;
-  font-family: "nassim";
-  border-bottom: 1px solid #dfdfdd;
-  display: inline-block;
-  padding: 8.5px 0;
-  width: 100%;
-}
-.main .all-box .news-box .ul__news-box .list-item__news-box .link__news-box::before {
-  color: #0040ad;
-  font-family: FontAwesome;
-  display: inline-block;
-  content: "\f111";
-  font-size: 9px;
-  line-height: 1;
-  position: relative;
-  margin-left: 5px;
-  font-size: 8px;
-}
-.main .all-box .news-box .ul__news-box .list-item__news-box .link__news-box:hover {
-  color: #b71818;
-}
-.main .all-box .news-box .ul__news-box .list-item__news-box:last-child .link__news-box {
-  border-bottom: none;
-}
-.main .slideshow-wrapper {
-  margin-right: -8px;
 }
 .main .slideshow-wrapper .navــslideshow-wrapper {
   margin: 17px 0;
@@ -1316,4 +1360,47 @@ header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a16:
 }
 .main .row-gold-price .ul__all-img-left .list-items__all-img-left .link__all-img-left img {
   width: 100%;
+}
+.main .box-money-1 .news-menu-box-header {
+  border-top-color: #483d8b;
+}
+.main .box-money-1 .news-menu-box-header .ul__news-menu-box-header .list-items__news-menu-box-header .link__news-menu-box-header:hover {
+  color: #483d8b;
+}
+.main .box-money-1 .news-menu-box-default-right-or-left:hover h2 {
+  color: #483d8b;
+}
+.main .box-money-1 .little-box-info:hover h2,
+.main .box-money-1 .little-box-info:hover h3 {
+  color: #483d8b;
+}
+.main .box-money-1 .link__news-box:hover {
+  border-color: #483d8b;
+  color: #483d8b !important;
+}
+.main .box-market-2 .news-menu-box-header {
+  border-top-color: #228b22;
+}
+.main .box-market-2 .news-menu-box-header .news-box-right .news-menu-box-header-tittle .link__news-menu-box-tittle {
+  color: #228b22;
+}
+.main .box-market-2 .news-menu-box-header .news-box-right .news-menu-box-header-tittle .link__news-menu-box-tittle i {
+  color: #228b22;
+}
+.main .box-market-2 .news-menu-box-header .news-box-right .news-menu-box-header-tittle i {
+  color: #228b22;
+}
+.main .box-market-2 .news-menu-box-header .ul__news-menu-box-header .list-items__news-menu-box-header .link__news-menu-box-header:hover {
+  color: #228b22;
+}
+.main .box-market-2 .news-menu-box-default-right-or-left:hover h2 {
+  color: #228b22;
+}
+.main .box-market-2 .little-box-info:hover h2,
+.main .box-market-2 .little-box-info:hover h3 {
+  color: #228b22;
+}
+.main .box-market-2 .link__news-box:hover {
+  border-color: #228b22;
+  color: #228b22 !important;
 }/*# sourceMappingURL=style.css.map */

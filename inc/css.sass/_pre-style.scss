@@ -62,9 +62,9 @@ a {
   padding-left: 1.3%;
 }
 
-.no-padding {
-  padding: 0;
-  margin-left: -2px;
+.col-4 , .col-3 , .col-6{
+  padding-left: 8px;
+  padding-right: 8px;
 }
 .no-padding-little-box {
   padding: 0;
@@ -73,9 +73,57 @@ a {
   margin-top: 7px;
 }
 
-.padding-gold-rice {
-  padding-right: 3px;
+
+
+/* شروع باکس حاوی اخبار فرهنگ */
+.news-box {
+  text-align: right;
+
+  .ul__news-box {
+    border: solid #dfdfdd;
+    border-width: 0 0 1px 1px;
+    background: #fff;
+    border-top: 3px solid #0040ad;
+    margin-left: 3px;
+
+    .list-item__news-box {
+      margin: 0px 12px;
+
+      .link__news-box {
+        color: #222;
+        font-weight: normal;
+        font-size: 15px;
+        font-family: "nassim";
+        border-bottom: 1px solid #dfdfdd;
+        display: inline-block;
+        padding: 7.7px 0;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+
+        &::before {
+          color: #0040ad;
+          font-family: FontAwesome;
+          display: inline-block;
+          content: "\f111";
+          font-size: 9px;
+          line-height: 1;
+          position: relative;
+          margin-left: 5px;
+          font-size: 8px;
+        }
+        &:hover {
+          color: #b71818;
+        }
+      }
+      &:last-child .link__news-box {
+        border-bottom: none;
+      }
+    }
+  }
 }
+/* پایان باکس حاوی اخبار فرهنگ */
 
 /*شروع عنوان باکس های کوچیک */
 .section-tittle {
@@ -120,7 +168,6 @@ a {
 }
 /* پایان عنوان باکس های کوچیک */
 
-
 /* شروع دو باکس کوچک زیر عکس فرهنگ  */
 .little-box-info {
   display: flex;
@@ -145,7 +192,6 @@ a {
   .img-little-box-content {
     overflow: hidden;
     width: 52%;
-    cursor: pointer;
 
     .image-little-box {
       width: 100px;
@@ -194,107 +240,170 @@ a {
 }
 /* پایان دو باکس کوچک زیر عکس فرهنگ */
 
+/*  شروع باکس خبری حاوی منو */
+.news-menu-box {
+  margin-top: 18px;
+  .news-menu-box-header {
+    border-top: 3px solid #555;
+    padding: 1px 0 10px;
+    display: flex;
+    justify-content: space-between;
 
-  /*  شروع باکس خبری حاوی منو */
-  .news-menu-box {
-    .news-menu-box-header {
-      border-top: 3px solid #555;
-      padding: 1px 0 10px;
+    .news-box-right {
       display: flex;
-      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
 
-      .news-box-right {
-        display: flex;
-        align-items: center;
-        .news-menu-box-header-tittle {
-          .link__news-menu-box-tittle {
-            color: #483d8b;
-            font-family: nassim-bold;
-            font-size: 20px;
-            i {
-              font-size: 16px;
-              margin-left: 8px;
-              position: relative;
-              bottom: -2px;
-            }
-          }
+      .news-menu-box-header-tittle {
+        .link__news-menu-box-tittle {
+          color: #483d8b;
+          font-family: nassim-bold;
+          font-size: 20px;
+
           i {
-            font-size: 14px;
-            margin: 0 7px;
+            font-size: 16px;
+            margin-left: 8px;
             position: relative;
             bottom: -2px;
-            color: #483d8b;
           }
         }
-
-        /* منو باکس خبری */
-        .ul__news-menu-box-header {
-          .list-items__news-menu-box-header {
-            .link__news-menu-box-header {
-              color: #333;
-              font-size: 17px;
-              font-family: "nassim";
-              padding: 10px 8px;
-            }
-          }
+        i {
+          font-size: 14px;
+          margin: 0 7px;
+          position: relative;
+          bottom: -2px;
+          color: #483d8b;
         }
       }
 
-      /* ایکون تنظیمات */
-      .sittings {
-        display: flex;
-        margin-top: 5px;
-        .sitting-box {
-          a {
-            color: #666;
-            padding: 6px 14.5px 8px;
-            background: #e0e0e0;
-            margin-right: 6px;
-            display: inline-block;
-
-            i {
-              font-size: 16px;
-            }
+      /* منو باکس خبری */
+      .ul__news-menu-box-header {
+        .list-items__news-menu-box-header {
+          .link__news-menu-box-header {
+            color: #333;
+            font-size: 17px;
+            font-family: "nassim";
+            padding: 10px 8px;
           }
         }
       }
     }
-    .news-menu-box-default-right {
-      position: relative;
-      border: solid #dfdfdd;
-      border-width: 0 0 0.1rem 0.1rem;
-      background: #fff;
-      padding: 3px;
-      position: relative;
 
-      a {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-      }
 
-      .default-right-img {
-        overflow: hidden;
+    /* ایکون تنظیمات */
+    .sittings {
+      display: flex;
+      margin-top: 5px;
+      .sitting-box {
+        a {
+          color: #666;
+          padding: 6px 14.5px 8px;
+          background: #e0e0e0;
+          margin-right: 6px;
+          display: inline-block;
 
-        img {
-          transition: all 0.9s ease-in-out;
-          width: 100%;          
+          i {
+            font-size: 16px;
+          }
+
           &:hover {
-            transform: scale(1.02);
+            background: #333;
+            color: #fff;
           }
         }
-      }
-      .content-box-info {
-        color: #222;
-        padding: 10px;
-        height: 97px;
-        overflow: hidden;        
-        h2 {
-          margin: 0;
-          font-size: 23px;
-          font-family: nassim-bold;
+        .rss-orang-color:hover {
+          background: #f90;
         }
       }
     }
   }
-  /*  پایان باکس خبری حاوی منو */
+
+  /* اولین و آخرین ستون حاوی یک عکس با یک متن در زیر آن */
+  .news-menu-box-default-right-or-left {
+    position: relative;
+    border: solid #dfdfdd;
+    border-width: 0 0 1px 1px;
+    background: #fff;
+    padding: 3px;
+    position: relative;
+
+    a {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+
+    .default-right-img {
+      overflow: hidden;
+
+      img {
+        transition: all 0.9s ease-in-out;
+        width: 100%;
+      }
+    }
+    .content-box-info {
+      color: #222;
+      padding: 10px;
+      height: 97px;
+      overflow: hidden;
+
+      h3 {
+        margin: 0 0 3px;
+        padding: 0;
+        font-size: 16px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-family: nassim;
+        color: #555; 
+      }
+      h2 {
+        margin: 0;
+        font-size: 23px;
+        font-family: nassim-bold;
+      }
+    }
+    &:hover img {
+      transform: scale(1.02);
+    }
+  }
+
+  /* سه باکس خبری در یک ستون */
+  .ul__little-box-info {
+    background: #fff;
+    border: solid #dfdfdd;
+    border-width: 0 0 1px 1px;
+
+    .list-items__little-box-info {
+      padding: 0 12px;
+
+      .little-box-info {
+        border-left: none;
+        padding-left: 0;
+        padding-right: 0;
+
+        .image-little-box {
+          transform: scale(1);
+        }
+      }
+
+      .the-last-little-box {
+        border: none;
+      }
+    }
+  }
+
+  /* باکس حاوی خبرهای تک خطی */
+  .ul__news-box {
+    border-top: none;
+    margin: 0;
+    .link__news-box {
+      padding: 8px 0 !important;
+    }
+  }
+
+  &:hover .news-box-right {
+    margin-right: 5px;
+  }
+}
+/*  پایان باکس خبری حاوی منو */

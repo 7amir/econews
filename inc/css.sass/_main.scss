@@ -1,6 +1,5 @@
 .main {
   .all-box {
-    width: 95%;
     .tittle-main {
       text-align: right;
       #tab {
@@ -66,8 +65,7 @@
     }
 
     .slideshow {
-      width: 606px;
-      margin-right: -14px;
+      margin-right: -7px;
       position: relative;
       .link__slideshow {
         display: block;
@@ -156,60 +154,9 @@
         }
       }
     }
-
-    /* باکس حاوی اخبار فرهنگ */
-    .news-box {
-      text-align: right;
-      width: 101.8%;
-      margin-right: -4px;
-      .ul__news-box {
-        border: solid #dfdfdd;
-        border-width: 0 0 1px 1px;
-        background: #fff;
-        border-top: 3px solid #0040ad;
-        margin-left: 3px;
-        .list-item__news-box {
-          margin: 0px 12px;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          white-space: nowrap;
-
-          .link__news-box {
-            color: #222;
-            font-weight: normal;
-            font-size: 15px;
-            font-family: "nassim";
-            border-bottom: 1px solid #dfdfdd;
-            display: inline-block;
-            padding: 8.5px 0;
-            width: 100%;
-
-            &::before {
-              color: #0040ad;
-              font-family: FontAwesome;
-              display: inline-block;
-              content: "\f111";
-              font-size: 9px;
-              line-height: 1;
-              position: relative;
-              margin-left: 5px;
-              font-size: 8px;
-            }
-            &:hover {
-              color: #b71818;
-            }
-          }
-          &:last-child .link__news-box {
-            border-bottom: none;
-          }
-        }
-      }
-    }
   }
 
   .slideshow-wrapper {
-    margin-right: -8px;
-
     .navــslideshow-wrapper {
       margin: 17px 0;
       .ulــslideshow-wrapper {
@@ -615,6 +562,72 @@
       }
     }
   }
+  /* هاور های باکس خبری حاوی منو از 1 تا 10 */
+  /* هاورهای باکس خبری پولی- مالی */
+  .box-money-1 {
+    .news-menu-box-header {
+      border-top-color: #483d8b;
+      .ul__news-menu-box-header {
+        .list-items__news-menu-box-header {
+          .link__news-menu-box-header:hover {
+            color: #483d8b;
+          }
+        }
+      }
+    }
+    .news-menu-box-default-right-or-left:hover h2 {
+      color: #483d8b;
+    }
 
+    .little-box-info:hover h2,
+    .little-box-info:hover h3 {
+      color: #483d8b;
+    }
 
+    .link__news-box:hover {
+      border-color: #483d8b;
+      color: #483d8b !important;
+    }
+  }
+
+  /* هاورهای باکس خبری بازار سزمایه */
+  .box-market-2 {
+    .news-menu-box-header {
+      border-top-color: #228b22;
+
+      .news-box-right {
+        .news-menu-box-header-tittle {
+          .link__news-menu-box-tittle {
+            color: #228b22;
+            i {
+              color: #228b22;
+            }
+          }
+          i {
+            color: #228b22;
+          }
+        }
+      }
+      .ul__news-menu-box-header {
+        .list-items__news-menu-box-header {
+          .link__news-menu-box-header:hover {
+            color: #228b22;
+          }
+        }
+      }
+    }
+    .news-menu-box-default-right-or-left:hover h2 {
+      color: #228b22;
+    }
+
+    .little-box-info:hover h2,
+    .little-box-info:hover h3 {
+      color: #228b22;
+    }
+
+    .link__news-box:hover {
+      border-color: #228b22;
+      color: #228b22 !important;
+    }
+  }
 }
