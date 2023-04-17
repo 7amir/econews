@@ -182,20 +182,12 @@ a {
   background: #fff;
   position: relative;
 
-  .link__little-box-info {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    right: 0;
-    z-index: 1;
-  }
   .img-little-box-content {
     overflow: hidden;
     width: 52%;
 
     .image-little-box {
       width: 100px;
-      height: 75px;
       transition: all 0.9s ease-in-out;
     }
   }
@@ -320,18 +312,11 @@ a {
 
   /* اولین و آخرین ستون حاوی یک عکس با یک متن در زیر آن */
   .news-menu-box-default-right-or-left {
-    position: relative;
+    display: block;
     border: solid #dfdfdd;
     border-width: 0 0 1px 1px;
     background: #fff;
     padding: 3px;
-    position: relative;
-
-    a {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-    }
 
     .default-right-img {
       overflow: hidden;

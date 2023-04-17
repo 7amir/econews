@@ -67,80 +67,87 @@
     .slideshow {
       margin-right: -7px;
       position: relative;
-      .link__slideshow {
-        display: block;
+
+      .slideshow-box-img {
         position: relative;
-        border: 1px solid #dfdfdd;
-        border-right: none;
-        background: #fff;
-        padding: 3px;
 
-        .box-img-slideshow-content {
+        .link__slideshow {
+          display: block;
           position: relative;
-          overflow: hidden;
+          border: 1px solid #dfdfdd;
+          border-right: none;
+          background: #fff;
+          padding: 3px;
 
-          .image-slideshow-content {
-            width: 100%;
-            transition: all 0.9s ease-in-out;
+          .box-img-slideshow-content {
+            position: relative;
+            overflow: hidden;
 
-            &:hover {
-              transform: scale(1.02);
+            img {
+              width: 100%;
+              transition: all 0.9s ease-in-out;
+
+              &:hover {
+                transform: scale(1.02);
+              }
+            }
+
+            &::before {
+              background: linear-gradient(
+                0deg,
+                rgba(0, 0, 0, 0.95) 30%,
+                rgba(0, 0, 0, 0) 100%
+              );
+              content: "";
+              height: 83px;
+              position: absolute;
+              width: 100%;
+              z-index: 1;
+              bottom: 0;
             }
           }
-
-          &::before {
-            background: linear-gradient(
-              0deg,
-              rgba(0, 0, 0, 0.95) 30%,
-              rgba(0, 0, 0, 0) 100%
-            );
-            content: "";
-            height: 83px;
+        }
+        .link__slideshow-text {
+          .box-info-slideshow-content {
             position: absolute;
-            width: 100%;
+            bottom: 3px;
+            left: 3px;
+            right: 3px;
+            color: #fff;
+            padding: 20px;
             z-index: 1;
-            bottom: 0;
-          }
-        }
-        .box-info-slideshow-content {
-          position: absolute;
-          bottom: 3px;
-          left: 3px;
-          right: 3px;
-          color: #fff;
-          padding: 20px;
-          z-index: 1;
-          text-align: right;
-          font-family: nassim;
+            text-align: right;
+            font-family: nassim;
 
-          h3 {
-            padding: 0;
-            margin: 0 0 6px;
-            font-size: 17px;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
+            h3 {
+              padding: 0;
+              margin: 0 0 6px;
+              font-size: 17px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+            h2 {
+              padding: 0;
+              margin: 0;
+              font-size: 30px;
+              font-weight: bold;
+              border-bottom: 2px solid transparent;
+              display: inline-block;
+            }
           }
-          h2 {
-            padding: 0;
-            margin: 0;
-            font-size: 30px;
-            font-weight: bold;
-            border-bottom: 2px solid transparent;
-            display: inline-block;
+          .badge-style {
+            position: absolute;
+            top: 13px;
+            right: 13px;
+            border-radius: 0;
+            padding: 5px 8px 4px;
+            z-index: 2;
+            font-family: nassim-bold;
+            font-size: 13px;
+            color: #fff;
+            background: #0040ad;
           }
-        }
-        .badge-style {
-          position: absolute;
-          top: 13px;
-          right: 13px;
-          border-radius: 0;
-          padding: 5px 8px 4px;
-          z-index: 2;
-          font-family: nassim-bold;
-          font-size: 13px;
-          color: #fff;
-          background: #0040ad;
         }
       }
     }
@@ -584,6 +591,16 @@
       color: #483d8b;
     }
 
+    .news-box {
+      .ul__news-box {
+        li {
+          a:before {
+            color: #483d8b;
+          }
+        }
+      }
+    }
+
     .link__news-box:hover {
       border-color: #483d8b;
       color: #483d8b !important;
@@ -599,9 +616,6 @@
         .news-menu-box-header-tittle {
           .link__news-menu-box-tittle {
             color: #228b22;
-            i {
-              color: #228b22;
-            }
           }
           i {
             color: #228b22;
@@ -625,9 +639,166 @@
       color: #228b22;
     }
 
+    .news-box {
+      .ul__news-box {
+        li {
+          a:before {
+            color: #228b22;
+          }
+        }
+      }
+    }
+
     .link__news-box:hover {
       border-color: #228b22;
       color: #228b22 !important;
+    }
+  }
+
+  /* هاورهای باکس خبری چهر های شاخص  */
+  .box-face-3 {
+    .news-menu-box-header {
+      border-top-color: #7f05a1;
+
+      .news-box-right {
+        .news-menu-box-header-tittle {
+          .link__news-menu-box-tittle {
+            color: #7f05a1;
+          }
+          i {
+            color: #7f05a1;
+          }
+        }
+      }
+      .ul__news-menu-box-header {
+        .list-items__news-menu-box-header {
+          .link__news-menu-box-header:hover {
+            color: #7f05a1;
+          }
+        }
+      }
+    }
+    .news-menu-box-default-right-or-left:hover h2,
+    .news-menu-box-default-right-or-left:hover h3 {
+      color: #7f05a1;
+    }
+
+    .little-box-info:hover h2,
+    .little-box-info:hover h3 {
+      color: #7f05a1;
+    }
+
+    .news-box {
+      .ul__news-box {
+        li {
+          a:before {
+            color: #7f05a1;
+          }
+        }
+      }
+    }
+
+    .link__news-box:hover {
+      border-color: #7f05a1;
+      color: #7f05a1 !important;
+    }
+  }
+
+  /* هاورهای باکس خبری اقتصاد دانش بنیان */
+  .box-Knowledge-base-4 {
+    .news-menu-box-header {
+      border-top-color: #7b68ee;
+
+      .news-box-right {
+        .news-menu-box-header-tittle {
+          .link__news-menu-box-tittle {
+            color: #7b68ee;
+          }
+          i {
+            color: #7b68ee;
+          }
+        }
+      }
+      .ul__news-menu-box-header {
+        .list-items__news-menu-box-header {
+          .link__news-menu-box-header:hover {
+            color: #7b68ee;
+          }
+        }
+      }
+    }
+    .news-menu-box-default-right-or-left:hover h2,
+    .news-menu-box-default-right-or-left:hover h3 {
+      color: #7b68ee;
+    }
+
+    .little-box-info:hover h2,
+    .little-box-info:hover h3 {
+      color: #7b68ee;
+    }
+
+    .news-box {
+      .ul__news-box {
+        li {
+          a:before {
+            color: #7b68ee;
+          }
+        }
+      }
+    }
+
+    .link__news-box:hover {
+      border-color: #7b68ee;
+      color: #7b68ee !important;
+    }
+  }
+
+  /* هاورهای باکس خبری اقتصاد فرهنگ و هنر */
+  .box-art-5 {
+    .news-menu-box-header {
+      border-top-color: #0040AD;
+
+      .news-box-right {
+        .news-menu-box-header-tittle {
+          .link__news-menu-box-tittle {
+            color: #0040AD;
+          }
+          i {
+            color: #0040AD;
+          }
+        }
+      }
+      .ul__news-menu-box-header {
+        .list-items__news-menu-box-header {
+          .link__news-menu-box-header:hover {
+            color: #0040AD;
+          }
+        }
+      }
+    }
+    .news-menu-box-default-right-or-left:hover h2,
+    .news-menu-box-default-right-or-left:hover h3 {
+      color: #0040AD;
+    }
+
+    .little-box-info:hover h2,
+    .little-box-info:hover h3 {
+      color: #0040AD;
+    }
+
+    .news-box {
+      .ul__news-box {
+        li {
+          a:before {
+            color: #0040AD;
+          }
+        }
+      }
+    }
+
+    .link__news-box:hover {
+      border-color: #0040AD;
+      color: #0040AD !important;
     }
   }
 }
