@@ -756,49 +756,542 @@
   /* هاورهای باکس خبری اقتصاد فرهنگ و هنر */
   .box-art-5 {
     .news-menu-box-header {
-      border-top-color: #0040AD;
+      border-top-color: #0040ad;
 
       .news-box-right {
         .news-menu-box-header-tittle {
           .link__news-menu-box-tittle {
-            color: #0040AD;
+            color: #0040ad;
           }
           i {
-            color: #0040AD;
+            color: #0040ad;
           }
         }
       }
       .ul__news-menu-box-header {
         .list-items__news-menu-box-header {
           .link__news-menu-box-header:hover {
-            color: #0040AD;
+            color: #0040ad;
           }
         }
       }
     }
     .news-menu-box-default-right-or-left:hover h2,
     .news-menu-box-default-right-or-left:hover h3 {
-      color: #0040AD;
+      color: #0040ad;
     }
 
     .little-box-info:hover h2,
     .little-box-info:hover h3 {
-      color: #0040AD;
+      color: #0040ad;
     }
 
     .news-box {
       .ul__news-box {
         li {
           a:before {
-            color: #0040AD;
+            color: #0040ad;
           }
         }
       }
     }
 
     .link__news-box:hover {
-      border-color: #0040AD;
-      color: #0040AD !important;
+      border-color: #0040ad;
+      color: #0040ad !important;
+    }
+  }
+
+  /* هاورهای باکس خبری اقتصاد ورزش */
+  .box-sport-6 {
+    .news-menu-box-header {
+      border-top-color: #ff8c00;
+
+      .news-box-right {
+        .news-menu-box-header-tittle {
+          .link__news-menu-box-tittle {
+            color: #ff8c00;
+          }
+          i {
+            color: #ff8c00;
+          }
+        }
+      }
+      .ul__news-menu-box-header {
+        .list-items__news-menu-box-header {
+          .link__news-menu-box-header:hover {
+            color: #ff8c00;
+          }
+        }
+      }
+    }
+    .news-menu-box-default-right-or-left:hover h2,
+    .news-menu-box-default-right-or-left:hover h3 {
+      color: #ff8c00;
+    }
+
+    .little-box-info:hover h2,
+    .little-box-info:hover h3 {
+      color: #ff8c00;
+    }
+
+    .news-box {
+      .ul__news-box {
+        li {
+          a:before {
+            color: #ff8c00;
+          }
+        }
+      }
+    }
+
+    .link__news-box:hover {
+      border-color: #ff8c00;
+      color: #ff8c00 !important;
+    }
+  }
+
+  /* هاورهای باکس خبری اقتصاد خودرو */
+  .box-cars-7 {
+    .news-menu-box-header {
+      border-top-color: #daa520;
+
+      .news-box-right {
+        .news-menu-box-header-tittle {
+          .link__news-menu-box-tittle {
+            color: #daa520;
+          }
+          i {
+            color: #daa520;
+          }
+        }
+      }
+      .ul__news-menu-box-header {
+        .list-items__news-menu-box-header {
+          .link__news-menu-box-header:hover {
+            color: #daa520;
+          }
+        }
+      }
+    }
+    .news-menu-box-default-right-or-left:hover h2,
+    .news-menu-box-default-right-or-left:hover h3 {
+      color: #daa520;
+    }
+
+    .little-box-info:hover h2,
+    .little-box-info:hover h3 {
+      color: #daa520;
+    }
+
+    .news-box {
+      .ul__news-box {
+        li {
+          a:before {
+            color: #daa520;
+          }
+        }
+      }
+    }
+
+    .link__news-box:hover {
+      border-color: #daa520;
+      color: #daa520 !important;
+    }
+  }
+
+  /* هاورهای باکس خبری اقتصاد خودرو */
+  .box-the-way-8 {
+    .news-menu-box-header {
+      border-top-color: #283803;
+
+      .news-box-right {
+        .news-menu-box-header-tittle {
+          .link__news-menu-box-tittle {
+            color: #283803;
+          }
+          i {
+            color: #283803;
+          }
+        }
+      }
+      .ul__news-menu-box-header {
+        .list-items__news-menu-box-header {
+          .link__news-menu-box-header:hover {
+            color: #283803;
+          }
+        }
+      }
+    }
+    .news-menu-box-default-right-or-left:hover h2,
+    .news-menu-box-default-right-or-left:hover h3 {
+      color: #283803;
+    }
+
+    .little-box-info:hover h2,
+    .little-box-info:hover h3 {
+      color: #283803;
+    }
+
+    .news-box {
+      .ul__news-box {
+        li {
+          a:before {
+            color: #283803;
+          }
+        }
+      }
+    }
+
+    .link__news-box:hover {
+      border-color: #283803;
+      color: #283803 !important;
+    }
+  }
+
+  /* هاورهای باکس خبری اقتصاد سبز */
+  .box-green-9 {
+    .news-menu-box-header {
+      border-top-color: #006400;
+
+      .news-box-right {
+        .news-menu-box-header-tittle {
+          .link__news-menu-box-tittle {
+            color: #006400;
+          }
+          i {
+            color: #006400;
+          }
+        }
+      }
+      .ul__news-menu-box-header {
+        .list-items__news-menu-box-header {
+          .link__news-menu-box-header:hover {
+            color: #006400;
+          }
+        }
+      }
+    }
+    .news-menu-box-default-right-or-left:hover h2,
+    .news-menu-box-default-right-or-left:hover h3 {
+      color: #006400;
+    }
+
+    .little-box-info:hover h2,
+    .little-box-info:hover h3 {
+      color: #006400;
+    }
+
+    .news-box {
+      .ul__news-box {
+        li {
+          a:before {
+            color: #006400;
+          }
+        }
+      }
+    }
+
+    .link__news-box:hover {
+      border-color: #006400;
+      color: #006400 !important;
+    }
+  }
+
+  /* هاورهای باکس خبری توریسم و گردشگری */
+  .box-tourism-10 {
+    .news-menu-box-header {
+      border-top-color: #008b8b;
+
+      .news-box-right {
+        .news-menu-box-header-tittle {
+          .link__news-menu-box-tittle {
+            color: #008b8b;
+          }
+          i {
+            color: #008b8b;
+          }
+        }
+      }
+      .ul__news-menu-box-header {
+        .list-items__news-menu-box-header {
+          .link__news-menu-box-header:hover {
+            color: #008b8b;
+          }
+        }
+      }
+    }
+    .news-menu-box-default-right-or-left:hover h2,
+    .news-menu-box-default-right-or-left:hover h3 {
+      color: #008b8b;
+    }
+
+    .little-box-info:hover h2,
+    .little-box-info:hover h3 {
+      color: #008b8b;
+    }
+
+    .news-box {
+      .ul__news-box {
+        li {
+          a:before {
+            color: #008b8b;
+          }
+        }
+      }
+    }
+
+    .link__news-box:hover {
+      border-color: #008b8b;
+      color: #008b8b !important;
+    }
+  }
+
+  /* هاورهای باکس خبری سبک زندگی */
+  .box-life-style-11 {
+    .news-menu-box-header {
+      border-top-color: #c71585;
+
+      .news-box-right {
+        .news-menu-box-header-tittle {
+          .link__news-menu-box-tittle {
+            color: #c71585;
+          }
+          i {
+            color: #c71585;
+          }
+        }
+      }
+      .ul__news-menu-box-header {
+        .list-items__news-menu-box-header {
+          .link__news-menu-box-header:hover {
+            color: #c71585;
+          }
+        }
+      }
+    }
+    .news-menu-box-default-right-or-left:hover h2,
+    .news-menu-box-default-right-or-left:hover h3 {
+      color: #c71585;
+    }
+
+    .little-box-info:hover h2,
+    .little-box-info:hover h3 {
+      color: #c71585;
+    }
+
+    .news-box {
+      .ul__news-box {
+        li {
+          a:before {
+            color: #c71585;
+          }
+        }
+      }
+    }
+
+    .link__news-box:hover {
+      border-color: #c71585;
+      color: #c71585 !important;
+    }
+  }
+
+  /* هاورهای باکس خبری سلامت */
+  .box-health-12 {
+    .news-menu-box-header {
+      border-top-color: #f08080;
+
+      .news-box-right {
+        .news-menu-box-header-tittle {
+          .link__news-menu-box-tittle {
+            color: #f08080;
+          }
+          i {
+            color: #f08080;
+          }
+        }
+      }
+      .ul__news-menu-box-header {
+        .list-items__news-menu-box-header {
+          .link__news-menu-box-header:hover {
+            color: #f08080;
+          }
+        }
+      }
+    }
+    .news-menu-box-default-right-or-left:hover h2,
+    .news-menu-box-default-right-or-left:hover h3 {
+      color: #f08080;
+    }
+
+    .little-box-info:hover h2,
+    .little-box-info:hover h3 {
+      color: #f08080;
+    }
+
+    .news-box {
+      .ul__news-box {
+        li {
+          a:before {
+            color: #f08080;
+          }
+        }
+      }
+    }
+
+    .link__news-box:hover {
+      border-color: #f08080;
+      color: #f08080 !important;
+    }
+  }
+
+  /* هاورهای باکس خبری راهنمای بازار */
+  .box-market-guide-13 {
+    .news-menu-box-header {
+      border-top-color: #ba55d3;
+
+      .news-box-right {
+        .news-menu-box-header-tittle {
+          .link__news-menu-box-tittle {
+            color: #ba55d3;
+          }
+          i {
+            color: #ba55d3;
+          }
+        }
+      }
+      .ul__news-menu-box-header {
+        .list-items__news-menu-box-header {
+          .link__news-menu-box-header:hover {
+            color: #ba55d3;
+          }
+        }
+      }
+    }
+    .news-menu-box-default-right-or-left:hover h2,
+    .news-menu-box-default-right-or-left:hover h3 {
+      color: #ba55d3;
+    }
+
+    .little-box-info:hover h2,
+    .little-box-info:hover h3 {
+      color: #ba55d3;
+    }
+
+    .news-box {
+      .ul__news-box {
+        li {
+          a:before {
+            color: #ba55d3;
+          }
+        }
+      }
+    }
+
+    .link__news-box:hover {
+      border-color: #ba55d3;
+      color: #ba55d3 !important;
+    }
+  }
+
+  /* هاورهای باکس خبری چند رسانه ای */
+  .box-media-14 {
+    .news-menu-box-header {
+      border-top-color: #555;
+
+      .news-box-right {
+        .news-menu-box-header-tittle {
+          .link__news-menu-box-tittle {
+            color: #555;
+          }
+          i {
+            color: #555;
+          }
+        }
+      }
+      .ul__news-menu-box-header {
+        .list-items__news-menu-box-header {
+          .link__news-menu-box-header:hover {
+            color: #222;
+          }
+        }
+      }
+    }
+
+    .news-menu-box-default-right-or-left {
+      .default-right-img:before {
+        font-family: FontAwesome;
+        content: '\f04b';
+        position: absolute;
+        left: 0;
+        bottom: 2px;
+        background: rgba(178,34,34, .8);
+        padding: 8px 6px;
+        font-size: 15px;
+        color: #fff;
+        z-index: 2; 
+      }
+    }
+    .news-menu-box-default-right-or-left:hover h2,
+    .news-menu-box-default-right-or-left:hover h3 {
+      color: #222;
+    }
+
+    .little-box-info {
+      .img-little-box-content::before {
+        font-family: FontAwesome;
+        content: '\f04b';
+        position: absolute;
+        left: 0;
+        bottom: 1.5px;
+        background: rgba(178,34,34, .8);
+        padding: 6px 5px 5px;
+        font-size: 10px;
+        color: #fff;
+        z-index: 2; 
+      }
+
+      .img-background-top::before {
+        background: rgba(255,140,0, .8);
+      }
+      .img-background-sub::before {
+        background: rgba(51,0,204, .8);
+      }
+    }
+
+    .little-box-info:hover h2,
+    .little-box-info:hover h3 {
+      color: #222;
+    }
+
+    .news-box {
+      .ul__news-box {
+        li {
+          a:before {
+            content: "\f04b";
+            font-family: FontAwesome;
+            font-size: 13px;
+            color: #da9696;
+          }
+
+          .link__fist-child::before {
+            content: '\f030';
+            margin-left: 3px;
+            font-family: FontAwesome;
+          }
+
+          .link__last-child::before {
+            content: '\f028';
+            font-size: 11px;
+            margin-left: 3px;
+          }          
+        }
+      }
+    }
+
+    .link__news-box:hover {
+      border-color: #b71818;
+      color: #b71818 !important;
     }
   }
 }

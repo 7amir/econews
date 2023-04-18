@@ -170,7 +170,6 @@ a {
 
 /* شروع دو باکس کوچک زیر عکس فرهنگ  */
 .little-box-info {
-  display: flex;
   background: #fff;
   align-items: center;
   padding: 12px;
@@ -179,15 +178,15 @@ a {
   border: 1px solid #dfdfdd;
   border-right: none;
   border-top: none;
-  background: #fff;
   position: relative;
+  display: block;
 
   .img-little-box-content {
     overflow: hidden;
-    width: 52%;
+    float: right;
 
     .image-little-box {
-      width: 100px;
+      width: 100%;
       transition: all 0.9s ease-in-out;
     }
   }
@@ -200,7 +199,7 @@ a {
 
     h3 {
       padding: 0;
-      margin: 0 0 6px;
+      margin: 0 0 3px;
       font-size: 15px;
       color: #555;
       overflow: hidden;
@@ -214,6 +213,7 @@ a {
       font-weight: bold;
       font-family: nassim;
       border-bottom: 2px solid transparent;
+      line-height: 1.34;
     }
     .h2__padding-top {
       padding-bottom: 22px;
@@ -320,6 +320,7 @@ a {
 
     .default-right-img {
       overflow: hidden;
+      position: relative;
 
       img {
         transition: all 0.9s ease-in-out;
@@ -367,9 +368,13 @@ a {
         padding-left: 0;
         padding-right: 0;
 
-        .image-little-box {
-          transform: scale(1);
+        .img-little-box-content {
+          position: relative;
+          .image-little-box {
+            transform: scale(1);
+          }
         }
+
       }
 
       .the-last-little-box {
