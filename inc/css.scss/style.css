@@ -62,23 +62,23 @@ body {
 
 @font-face {
   font-family: fa-solid;
-  src: url(../font/fa-solid-900.ttf);
+  src: url(/componet/font/fa-solid/fa-solid-900.ttf);
 }
 @font-face {
   font-family: fontawesome;
-  src: url(../font/fontawesome-webfont.ttf);
+  src: url(/componet/font/fontawesome/fontawesome-webfont.ttf);
 }
 @font-face {
   font-family: nassim-bold;
-  src: url(../font/nassim-bold.ttf);
+  src: url(/componet/font/nassim-bold/nassim-bold.ttf);
 }
 @font-face {
   font-family: nassim;
-  src: url(../font/nassim-normal.ttf);
+  src: url(/componet/font/nassim-normal/nassim-normal.ttf);
 }
 @font-face {
   font-family: yekan;
-  src: url(../font/yekan-normal.ttf);
+  src: url(/componet/font/yekan/yekan-normal.ttf);
 }
 i {
   font-size: 11px;
@@ -116,9 +116,13 @@ a {
   padding-left: 1.3%;
 }
 
-.col-4, .col-3, .col-6 {
+.col-4, .col-3 {
   padding-left: 8px;
   padding-right: 8px;
+}
+
+.col-6 {
+  padding: 0;
 }
 
 .no-padding-little-box {
@@ -276,7 +280,7 @@ a {
 /* پایان دو باکس کوچک زیر عکس فرهنگ */
 /*  شروع باکس خبری حاوی منو */
 .news-menu-box {
-  margin-top: 18px;
+  padding: 18px 0;
   /* اولین و آخرین ستون حاوی یک عکس با یک متن در زیر آن */
   /* سه باکس خبری در یک ستون */
   /* باکس حاوی خبرهای تک خطی */
@@ -862,7 +866,7 @@ header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a16:
 
 .main {
   /* قسمت دوم بدنه سایت و قیمت طلا وسکه  */
-  /* هاور های باکس خبری حاوی منو از 1 تا 10 */
+  /* هاور های باکس خبری حاوی منو از 1 تا 15 */
   /* هاورهای باکس خبری پولی- مالی */
   /* هاورهای باکس خبری بازار سزمایه */
   /* هاورهای باکس خبری چهر های شاخص  */
@@ -877,6 +881,7 @@ header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a16:
   /* هاورهای باکس خبری سلامت */
   /* هاورهای باکس خبری راهنمای بازار */
   /* هاورهای باکس خبری چند رسانه ای */
+  /* هاورهای باکس خبری استان ها */
 }
 .main .all-box .tittle-main {
   text-align: right;
@@ -1779,4 +1784,90 @@ header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a16:
 .main .box-media-14 .link__news-box:hover {
   border-color: #b71818;
   color: #b71818 !important;
+}
+.main .box-state-15 .news-menu-box-header {
+  border-top-color: #555;
+}
+.main .box-state-15 .news-menu-box-header .news-box-right .news-menu-box-header-tittle .link__news-menu-box-tittle {
+  color: #555;
+}
+.main .box-state-15 .news-menu-box-header .news-box-right .news-menu-box-header-tittle i {
+  color: #555;
+}
+.main .box-state-15 .news-menu-box-header .ul__news-menu-box-header .list-items__news-menu-box-header .link__news-menu-box-header {
+  font-family: nassim-bold;
+  color: #111;
+}
+.main .box-state-15 .news-menu-box-header .ul__news-menu-box-header .list-items__news-menu-box-header .link__news-menu-box-header:hover {
+  color: #b71818;
+}
+.main .box-state-15 .ul__little-box-info {
+  position: relative;
+  max-height: 297px;
+}
+.main .box-state-15 .ul__little-box-info .list-items__little-box-info {
+  padding: 0;
+}
+.main .box-state-15 .ul__little-box-info .list-items__little-box-info .little-box-info {
+  border: none;
+  background: #333;
+  padding: 10.8px 12px;
+}
+.main .box-state-15 .ul__little-box-info .list-items__little-box-info .little-box-info .box-info-content h2 {
+  font-family: "nassim-bold";
+  color: #fff;
+}
+.main .box-state-15 .ul__little-box-info .list-items__little-box-info .little-box-info:hover h2 {
+  color: #ff8c00;
+}
+.main .box-state-15 .ul__little-box-info .list-items__little-box-info .little-box-info:hover img {
+  transform: scale(1.02);
+}
+.main .box-state-15 .ul__little-box-info .link__text-more {
+  font-size: 1.1em;
+  color: #b71818;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-family: "nassim-bold";
+}
+.main .box-state-15 .ul__little-box-info .link__text-more::after {
+  content: "...";
+}
+.main .box-state-15 .ul__little-box-info .link__text-more:hover {
+  color: #fff;
+}
+.main .box-state-15:hover .news-box-right {
+  margin: 0;
+}
+.main .box-state-15 .iran-map {
+  background: #e5e5e5;
+  height: 295.5px;
+  position: relative;
+}
+.main .box-state-15 .iran-map .select-iran-map {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.main .box-state-15 .iran-map .select-iran-map select {
+  font-size: 12px;
+  font-family: tahoma;
+  box-shadow: inset 0 1px 2px #fff, 0 1px 2px rgba(0, 0, 0, 0.2);
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url(../img/download.png);
+  background-position: 12px, left center;
+  background-repeat: no-repeat, repeat;
+  border-radius: 3px;
+  border: 1px solid #a0a0a0;
+  padding: 8px 10px 9px 29px;
+  outline: 0;
+}
+.main .box-state-15 .iran-map .select-iran-map select:hover {
+  box-shadow: inset 0 1px 2px #fff, 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.main .box-state-15 .iran-map .map {
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

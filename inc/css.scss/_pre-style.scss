@@ -8,28 +8,25 @@ body {
 
 @font-face {
   font-family: fa-solid;
-  src: url(../font/fa-solid-900.ttf);
+  src: url(/componet/font/fa-solid/fa-solid-900.ttf);
 }
 @font-face {
   font-family: fontawesome;
-  src: url(../font/fontawesome-webfont.ttf);
+  src: url(/componet/font/fontawesome/fontawesome-webfont.ttf);
 }
 @font-face {
   font-family: nassim-bold;
-  src: url(../font/nassim-bold.ttf);
+  src: url(/componet/font/nassim-bold/nassim-bold.ttf);
 }
 @font-face {
   font-family: nassim;
-  src: url(../font/nassim-normal.ttf);
+  src: url(/componet/font/nassim-normal/nassim-normal.ttf);
 }
 @font-face {
   font-family: yekan;
-  src: url(../font/yekan-normal.ttf);
+  src: url(/componet/font/yekan/yekan-normal.ttf);
 }
-// .col-4 {
-//   padding: 0 0 0 16px;
 
-// }
 
 i {
   // font: normal normal normal 14px/1 fontawesome;
@@ -62,10 +59,14 @@ a {
   padding-left: 1.3%;
 }
 
-.col-4 , .col-3 , .col-6{
+.col-4 , .col-3 {
   padding-left: 8px;
   padding-right: 8px;
 }
+.col-6 {
+  padding: 0;
+}
+
 .no-padding-little-box {
   padding: 0;
   width: 46.5%;
@@ -234,7 +235,7 @@ a {
 
 /*  شروع باکس خبری حاوی منو */
 .news-menu-box {
-  margin-top: 18px;
+  padding: 18px 0;
   .news-menu-box-header {
     border-top: 3px solid #555;
     padding: 1px 0 10px;

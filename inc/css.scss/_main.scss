@@ -569,7 +569,7 @@
       }
     }
   }
-  /* هاور های باکس خبری حاوی منو از 1 تا 10 */
+  /* هاور های باکس خبری حاوی منو از 1 تا 15 */
   /* هاورهای باکس خبری پولی- مالی */
   .box-money-1 {
     .news-menu-box-header {
@@ -1221,15 +1221,15 @@
     .news-menu-box-default-right-or-left {
       .default-right-img:before {
         font-family: FontAwesome;
-        content: '\f04b';
+        content: "\f04b";
         position: absolute;
         left: 0;
         bottom: 2px;
-        background: rgba(178,34,34, .8);
+        background: rgba(178, 34, 34, 0.8);
         padding: 8px 6px;
         font-size: 15px;
         color: #fff;
-        z-index: 2; 
+        z-index: 2;
       }
     }
     .news-menu-box-default-right-or-left:hover h2,
@@ -1240,22 +1240,22 @@
     .little-box-info {
       .img-little-box-content::before {
         font-family: FontAwesome;
-        content: '\f04b';
+        content: "\f04b";
         position: absolute;
         left: 0;
         bottom: 1.5px;
-        background: rgba(178,34,34, .8);
+        background: rgba(178, 34, 34, 0.8);
         padding: 6px 5px 5px;
         font-size: 10px;
         color: #fff;
-        z-index: 2; 
+        z-index: 2;
       }
 
       .img-background-top::before {
-        background: rgba(255,140,0, .8);
+        background: rgba(255, 140, 0, 0.8);
       }
       .img-background-sub::before {
-        background: rgba(51,0,204, .8);
+        background: rgba(51, 0, 204, 0.8);
       }
     }
 
@@ -1275,16 +1275,16 @@
           }
 
           .link__fist-child::before {
-            content: '\f030';
+            content: "\f030";
             margin-left: 3px;
             font-family: FontAwesome;
           }
 
           .link__last-child::before {
-            content: '\f028';
+            content: "\f028";
             font-size: 11px;
             margin-left: 3px;
-          }          
+          }
         }
       }
     }
@@ -1292,6 +1292,116 @@
     .link__news-box:hover {
       border-color: #b71818;
       color: #b71818 !important;
+    }
+  }
+
+  /* هاورهای باکس خبری استان ها */
+  .box-state-15 {
+    .news-menu-box-header {
+      border-top-color: #555;
+
+      .news-box-right {
+        .news-menu-box-header-tittle {
+          .link__news-menu-box-tittle {
+            color: #555;
+          }
+          i {
+            color: #555;
+          }
+        }
+      }
+      .ul__news-menu-box-header {
+        .list-items__news-menu-box-header {
+          .link__news-menu-box-header {
+            font-family: nassim-bold;
+            color: #111;
+            &:hover {
+              color: #b71818;
+            }
+          }
+        }
+      }
+    }
+
+    .ul__little-box-info {
+      position: relative;
+      max-height: 297px;
+
+      .list-items__little-box-info {
+        padding: 0;
+        .little-box-info {
+          border: none;
+          background: #333;
+          padding: 10.8px 12px;
+
+          .box-info-content {
+            h2 {
+              font-family: "nassim-bold";
+              color: #fff;
+            }
+          }
+          &:hover h2 {
+            color: #ff8c00;
+          }
+
+          &:hover img {
+            transform: scale(1.02);
+          }
+        }
+      }
+
+      .link__text-more {
+        font-size: 1.1em;
+        color: #b71818;
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        font-family: "nassim-bold";
+
+        &::after {
+          content: "...";
+        }
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+
+    &:hover .news-box-right {
+      margin: 0;
+    }
+
+    .iran-map {
+      background: #e5e5e5;
+      height: 295.5px;
+      position: relative;
+
+      .select-iran-map {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        select {
+          font-size: 12px;
+          font-family: tahoma;
+          box-shadow: inset 0 1px 2px #fff, 0 1px 2px rgba(0, 0, 0, 0.2);
+          appearance: none;
+          background-image: url(../img/download.png);
+          background-position: 12px, left center;
+          background-repeat: no-repeat, repeat;
+          border-radius: 3px;
+          border: 1px solid #a0a0a0;
+          padding: 8px 10px 9px 29px;
+          outline: 0;
+
+          &:hover {
+            box-shadow: inset 0 1px 2px #fff, 0 2px 4px rgba(0, 0, 0, 0.2); 
+          }
+        }
+      }
+
+      .map {
+        text-align: center;
+      }
     }
   }
 }
