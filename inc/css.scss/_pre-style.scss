@@ -1,6 +1,7 @@
 body {
   direction: rtl;
   background: #f2f2f2;
+  overflow-x: hidden;
 }
 .container {
   max-width: 1269px;
@@ -63,9 +64,6 @@ a {
   padding-left: 8px;
   padding-right: 8px;
 }
-.col-6 {
-  padding: 0;
-}
 
 .no-padding-little-box {
   padding: 0;
@@ -74,7 +72,90 @@ a {
   margin-top: 7px;
 }
 
+/* شروع نمایش اسلاید یکی بعد هدر و دیگری قبل فوتر */
+.slideshow-box-img {
+  position: relative;
 
+  .link__slideshow {
+    display: block;
+    position: relative;
+    border: 1px solid #dfdfdd;
+    border-right: none;
+    background: #fff;
+    padding: 3px;
+
+    .box-img-slideshow-content {
+      position: relative;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        transition: all 0.9s ease-in-out;
+      }
+
+      &::before {
+        background: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.95) 30%,
+          rgba(0, 0, 0, 0) 100%
+        );
+        content: "";
+        height: 83px;
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+        bottom: 0;
+      }
+    }
+  }
+  .link__slideshow-text {
+    .box-info-slideshow-content {
+      position: absolute;
+      bottom: 3px;
+      left: 3px;
+      right: 3px;
+      color: #fff;
+      padding: 20px;
+      z-index: 1;
+      text-align: right;
+      font-family: nassim;
+
+      h3 {
+        padding: 0;
+        margin: 0 0 6px;
+        font-size: 17px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      h2 {
+        padding: 0;
+        margin: 0;
+        font-size: 30px;
+        font-weight: bold;
+        border-bottom: 2px solid transparent;
+        display: inline-block;
+      }
+    }
+    .badge-style {
+      position: absolute;
+      top: 13px;
+      right: 13px;
+      border-radius: 0;
+      padding: 5px 8px 4px;
+      z-index: 2;
+      font-family: nassim-bold;
+      font-size: 13px;
+      color: #fff;
+      background: #0040ad;
+    }
+  }
+
+  &:hover img{
+    transform: scale(1.02);
+  }
+}
+/* پایان نمایش اسلاید یکی بعد هدر و دیگری قبل فوتر */
 
 /* شروع باکس حاوی اخبار فرهنگ */
 .news-box {

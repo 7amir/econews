@@ -1,0 +1,131 @@
+footer {
+  background-color: #3f3f3f;
+  color: #fff;
+
+  .footer-top {
+    background-color: rgb(26 26 26);
+
+    .link__footer-icon {
+      padding: 9px 0px;
+      display: inline-block;
+
+      i {
+        border-left: 1px solid #777;
+        color: #fff;
+        font-size: 22px;
+        padding: 5px 18px;
+      }
+    }
+
+    /* آب و هوا */
+    .weather {
+      display: inline-block;
+
+      .weather-box-content {
+        display: flex;
+        align-items: end;
+        margin-right: 8px;
+
+        .weather-img {
+          width: 12.1%;
+          position: relative;
+          top: 5px;
+
+          img {
+            width: 100%;
+          }
+        }
+        .weather-text-info {
+          margin: 0px 7px 0 8px;
+          span {
+            font-family: nassim-bold;
+          }
+        }
+
+        .weather-cities {
+          position: relative;
+
+          i {
+            position: absolute;
+            left: 5px;
+            top: 6px;
+            color: #555;
+            font-size: 12px;
+          }
+
+          .select__weather-cities {
+            appearance: none;
+            outline: 0;
+            border: 0;
+            font-family: nassim-bold;
+            padding: 2px 9px 0px 19px;
+            background: transparent;
+            color: #fff;
+            option {
+              background-color: #3f3f3f;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+
+    .form-search {
+      text-align: left;
+      position: relative;
+      margin-left: 10px;
+
+      .input__search {
+        padding: 11px 54px;
+        height: auto;
+        font-size: 19px;
+        color: white;
+        text-align: left;
+        border: none;
+        outline: none;
+        font-family: nassim;
+        font-size: 19px;
+        color: #999;
+        background: none;
+      }
+      i {
+        font-size: 18px;
+        position: absolute;
+        left: 2%;
+        top: 32%;
+      }
+    }
+  }
+
+  .footer-body {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 377px;
+
+    .econews-text {
+      direction: ltr;
+      display: flex;
+      justify-content: center;
+
+      h2,
+      h3 {
+        font-size: 60px;
+        font-weight: bold;
+      }
+      h3 {
+        font-weight: normal;
+      }
+    }
+
+    .footer-icon {
+        position: relative;
+      .link__footer-icon {
+        opacity: 0.8;
+        border-radius: 100%;
+        overflow: hidden;
+        width: 34px;
+        height: 34px;
+        margin: 0 15px;
+      }
+    }
+  }
+}

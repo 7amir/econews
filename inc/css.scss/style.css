@@ -54,6 +54,7 @@ table {
 body {
   direction: rtl;
   background: #f2f2f2;
+  overflow-x: hidden;
 }
 
 .container {
@@ -121,10 +122,6 @@ a {
   padding-right: 8px;
 }
 
-.col-6 {
-  padding: 0;
-}
-
 .no-padding-little-box {
   padding: 0;
   width: 46.5%;
@@ -132,6 +129,79 @@ a {
   margin-top: 7px;
 }
 
+/* شروع نمایش اسلاید یکی بعد هدر و دیگری قبل فوتر */
+.slideshow-box-img {
+  position: relative;
+}
+.slideshow-box-img .link__slideshow {
+  display: block;
+  position: relative;
+  border: 1px solid #dfdfdd;
+  border-right: none;
+  background: #fff;
+  padding: 3px;
+}
+.slideshow-box-img .link__slideshow .box-img-slideshow-content {
+  position: relative;
+  overflow: hidden;
+}
+.slideshow-box-img .link__slideshow .box-img-slideshow-content img {
+  width: 100%;
+  transition: all 0.9s ease-in-out;
+}
+.slideshow-box-img .link__slideshow .box-img-slideshow-content::before {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.95) 30%, rgba(0, 0, 0, 0) 100%);
+  content: "";
+  height: 83px;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  bottom: 0;
+}
+.slideshow-box-img .link__slideshow-text .box-info-slideshow-content {
+  position: absolute;
+  bottom: 3px;
+  left: 3px;
+  right: 3px;
+  color: #fff;
+  padding: 20px;
+  z-index: 1;
+  text-align: right;
+  font-family: nassim;
+}
+.slideshow-box-img .link__slideshow-text .box-info-slideshow-content h3 {
+  padding: 0;
+  margin: 0 0 6px;
+  font-size: 17px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.slideshow-box-img .link__slideshow-text .box-info-slideshow-content h2 {
+  padding: 0;
+  margin: 0;
+  font-size: 30px;
+  font-weight: bold;
+  border-bottom: 2px solid transparent;
+  display: inline-block;
+}
+.slideshow-box-img .link__slideshow-text .badge-style {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  border-radius: 0;
+  padding: 5px 8px 4px;
+  z-index: 2;
+  font-family: nassim-bold;
+  font-size: 13px;
+  color: #fff;
+  background: #0040ad;
+}
+.slideshow-box-img:hover img {
+  transform: scale(1.02);
+}
+
+/* پایان نمایش اسلاید یکی بعد هدر و دیگری قبل فوتر */
 /* شروع باکس حاوی اخبار فرهنگ */
 .news-box {
   text-align: right;
@@ -866,7 +936,7 @@ header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a16:
 
 .main {
   /* قسمت دوم بدنه سایت و قیمت طلا وسکه  */
-  /* هاور های باکس خبری حاوی منو از 1 تا 15 */
+  /* هاور های باکس خبری حاوی منو از 1 تا 16 */
   /* هاورهای باکس خبری پولی- مالی */
   /* هاورهای باکس خبری بازار سزمایه */
   /* هاورهای باکس خبری چهر های شاخص  */
@@ -882,6 +952,7 @@ header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a16:
   /* هاورهای باکس خبری راهنمای بازار */
   /* هاورهای باکس خبری چند رسانه ای */
   /* هاورهای باکس خبری استان ها */
+  /* هاورهای باکس نیازمندی ها */
 }
 .main .all-box .tittle-main {
   text-align: right;
@@ -946,76 +1017,6 @@ header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a16:
 .main .all-box .slideshow {
   margin-right: -7px;
   position: relative;
-}
-.main .all-box .slideshow .slideshow-box-img {
-  position: relative;
-}
-.main .all-box .slideshow .slideshow-box-img .link__slideshow {
-  display: block;
-  position: relative;
-  border: 1px solid #dfdfdd;
-  border-right: none;
-  background: #fff;
-  padding: 3px;
-}
-.main .all-box .slideshow .slideshow-box-img .link__slideshow .box-img-slideshow-content {
-  position: relative;
-  overflow: hidden;
-}
-.main .all-box .slideshow .slideshow-box-img .link__slideshow .box-img-slideshow-content img {
-  width: 100%;
-  transition: all 0.9s ease-in-out;
-}
-.main .all-box .slideshow .slideshow-box-img .link__slideshow .box-img-slideshow-content img:hover {
-  transform: scale(1.02);
-}
-.main .all-box .slideshow .slideshow-box-img .link__slideshow .box-img-slideshow-content::before {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.95) 30%, rgba(0, 0, 0, 0) 100%);
-  content: "";
-  height: 83px;
-  position: absolute;
-  width: 100%;
-  z-index: 1;
-  bottom: 0;
-}
-.main .all-box .slideshow .slideshow-box-img .link__slideshow-text .box-info-slideshow-content {
-  position: absolute;
-  bottom: 3px;
-  left: 3px;
-  right: 3px;
-  color: #fff;
-  padding: 20px;
-  z-index: 1;
-  text-align: right;
-  font-family: nassim;
-}
-.main .all-box .slideshow .slideshow-box-img .link__slideshow-text .box-info-slideshow-content h3 {
-  padding: 0;
-  margin: 0 0 6px;
-  font-size: 17px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.main .all-box .slideshow .slideshow-box-img .link__slideshow-text .box-info-slideshow-content h2 {
-  padding: 0;
-  margin: 0;
-  font-size: 30px;
-  font-weight: bold;
-  border-bottom: 2px solid transparent;
-  display: inline-block;
-}
-.main .all-box .slideshow .slideshow-box-img .link__slideshow-text .badge-style {
-  position: absolute;
-  top: 13px;
-  right: 13px;
-  border-radius: 0;
-  padding: 5px 8px 4px;
-  z-index: 2;
-  font-family: nassim-bold;
-  font-size: 13px;
-  color: #fff;
-  background: #0040ad;
 }
 .main .all-box .noroz {
   max-height: 497px;
@@ -1870,4 +1871,156 @@ header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a16:
 }
 .main .box-state-15 .iran-map .map {
   text-align: center;
+}
+.main .box-need-16 .news-menu-box-header {
+  border-top-color: #cc4129;
+}
+.main .box-need-16 .news-menu-box-header .news-box-right .news-menu-box-header-tittle .link__news-menu-box-tittle {
+  color: #cc4129;
+}
+.main .box-need-16 .news-menu-box-header .news-box-right .news-menu-box-header-tittle i {
+  color: #cc4129;
+}
+.main .box-need-16 .news-menu-box-header .ul__news-menu-box-header .list-items__news-menu-box-header .link__news-menu-box-header:hover {
+  color: #cc4129;
+}
+.main .box-need-16 .news-menu-box-header .news-confing {
+  margin-top: 9px;
+}
+.main .box-need-16 .news-menu-box-header .news-confing .link__news-confing {
+  background: #cc4129;
+  color: #fff;
+  font-family: nassim;
+  padding: 4px 15px;
+}
+.main .box-need-16 .news-menu-box-header .news-confing .link__news-confing i {
+  bottom: -2px;
+  position: relative;
+  margin-left: 4px;
+  font-family: fontawesome;
+  font-size: 17px;
+}
+.main .box-need-16 .news-menu-box-header .news-confing .link__news-confing:hover {
+  background: #333;
+}
+.main .box-need-16 h2 {
+  font-size: 23px !important;
+}
+
+footer {
+  background-color: #3f3f3f;
+  color: #fff;
+}
+footer .footer-top {
+  background-color: rgb(26, 26, 26);
+  /* آب و هوا */
+}
+footer .footer-top .link__footer-icon {
+  padding: 9px 0px;
+  display: inline-block;
+}
+footer .footer-top .link__footer-icon i {
+  border-left: 1px solid #777;
+  color: #fff;
+  font-size: 22px;
+  padding: 5px 18px;
+}
+footer .footer-top .weather {
+  display: inline-block;
+}
+footer .footer-top .weather .weather-box-content {
+  display: flex;
+  align-items: end;
+  margin-right: 8px;
+}
+footer .footer-top .weather .weather-box-content .weather-img {
+  width: 12.1%;
+  position: relative;
+  top: 5px;
+}
+footer .footer-top .weather .weather-box-content .weather-img img {
+  width: 100%;
+}
+footer .footer-top .weather .weather-box-content .weather-text-info {
+  margin: 0px 7px 0 8px;
+}
+footer .footer-top .weather .weather-box-content .weather-text-info span {
+  font-family: nassim-bold;
+}
+footer .footer-top .weather .weather-box-content .weather-cities {
+  position: relative;
+}
+footer .footer-top .weather .weather-box-content .weather-cities i {
+  position: absolute;
+  left: 5px;
+  top: 6px;
+  color: #555;
+  font-size: 12px;
+}
+footer .footer-top .weather .weather-box-content .weather-cities .select__weather-cities {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: 0;
+  border: 0;
+  font-family: nassim-bold;
+  padding: 2px 9px 0px 19px;
+  background: transparent;
+  color: #fff;
+}
+footer .footer-top .weather .weather-box-content .weather-cities .select__weather-cities option {
+  background-color: #3f3f3f;
+  font-size: 14px;
+}
+footer .footer-top .form-search {
+  text-align: left;
+  position: relative;
+  margin-left: 10px;
+}
+footer .footer-top .form-search .input__search {
+  padding: 11px 54px;
+  height: auto;
+  font-size: 19px;
+  color: white;
+  text-align: left;
+  border: none;
+  outline: none;
+  font-family: nassim;
+  font-size: 19px;
+  color: #999;
+  background: none;
+}
+footer .footer-top .form-search i {
+  font-size: 18px;
+  position: absolute;
+  left: 2%;
+  top: 32%;
+}
+footer .footer-body {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 377px;
+}
+footer .footer-body .econews-text {
+  direction: ltr;
+  display: flex;
+  justify-content: center;
+}
+footer .footer-body .econews-text h2,
+footer .footer-body .econews-text h3 {
+  font-size: 60px;
+  font-weight: bold;
+}
+footer .footer-body .econews-text h3 {
+  font-weight: normal;
+}
+footer .footer-body .footer-icon {
+  position: relative;
+}
+footer .footer-body .footer-icon .link__footer-icon {
+  opacity: 0.8;
+  border-radius: 100%;
+  overflow: hidden;
+  width: 34px;
+  height: 34px;
+  margin: 0 15px;
 }/*# sourceMappingURL=style.css.map */
