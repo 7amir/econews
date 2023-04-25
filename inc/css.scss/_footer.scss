@@ -65,6 +65,10 @@ footer {
               background-color: #3f3f3f;
               font-size: 14px;
             }
+
+            &:hover {
+              text-shadow: 0 1px 0 rgba(255, 255, 255, 0.99);
+            }
           }
         }
       }
@@ -98,18 +102,19 @@ footer {
   }
 
   .footer-body {
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 377px;
+    background-color: rgb(14 14 13);
+    padding: 6px 0 15px;
 
     .econews-text {
       direction: ltr;
       display: flex;
       justify-content: center;
+      margin-bottom: 8px;
 
-      h2,
-      h3 {
+      h2 , h3 {
         font-size: 60px;
         font-weight: bold;
+        margin-top: -10px;
       }
       h3 {
         font-weight: normal;
@@ -117,7 +122,10 @@ footer {
     }
 
     .footer-icon {
-        position: relative;
+      text-align: center;
+      direction: ltr;
+      margin: 10px 0 15px;
+
       .link__footer-icon {
         opacity: 0.8;
         border-radius: 100%;
@@ -125,6 +133,106 @@ footer {
         width: 34px;
         height: 34px;
         margin: 0 15px;
+
+        .fa-inverse {
+          color: #fff;
+          font-size: 17px;
+          top: -4px;
+        }
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+
+      /* هاور های آیکون فوتر */
+      .icon-facebook {
+        background: #3b5997;
+        .fa-square {
+          color: #3b5997;
+        }
+      }
+      .icon-twitter {
+        background: #29c5f6;
+        .fa-square {
+          color: #29c5f6;
+        }
+      }
+      .icon-google-plus {
+        background: #d03b2e;
+        .fa-square {
+          color: #d03b2e;
+        }
+      }
+      .icon-linkedin {
+        background: #006dbf;
+        .fa-square {
+          color: #006dbf;
+        }
+      }
+      .icon-instagram {
+        background: #b16c4f;
+        .fa-square {
+          color: #b16c4f;
+        }
+      }
+      .icon-send {
+        background: #2ca5e0;
+        .fa-square {
+          color: #2ca5e0;
+        }
+      }
+    }
+    /* باکس های خبری فوتر */
+    .footer-all-list {
+      display: flex;
+      justify-content: space-around;
+      width: 83%;
+      margin: 0 auto;
+
+      .footer-box-news {
+        width: 18.5%;
+
+        .list__footer-box-news {
+          li {
+            a {
+              display: block;
+              padding: 7px 4px 7px 0px;
+              color: #ddd;
+              font-size: 14px;
+              font-family: nassim;
+
+              &:hover {
+                background: #b71818;
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer-copy-right {
+    background-image: linear-gradient(138deg, #080808, #232323);
+
+    .copy-right {
+      display: flex;
+      align-items: center;
+      height: 56px;
+
+      .link__copy-right {
+        img {
+          margin: 0 0 -6px 13px;
+          display: inline-block;
+          height: 36px;
+          position: relative;
+          top: -5px;
+        }
+      }
+      p {
+        color: #999;
+        font-size: 14px;
+        font-family: nassim-bold;
       }
     }
   }

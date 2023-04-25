@@ -227,6 +227,8 @@
             tbody {
               tr {
                 color: #bd0a0a;
+                height: 40px;
+
                 td {
                   padding: 8px 8px 8px 0;
                   border-top: 1px solid #ddd;
@@ -318,7 +320,7 @@
     .convertor {
       .convert-chart {
         width: 100%;
-        border-top: 3px solid #a4171e;
+        border-top: 3px solid #921313;
         .convert-chart-value {
           .input__convert-chart-value {
             text-align: center;
@@ -327,15 +329,12 @@
             height: 52px;
             font-family: yekan;
             width: 100%;
-            border: 1px solid #921313;
+            border: 1px solid #ccc;
             outline: 0;
-            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
-              0 0 8px rgba(146, 19, 19, 0.6);
             color: #555;
 
             &:focus {
-              border-color: #921313;
-              outline: 0;
+              border: 1px solid #921313;
               box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
                 0 0 8px rgba(146, 19, 19, 0.6);
             }
@@ -368,6 +367,7 @@
             background: #f5f5f5;
             box-shadow: inset 0 0 6px #bbb;
             border: none;
+            outline: none;
             appearance: none;
           }
         }
@@ -524,7 +524,7 @@
     }
   }
 
-  /* هاورهای باکس خبری بازار سزمایه */
+  /* هاورهای باکس خبری بازار سرمایه */
   .box-market-2 {
     .news-menu-box-header {
       border-top-color: #228b22;
@@ -641,6 +641,15 @@
           .link__news-menu-box-header:hover {
             color: #7b68ee;
           }
+        }
+      }
+    }
+    .news-menu-box-default-right-or-left {
+      border: none;
+      .default-gift {
+        img {
+          width: 100%;
+          transform: scale(1);
         }
       }
     }
@@ -817,7 +826,7 @@
     }
   }
 
-  /* هاورهای باکس خبری اقتصاد خودرو */
+  /* هاورهای باکس خبری راه و شهر سازی */
   .box-the-way-8 {
     .news-menu-box-header {
       border-top-color: #283803;
@@ -837,6 +846,15 @@
           .link__news-menu-box-header:hover {
             color: #283803;
           }
+        }
+      }
+    }
+    .news-menu-box-default-right-or-left {
+      border: none;
+      .default-gift {
+        img {
+          width: 100%;
+          transform: scale(1);
         }
       }
     }
@@ -1036,6 +1054,15 @@
         }
       }
     }
+    .news-menu-box-default-right-or-left {
+      border: none;
+      .default-gift {
+        img {
+          width: 100%;
+          transform: scale(1);
+        }
+      }
+    }
     .news-menu-box-default-right-or-left:hover h2,
     .news-menu-box-default-right-or-left:hover h3 {
       color: #f08080;
@@ -1141,7 +1168,7 @@
         content: "\f04b";
         position: absolute;
         left: 0;
-        bottom: 2px;
+        bottom: 0;
         background: rgba(178, 34, 34, 0.8);
         padding: 8px 6px;
         font-size: 15px;
@@ -1236,6 +1263,15 @@
               color: #b71818;
             }
           }
+        }
+      }
+    }
+    .news-menu-box-default-right-or-left {
+      border: none;
+      .default-gift {
+        img {
+          width: 100%;
+          transform: scale(1);
         }
       }
     }

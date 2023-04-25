@@ -83,7 +83,7 @@ body {
 }
 i {
   font-size: 11px;
-  font-family: "FontAwesome";
+  font-family: fontawesome;
   position: relative;
   bottom: -1px;
 }
@@ -423,6 +423,7 @@ a {
 .news-menu-box .news-menu-box-default-right-or-left .default-right-img {
   overflow: hidden;
   position: relative;
+  max-height: 196px;
 }
 .news-menu-box .news-menu-box-default-right-or-left .default-right-img img {
   transition: all 0.9s ease-in-out;
@@ -558,7 +559,8 @@ header .header-top .header-clock .date .form-login form {
   font-size: 13px;
   font-family: nassim;
 }
-header .header-top .header-clock .date .form-login form .input-groups .input-email, header .header-top .header-clock .date .form-login form .input-groups .input-password {
+header .header-top .header-clock .date .form-login form .input-groups .input-email,
+header .header-top .header-clock .date .form-login form .input-groups .input-password {
   border: 1px solid #ccc;
   width: 160px;
   font-size: 13px;
@@ -566,7 +568,8 @@ header .header-top .header-clock .date .form-login form .input-groups .input-ema
   padding: 5.3px 12px;
   color: #555;
 }
-header .header-top .header-clock .date .form-login form .input-groups .input-email:focus, header .header-top .header-clock .date .form-login form .input-groups .input-password:focus {
+header .header-top .header-clock .date .form-login form .input-groups .input-email:focus,
+header .header-top .header-clock .date .form-login form .input-groups .input-password:focus {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(146, 19, 19, 0.6);
   border: 1px solid #921313;
   outline: none;
@@ -742,6 +745,7 @@ header .header__iran-news .logo-and-nav__iran-news .background-img-world .nav__i
   display: flex;
   align-items: center;
   /* هاور آیتم نرخ ها و داده ها */
+  /* هاور آیتم مناطق آزاد */
 }
 header .header__iran-news .logo-and-nav__iran-news .background-img-world .nav__iran-news .ul__iran-news .list-item__iran-news .navbar-hover__list-item__iran-news .dropdown {
   background: #1b1b1b;
@@ -782,12 +786,14 @@ header .header__iran-news .logo-and-nav__iran-news .background-img-world .nav__i
   width: 31%;
 }
 header .header__iran-news .logo-and-nav__iran-news .background-img-world .nav__iran-news .ul__iran-news .list-item__iran-news .navbar-hover__list-item__iran-news .rate-hover {
-  padding-right: 31px;
+  padding: 15px 0;
+  padding-right: 15px;
   background-image: url(../img/header-overlay.png);
 }
 header .header__iran-news .logo-and-nav__iran-news .background-img-world .nav__iran-news .ul__iran-news .list-item__iran-news .navbar-hover__list-item__iran-news .rate-hover .list-item-rate {
   display: inline-block;
   width: 16.4%;
+  margin: 2px 0;
 }
 header .header__iran-news .logo-and-nav__iran-news .background-img-world .nav__iran-news .ul__iran-news .list-item__iran-news .navbar-hover__list-item__iran-news .rate-hover .list-item-rate .fa.fa-chevron-left {
   float: right;
@@ -817,6 +823,27 @@ header .header__iran-news .logo-and-nav__iran-news .background-img-world .nav__i
 }
 header .header__iran-news .logo-and-nav__iran-news .background-img-world .nav__iran-news .ul__iran-news .list-item__iran-news .navbar-hover__list-item__iran-news .rate-hover .list-item-rate .border-none {
   border: none;
+}
+header .header__iran-news .logo-and-nav__iran-news .background-img-world .nav__iran-news .ul__iran-news .list-item__iran-news .navbar-hover__list-item__iran-news .menu-area {
+  text-align: center;
+}
+header .header__iran-news .logo-and-nav__iran-news .background-img-world .nav__iran-news .ul__iran-news .list-item__iran-news .navbar-hover__list-item__iran-news .menu-area .list-item-area {
+  display: inline-block;
+  margin: 0 4px;
+  padding: 15px 0;
+}
+header .header__iran-news .logo-and-nav__iran-news .background-img-world .nav__iran-news .ul__iran-news .list-item__iran-news .navbar-hover__list-item__iran-news .menu-area .list-item-area a {
+  display: block;
+  background: #fff;
+  border-radius: 7px;
+  overflow: hidden;
+  padding: 5px 5px 0 5px;
+}
+header .header__iran-news .logo-and-nav__iran-news .background-img-world .nav__iran-news .ul__iran-news .list-item__iran-news .navbar-hover__list-item__iran-news .menu-area .list-item-area a img {
+  width: 100%;
+}
+header .header__iran-news .logo-and-nav__iran-news .background-img-world .nav__iran-news .ul__iran-news .list-item__iran-news .navbar-hover__list-item__iran-news .menu-area .list-item-area a:hover img {
+  outline: 6px solid #b01927;
 }
 header .header__iran-news .logo-and-nav__iran-news .background-img-world .nav__iran-news .ul__iran-news .list-item__iran-news:hover .navbar-hover__list-item__iran-news {
   opacity: 1;
@@ -938,13 +965,13 @@ header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a16:
   /* قسمت دوم بدنه سایت و قیمت طلا وسکه  */
   /* هاور های باکس خبری حاوی منو از 1 تا 16 */
   /* هاورهای باکس خبری پولی- مالی */
-  /* هاورهای باکس خبری بازار سزمایه */
+  /* هاورهای باکس خبری بازار سرمایه */
   /* هاورهای باکس خبری چهر های شاخص  */
   /* هاورهای باکس خبری اقتصاد دانش بنیان */
   /* هاورهای باکس خبری اقتصاد فرهنگ و هنر */
   /* هاورهای باکس خبری اقتصاد ورزش */
   /* هاورهای باکس خبری اقتصاد خودرو */
-  /* هاورهای باکس خبری اقتصاد خودرو */
+  /* هاورهای باکس خبری راه و شهر سازی */
   /* هاورهای باکس خبری اقتصاد سبز */
   /* هاورهای باکس خبری توریسم و گردشگری */
   /* هاورهای باکس خبری سبک زندگی */
@@ -1162,6 +1189,7 @@ header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a16:
 }
 .main .row-gold-price .section-group .tabpanel .tabpanel-content .tabel__tabpanel tbody tr {
   color: #bd0a0a;
+  height: 40px;
   /* عکس کوچیک شده پرچم کشورها */
 }
 .main .row-gold-price .section-group .tabpanel .tabpanel-content .tabel__tabpanel tbody tr td {
@@ -1234,7 +1262,7 @@ header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a16:
 }
 .main .row-gold-price .convertor .convert-chart {
   width: 100%;
-  border-top: 3px solid #a4171e;
+  border-top: 3px solid #921313;
 }
 .main .row-gold-price .convertor .convert-chart .convert-chart-value .input__convert-chart-value {
   text-align: center;
@@ -1243,14 +1271,12 @@ header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a16:
   height: 52px;
   font-family: yekan;
   width: 100%;
-  border: 1px solid #921313;
+  border: 1px solid #ccc;
   outline: 0;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(146, 19, 19, 0.6);
   color: #555;
 }
 .main .row-gold-price .convertor .convert-chart .convert-chart-value .input__convert-chart-value:focus {
-  border-color: #921313;
-  outline: 0;
+  border: 1px solid #921313;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(146, 19, 19, 0.6);
 }
 .main .row-gold-price .convertor .convert-chart .clear-fix .convert-chart-from,
@@ -1278,6 +1304,7 @@ header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a16:
   background: #f5f5f5;
   box-shadow: inset 0 0 6px #bbb;
   border: none;
+  outline: none;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -1458,6 +1485,13 @@ header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a16:
 .main .box-Knowledge-base-4 .news-menu-box-header .ul__news-menu-box-header .list-items__news-menu-box-header .link__news-menu-box-header:hover {
   color: #7b68ee;
 }
+.main .box-Knowledge-base-4 .news-menu-box-default-right-or-left {
+  border: none;
+}
+.main .box-Knowledge-base-4 .news-menu-box-default-right-or-left .default-gift img {
+  width: 100%;
+  transform: scale(1);
+}
 .main .box-Knowledge-base-4 .news-menu-box-default-right-or-left:hover h2,
 .main .box-Knowledge-base-4 .news-menu-box-default-right-or-left:hover h3 {
   color: #7b68ee;
@@ -1565,6 +1599,13 @@ header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a16:
 }
 .main .box-the-way-8 .news-menu-box-header .ul__news-menu-box-header .list-items__news-menu-box-header .link__news-menu-box-header:hover {
   color: #283803;
+}
+.main .box-the-way-8 .news-menu-box-default-right-or-left {
+  border: none;
+}
+.main .box-the-way-8 .news-menu-box-default-right-or-left .default-gift img {
+  width: 100%;
+  transform: scale(1);
 }
 .main .box-the-way-8 .news-menu-box-default-right-or-left:hover h2,
 .main .box-the-way-8 .news-menu-box-default-right-or-left:hover h3 {
@@ -1674,6 +1715,13 @@ header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a16:
 .main .box-health-12 .news-menu-box-header .ul__news-menu-box-header .list-items__news-menu-box-header .link__news-menu-box-header:hover {
   color: #f08080;
 }
+.main .box-health-12 .news-menu-box-default-right-or-left {
+  border: none;
+}
+.main .box-health-12 .news-menu-box-default-right-or-left .default-gift img {
+  width: 100%;
+  transform: scale(1);
+}
 .main .box-health-12 .news-menu-box-default-right-or-left:hover h2,
 .main .box-health-12 .news-menu-box-default-right-or-left:hover h3 {
   color: #f08080;
@@ -1733,7 +1781,7 @@ header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a16:
   content: "\f04b";
   position: absolute;
   left: 0;
-  bottom: 2px;
+  bottom: 0;
   background: rgba(178, 34, 34, 0.8);
   padding: 8px 6px;
   font-size: 15px;
@@ -1801,6 +1849,13 @@ header .sub-header .nav__sub-header .ul__sub-header .list-item__sub-header .a16:
 }
 .main .box-state-15 .news-menu-box-header .ul__news-menu-box-header .list-items__news-menu-box-header .link__news-menu-box-header:hover {
   color: #b71818;
+}
+.main .box-state-15 .news-menu-box-default-right-or-left {
+  border: none;
+}
+.main .box-state-15 .news-menu-box-default-right-or-left .default-gift img {
+  width: 100%;
+  transform: scale(1);
 }
 .main .box-state-15 .ul__little-box-info {
   position: relative;
@@ -1972,6 +2027,9 @@ footer .footer-top .weather .weather-box-content .weather-cities .select__weathe
   background-color: #3f3f3f;
   font-size: 14px;
 }
+footer .footer-top .weather .weather-box-content .weather-cities .select__weather-cities:hover {
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.99);
+}
 footer .footer-top .form-search {
   text-align: left;
   position: relative;
@@ -1997,24 +2055,29 @@ footer .footer-top .form-search i {
   top: 32%;
 }
 footer .footer-body {
-  background-color: rgba(0, 0, 0, 0.5);
-  height: 377px;
+  background-color: rgb(14, 14, 13);
+  padding: 6px 0 15px;
+  /* باکس های خبری فوتر */
 }
 footer .footer-body .econews-text {
   direction: ltr;
   display: flex;
   justify-content: center;
+  margin-bottom: 8px;
 }
-footer .footer-body .econews-text h2,
-footer .footer-body .econews-text h3 {
+footer .footer-body .econews-text h2, footer .footer-body .econews-text h3 {
   font-size: 60px;
   font-weight: bold;
+  margin-top: -10px;
 }
 footer .footer-body .econews-text h3 {
   font-weight: normal;
 }
 footer .footer-body .footer-icon {
-  position: relative;
+  text-align: center;
+  direction: ltr;
+  margin: 10px 0 15px;
+  /* هاور های آیکون فوتر */
 }
 footer .footer-body .footer-icon .link__footer-icon {
   opacity: 0.8;
@@ -2023,4 +2086,88 @@ footer .footer-body .footer-icon .link__footer-icon {
   width: 34px;
   height: 34px;
   margin: 0 15px;
+}
+footer .footer-body .footer-icon .link__footer-icon .fa-inverse {
+  color: #fff;
+  font-size: 17px;
+  top: -4px;
+}
+footer .footer-body .footer-icon .link__footer-icon:hover {
+  opacity: 1;
+}
+footer .footer-body .footer-icon .icon-facebook {
+  background: #3b5997;
+}
+footer .footer-body .footer-icon .icon-facebook .fa-square {
+  color: #3b5997;
+}
+footer .footer-body .footer-icon .icon-twitter {
+  background: #29c5f6;
+}
+footer .footer-body .footer-icon .icon-twitter .fa-square {
+  color: #29c5f6;
+}
+footer .footer-body .footer-icon .icon-google-plus {
+  background: #d03b2e;
+}
+footer .footer-body .footer-icon .icon-google-plus .fa-square {
+  color: #d03b2e;
+}
+footer .footer-body .footer-icon .icon-linkedin {
+  background: #006dbf;
+}
+footer .footer-body .footer-icon .icon-linkedin .fa-square {
+  color: #006dbf;
+}
+footer .footer-body .footer-icon .icon-instagram {
+  background: #b16c4f;
+}
+footer .footer-body .footer-icon .icon-instagram .fa-square {
+  color: #b16c4f;
+}
+footer .footer-body .footer-icon .icon-send {
+  background: #2ca5e0;
+}
+footer .footer-body .footer-icon .icon-send .fa-square {
+  color: #2ca5e0;
+}
+footer .footer-body .footer-all-list {
+  display: flex;
+  justify-content: space-around;
+  width: 83%;
+  margin: 0 auto;
+}
+footer .footer-body .footer-all-list .footer-box-news {
+  width: 18.5%;
+}
+footer .footer-body .footer-all-list .footer-box-news .list__footer-box-news li a {
+  display: block;
+  padding: 7px 4px 7px 0px;
+  color: #ddd;
+  font-size: 14px;
+  font-family: nassim;
+}
+footer .footer-body .footer-all-list .footer-box-news .list__footer-box-news li a:hover {
+  background: #b71818;
+  color: #fff;
+}
+footer .footer-copy-right {
+  background-image: linear-gradient(138deg, #080808, #232323);
+}
+footer .footer-copy-right .copy-right {
+  display: flex;
+  align-items: center;
+  height: 56px;
+}
+footer .footer-copy-right .copy-right .link__copy-right img {
+  margin: 0 0 -6px 13px;
+  display: inline-block;
+  height: 36px;
+  position: relative;
+  top: -5px;
+}
+footer .footer-copy-right .copy-right p {
+  color: #999;
+  font-size: 14px;
+  font-family: nassim-bold;
 }/*# sourceMappingURL=style.css.map */

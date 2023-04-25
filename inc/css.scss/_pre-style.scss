@@ -30,9 +30,8 @@ body {
 
 
 i {
-  // font: normal normal normal 14px/1 fontawesome;
   font-size: 11px;
-  font-family: "FontAwesome";
+  font-family: fontawesome;
   position: relative;
   bottom: -1px;
 }
@@ -403,6 +402,7 @@ a {
     .default-right-img {
       overflow: hidden;
       position: relative;
+      max-height: 196px;
 
       img {
         transition: all 0.9s ease-in-out;

@@ -74,7 +74,8 @@ header {
             font-family: nassim;
 
             .input-groups {
-              .input-email , .input-password {
+              .input-email,
+              .input-password {
                 border: 1px solid #ccc;
                 width: 160px;
                 font-size: 13px;
@@ -319,12 +320,14 @@ header {
 
                 /* هاور آیتم نرخ ها و داده ها */
                 .rate-hover {
-                  padding-right: 31px;
+                  padding: 15px 0;
+                  padding-right: 15px;
                   background-image: url(../img/header-overlay.png);
 
                   .list-item-rate {
                     display: inline-block;
                     width: 16.4%;
+                    margin: 2px 0;
 
                     .fa.fa-chevron-left {
                       float: right;
@@ -357,6 +360,31 @@ header {
                     }
                     .border-none {
                       border: none;
+                    }
+                  }
+                }
+
+                /* هاور آیتم مناطق آزاد */
+                .menu-area {
+                  text-align: center;
+
+                  .list-item-area {
+                    display: inline-block;
+                    margin: 0 4px;
+                    padding: 15px 0;
+                    a {
+                      display: block;
+                      background: #fff;
+                      border-radius: 7px;
+                      overflow: hidden;
+                      padding: 5px 5px 0 5px;
+
+                      img {
+                        width: 100%;
+                      }
+                      &:hover img {
+                        outline: 6px solid #b01927;
+                      }
                     }
                   }
                 }
