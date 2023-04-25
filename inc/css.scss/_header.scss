@@ -262,7 +262,7 @@ header {
               }
 
               /* هاور آیتم اخبار و رویداد ها */
-              .navbar-hover__list-item__iran-news {
+              .navbar-hover-iran-news {
                 background: #111;
                 position: absolute;
                 width: 100%;
@@ -339,7 +339,7 @@ header {
                       font-family: fontawesome;
                     }
 
-                    .link-rate {
+                    a {
                       text-align: right;
                       padding: 6px 13px 10px;
                       width: 97%;
@@ -368,7 +368,7 @@ header {
                 .menu-area {
                   text-align: center;
 
-                  .list-item-area {
+                  li {
                     display: inline-block;
                     margin: 0 4px;
                     padding: 15px 0;
@@ -389,7 +389,7 @@ header {
                   }
                 }
               }
-              &:hover .navbar-hover__list-item__iran-news {
+              &:hover .navbar-hover-iran-news {
                 opacity: 1;
                 visibility: initial;
               }
