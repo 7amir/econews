@@ -168,9 +168,9 @@
         border: solid #dfdfdd;
         border-width: 0 0 1px 1px;
 
-        .ul__tabpanel {
+        .list__tabpanel {
           padding: 0;
-          .list-item__tabpanel {
+          li {
             width: 50%;
             .link__tabpanel-left,
             .link__tabpanel-right {
@@ -470,15 +470,15 @@
     }
 
     /* کل باکس عکس ها در سمت چپ */
-    .ul__all-img-left {
+    .list__all-img-left {
       margin-top: 28px;
 
-      .list-items__all-img-left {
+      li {
         margin-bottom: 13px;
 
-        .link__all-img-left {
+        a {
           display: block;
-
+          
           img {
             width: 100%;
           }
@@ -491,7 +491,7 @@
   .box-money-1 {
     .news-menu-box-header {
       border-top-color: #483d8b;
-      .ul__news-menu-box-header {
+      .list__news-menu-box-header {
         .list-items__news-menu-box-header {
           .link__news-menu-box-header:hover {
             color: #483d8b;
@@ -509,7 +509,7 @@
     }
 
     .news-box {
-      .ul__news-box {
+      .list__news-box {
         li {
           a:before {
             color: #483d8b;
@@ -539,7 +539,7 @@
           }
         }
       }
-      .ul__news-menu-box-header {
+      .list__news-menu-box-header {
         .list-items__news-menu-box-header {
           .link__news-menu-box-header:hover {
             color: #228b22;
@@ -557,7 +557,7 @@
     }
 
     .news-box {
-      .ul__news-box {
+      .list__news-box {
         li {
           a:before {
             color: #228b22;
@@ -587,7 +587,7 @@
           }
         }
       }
-      .ul__news-menu-box-header {
+      .list__news-menu-box-header {
         .list-items__news-menu-box-header {
           .link__news-menu-box-header:hover {
             color: #7f05a1;
@@ -606,7 +606,7 @@
     }
 
     .news-box {
-      .ul__news-box {
+      .list__news-box {
         li {
           a:before {
             color: #7f05a1;
@@ -636,7 +636,7 @@
           }
         }
       }
-      .ul__news-menu-box-header {
+      .list__news-menu-box-header {
         .list-items__news-menu-box-header {
           .link__news-menu-box-header:hover {
             color: #7b68ee;
@@ -664,7 +664,7 @@
     }
 
     .news-box {
-      .ul__news-box {
+      .list__news-box {
         li {
           a:before {
             color: #7b68ee;
@@ -694,7 +694,7 @@
           }
         }
       }
-      .ul__news-menu-box-header {
+      .list__news-menu-box-header {
         .list-items__news-menu-box-header {
           .link__news-menu-box-header:hover {
             color: #0040ad;
@@ -713,7 +713,7 @@
     }
 
     .news-box {
-      .ul__news-box {
+      .list__news-box {
         li {
           a:before {
             color: #0040ad;
@@ -743,7 +743,7 @@
           }
         }
       }
-      .ul__news-menu-box-header {
+      .list__news-menu-box-header {
         .list-items__news-menu-box-header {
           .link__news-menu-box-header:hover {
             color: #ff8c00;
@@ -762,7 +762,7 @@
     }
 
     .news-box {
-      .ul__news-box {
+      .list__news-box {
         li {
           a:before {
             color: #ff8c00;
@@ -792,7 +792,7 @@
           }
         }
       }
-      .ul__news-menu-box-header {
+      .list__news-menu-box-header {
         .list-items__news-menu-box-header {
           .link__news-menu-box-header:hover {
             color: #daa520;
@@ -811,7 +811,7 @@
     }
 
     .news-box {
-      .ul__news-box {
+      .list__news-box {
         li {
           a:before {
             color: #daa520;
@@ -841,7 +841,7 @@
           }
         }
       }
-      .ul__news-menu-box-header {
+      .list__news-menu-box-header {
         .list-items__news-menu-box-header {
           .link__news-menu-box-header:hover {
             color: #283803;
@@ -869,7 +869,7 @@
     }
 
     .news-box {
-      .ul__news-box {
+      .list__news-box {
         li {
           a:before {
             color: #283803;
@@ -899,7 +899,7 @@
           }
         }
       }
-      .ul__news-menu-box-header {
+      .list__news-menu-box-header {
         .list-items__news-menu-box-header {
           .link__news-menu-box-header:hover {
             color: #006400;
@@ -918,7 +918,7 @@
     }
 
     .news-box {
-      .ul__news-box {
+      .list__news-box {
         li {
           a:before {
             color: #006400;
@@ -948,7 +948,7 @@
           }
         }
       }
-      .ul__news-menu-box-header {
+      .list__news-menu-box-header {
         .list-items__news-menu-box-header {
           .link__news-menu-box-header:hover {
             color: #008b8b;
@@ -967,7 +967,7 @@
     }
 
     .news-box {
-      .ul__news-box {
+      .list__news-box {
         li {
           a:before {
             color: #008b8b;
@@ -997,7 +997,7 @@
           }
         }
       }
-      .ul__news-menu-box-header {
+      .list__news-menu-box-header {
         .list-items__news-menu-box-header {
           .link__news-menu-box-header:hover {
             color: #c71585;
@@ -1016,7 +1016,7 @@
     }
 
     .news-box {
-      .ul__news-box {
+      .list__news-box {
         li {
           a:before {
             color: #c71585;
@@ -1046,7 +1046,7 @@
           }
         }
       }
-      .ul__news-menu-box-header {
+      .list__news-menu-box-header {
         .list-items__news-menu-box-header {
           .link__news-menu-box-header:hover {
             color: #f08080;
@@ -1074,7 +1074,7 @@
     }
 
     .news-box {
-      .ul__news-box {
+      .list__news-box {
         li {
           a:before {
             color: #f08080;
@@ -1104,7 +1104,7 @@
           }
         }
       }
-      .ul__news-menu-box-header {
+      .list__news-menu-box-header {
         .list-items__news-menu-box-header {
           .link__news-menu-box-header:hover {
             color: #ba55d3;
@@ -1123,7 +1123,7 @@
     }
 
     .news-box {
-      .ul__news-box {
+      .list__news-box {
         li {
           a:before {
             color: #ba55d3;
@@ -1153,7 +1153,7 @@
           }
         }
       }
-      .ul__news-menu-box-header {
+      .list__news-menu-box-header {
         .list-items__news-menu-box-header {
           .link__news-menu-box-header:hover {
             color: #222;
@@ -1209,7 +1209,7 @@
     }
 
     .news-box {
-      .ul__news-box {
+      .list__news-box {
         li {
           a:before {
             content: "\f04b";
@@ -1254,7 +1254,7 @@
           }
         }
       }
-      .ul__news-menu-box-header {
+      .list__news-menu-box-header {
         .list-items__news-menu-box-header {
           .link__news-menu-box-header {
             font-family: nassim-bold;
@@ -1276,7 +1276,7 @@
       }
     }
 
-    .ul__little-box-info {
+    .list__little-box-info {
       position: relative;
       max-height: 297px;
 
@@ -1373,7 +1373,7 @@
           }
         }
       }
-      .ul__news-menu-box-header {
+      .list__news-menu-box-header {
         .list-items__news-menu-box-header {
           .link__news-menu-box-header:hover {
             color: #cc4129;

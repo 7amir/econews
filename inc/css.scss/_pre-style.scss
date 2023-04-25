@@ -7,6 +7,7 @@ body {
   max-width: 1269px;
 }
 
+
 @font-face {
   font-family: fa-solid;
   src: url(/componet/font/fa-solid/fa-solid-900.ttf);
@@ -160,7 +161,7 @@ a {
 .news-box {
   text-align: right;
 
-  .ul__news-box {
+  .list__news-box {
     border: solid #dfdfdd;
     border-width: 0 0 1px 1px;
     background: #fff;
@@ -350,7 +351,7 @@ a {
       }
 
       /* منو باکس خبری */
-      .ul__news-menu-box-header {
+      .list__news-menu-box-header {
         .list-items__news-menu-box-header {
           .link__news-menu-box-header {
             color: #333;
@@ -437,7 +438,7 @@ a {
   }
 
   /* سه باکس خبری در یک ستون */
-  .ul__little-box-info {
+  .list__little-box-info {
     background: #fff;
     border: solid #dfdfdd;
     border-width: 0 0 1px 1px;
@@ -466,7 +467,7 @@ a {
   }
 
   /* باکس حاوی خبرهای تک خطی */
-  .ul__news-box {
+  .list__news-box {
     border-top: none;
     margin: 0;
     .link__news-box {

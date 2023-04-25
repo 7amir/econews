@@ -163,10 +163,10 @@ header {
       margin-left: 8px;
 
       .nav__header-top {
-        .ul__header-top {
+        .list__header-top {
           display: flex;
           border-right: 1px solid #ddd;
-          .list-items__header-top {
+          li {
             font-family: nassim-bold;
             font-size: 13px;
             padding: 10.5px 6px;
@@ -237,10 +237,10 @@ header {
         /* منوی هدر خبرگذاری اقتصاد ایران  */
         .nav__iran-news {
           margin-right: -7%;
-          .ul__iran-news {
+          .list__iran-news {
             display: flex;
             margin-right: 6px;
-            .list-item__iran-news {
+            li {
               .link__iran-news {
                 color: #fff;
                 font-size: 18px;
@@ -322,7 +322,7 @@ header {
                 .rate-hover {
                   padding: 15px 0;
                   padding-right: 15px;
-                  background-image: url(../img/header-overlay.png);
+                  background-image: url("../img/header-overlay.png");
 
                   .list-item-rate {
                     display: inline-block;
@@ -409,22 +409,21 @@ header {
   }
 
   /* آخرین هدر همراه لینک های رنگی  */
-  .sub-header {
+  .header-sub {
     background: #dedede;
     height: 36px;
-    .nav__sub-header {
+    .nav__header-sub {
       margin-right: -4px;
       line-height: 28px;
-      .ul__sub-header {
+      .list__header-sub {
         display: flex;
         .fa.fa-bars {
           color: #b01927;
           position: relative;
-          bottom: -10px;
+          bottom: -7px;
           left: 6px;
-          font-family: fontawesome;
         }
-        .list-item__sub-header {
+        li {
           &::after {
             width: 1px;
             content: "";
@@ -436,7 +435,7 @@ header {
             margin-left: 0.7px;
           }
 
-          &:last-child::after {
+          &:last-child::after , &:first-child::after {
             border: none;
           }
           a {
