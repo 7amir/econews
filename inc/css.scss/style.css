@@ -421,6 +421,7 @@ a {
   border-width: 0 0 1px 1px;
   background: #fff;
   padding: 3px;
+  height: 100%;
 }
 .news-menu-box .link__default-img .default-right-img {
   overflow: hidden;
@@ -480,6 +481,7 @@ a {
 .news-menu-box .list__news-box {
   border-top: none;
   margin: 0;
+  height: 100%;
 }
 .news-menu-box .list__news-box .link__news-box {
   padding: 8px 0 !important;
@@ -820,7 +822,7 @@ header .header__iran-news .logo-and-nav__iran-news .background-img-world .nav__i
   background: #b71818;
   color: #fff;
 }
-header .header__iran-news .logo-and-nav__iran-news .background-img-world .nav__iran-news .list__iran-news li .navbar-hover-iran-news .rate-hover .list-item-rate a:hover i {
+header .header__iran-news .logo-and-nav__iran-news .background-img-world .nav__iran-news .list__iran-news li .navbar-hover-iran-news .rate-hover .list-item-rate a:hover .fa.fa-chevron-left {
   color: #fff;
 }
 header .header__iran-news .logo-and-nav__iran-news .background-img-world .nav__iran-news .list__iran-news li .navbar-hover-iran-news .rate-hover .list-item-rate .border-none {
@@ -873,7 +875,7 @@ header .header-sub .nav__header-sub .list__header-sub .fa.fa-bars {
   color: #b01927;
   position: relative;
   bottom: -7px;
-  left: 6px;
+  left: 2px;
 }
 header .header-sub .nav__header-sub .list__header-sub li {
   /* هاور های لینک 1 تا 16 */
@@ -1048,40 +1050,55 @@ header .header-sub .nav__header-sub .list__header-sub li .a16:hover {
 }
 .main .all-box .noroz {
   max-height: 497px;
-  overflow: hidden;
 }
 .main .all-box .noroz .link-noroz img {
   width: 100%;
 }
-.main .all-box .box-tag-a i {
-  color: rebeccapurple;
+.main .all-box .box-tag-a {
+  margin-top: 6px;
+}
+.main .all-box .box-tag-a .sub-tittle i,
+.main .all-box .box-tag-a .sub-tittle .link-tittle-main {
+  color: #b71818;
+}
+.main .all-box .box-tag-a .sub-tittle i:hover,
+.main .all-box .box-tag-a .sub-tittle .link-tittle-main:hover {
+  color: #b71818;
 }
 .main .all-box .box-tag-a .box-tag-content .tag-list {
-  padding: 12px;
+  padding: 12px 12px 8px;
   text-align: justify;
   overflow: hidden;
-  margin: 0 0 6px;
-  border-top: 3px solid red;
+  border-top: 3px solid #c5c5c5;
   background: #fff;
+  height: 176px;
 }
 .main .all-box .box-tag-a .box-tag-content .tag-list li {
-  display: inline-block;
+  display: inline;
 }
 .main .all-box .box-tag-a .box-tag-content .tag-list li a {
   font-size: 15px;
   font-family: nassim;
   color: #254d6b;
+  line-height: 21.42px;
 }
 .main .all-box .box-tag-a .box-tag-content .tag-list li a::after {
   content: " | ";
   color: #bbb;
-  margin: 0 4px;
+  margin: 0 1px;
+}
+.main .all-box .box-tag-a .box-tag-content .tag-list li a:hover {
+  color: #b71818;
+}
+.main .all-box .box-tag-a .box-tag-content .tag-list li:last-child a::after {
+  display: none;
 }
 .main .slideshow-wrapper .navــslideshow-wrapper {
   margin: 17px 0;
 }
 .main .slideshow-wrapper .navــslideshow-wrapper .list__slideshow-wrapper {
   margin: 0 -9px;
+  text-align: center;
 }
 .main .slideshow-wrapper .navــslideshow-wrapper .list__slideshow-wrapper li {
   width: 1%;
@@ -2062,7 +2079,7 @@ header .header-sub .nav__header-sub .list__header-sub li .a16:hover {
 }
 
 footer {
-  background-color: #3f3f3f;
+  background: #3f3f3f;
   color: #fff;
 }
 footer .footer-top {
@@ -2269,4 +2286,79 @@ footer .footer-copy-right .copy-right p {
   color: #999;
   font-size: 14px;
   font-family: nassim-bold;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/* ریسپانسیو در سایز 1200 پیکسل */
+@media only screen and (max-width: 1200px) {
+  .container {
+    max-width: 1040px;
+  }
+  .nav__header-top,
+  .danesh-logo {
+    display: none;
+  }
+  .logo-and-nav__iran-news .logo-econews {
+    width: 23%;
+  }
+  .nav__header-sub {
+    overflow-y: scroll;
+  }
+  .nav__header-sub .list__header-sub {
+    flex-wrap: wrap;
+    height: 36px;
+  }
+  .list__news-box {
+    overflow: hidden;
+    height: 401px;
+  }
+  .tag-list {
+    height: 127px !important;
+  }
+}
+/* ریسپانسیو در سایز 992 پیکسل */
+@media only screen and (max-width: 992px) {
+  .container {
+    max-width: 900px;
+    max-width: 840px;
+  }
+  .header__iran-news {
+    height: 50px !important;
+    overflow: hidden;
+  }
+  .header__iran-news .nav__iran-news-red {
+    display: none;
+  }
+  .header__iran-news .taggle-menu {
+    padding: 8px 20px;
+    display: flex;
+    align-items: flex-start;
+  }
+  .header__iran-news .taggle-menu .btn__taggle {
+    background: none;
+    border: 1px solid black;
+    padding: 6px 13px;
+  }
+  .header__iran-news .taggle-menu .btn__taggle i {
+    font-size: 21px;
+    color: #fff;
+  }
+  .header__iran-news .taggle-menu .logo-header {
+    width: 13%;
+    position: relative;
+    top: -3px;
+    margin-right: 16px;
+  }
+  .header__iran-news .taggle-menu .logo-header img {
+    width: 100%;
+  }
+  .none-col-3 {
+    display: none;
+  }
+}
+/* ریسپانسیو در سایز 768 پیکسل */
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 736px;
+  }
+}
+/* ریسپانسیو در سایز 576 پیکسل *//*# sourceMappingURL=style.css.map */

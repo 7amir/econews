@@ -354,7 +354,7 @@ header {
                         background: #b71818;
                         color: #fff;
                       }
-                      &:hover i {
+                      &:hover .fa.fa-chevron-left {
                         color: #fff;
                       }
                     }
@@ -421,7 +421,7 @@ header {
           color: #b01927;
           position: relative;
           bottom: -7px;
-          left: 6px;
+          left: 2px;
         }
         li {
           &::after {

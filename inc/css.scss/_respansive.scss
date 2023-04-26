@@ -1,0 +1,92 @@
+/* ریسپانسیو در سایز 1200 پیکسل */
+@media only screen and (max-width: 1200px) {
+  .container {
+    max-width: 1040px;
+  }
+  .nav__header-top,
+  .danesh-logo {
+    display: none;
+  }
+  .logo-and-nav__iran-news {
+    .logo-econews {
+      width: 23%;
+    }
+  }
+  .nav__header-sub {
+    overflow-y: scroll;
+
+    .list__header-sub {
+      flex-wrap: wrap;
+      height: 36px;
+    }
+  }
+  .list__news-box {
+    overflow: hidden;
+    height: 401px;
+  }
+  .tag-list {
+    height: 127px !important;
+  }
+
+//   .slideshow-box-img .link__slideshow .box-img-slideshow-content img {
+//     width: auto;
+//   }
+}
+
+/* ریسپانسیو در سایز 992 پیکسل */
+@media only screen and (max-width: 992px) {
+  .container {
+    max-width: 900px;
+    max-width: 840px;
+  }
+  .header__iran-news {
+    height: 50px !important;
+    overflow: hidden;
+
+    .nav__iran-news-red {
+      display: none;
+    }
+
+    .taggle-menu {
+      padding: 8px 20px;
+      display: flex;
+      align-items: flex-start;
+
+      .btn__taggle {
+        background: none;
+        border: 1px solid black;
+        padding: 6px 13px;
+        i {
+          font-size: 21px;
+          color: #fff;
+        }
+      }
+      .logo-header {
+        width: 13%;
+        position: relative;
+        top: -3px;
+        margin-right: 16px;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .none-col-3 {
+    display: none;
+  }
+}
+
+/* ریسپانسیو در سایز 768 پیکسل */
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 736px;
+  }
+}
+
+/* ریسپانسیو در سایز 576 پیکسل */
+@media only screen and (max-width: 576px) {
+  .container {
+  }
+}

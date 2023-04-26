@@ -398,6 +398,7 @@ a {
     border-width: 0 0 1px 1px;
     background: #fff;
     padding: 3px;
+    height: 100%;
 
     .default-right-img {
       overflow: hidden;
@@ -468,6 +469,7 @@ a {
   .list__news-box {
     border-top: none;
     margin: 0;
+    height: 100%;
     .link__news-box {
       padding: 8px 0 !important;
     }

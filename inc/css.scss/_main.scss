@@ -70,7 +70,6 @@
     }
     .noroz {
       max-height: 497px;
-      overflow: hidden;
       .link-noroz {
         img {
           width: 100%;
@@ -79,30 +78,46 @@
     }
 
     .box-tag-a {
-      i {
-        color: rebeccapurple;
+      margin-top: 6px;
+
+      .sub-tittle {
+        i,
+        .link-tittle-main {
+          color: #b71818;
+
+          &:hover {
+            color: #b71818;
+          }
+        }
       }
       .box-tag-content {
         .tag-list {
-          padding: 12px;
+          padding: 12px 12px 8px;
           text-align: justify;
           overflow: hidden;
-          margin: 0 0 6px;
-          border-top: 3px solid red;
+          border-top: 3px solid #c5c5c5;
           background: #fff;
+          height: 176px;
           li {
-            display: inline-block;
+            display: inline;
 
             a {
               font-size: 15px;
               font-family: nassim;
               color: #254d6b;
+              line-height: 21.42px;
 
               &::after {
                 content: " | ";
                 color: #bbb;
-                margin: 0 4px;
+                margin: 0 1px;
               }
+              &:hover {
+                color: #b71818;
+              }
+            }
+            &:last-child a::after {
+              display: none;
             }
           }
         }
@@ -115,6 +130,7 @@
       margin: 17px 0;
       .list__slideshow-wrapper {
         margin: 0 -9px;
+        text-align: center;
         li {
           width: 1%;
           display: table-cell;
