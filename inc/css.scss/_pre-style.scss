@@ -319,24 +319,24 @@ a {
   .news-menu-box-header {
     border-top: 3px solid #555;
     padding: 1px 0 10px;
-    display: flex;
-    justify-content: space-between;
 
-    .news-box-right {
-      display: flex;
-      align-items: center;
+    .list-meun-content {
+      margin-top: 10px;
+      overflow: hidden;
+      height: 23px;
       transition: all 0.3s ease-in-out;
-      margin-right: -7px;
 
       .news-menu-box-header-tittle {
+        display: inline-block;
+
         .link__news-menu-box-tittle {
           color: #483d8b;
           font-family: nassim-bold;
           font-size: 20px;
-
+  
           i {
             font-size: 16px;
-            margin-left: 8px;
+            margin: 0 0 0 8px;
             position: relative;
             bottom: -2px;
           }
@@ -349,10 +349,10 @@ a {
           color: #483d8b;
         }
       }
-
-      /* منو باکس خبری */
       .list__news-menu-box-header {
+        display: inline;
         li {
+          display: inline-block;
           a {
             color: #333;
             font-size: 17px;
@@ -362,34 +362,37 @@ a {
         }
       }
     }
+  /* ایکون تنظیمات */
+  .sittings {
+    display: flex;
+    margin-top: 5px;
+    justify-content: left;
 
-    /* ایکون تنظیمات */
-    .sittings {
-      display: flex;
-      margin-top: 5px;
-      .sitting-box {
-        a {
-          color: #666;
-          padding: 6px 14.5px 8px;
-          background: #e0e0e0;
-          margin-right: 6px;
-          display: inline-block;
+    .sitting-box {
+      a {
+        color: #666;
+        padding: 6px 14.5px 8px;
+        background: #e0e0e0;
+        margin-right: 6px;
+        display: inline-block;
 
-          i {
-            font-size: 16px;
-          }
-
-          &:hover {
-            background: #333;
-            color: #fff;
-          }
+        i {
+          font-size: 16px;
         }
-        .rss-orang-color:hover {
-          background: #f90;
+
+        &:hover {
+          background: #333;
+          color: #fff;
         }
+      }
+      .rss-orang-color:hover {
+        background: #f90;
       }
     }
   }
+  }
+
+
 
   /* اولین و آخرین ستون حاوی یک عکس با یک متن در زیر آن */
   .link__default-img {
@@ -480,3 +483,90 @@ a {
   }
 }
 /*  پایان باکس خبری حاوی منو */
+
+
+  // aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+  .news-menu-box {
+    .news-menu-box-header {
+      border-top: 3px solid #555;
+      padding: 1px 0 10px;
+
+      .list-meun-content {
+        margin-top: 10px;
+        overflow: hidden;
+        height: 23px;
+        transition: all 0.3s ease-in-out;
+
+        .news-menu-box-header-tittle {
+          display: inline-block;
+  
+          .link__news-menu-box-tittle {
+            color: #483d8b;
+            font-family: nassim-bold;
+            font-size: 20px;
+    
+            i {
+              font-size: 16px;
+              margin: 0 0 0 8px;
+              position: relative;
+              bottom: -2px;
+            }
+          }
+          i {
+            font-size: 14px;
+            margin: 0 7px;
+            position: relative;
+            bottom: -2px;
+            color: #483d8b;
+          }
+        }
+        .list__news-menu-box-header {
+          display: inline;
+          li {
+            display: inline-block;
+            a {
+              color: #333;
+              font-size: 17px;
+              font-family: "nassim";
+              padding: 10px 8px;
+            }
+          }
+        }
+      }
+    /* ایکون تنظیمات */
+    .sittings {
+      display: flex;
+      margin-top: 5px;
+      justify-content: left;
+
+      .sitting-box {
+        a {
+          color: #666;
+          padding: 6px 14.5px 8px;
+          background: #e0e0e0;
+          margin-right: 6px;
+          display: inline-block;
+
+          i {
+            font-size: 16px;
+          }
+
+          &:hover {
+            background: #333;
+            color: #fff;
+          }
+        }
+        .rss-orang-color:hover {
+          background: #f90;
+        }
+      }
+    }
+    }
+
+    &:hover .list-meun-content {
+      margin-right: 5px;
+    }
+  }
+
+
+  // zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz

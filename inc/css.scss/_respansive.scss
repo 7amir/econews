@@ -1,7 +1,7 @@
 /* ریسپانسیو در سایز 1200 پیکسل */
 @media only screen and (max-width: 1200px) {
   .container {
-    max-width: 1040px;
+    max-width: 1014px;
   }
   .nav__header-top,
   .danesh-logo {
@@ -28,16 +28,16 @@
     height: 127px !important;
   }
 
-//   .slideshow-box-img .link__slideshow .box-img-slideshow-content img {
-//     width: auto;
-//   }
+  .tittle-td {
+    font-size: 13px !important;
+  }
 }
 
 /* ریسپانسیو در سایز 992 پیکسل */
 @media only screen and (max-width: 992px) {
   .container {
     max-width: 900px;
-    max-width: 840px;
+    max-width: 736px;
   }
   .header__iran-news {
     height: 50px !important;
@@ -62,7 +62,7 @@
         }
       }
       .logo-header {
-        width: 13%;
+        width: 120px;
         position: relative;
         top: -3px;
         margin-right: 16px;
@@ -73,8 +73,19 @@
       }
     }
   }
-  .none-col-3 {
-    display: none;
+  .tittle-td {
+    font-size: 13px !important;
+  }
+
+  .little-box-info {
+    .box-info-content {
+      h3 {
+        font-size: 13px;
+      }
+      h2 {
+        font-size: 14px;
+      }
+    }
   }
 }
 

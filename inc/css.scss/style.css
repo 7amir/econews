@@ -359,36 +359,42 @@ a {
 .news-menu-box .news-menu-box-header {
   border-top: 3px solid #555;
   padding: 1px 0 10px;
-  display: flex;
-  justify-content: space-between;
   /* ایکون تنظیمات */
 }
-.news-menu-box .news-menu-box-header .news-box-right {
-  display: flex;
-  align-items: center;
+.news-menu-box .news-menu-box-header .list-meun-content {
+  margin-top: 10px;
+  overflow: hidden;
+  height: 23px;
   transition: all 0.3s ease-in-out;
-  margin-right: -7px;
-  /* منو باکس خبری */
 }
-.news-menu-box .news-menu-box-header .news-box-right .news-menu-box-header-tittle .link__news-menu-box-tittle {
+.news-menu-box .news-menu-box-header .list-meun-content .news-menu-box-header-tittle {
+  display: inline-block;
+}
+.news-menu-box .news-menu-box-header .list-meun-content .news-menu-box-header-tittle .link__news-menu-box-tittle {
   color: #483d8b;
   font-family: nassim-bold;
   font-size: 20px;
 }
-.news-menu-box .news-menu-box-header .news-box-right .news-menu-box-header-tittle .link__news-menu-box-tittle i {
+.news-menu-box .news-menu-box-header .list-meun-content .news-menu-box-header-tittle .link__news-menu-box-tittle i {
   font-size: 16px;
-  margin-left: 8px;
+  margin: 0 0 0 8px;
   position: relative;
   bottom: -2px;
 }
-.news-menu-box .news-menu-box-header .news-box-right .news-menu-box-header-tittle i {
+.news-menu-box .news-menu-box-header .list-meun-content .news-menu-box-header-tittle i {
   font-size: 14px;
   margin: 0 7px;
   position: relative;
   bottom: -2px;
   color: #483d8b;
 }
-.news-menu-box .news-menu-box-header .news-box-right .list__news-menu-box-header li a {
+.news-menu-box .news-menu-box-header .list-meun-content .list__news-menu-box-header {
+  display: inline;
+}
+.news-menu-box .news-menu-box-header .list-meun-content .list__news-menu-box-header li {
+  display: inline-block;
+}
+.news-menu-box .news-menu-box-header .list-meun-content .list__news-menu-box-header li a {
   color: #333;
   font-size: 17px;
   font-family: "nassim";
@@ -397,6 +403,7 @@ a {
 .news-menu-box .news-menu-box-header .sittings {
   display: flex;
   margin-top: 5px;
+  justify-content: left;
 }
 .news-menu-box .news-menu-box-header .sittings .sitting-box a {
   color: #666;
@@ -491,6 +498,76 @@ a {
 }
 
 /*  پایان باکس خبری حاوی منو */
+.news-menu-box .news-menu-box-header {
+  border-top: 3px solid #555;
+  padding: 1px 0 10px;
+  /* ایکون تنظیمات */
+}
+.news-menu-box .news-menu-box-header .list-meun-content {
+  margin-top: 10px;
+  overflow: hidden;
+  height: 23px;
+  transition: all 0.3s ease-in-out;
+}
+.news-menu-box .news-menu-box-header .list-meun-content .news-menu-box-header-tittle {
+  display: inline-block;
+}
+.news-menu-box .news-menu-box-header .list-meun-content .news-menu-box-header-tittle .link__news-menu-box-tittle {
+  color: #483d8b;
+  font-family: nassim-bold;
+  font-size: 20px;
+}
+.news-menu-box .news-menu-box-header .list-meun-content .news-menu-box-header-tittle .link__news-menu-box-tittle i {
+  font-size: 16px;
+  margin: 0 0 0 8px;
+  position: relative;
+  bottom: -2px;
+}
+.news-menu-box .news-menu-box-header .list-meun-content .news-menu-box-header-tittle i {
+  font-size: 14px;
+  margin: 0 7px;
+  position: relative;
+  bottom: -2px;
+  color: #483d8b;
+}
+.news-menu-box .news-menu-box-header .list-meun-content .list__news-menu-box-header {
+  display: inline;
+}
+.news-menu-box .news-menu-box-header .list-meun-content .list__news-menu-box-header li {
+  display: inline-block;
+}
+.news-menu-box .news-menu-box-header .list-meun-content .list__news-menu-box-header li a {
+  color: #333;
+  font-size: 17px;
+  font-family: "nassim";
+  padding: 10px 8px;
+}
+.news-menu-box .news-menu-box-header .sittings {
+  display: flex;
+  margin-top: 5px;
+  justify-content: left;
+}
+.news-menu-box .news-menu-box-header .sittings .sitting-box a {
+  color: #666;
+  padding: 6px 14.5px 8px;
+  background: #e0e0e0;
+  margin-right: 6px;
+  display: inline-block;
+}
+.news-menu-box .news-menu-box-header .sittings .sitting-box a i {
+  font-size: 16px;
+}
+.news-menu-box .news-menu-box-header .sittings .sitting-box a:hover {
+  background: #333;
+  color: #fff;
+}
+.news-menu-box .news-menu-box-header .sittings .sitting-box .rss-orang-color:hover {
+  background: #f90;
+}
+.news-menu-box:hover .list-meun-content {
+  margin-right: 5px;
+}
+
 header {
   /* هدر با لوگوی خبرگذاری اقتصاد ایران */
   /* آخرین هدر همراه لینک های رنگی  */
@@ -1471,10 +1548,10 @@ header .header-sub .nav__header-sub .list__header-sub li .a16:hover {
 .main .box-market-2 .news-menu-box-header {
   border-top-color: #228b22;
 }
-.main .box-market-2 .news-menu-box-header .news-box-right .news-menu-box-header-tittle .link__news-menu-box-tittle {
+.main .box-market-2 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle .link__news-menu-box-tittle {
   color: #228b22;
 }
-.main .box-market-2 .news-menu-box-header .news-box-right .news-menu-box-header-tittle i {
+.main .box-market-2 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle i {
   color: #228b22;
 }
 .main .box-market-2 .news-menu-box-header .list__news-menu-box-header li a:hover {
@@ -1501,10 +1578,10 @@ header .header-sub .nav__header-sub .list__header-sub li .a16:hover {
 .main .box-face-3 .news-menu-box-header {
   border-top-color: #7f05a1;
 }
-.main .box-face-3 .news-menu-box-header .news-box-right .news-menu-box-header-tittle .link__news-menu-box-tittle {
+.main .box-face-3 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle .link__news-menu-box-tittle {
   color: #7f05a1;
 }
-.main .box-face-3 .news-menu-box-header .news-box-right .news-menu-box-header-tittle i {
+.main .box-face-3 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle i {
   color: #7f05a1;
 }
 .main .box-face-3 .news-menu-box-header .list__news-menu-box-header li a:hover {
@@ -1532,10 +1609,10 @@ header .header-sub .nav__header-sub .list__header-sub li .a16:hover {
 .main .box-Knowledge-base-4 .news-menu-box-header {
   border-top-color: #7b68ee;
 }
-.main .box-Knowledge-base-4 .news-menu-box-header .news-box-right .news-menu-box-header-tittle .link__news-menu-box-tittle {
+.main .box-Knowledge-base-4 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle .link__news-menu-box-tittle {
   color: #7b68ee;
 }
-.main .box-Knowledge-base-4 .news-menu-box-header .news-box-right .news-menu-box-header-tittle i {
+.main .box-Knowledge-base-4 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle i {
   color: #7b68ee;
 }
 .main .box-Knowledge-base-4 .news-menu-box-header .list__news-menu-box-header li a:hover {
@@ -1570,10 +1647,10 @@ header .header-sub .nav__header-sub .list__header-sub li .a16:hover {
 .main .box-art-5 .news-menu-box-header {
   border-top-color: #0040ad;
 }
-.main .box-art-5 .news-menu-box-header .news-box-right .news-menu-box-header-tittle .link__news-menu-box-tittle {
+.main .box-art-5 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle .link__news-menu-box-tittle {
   color: #0040ad;
 }
-.main .box-art-5 .news-menu-box-header .news-box-right .news-menu-box-header-tittle i {
+.main .box-art-5 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle i {
   color: #0040ad;
 }
 .main .box-art-5 .news-menu-box-header .list__news-menu-box-header li a:hover {
@@ -1601,10 +1678,10 @@ header .header-sub .nav__header-sub .list__header-sub li .a16:hover {
 .main .box-sport-6 .news-menu-box-header {
   border-top-color: #ff8c00;
 }
-.main .box-sport-6 .news-menu-box-header .news-box-right .news-menu-box-header-tittle .link__news-menu-box-tittle {
+.main .box-sport-6 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle .link__news-menu-box-tittle {
   color: #ff8c00;
 }
-.main .box-sport-6 .news-menu-box-header .news-box-right .news-menu-box-header-tittle i {
+.main .box-sport-6 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle i {
   color: #ff8c00;
 }
 .main .box-sport-6 .news-menu-box-header .list__news-menu-box-header li a:hover {
@@ -1632,10 +1709,10 @@ header .header-sub .nav__header-sub .list__header-sub li .a16:hover {
 .main .box-cars-7 .news-menu-box-header {
   border-top-color: #daa520;
 }
-.main .box-cars-7 .news-menu-box-header .news-box-right .news-menu-box-header-tittle .link__news-menu-box-tittle {
+.main .box-cars-7 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle .link__news-menu-box-tittle {
   color: #daa520;
 }
-.main .box-cars-7 .news-menu-box-header .news-box-right .news-menu-box-header-tittle i {
+.main .box-cars-7 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle i {
   color: #daa520;
 }
 .main .box-cars-7 .news-menu-box-header .list__news-menu-box-header li a:hover {
@@ -1663,10 +1740,10 @@ header .header-sub .nav__header-sub .list__header-sub li .a16:hover {
 .main .box-the-way-8 .news-menu-box-header {
   border-top-color: #283803;
 }
-.main .box-the-way-8 .news-menu-box-header .news-box-right .news-menu-box-header-tittle .link__news-menu-box-tittle {
+.main .box-the-way-8 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle .link__news-menu-box-tittle {
   color: #283803;
 }
-.main .box-the-way-8 .news-menu-box-header .news-box-right .news-menu-box-header-tittle i {
+.main .box-the-way-8 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle i {
   color: #283803;
 }
 .main .box-the-way-8 .news-menu-box-header .list__news-menu-box-header li a:hover {
@@ -1701,10 +1778,10 @@ header .header-sub .nav__header-sub .list__header-sub li .a16:hover {
 .main .box-green-9 .news-menu-box-header {
   border-top-color: #006400;
 }
-.main .box-green-9 .news-menu-box-header .news-box-right .news-menu-box-header-tittle .link__news-menu-box-tittle {
+.main .box-green-9 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle .link__news-menu-box-tittle {
   color: #006400;
 }
-.main .box-green-9 .news-menu-box-header .news-box-right .news-menu-box-header-tittle i {
+.main .box-green-9 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle i {
   color: #006400;
 }
 .main .box-green-9 .news-menu-box-header .list__news-menu-box-header li a:hover {
@@ -1732,10 +1809,10 @@ header .header-sub .nav__header-sub .list__header-sub li .a16:hover {
 .main .box-tourism-10 .news-menu-box-header {
   border-top-color: #008b8b;
 }
-.main .box-tourism-10 .news-menu-box-header .news-box-right .news-menu-box-header-tittle .link__news-menu-box-tittle {
+.main .box-tourism-10 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle .link__news-menu-box-tittle {
   color: #008b8b;
 }
-.main .box-tourism-10 .news-menu-box-header .news-box-right .news-menu-box-header-tittle i {
+.main .box-tourism-10 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle i {
   color: #008b8b;
 }
 .main .box-tourism-10 .news-menu-box-header .list__news-menu-box-header li a:hover {
@@ -1763,10 +1840,10 @@ header .header-sub .nav__header-sub .list__header-sub li .a16:hover {
 .main .box-life-style-11 .news-menu-box-header {
   border-top-color: #c71585;
 }
-.main .box-life-style-11 .news-menu-box-header .news-box-right .news-menu-box-header-tittle .link__news-menu-box-tittle {
+.main .box-life-style-11 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle .link__news-menu-box-tittle {
   color: #c71585;
 }
-.main .box-life-style-11 .news-menu-box-header .news-box-right .news-menu-box-header-tittle i {
+.main .box-life-style-11 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle i {
   color: #c71585;
 }
 .main .box-life-style-11 .news-menu-box-header .list__news-menu-box-header li a:hover {
@@ -1794,10 +1871,10 @@ header .header-sub .nav__header-sub .list__header-sub li .a16:hover {
 .main .box-health-12 .news-menu-box-header {
   border-top-color: #f08080;
 }
-.main .box-health-12 .news-menu-box-header .news-box-right .news-menu-box-header-tittle .link__news-menu-box-tittle {
+.main .box-health-12 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle .link__news-menu-box-tittle {
   color: #f08080;
 }
-.main .box-health-12 .news-menu-box-header .news-box-right .news-menu-box-header-tittle i {
+.main .box-health-12 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle i {
   color: #f08080;
 }
 .main .box-health-12 .news-menu-box-header .list__news-menu-box-header li a:hover {
@@ -1832,10 +1909,10 @@ header .header-sub .nav__header-sub .list__header-sub li .a16:hover {
 .main .box-market-guide-13 .news-menu-box-header {
   border-top-color: #ba55d3;
 }
-.main .box-market-guide-13 .news-menu-box-header .news-box-right .news-menu-box-header-tittle .link__news-menu-box-tittle {
+.main .box-market-guide-13 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle .link__news-menu-box-tittle {
   color: #ba55d3;
 }
-.main .box-market-guide-13 .news-menu-box-header .news-box-right .news-menu-box-header-tittle i {
+.main .box-market-guide-13 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle i {
   color: #ba55d3;
 }
 .main .box-market-guide-13 .news-menu-box-header .list__news-menu-box-header li a:hover {
@@ -1863,10 +1940,10 @@ header .header-sub .nav__header-sub .list__header-sub li .a16:hover {
 .main .box-media-14 .news-menu-box-header {
   border-top-color: #555;
 }
-.main .box-media-14 .news-menu-box-header .news-box-right .news-menu-box-header-tittle .link__news-menu-box-tittle {
+.main .box-media-14 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle .link__news-menu-box-tittle {
   color: #555;
 }
-.main .box-media-14 .news-menu-box-header .news-box-right .news-menu-box-header-tittle i {
+.main .box-media-14 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle i {
   color: #555;
 }
 .main .box-media-14 .news-menu-box-header .list__news-menu-box-header li a:hover {
@@ -1936,10 +2013,10 @@ header .header-sub .nav__header-sub .list__header-sub li .a16:hover {
 .main .box-state-15 .news-menu-box-header {
   border-top-color: #555;
 }
-.main .box-state-15 .news-menu-box-header .news-box-right .news-menu-box-header-tittle .link__news-menu-box-tittle {
+.main .box-state-15 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle .link__news-menu-box-tittle {
   color: #555;
 }
-.main .box-state-15 .news-menu-box-header .news-box-right .news-menu-box-header-tittle i {
+.main .box-state-15 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle i {
   color: #555;
 }
 .main .box-state-15 .news-menu-box-header .list__news-menu-box-header li a {
@@ -2046,10 +2123,10 @@ header .header-sub .nav__header-sub .list__header-sub li .a16:hover {
 .main .box-need-16 .news-menu-box-header {
   border-top-color: #cc4129;
 }
-.main .box-need-16 .news-menu-box-header .news-box-right .news-menu-box-header-tittle .link__news-menu-box-tittle {
+.main .box-need-16 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle .link__news-menu-box-tittle {
   color: #cc4129;
 }
-.main .box-need-16 .news-menu-box-header .news-box-right .news-menu-box-header-tittle i {
+.main .box-need-16 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle i {
   color: #cc4129;
 }
 .main .box-need-16 .news-menu-box-header .list__news-menu-box-header li a:hover {
@@ -2291,7 +2368,7 @@ footer .footer-copy-right .copy-right p {
 /* ریسپانسیو در سایز 1200 پیکسل */
 @media only screen and (max-width: 1200px) {
   .container {
-    max-width: 1040px;
+    max-width: 1014px;
   }
   .nav__header-top,
   .danesh-logo {
@@ -2314,12 +2391,15 @@ footer .footer-copy-right .copy-right p {
   .tag-list {
     height: 127px !important;
   }
+  .tittle-td {
+    font-size: 13px !important;
+  }
 }
 /* ریسپانسیو در سایز 992 پیکسل */
 @media only screen and (max-width: 992px) {
   .container {
     max-width: 900px;
-    max-width: 840px;
+    max-width: 736px;
   }
   .header__iran-news {
     height: 50px !important;
@@ -2343,7 +2423,7 @@ footer .footer-copy-right .copy-right p {
     color: #fff;
   }
   .header__iran-news .taggle-menu .logo-header {
-    width: 13%;
+    width: 120px;
     position: relative;
     top: -3px;
     margin-right: 16px;
@@ -2351,8 +2431,14 @@ footer .footer-copy-right .copy-right p {
   .header__iran-news .taggle-menu .logo-header img {
     width: 100%;
   }
-  .none-col-3 {
-    display: none;
+  .tittle-td {
+    font-size: 13px !important;
+  }
+  .little-box-info .box-info-content h3 {
+    font-size: 13px;
+  }
+  .little-box-info .box-info-content h2 {
+    font-size: 14px;
   }
 }
 /* ریسپانسیو در سایز 768 پیکسل */
