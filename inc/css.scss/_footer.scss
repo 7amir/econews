@@ -5,6 +5,10 @@ footer {
   .footer-top {
     background-color: rgb(26 26 26);
 
+    .row__footer-top {
+      margin-left: 0;
+    }
+
     .link__footer-icon {
       padding: 9px 0px;
       display: inline-block;
@@ -115,6 +119,7 @@ footer {
         font-size: 60px;
         font-weight: bold;
         margin-top: -10px;
+        font-family: arial;
       }
       h3 {
         font-weight: normal;
@@ -185,27 +190,21 @@ footer {
     }
     /* باکس های خبری فوتر */
     .footer-all-list {
-      display: flex;
-      justify-content: space-around;
-      width: 83%;
       margin: 0 auto;
+      width: 76%;
+      
+      .list__footer-box-news {
+        li {
+          a {
+            display: block;
+            padding: 7px 4px 7px 0px;
+            color: #ddd;
+            font-size: 14px;
+            font-family: nassim;
 
-      .footer-box-news {
-        width: 18.5%;
-
-        .list__footer-box-news {
-          li {
-            a {
-              display: block;
-              padding: 7px 4px 7px 0px;
-              color: #ddd;
-              font-size: 14px;
-              font-family: nassim;
-
-              &:hover {
-                background: #b71818;
-                color: #fff;
-              }
+            &:hover {
+              background: #b71818;
+              color: #fff;
             }
           }
         }

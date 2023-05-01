@@ -1,35 +1,59 @@
 /* ریسپانسیو در سایز 1200 پیکسل */
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1210px) {
   .container {
-    max-width: 1014px;
+    max-width: 1022px;
   }
+
   .nav__header-top,
   .danesh-logo {
     display: none;
   }
+
   .logo-and-nav__iran-news {
+    margin: 0 !important;
+    justify-content: right !important;
+
     .logo-econews {
       width: 23%;
     }
   }
+
   .nav__header-sub {
     overflow-y: scroll;
 
     .list__header-sub {
       flex-wrap: wrap;
       height: 36px;
+      margin-right: 11px;
     }
   }
+
+  .change-hight-1200 {
+    height: 394px;
+    img {
+      height: 394px;
+    }
+  }
+
   .list__news-box {
     overflow: hidden;
     height: 401px;
   }
+
   .tag-list {
     height: 127px !important;
   }
 
+  .box-info-slideshow-content h2 {
+    font-size: 23px !important;
+  }
+
   .tittle-td {
     font-size: 13px !important;
+  }
+  
+  .list__footer-box-news li a {
+    font-size: 12px !important;
   }
 }
 
@@ -40,41 +64,21 @@
     max-width: 736px;
   }
   .header__iran-news {
-    height: 50px !important;
-    overflow: hidden;
-
     .nav__iran-news-red {
       display: none;
     }
-
-    .taggle-menu {
-      padding: 8px 20px;
-      display: flex;
-      align-items: flex-start;
-
-      .btn__taggle {
-        background: none;
-        border: 1px solid black;
-        padding: 6px 13px;
-        i {
-          font-size: 21px;
-          color: #fff;
-        }
-      }
-      .logo-header {
-        width: 120px;
-        position: relative;
-        top: -3px;
-        margin-right: 16px;
-
-        img {
-          width: 100%;
-        }
-      }
-    }
   }
+
   .tittle-td {
     font-size: 13px !important;
+  }
+
+  .chart {
+    display: none;
+  }
+
+  .box-info-slideshow-content {
+    padding: 9px !important;
   }
 
   .little-box-info {
@@ -87,6 +91,40 @@
       }
     }
   }
+
+  .content-box-info {
+    padding-bottom: 0;
+
+    h2 {
+      font-size: 19px !important;
+    }
+  }
+
+  .news-box {
+    height: 236px;
+
+    .list__news-box {
+      padding-top: 4px;
+
+      a::before {
+        font-size: 7px;
+      }
+      li:last-child a {
+        border-bottom: none;
+      }
+    }
+  }
+
+  .link__footer-icon {
+    margin: 0 3px !important;
+  }
+
+  .copy-right {
+    flex-direction: column;
+    padding: 22px 0;
+    height: 100% !important;
+    line-height: 24px;
+  }
 }
 
 /* ریسپانسیو در سایز 768 پیکسل */
@@ -94,10 +132,84 @@
   .container {
     max-width: 736px;
   }
+
+  .date {
+    padding: 0 !important;
+
+    .day,
+    .clock {
+      display: none;
+    }
+
+    .login {
+      margin: 0 !important;
+    }
+  }
+
+  .noroz-box {
+    margin-top: 11.5rem;
+
+    .tab-768px {
+      display: none;
+    }
+    .noroz {
+      width: 40%;
+      margin: 0 auto;
+    }
+  }
+
+  .clear-fix {
+    display: flex;
+    justify-content: space-between;
+
+    .convert-chart-from , .convert-chart-to {
+      width: 46%;
+    }
+  }
+
+  .row__footer-top {
+    text-align: center;
+    margin: 0;
+
+    .form-search {
+      margin: 0;
+
+      i {
+        left: 37% !important;
+      }
+      
+      .input__search {
+        width: 100%;
+        text-align: center !important;
+      }
+    }
+  }
+  .list__footer-box-news li a {
+    font-size: 14px !important;
+  }
 }
 
 /* ریسپانسیو در سایز 576 پیکسل */
 @media only screen and (max-width: 576px) {
-  .container {
+  .form-search i {
+    display: none;
+  }
+
+  .box-sm {
+    width: 50%;
+  }
+  .box-none {
+    display: none;
+  }
+}
+
+/* ریسپانسیو در سایز 370 پیکسل */
+@media only screen and (max-width: 405px) {
+  .search-form {
+    display: none;
+  }
+
+  .list__slideshow-wrapper {
+    white-space: normal !important;
   }
 }

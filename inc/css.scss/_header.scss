@@ -160,7 +160,6 @@ header {
     .header-top-nav-left {
       display: flex;
       align-items: center;
-      margin-left: 8px;
 
       .nav__header-top {
         .list__header-top {
@@ -217,14 +216,14 @@ header {
   /* هدر با لوگوی خبرگذاری اقتصاد ایران */
   .header__iran-news {
     background-color: #b71818;
-    height: 80px;
+    height: 100%;
 
     .logo-and-nav__iran-news {
       margin-right: -2.7%;
       display: flex;
       justify-content: space-around;
       .logo__iran-news {
-        padding-left: 34px;
+        padding-left: 8px;
         margin-bottom: 3px;
       }
 
@@ -278,45 +277,6 @@ header {
                 min-height: 72px;
                 display: flex;
                 align-items: center;
-
-                .dropdown {
-                  background: #1b1b1b;
-                  min-height: 215px;
-                  .dropdown-heading {
-                    color: #fff;
-                    font-size: 16px;
-                    display: block;
-                    background: #313131;
-                    text-align: center;
-                    padding: 9px 0px;
-                    line-height: 8px;
-                    font-family: nassim-bold;
-                    margin-bottom: 7px;
-                    transition: all 0.3s ease-in-out;
-                    &:hover {
-                      padding-left: 6px;
-                      background: #b71818;
-                    }
-                  }
-                  .link-dropdown-hover {
-                    display: inline-block;
-                    width: 48%;
-                    color: #fff;
-                    text-align: right;
-                    padding: 5px 10px;
-                    transition: all 0.3s ease-in-out;
-                    font-size: 15px;
-                    margin-bottom: 4.6px;
-                    margin-left: 1.2%;
-                    &:hover {
-                      padding-right: 6px;
-                      background: #b71818;
-                    }
-                  }
-                  .container-3 {
-                    width: 31%;
-                  }
-                }
 
                 /* هاور آیتم نرخ ها و داده ها */
                 .rate-hover {
@@ -406,6 +366,61 @@ header {
         }
       }
     }
+    .toggle-menu {
+      padding-top: 8px;
+      height: 50px;
+      margin-right: 8px;
+
+      .btn__toggle {
+        background: none;
+        border: 1px solid #000;
+        padding: 4px 13px 8px;
+
+        i {
+          font-size: 21px;
+          color: #fff;
+        }
+        &:hover {
+          background-color: #202020;
+        }
+      }
+      .logo-header {
+        width: 120px;
+        position: relative;
+        top: -37px;
+        right: 57px;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .navbar-collapse {
+      background: #212121;
+      padding: 15px 20px 15px 10px;
+
+      .list__navbar-collapse {
+        li {
+          .link__navbar-collapse {
+            font-family: nassim-bold;
+            font-size: 18px;
+            color: #fff;
+            padding: 15px 25px 16px;
+            display: block;
+
+            i {
+              font-size: 17px;
+              margin-right: 2px;
+            }
+
+            &:hover {
+              background: #92191f;
+            }
+          }
+        }
+      }
+    }
   }
 
   /* آخرین هدر همراه لینک های رنگی  */
@@ -435,7 +450,8 @@ header {
             margin-left: 0.7px;
           }
 
-          &:last-child::after , &:first-child::after {
+          &:last-child::after,
+          &:first-child::after {
             border: none;
           }
           a {
