@@ -278,51 +278,6 @@ header {
                 display: flex;
                 align-items: center;
 
-                /* هاور آیتم نرخ ها و داده ها */
-                .rate-hover {
-                  padding: 15px 0;
-                  padding-right: 15px;
-                  background-image: url("../img/header-overlay.png");
-
-                  .list-item-rate {
-                    display: inline-block;
-                    width: 16.4%;
-                    margin: 2px 0;
-
-                    .fa.fa-chevron-left {
-                      float: right;
-                      position: relative;
-                      bottom: -2px;
-                      left: 7px;
-                      font-size: 13px;
-                      color: #b71818;
-                      font-family: fontawesome;
-                    }
-
-                    a {
-                      text-align: right;
-                      padding: 6px 13px 10px;
-                      width: 97%;
-                      color: #fff;
-                      font-family: nassim, tahoma, helvetica, arial, sans-serif;
-                      border-left: 1px solid #444;
-                      -webkit-border-radius: 0;
-                      border-radius: 0;
-                      display: inline-block;
-
-                      &:hover {
-                        background: #b71818;
-                        color: #fff;
-                      }
-                      &:hover .fa.fa-chevron-left {
-                        color: #fff;
-                      }
-                    }
-                    .border-none {
-                      border: none;
-                    }
-                  }
-                }
 
                 /* هاور آیتم مناطق آزاد */
                 .menu-area {
@@ -374,7 +329,8 @@ header {
       .btn__toggle {
         background: none;
         border: 1px solid #000;
-        padding: 4px 13px 8px;
+        padding: 5px 13px 7px;
+        border-radius: 0;
 
         i {
           font-size: 21px;
@@ -396,9 +352,14 @@ header {
       }
     }
 
+    .card-body {
+      padding: 0;
+      background: #212121;
+      border: 0; 
+    }
     .navbar-collapse {
       background: #212121;
-      padding: 15px 20px 15px 10px;
+      padding: 15px 13px 15px 13px;
 
       .list__navbar-collapse {
         li {

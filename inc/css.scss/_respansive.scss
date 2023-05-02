@@ -51,7 +51,7 @@
   .tittle-td {
     font-size: 13px !important;
   }
-  
+
   .list__footer-box-news li a {
     font-size: 12px !important;
   }
@@ -60,12 +60,48 @@
 /* ریسپانسیو در سایز 992 پیکسل */
 @media only screen and (max-width: 992px) {
   .container {
-    max-width: 900px;
     max-width: 736px;
+  }
+
+  .form-login {
+    right: 36% !important;
+    top: 24% !important;
   }
   .header__iran-news {
     .nav__iran-news-red {
       display: none;
+    }
+  }
+
+  .dropdown-toggle-hover {
+    margin: 0;
+    padding: 0;
+    .dropdown-respansive {
+      padding: 8px 16px;
+      background: #313131;
+    }
+  }
+
+  .rate-hover .list-item-rate {
+    width: 49%;
+  }
+
+  .menu-area {
+    li {
+      display: inline-block;
+      width: 49%;
+      a {
+        background: white;
+        border-radius: 7px;
+        overflow: hidden;
+        padding: 5px;
+        display: block;
+        img {
+          max-width: 100%;
+          margin: 0 auto;
+          display: block;          
+        } 
+      }
     }
   }
 
@@ -146,6 +182,10 @@
     }
   }
 
+  .form-login {
+    right: 2% !important;
+  }
+
   .noroz-box {
     margin-top: 11.5rem;
 
@@ -162,7 +202,8 @@
     display: flex;
     justify-content: space-between;
 
-    .convert-chart-from , .convert-chart-to {
+    .convert-chart-from,
+    .convert-chart-to {
       width: 46%;
     }
   }
@@ -177,7 +218,7 @@
       i {
         left: 37% !important;
       }
-      
+
       .input__search {
         width: 100%;
         text-align: center !important;

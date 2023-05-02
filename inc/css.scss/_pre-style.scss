@@ -1,4 +1,3 @@
-
 body {
   direction: rtl;
   background: #f2f2f2;
@@ -72,7 +71,7 @@ a {
 /* شروع دراپ دون */
 .dropdown {
   background: #1b1b1b;
-  min-height: 215px;
+
   .dropdown-heading {
     color: #fff;
     font-size: 16px;
@@ -99,6 +98,8 @@ a {
     font-size: 15px;
     margin-bottom: 4.6px;
     margin-left: 1.2%;
+    font-family: nassim;
+
     &:hover {
       padding-right: 6px;
       background: #b71818;
@@ -108,7 +109,57 @@ a {
     width: 31%;
   }
 }
+
+.dropdown-toggle-hover {
+  display: none;
+}
 /* پایان دارپ دون */
+
+/* شروع هاور آیتم نرخ ها و داده ها */
+.rate-hover {
+  padding: 15px 0;
+  padding-right: 15px;
+  background-image: url("../img/header-overlay.png");
+
+  .list-item-rate {
+    display: inline-block;
+    width: 16.4%;
+    margin: 2px 0;
+
+    .fa.fa-chevron-left {
+      float: right;
+      position: relative;
+      bottom: -2px;
+      left: 7px;
+      font-size: 13px;
+      color: #b71818;
+      font-family: fontawesome;
+    }
+
+    a {
+      text-align: right;
+      padding: 6px 13px 10px;
+      width: 97%;
+      color: #fff;
+      font-family: nassim, tahoma, helvetica, arial, sans-serif;
+      border-left: 1px solid #444;
+      border-radius: 0;
+      display: inline-block;
+
+      &:hover {
+        background: #b71818;
+        color: #fff;
+      }
+      &:hover .fa.fa-chevron-left {
+        color: #fff;
+      }
+    }
+    .border-none {
+      border: none;
+    }
+  }
+}
+/* پایان هاور آیتم نرخ ها و داده ها */
 
 /* شروع نمایش اسلاید یکی بعد هدر و دیگری قبل فوتر */
 .slideshow-box-img {
@@ -369,7 +420,7 @@ a {
           color: #483d8b;
           font-family: nassim-bold;
           font-size: 20px;
-  
+
           i {
             font-size: 16px;
             margin: 0 0 0 8px;
@@ -398,37 +449,81 @@ a {
         }
       }
     }
-  /* ایکون تنظیمات */
-  .sittings {
-    display: flex;
-    margin-top: 5px;
-    justify-content: left;
+    /* ایکون تنظیمات */
+    .sittings {
+      display: flex;
+      margin-top: 5px;
+      justify-content: left;
 
-    .sitting-box {
-      a {
-        color: #666;
-        padding: 6px 14.5px 8px;
-        background: #e0e0e0;
-        margin-right: 6px;
-        display: inline-block;
+      .sitting-box {
+        a {
+          color: #666;
+          padding: 6px 14.5px 8px;
+          background: #e0e0e0;
+          margin-right: 6px;
+          display: inline-block;
 
-        i {
-          font-size: 16px;
+          i {
+            font-size: 16px;
+          }
+
+          &:hover {
+            background: #333;
+            color: #fff;
+          }
+        }
+        .rss-orang-color:hover {
+          background: #f90;
         }
 
-        &:hover {
-          background: #333;
-          color: #fff;
+        .btn-secondary {
+          border: none;
+          padding: 2px 13.5px 5px;
+          border-radius: 0;
+          &::after {
+            display: none;
+          }
         }
-      }
-      .rss-orang-color:hover {
-        background: #f90;
+        .dropdown-sitting {
+          border: 1px solid rgba(0, 0, 0, 0.15);
+          border-radius: 0;
+          background: #fff;
+          padding: 0;
+          text-align: right;
+          width: 220px;
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+          li {
+            a {
+              margin: 0;
+              margin: 0;
+              padding: 9px 8px 9.5px;
+              background: #fff;
+              color: #333;
+              font-family: nassim;
+              font-size: 17px;
+
+              i {
+                background: #222;
+                color: white;
+                border-radius: 100%;
+                width: 22px;
+                height: 22px;
+                text-align: center;
+                font-size: 14px;
+                padding-top: 4px;
+                margin-left: 5px;
+              }
+
+              &:hover {
+                color: #222;
+                background: #ddd;
+              }
+            }
+          }
+        }
       }
     }
   }
-  }
-
-
 
   /* اولین و آخرین ستون حاوی یک عکس با یک متن در زیر آن */
   .link__default-img {
@@ -521,55 +616,54 @@ a {
 }
 /*  پایان باکس خبری حاوی منو */
 
+// aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+.news-menu-box {
+  .news-menu-box-header {
+    border-top: 3px solid #555;
+    padding: 1px 0 10px;
 
-  // aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-  .news-menu-box {
-    .news-menu-box-header {
-      border-top: 3px solid #555;
-      padding: 1px 0 10px;
+    .list-meun-content {
+      margin-top: 10px;
+      overflow: hidden;
+      height: 23px;
+      transition: all 0.3s ease-in-out;
 
-      .list-meun-content {
-        margin-top: 10px;
-        overflow: hidden;
-        height: 23px;
-        transition: all 0.3s ease-in-out;
+      .news-menu-box-header-tittle {
+        display: inline-block;
 
-        .news-menu-box-header-tittle {
-          display: inline-block;
-  
-          .link__news-menu-box-tittle {
-            color: #483d8b;
-            font-family: nassim-bold;
-            font-size: 20px;
-    
-            i {
-              font-size: 16px;
-              margin: 0 0 0 8px;
-              position: relative;
-              bottom: -2px;
-            }
-          }
+        .link__news-menu-box-tittle {
+          color: #483d8b;
+          font-family: nassim-bold;
+          font-size: 20px;
+
           i {
-            font-size: 14px;
-            margin: 0 7px;
+            font-size: 16px;
+            margin: 0 0 0 8px;
             position: relative;
             bottom: -2px;
-            color: #483d8b;
           }
         }
-        .list__news-menu-box-header {
-          display: inline;
-          li {
-            display: inline-block;
-            a {
-              color: #333;
-              font-size: 17px;
-              font-family: "nassim";
-              padding: 10px 8px;
-            }
+        i {
+          font-size: 14px;
+          margin: 0 7px;
+          position: relative;
+          bottom: -2px;
+          color: #483d8b;
+        }
+      }
+      .list__news-menu-box-header {
+        display: inline;
+        li {
+          display: inline-block;
+          a {
+            color: #333;
+            font-size: 17px;
+            font-family: "nassim";
+            padding: 10px 8px;
           }
         }
       }
+    }
     /* ایکون تنظیمات */
     .sittings {
       display: flex;
@@ -598,12 +692,11 @@ a {
         }
       }
     }
-    }
-
-    &:hover .list-meun-content {
-      margin-right: 5px;
-    }
   }
 
+  &:hover .list-meun-content {
+    margin-right: 5px;
+  }
+}
 
-  // zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+// zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
