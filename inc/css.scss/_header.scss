@@ -3,25 +3,28 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 34.5px;
     background: #fff;
 
     /* باکس سمت راست هدر  */
     .header-clock {
+      display: flex;
       span {
         font-size: 12px;
         font-family: yekan;
       }
+
       .date {
         display: flex;
         padding-right: 16px;
         line-height: 22px;
+
         .day {
           .fa.fa-calendar {
             bottom: 0;
             font-size: 12px;
           }
         }
+
         .clock {
           i {
             margin-right: 8px;
@@ -32,124 +35,136 @@ header {
           }
         }
 
-        /* دکمه ثبت نام یا ورود  */
-        .login {
-          padding: 2px 6px 0px 8px;
-          font-size: 13px;
-          border-radius: 2px;
-          margin-right: 24px;
-          background: #656565;
-          font-family: nassim-bold;
-          color: #fff;
-          text-decoration: none;
-          cursor: pointer;
 
-          .fa.fa-user {
-            font-size: 13px;
-            margin-left: 2px;
-            font-family: fontawesome;
-          }
-          .fa.fa-chevron-down {
-            font-size: 12px;
-            margin-left: 1px;
-            font-family: fontawesome;
-          }
+      }
+
+      /* دکمه ثبت نام یا ورود  */
+      .login {
+        padding: 5px 6px 0px 8px;
+        font-size: 13px;
+        border-radius: 2px;
+        margin-right: 24px;
+        background: #656565;
+        font-family: nassim-bold;
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+
+        .fa.fa-user {
+          font-size: 13px;
+          margin-left: 2px;
+          font-family: fontawesome;
         }
 
-        /* فرم ثبت نام */
-        .form-login {
-          position: absolute;
-          background: #fff;
-          padding: 15px;
-          z-index: 1;
-          right: 23.7%;
-          top: 19%;
-          border: 1px solid #ccc;
-          padding-left: 13px;
-          display: none;
+        .fa.fa-chevron-down {
+          font-size: 12px;
+          margin-left: 1px;
+          font-family: fontawesome;
+        }
+      }
 
-          form {
-            color: #444;
-            font-size: 13px;
-            font-family: nassim;
+      /* فرم ثبت نام */
+      .form-login {
+        position: absolute;
+        background: #fff;
+        padding: 15px;
+        z-index: 1;
+        right: 23.7%;
+        top: 19%;
+        border: 1px solid #ccc;
+        padding-left: 13px;
+        display: none;
 
-            .input-groups {
-              .input-email,
-              .input-password {
-                border: 1px solid #ccc;
-                width: 160px;
-                font-size: 13px;
-                font-family: nassim;
-                padding: 5.3px 12px;
-                color: #555;
+        form {
+          color: #444;
+          font-size: 13px;
+          font-family: nassim;
 
-                &:focus {
-                  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
-                    0 0 8px rgba(146, 19, 19, 0.6);
-                  border: 1px solid #921313;
-                  outline: none;
-                }
-              }
-              .input-password {
-                border-top: 0;
+          .input-groups {
+
+            .input-email,
+            .input-password {
+              border: 1px solid #ccc;
+              width: 160px;
+              font-size: 13px;
+              font-family: nassim;
+              padding: 5.3px 12px;
+              color: #555;
+
+              &:focus {
+                box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+                  0 0 8px rgba(146, 19, 19, 0.6);
+                border: 1px solid #921313;
+                outline: none;
               }
             }
 
-            .form-check.loginform {
-              margin: 7px 0;
-              .form-check-input {
-                float: right;
-                background: linear-gradient(#fafafa, #dcdcdc);
-                border: 1px solid #a0a0a0;
-                margin-left: 5px;
-                width: 16px;
-                height: 16px;
-                padding: 1.5px;
-                font: 11px tahoma;
-                box-shadow: none;
+            .input-password {
+              border-top: 0;
+            }
+          }
 
-                &:hover {
-                  background: linear-gradient(#fff, #e6e6e6);
-                  text-shadow: 0 1px 0 #fff;
-                }
-                &:focus {
-                  border-color: #4080fa;
-                  outline: none;
-                  box-shadow: inset 0 1px 2px #fff, 0 1px 2px rgba(0, 0, 0, 0.2),
-                    0 0 1px #c0c0c0, 0 0 1px #c0c0c0, 0 0 1px #c0c0c0;
-                }
+          .form-check.loginform {
+            margin: 7px 0;
+
+            .form-check-input {
+              float: right;
+              background: linear-gradient(#fafafa, #dcdcdc);
+              border: 1px solid #a0a0a0;
+              margin-left: 5px;
+              width: 16px;
+              height: 16px;
+              padding: 1.5px;
+              font: 11px tahoma;
+              box-shadow: none;
+
+              &:hover {
+                background: linear-gradient(#fff, #e6e6e6);
+                text-shadow: 0 1px 0 #fff;
               }
-              .form-check-input[type="checkbox"]:checked::before {
-                background: none;
-                color: #808080;
-                content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAKCAYAAABi8KSDAAAAmElEQVR42nXQMQ6EIBAFUI5OQ6TwHibacAIaIx4AbbiAtQGk429wg8lEKX4xzJswwAA0s64rpmlCrZvQGAPO+Z1xHPFgay1Ks8JlWQp6IqWEcw5s33cIIe7DeZ5LXvA4DqSUwPq+J80veF3Xf41t29B1XRPGGOkDtdafMIRwQ4LLNcMwEOi9J5B8Xc4ZSqkmrJgMnOdZ4Ss/HaFLUf+pI9MAAAAASUVORK5CYII=");
-              }
-              .form-check-label {
-                display: block;
+
+              &:focus {
+                border-color: #4080fa;
+                outline: none;
+                box-shadow: inset 0 1px 2px #fff, 0 1px 2px rgba(0, 0, 0, 0.2),
+                  0 0 1px #c0c0c0, 0 0 1px #c0c0c0, 0 0 1px #c0c0c0;
               }
             }
 
-            .login-group {
-              display: flex;
-              .btn.btn-danger.login {
-                width: 100%;
-                border-radius: 0 4px 4px 0;
-                border: 1px solid #ccc;
-                border-left: none;
-                background: #b71818;
-                font-size: 14px;
-                margin: 0;
-                &:hover {
-                  background: #991313;
-                }
+            .form-check-input[type="checkbox"]:checked::before {
+              background: none;
+              color: #808080;
+              content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAKCAYAAABi8KSDAAAAmElEQVR42nXQMQ6EIBAFUI5OQ6TwHibacAIaIx4AbbiAtQGk429wg8lEKX4xzJswwAA0s64rpmlCrZvQGAPO+Z1xHPFgay1Ks8JlWQp6IqWEcw5s33cIIe7DeZ5LXvA4DqSUwPq+J80veF3Xf41t29B1XRPGGOkDtdafMIRwQ4LLNcMwEOi9J5B8Xc4ZSqkmrJgMnOdZ4Ss/HaFLUf+pI9MAAAAASUVORK5CYII=");
+            }
+
+            .form-check-label {
+              display: block;
+            }
+          }
+
+          .login-group {
+            display: flex;
+
+            .btn.btn-danger.login {
+              width: 100%;
+              border-radius: 0 4px 4px 0;
+              border: 1px solid #ccc;
+              border-left: none;
+              background: #b71818;
+              font-size: 14px;
+              margin: 0;
+
+              &:hover {
+                background: #991313;
               }
-              .btn.btn-light.sign-up {
-                width: 100%;
-                border-radius: 4px 0 0 4px;
-                border: 1px solid #ccc;
-                border-right: none;
-                font-size: 14px;
-              }
+            }
+
+            .btn.btn-light.sign-up {
+              width: 100%;
+              border-radius: 4px 0 0 4px;
+              border: 1px solid #ccc;
+              border-right: none;
+              font-size: 14px;
             }
           }
         }
@@ -159,25 +174,29 @@ header {
     /* منو هدر اول  */
     .header-top-nav-left {
       display: flex;
-      align-items: center;
+      height: 34px;
 
       .nav__header-top {
         .list__header-top {
-          display: flex;
           border-right: 1px solid #ddd;
+
           li {
             font-family: nassim-bold;
             font-size: 13px;
-            padding: 10.5px 6px;
-            margin-left: 6px;
+            display: inline-block;
             cursor: pointer;
 
             i {
+              top: 2px;
               margin-left: 2px;
             }
+
             a {
               color: #222;
+              padding: 11px 7px;
+              display: block;
             }
+
             &:hover {
               background: #e8e8e8;
             }
@@ -188,15 +207,18 @@ header {
       /* فرم جست و جو در هدر  */
       .search-form {
         position: relative;
+        display: inline-block;
+
         .search-addon.fa.fa-search {
           position: absolute;
           color: #b01927;
-          font-size: 13.19px;
-          top: 8px;
+          font-size: 13px;
+          top: 10px;
           cursor: pointer;
           left: 4%;
           font-family: fontawesome;
         }
+
         .input__search-form {
           background: #e4e4e4;
           border: none;
@@ -204,6 +226,7 @@ header {
           font-family: tahoma;
           font-size: 12px;
           padding: 5px 26px 9px 29px;
+          margin-top: 3px;
 
           &:focus {
             outline: none;
@@ -222,6 +245,7 @@ header {
       margin-right: -2.7%;
       display: flex;
       justify-content: space-around;
+
       .logo__iran-news {
         padding-left: 8px;
         margin-bottom: 3px;
@@ -229,16 +253,17 @@ header {
 
       .background-img-world {
         background-image: url(../img/header-overlay.png);
-        background-position: center;
-        background-size: cover;
-        width: 156%;
+        background-position: right;
+        width: 130%;
 
         /* منوی هدر خبرگذاری اقتصاد ایران  */
         .nav__iran-news {
-          margin-right: -7%;
+
+          // margin-right: -7%;
           .list__iran-news {
             display: flex;
             margin-right: 6px;
+
             li {
               .link__iran-news {
                 color: #fff;
@@ -247,6 +272,7 @@ header {
                 line-height: 77px;
                 font-family: nassim-bold;
                 transition: all ease-in-out 0.15s;
+
                 i {
                   font-family: fontawesome;
                   font-size: 16px;
@@ -254,6 +280,7 @@ header {
                   position: relative;
                   bottom: -0.5px;
                 }
+
                 &:hover {
                   background: #92191f;
                   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3) inset;
@@ -278,7 +305,6 @@ header {
                 display: flex;
                 align-items: center;
 
-
                 /* هاور آیتم مناطق آزاد */
                 .menu-area {
                   text-align: center;
@@ -287,6 +313,7 @@ header {
                     display: inline-block;
                     margin: 0 4px;
                     padding: 15px 0;
+
                     a {
                       display: block;
                       background: #fff;
@@ -297,6 +324,7 @@ header {
                       img {
                         width: 100%;
                       }
+
                       &:hover img {
                         outline: 6px solid #b01927;
                       }
@@ -304,6 +332,7 @@ header {
                   }
                 }
               }
+
               &:hover .navbar-hover-iran-news {
                 opacity: 1;
                 visibility: initial;
@@ -315,31 +344,36 @@ header {
 
       .danesh-logo {
         margin-right: 14px;
+
         .link-danesh-logo {
           display: table-cell;
           height: 76px;
         }
       }
     }
+
     .toggle-menu {
       padding-top: 8px;
       height: 50px;
-      margin-right: 8px;
+      // margin-right: 0px;
 
       .btn__toggle {
         background: none;
         border: 1px solid #000;
         padding: 5px 13px 7px;
         border-radius: 0;
+        margin-top: -2px;
 
         i {
           font-size: 21px;
           color: #fff;
         }
+
         &:hover {
           background-color: #202020;
         }
       }
+
       .logo-header {
         width: 120px;
         position: relative;
@@ -355,8 +389,9 @@ header {
     .card-body {
       padding: 0;
       background: #212121;
-      border: 0; 
+      border: 0;
     }
+
     .navbar-collapse {
       background: #212121;
       padding: 15px 13px 15px 13px;
@@ -387,19 +422,24 @@ header {
   /* آخرین هدر همراه لینک های رنگی  */
   .header-sub {
     background: #dedede;
-    height: 36px;
+
     .nav__header-sub {
       margin-right: -4px;
       line-height: 28px;
+
       .list__header-sub {
-        display: flex;
+        white-space: nowrap;
+
         .fa.fa-bars {
           color: #b01927;
           position: relative;
-          bottom: -7px;
+          bottom: -3px;
           left: 2px;
         }
+
         li {
+          display: inline-block;
+
           &::after {
             width: 1px;
             content: "";
@@ -415,6 +455,7 @@ header {
           &:first-child::after {
             border: none;
           }
+
           a {
             padding: 6.2px 4px;
             color: #111;
@@ -427,62 +468,77 @@ header {
             background: #483d8b;
             color: #fff;
           }
+
           .a2:hover {
             background: #006666;
             color: #fff;
           }
+
           .a3:hover {
             background: #dc143c;
             color: #fff;
           }
+
           .a4:hover {
             background: #483d8b;
             color: #fff;
           }
+
           .a5:hover {
             background: #0099cc;
             color: #fff;
           }
+
           .a6:hover {
             background: #08bf11;
             color: #fff;
           }
+
           .a7:hover {
             background: #336699;
             color: #fff;
           }
+
           .a8:hover {
             background: #cc00cc;
             color: #fff;
           }
+
           .a9:hover {
             background: #0066ff;
             color: #fff;
           }
+
           .a10:hover {
             background: #daa520;
             color: #fff;
           }
+
           .a11:hover {
             background: #8b0000;
             color: #fff;
           }
+
           .a12:hover {
             background: #483d8b;
             color: #fff;
           }
+
           .a13:hover {
             background: #228b22;
             color: #fff;
           }
+
           .a14:hover {
             background: #1e90ff;
             color: #fff;
           }
+
           .a15:hover {
             background: #228b22;
             color: #fff;
           }
+
           .a16:hover {
             background: #bb0000;
             color: #fff;

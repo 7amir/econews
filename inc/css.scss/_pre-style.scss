@@ -4,7 +4,7 @@ body {
   overflow-x: hidden;
 }
 .container {
-  max-width: 1269px;
+  max-width: 1253px;
 }
 
 @font-face {
@@ -37,11 +37,7 @@ i {
 a {
   text-decoration: none;
 }
-.world-img {
-  padding-right: 5.3%;
-  height: 80px;
-  margin-bottom: 1px;
-}
+
 .container-fluid {
   background: #fff;
 }
@@ -52,10 +48,6 @@ a {
 }
 .dropdown-col-4 {
   padding: 10px;
-}
-.mix-padding-right {
-  padding-right: 1.8%;
-  padding-left: 1.3%;
 }
 
 .col-4,
@@ -213,9 +205,6 @@ a {
         padding: 0;
         margin: 0 0 6px;
         font-size: 17px;
-        // overflow: hidden;
-        // text-overflow: ellipsis;
-        // white-space: nowrap;
       }
       h2 {
         padding: 0;
@@ -255,7 +244,6 @@ a {
     border-width: 0 0 1px 1px;
     background: #fff;
     border-top: 3px solid #0040ad;
-    margin-left: 3px;
 
     li {
       margin: 0px 12px;
@@ -449,6 +437,33 @@ a {
         }
       }
     }
+    .list__news-menu-box-header-2 {
+      display: inline;
+      li {
+        display: inline-block;
+        a {
+          color: #333;
+          font-size: 17px;
+          font-family: "nassim";
+          padding: 10px 8px;
+        }
+      }
+    }
+
+    .menu-mobile-show {
+      background: #ddd;
+      overflow-x: auto;
+      padding: 11px 8px;
+      white-space: nowrap;
+      margin-top: 3px;
+      display: none;
+      height: 40px;
+      line-height: 8px;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+    
     /* ایکون تنظیمات */
     .sittings {
       display: flex;
@@ -570,6 +585,7 @@ a {
   }
   .gif-box {
     background: none;
+    padding: 0;
   }
 
   /* سه باکس خبری در یک ستون */
@@ -615,8 +631,6 @@ a {
   }
 }
 /*  پایان باکس خبری حاوی منو */
-
-// aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 .news-menu-box {
   .news-menu-box-header {
     border-top: 3px solid #555;
@@ -698,5 +712,3 @@ a {
     margin-right: 5px;
   }
 }
-
-// zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz

@@ -58,7 +58,7 @@ body {
 }
 
 .container {
-  max-width: 1269px;
+  max-width: 1253px;
 }
 
 @font-face {
@@ -92,12 +92,6 @@ a {
   text-decoration: none;
 }
 
-.world-img {
-  padding-right: 5.3%;
-  height: 80px;
-  margin-bottom: 1px;
-}
-
 .container-fluid {
   background: #fff;
 }
@@ -110,11 +104,6 @@ a {
 
 .dropdown-col-4 {
   padding: 10px;
-}
-
-.mix-padding-right {
-  padding-right: 1.8%;
-  padding-left: 1.3%;
 }
 
 .col-4,
@@ -293,7 +282,6 @@ a {
   border-width: 0 0 1px 1px;
   background: #fff;
   border-top: 3px solid #0040ad;
-  margin-left: 3px;
 }
 .news-box .list__news-box li {
   margin: 0px 12px;
@@ -478,6 +466,31 @@ a {
   font-family: "nassim";
   padding: 10px 8px;
 }
+.news-menu-box .news-menu-box-header .list__news-menu-box-header-2 {
+  display: inline;
+}
+.news-menu-box .news-menu-box-header .list__news-menu-box-header-2 li {
+  display: inline-block;
+}
+.news-menu-box .news-menu-box-header .list__news-menu-box-header-2 li a {
+  color: #333;
+  font-size: 17px;
+  font-family: "nassim";
+  padding: 10px 8px;
+}
+.news-menu-box .news-menu-box-header .menu-mobile-show {
+  background: #ddd;
+  overflow-x: auto;
+  padding: 11px 8px;
+  white-space: nowrap;
+  margin-top: 3px;
+  display: none;
+  height: 40px;
+  line-height: 8px;
+}
+.news-menu-box .news-menu-box-header .menu-mobile-show::-webkit-scrollbar {
+  display: none;
+}
 .news-menu-box .news-menu-box-header .sittings {
   display: flex;
   margin-top: 5px;
@@ -582,6 +595,7 @@ a {
 }
 .news-menu-box .gif-box {
   background: none;
+  padding: 0;
 }
 .news-menu-box .list__little-box-info {
   background: #fff;
@@ -696,10 +710,14 @@ header .header-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 34.5px;
   background: #fff;
   /* باکس سمت راست هدر  */
   /* منو هدر اول  */
+}
+header .header-top .header-clock {
+  display: flex;
+  /* دکمه ثبت نام یا ورود  */
+  /* فرم ثبت نام */
 }
 header .header-top .header-clock span {
   font-size: 12px;
@@ -709,8 +727,6 @@ header .header-top .header-clock .date {
   display: flex;
   padding-right: 16px;
   line-height: 22px;
-  /* دکمه ثبت نام یا ورود  */
-  /* فرم ثبت نام */
 }
 header .header-top .header-clock .date .day .fa.fa-calendar {
   bottom: 0;
@@ -723,8 +739,8 @@ header .header-top .header-clock .date .clock i {
   font-size: 10px;
   font-weight: 900;
 }
-header .header-top .header-clock .date .login {
-  padding: 2px 6px 0px 8px;
+header .header-top .header-clock .login {
+  padding: 5px 6px 0px 8px;
   font-size: 13px;
   border-radius: 2px;
   margin-right: 24px;
@@ -734,17 +750,17 @@ header .header-top .header-clock .date .login {
   text-decoration: none;
   cursor: pointer;
 }
-header .header-top .header-clock .date .login .fa.fa-user {
+header .header-top .header-clock .login .fa.fa-user {
   font-size: 13px;
   margin-left: 2px;
   font-family: fontawesome;
 }
-header .header-top .header-clock .date .login .fa.fa-chevron-down {
+header .header-top .header-clock .login .fa.fa-chevron-down {
   font-size: 12px;
   margin-left: 1px;
   font-family: fontawesome;
 }
-header .header-top .header-clock .date .form-login {
+header .header-top .header-clock .form-login {
   position: absolute;
   background: #fff;
   padding: 15px;
@@ -755,13 +771,13 @@ header .header-top .header-clock .date .form-login {
   padding-left: 13px;
   display: none;
 }
-header .header-top .header-clock .date .form-login form {
+header .header-top .header-clock .form-login form {
   color: #444;
   font-size: 13px;
   font-family: nassim;
 }
-header .header-top .header-clock .date .form-login form .input-groups .input-email,
-header .header-top .header-clock .date .form-login form .input-groups .input-password {
+header .header-top .header-clock .form-login form .input-groups .input-email,
+header .header-top .header-clock .form-login form .input-groups .input-password {
   border: 1px solid #ccc;
   width: 160px;
   font-size: 13px;
@@ -769,19 +785,19 @@ header .header-top .header-clock .date .form-login form .input-groups .input-pas
   padding: 5.3px 12px;
   color: #555;
 }
-header .header-top .header-clock .date .form-login form .input-groups .input-email:focus,
-header .header-top .header-clock .date .form-login form .input-groups .input-password:focus {
+header .header-top .header-clock .form-login form .input-groups .input-email:focus,
+header .header-top .header-clock .form-login form .input-groups .input-password:focus {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(146, 19, 19, 0.6);
   border: 1px solid #921313;
   outline: none;
 }
-header .header-top .header-clock .date .form-login form .input-groups .input-password {
+header .header-top .header-clock .form-login form .input-groups .input-password {
   border-top: 0;
 }
-header .header-top .header-clock .date .form-login form .form-check.loginform {
+header .header-top .header-clock .form-login form .form-check.loginform {
   margin: 7px 0;
 }
-header .header-top .header-clock .date .form-login form .form-check.loginform .form-check-input {
+header .header-top .header-clock .form-login form .form-check.loginform .form-check-input {
   float: right;
   background: linear-gradient(#fafafa, #dcdcdc);
   border: 1px solid #a0a0a0;
@@ -792,27 +808,27 @@ header .header-top .header-clock .date .form-login form .form-check.loginform .f
   font: 11px tahoma;
   box-shadow: none;
 }
-header .header-top .header-clock .date .form-login form .form-check.loginform .form-check-input:hover {
+header .header-top .header-clock .form-login form .form-check.loginform .form-check-input:hover {
   background: linear-gradient(#fff, #e6e6e6);
   text-shadow: 0 1px 0 #fff;
 }
-header .header-top .header-clock .date .form-login form .form-check.loginform .form-check-input:focus {
+header .header-top .header-clock .form-login form .form-check.loginform .form-check-input:focus {
   border-color: #4080fa;
   outline: none;
   box-shadow: inset 0 1px 2px #fff, 0 1px 2px rgba(0, 0, 0, 0.2), 0 0 1px #c0c0c0, 0 0 1px #c0c0c0, 0 0 1px #c0c0c0;
 }
-header .header-top .header-clock .date .form-login form .form-check.loginform .form-check-input[type=checkbox]:checked::before {
+header .header-top .header-clock .form-login form .form-check.loginform .form-check-input[type=checkbox]:checked::before {
   background: none;
   color: #808080;
   content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAKCAYAAABi8KSDAAAAmElEQVR42nXQMQ6EIBAFUI5OQ6TwHibacAIaIx4AbbiAtQGk429wg8lEKX4xzJswwAA0s64rpmlCrZvQGAPO+Z1xHPFgay1Ks8JlWQp6IqWEcw5s33cIIe7DeZ5LXvA4DqSUwPq+J80veF3Xf41t29B1XRPGGOkDtdafMIRwQ4LLNcMwEOi9J5B8Xc4ZSqkmrJgMnOdZ4Ss/HaFLUf+pI9MAAAAASUVORK5CYII=");
 }
-header .header-top .header-clock .date .form-login form .form-check.loginform .form-check-label {
+header .header-top .header-clock .form-login form .form-check.loginform .form-check-label {
   display: block;
 }
-header .header-top .header-clock .date .form-login form .login-group {
+header .header-top .header-clock .form-login form .login-group {
   display: flex;
 }
-header .header-top .header-clock .date .form-login form .login-group .btn.btn-danger.login {
+header .header-top .header-clock .form-login form .login-group .btn.btn-danger.login {
   width: 100%;
   border-radius: 0 4px 4px 0;
   border: 1px solid #ccc;
@@ -821,10 +837,10 @@ header .header-top .header-clock .date .form-login form .login-group .btn.btn-da
   font-size: 14px;
   margin: 0;
 }
-header .header-top .header-clock .date .form-login form .login-group .btn.btn-danger.login:hover {
+header .header-top .header-clock .form-login form .login-group .btn.btn-danger.login:hover {
   background: #991313;
 }
-header .header-top .header-clock .date .form-login form .login-group .btn.btn-light.sign-up {
+header .header-top .header-clock .form-login form .login-group .btn.btn-light.sign-up {
   width: 100%;
   border-radius: 4px 0 0 4px;
   border: 1px solid #ccc;
@@ -833,37 +849,39 @@ header .header-top .header-clock .date .form-login form .login-group .btn.btn-li
 }
 header .header-top .header-top-nav-left {
   display: flex;
-  align-items: center;
+  height: 34px;
   /* فرم جست و جو در هدر  */
 }
 header .header-top .header-top-nav-left .nav__header-top .list__header-top {
-  display: flex;
   border-right: 1px solid #ddd;
 }
 header .header-top .header-top-nav-left .nav__header-top .list__header-top li {
   font-family: nassim-bold;
   font-size: 13px;
-  padding: 10.5px 6px;
-  margin-left: 6px;
+  display: inline-block;
   cursor: pointer;
 }
 header .header-top .header-top-nav-left .nav__header-top .list__header-top li i {
+  top: 2px;
   margin-left: 2px;
 }
 header .header-top .header-top-nav-left .nav__header-top .list__header-top li a {
   color: #222;
+  padding: 11px 7px;
+  display: block;
 }
 header .header-top .header-top-nav-left .nav__header-top .list__header-top li:hover {
   background: #e8e8e8;
 }
 header .header-top .header-top-nav-left .search-form {
   position: relative;
+  display: inline-block;
 }
 header .header-top .header-top-nav-left .search-form .search-addon.fa.fa-search {
   position: absolute;
   color: #b01927;
-  font-size: 13.19px;
-  top: 8px;
+  font-size: 13px;
+  top: 10px;
   cursor: pointer;
   left: 4%;
   font-family: fontawesome;
@@ -875,6 +893,7 @@ header .header-top .header-top-nav-left .search-form .input__search-form {
   font-family: tahoma;
   font-size: 12px;
   padding: 5px 26px 9px 29px;
+  margin-top: 3px;
 }
 header .header-top .header-top-nav-left .search-form .input__search-form:focus {
   outline: none;
@@ -894,13 +913,9 @@ header .header__iran-news .logo-and-nav__iran-news .logo__iran-news {
 }
 header .header__iran-news .logo-and-nav__iran-news .background-img-world {
   background-image: url(../img/header-overlay.png);
-  background-position: center;
-  background-size: cover;
-  width: 156%;
+  background-position: right;
+  width: 130%;
   /* منوی هدر خبرگذاری اقتصاد ایران  */
-}
-header .header__iran-news .logo-and-nav__iran-news .background-img-world .nav__iran-news {
-  margin-right: -7%;
 }
 header .header__iran-news .logo-and-nav__iran-news .background-img-world .nav__iran-news .list__iran-news {
   display: flex;
@@ -981,13 +996,13 @@ header .header__iran-news .logo-and-nav__iran-news .danesh-logo .link-danesh-log
 header .header__iran-news .toggle-menu {
   padding-top: 8px;
   height: 50px;
-  margin-right: 8px;
 }
 header .header__iran-news .toggle-menu .btn__toggle {
   background: none;
   border: 1px solid #000;
   padding: 5px 13px 7px;
   border-radius: 0;
+  margin-top: -2px;
 }
 header .header__iran-news .toggle-menu .btn__toggle i {
   font-size: 21px;
@@ -1030,22 +1045,22 @@ header .header__iran-news .navbar-collapse .list__navbar-collapse li .link__navb
 }
 header .header-sub {
   background: #dedede;
-  height: 36px;
 }
 header .header-sub .nav__header-sub {
   margin-right: -4px;
   line-height: 28px;
 }
 header .header-sub .nav__header-sub .list__header-sub {
-  display: flex;
+  white-space: nowrap;
 }
 header .header-sub .nav__header-sub .list__header-sub .fa.fa-bars {
   color: #b01927;
   position: relative;
-  bottom: -7px;
+  bottom: -3px;
   left: 2px;
 }
 header .header-sub .nav__header-sub .list__header-sub li {
+  display: inline-block;
   /* هاور های لینک 1 تا 16 */
 }
 header .header-sub .nav__header-sub .list__header-sub li::after {
@@ -1216,9 +1231,6 @@ header .header-sub .nav__header-sub .list__header-sub li .a16:hover {
   margin-right: -7px;
   position: relative;
 }
-.main .all-box .noroz {
-  max-height: 497px;
-}
 .main .all-box .noroz .link-noroz img {
   width: 100%;
 }
@@ -1261,6 +1273,10 @@ header .header-sub .nav__header-sub .list__header-sub li .a16:hover {
 .main .all-box .box-tag-a .box-tag-content .tag-list li:last-child a::after {
   display: none;
 }
+.main .slideshow-wrapper {
+  white-space: nowrap;
+  width: 100%;
+}
 .main .slideshow-wrapper .navــslideshow-wrapper {
   margin: 17px 0;
 }
@@ -1281,6 +1297,7 @@ header .header-sub .nav__header-sub .list__header-sub li .a16:hover {
   margin: 0 5px;
   display: block;
   cursor: pointer;
+  width: 86%;
 }
 .main .slideshow-wrapper .navــslideshow-wrapper .list__slideshow-wrapper li span::before {
   content: "";
@@ -1358,22 +1375,21 @@ header .header-sub .nav__header-sub .list__header-sub li .a16:hover {
   display: inline-block;
   font-size: 16px;
   font-family: nassim;
-  color: #4e4e4e;
   padding: 10.5px 0px;
   border-radius: 0;
-  background: #f8f8f8;
-  border-top: 3px solid #c00;
-  box-shadow: inset 0 0 1px 0 rgba(0, 0, 0, 0.36), inset 0 0 8px 1px rgba(165, 164, 164, 0.5);
+  border-top: 3px solid #ff3131;
   width: 100%;
   text-align: center;
-}
-.main .row-gold-price .section-group .tabpanel .list__tabpanel li .link__tabpanel-right {
-  border-color: #ff3131;
-  box-shadow: none;
-  background: #f2f2f2;
   color: #b71818;
+  margin-left: -1px;
 }
-.main .row-gold-price .section-group .tabpanel .list__tabpanel li .link__tabpanel-left:hover {
+.main .row-gold-price .section-group .tabpanel .list__tabpanel li .nav-link.active {
+  color: #4e4e4e;
+  box-shadow: inset 0 0 1px 0 rgba(0, 0, 0, 0.36), inset 0 0 8px 1px rgba(165, 164, 164, 0.5);
+  background: #f2f2f2;
+  border-color: #c00;
+}
+.main .row-gold-price .section-group .tabpanel .list__tabpanel li .nav-link.active:hover {
   background: #eee;
   box-shadow: 0 0 13px #c0c0c0 inset;
 }
@@ -1437,18 +1453,23 @@ header .header-sub .nav__header-sub .list__header-sub li .a16:hover {
 }
 .main .row-gold-price .section-group .tabpanel .tabpanel-content .tabel__tabpanel tbody tr .before-dollar::before {
   background: url("http://econews.ir/themes/frontend/econews/img/flag-sm.png") no-repeat;
-  background-position-x: 0%;
-  background-position-y: 0%;
+  background-position: -144px -187px;
 }
 .main .row-gold-price .section-group .tabpanel .tabpanel-content .tabel__tabpanel tbody tr .before-euro::before {
   background: url("http://econews.ir/themes/frontend/econews/img/flag-sm.png") no-repeat;
-  background-position-x: 0%;
-  background-position-y: 0%;
+  background-position: -64px -55px;
 }
 .main .row-gold-price .section-group .tabpanel .tabpanel-content .tabel__tabpanel tbody tr .before-AED::before {
   background: url("http://econews.ir/themes/frontend/econews/img/flag-sm.png") no-repeat;
-  background-position-x: 0%;
-  background-position-y: 0%;
+  background-position: -16px 0;
+}
+.main .row-gold-price .section-group .tabpanel .tabpanel-content .tabel__tabpanel tbody tr .before-chine::before {
+  background: url("http://econews.ir/themes/frontend/econews/img/flag-sm.png") no-repeat;
+  background-position: -107px -33px;
+}
+.main .row-gold-price .section-group .tabpanel .tabpanel-content .tabel__tabpanel tbody tr .before-turk::before {
+  background: url("http://econews.ir/themes/frontend/econews/img/flag-sm.png") no-repeat;
+  background-position: -16px -187px;
 }
 .main .row-gold-price .section-group .tabpanel .tabpanel-content .tabel__tabpanel tbody tr .chart {
   padding: 8px 0 8px 2px;
@@ -2324,7 +2345,7 @@ footer .footer-top .form-search {
   margin-left: 10px;
 }
 footer .footer-top .form-search .input__search {
-  padding: 11px 54px;
+  padding: 11px 15px;
   height: auto;
   font-size: 19px;
   color: white;
@@ -2335,6 +2356,7 @@ footer .footer-top .form-search .input__search {
   font-size: 19px;
   color: #999;
   background: none;
+  margin-left: 18px;
 }
 footer .footer-top .form-search i {
   font-size: 18px;
@@ -2473,18 +2495,14 @@ footer .footer-copy-right .copy-right p {
     width: 23%;
   }
   .nav__header-sub {
-    overflow-y: scroll;
+    overflow: auto;
   }
   .nav__header-sub .list__header-sub {
-    flex-wrap: wrap;
     height: 36px;
     margin-right: 11px;
   }
-  .change-hight-1200 {
-    height: 394px;
-  }
-  .change-hight-1200 img {
-    height: 394px;
+  .nav__header-sub::-webkit-scrollbar {
+    display: none;
   }
   .list__news-box {
     overflow: hidden;
@@ -2551,10 +2569,10 @@ footer .footer-copy-right .copy-right p {
   .box-info-slideshow-content {
     padding: 9px !important;
   }
-  .little-box-info .box-info-content h3 {
+  .link__little-box-info .box-info-content h3 {
     font-size: 13px;
   }
-  .little-box-info .box-info-content h2 {
+  .link__little-box-info .box-info-content h2 {
     font-size: 14px;
   }
   .content-box-info {
@@ -2597,11 +2615,34 @@ footer .footer-copy-right .copy-right p {
   .date .clock {
     display: none;
   }
-  .date .login {
-    margin: 0 !important;
+  .login {
+    margin: -4px !important;
+    padding: 5px 6px 4px 8px !important;
   }
   .form-login {
     right: 2% !important;
+  }
+  .header-top-nav-left {
+    width: 51%;
+    display: block !important;
+  }
+  .header-top-nav-left .nav__header-top {
+    display: block;
+  }
+  .header-top-nav-left .nav__header-top .list__header-top {
+    border-right: none !important;
+    overflow: auto;
+    width: 100%;
+    white-space: nowrap;
+  }
+  .header-top-nav-left .nav__header-top .list__header-top li {
+    font-size: 11px !important;
+  }
+  .header-top-nav-left .nav__header-top .list__header-top::-webkit-scrollbar {
+    display: none;
+  }
+  .header-top-nav-left .search-form {
+    display: none !important;
   }
   .noroz-box {
     margin-top: 11.5rem;
@@ -2610,8 +2651,10 @@ footer .footer-copy-right .copy-right p {
     display: none;
   }
   .noroz-box .noroz {
-    width: 40%;
-    margin: 0 auto;
+    display: none;
+  }
+  .list__slideshow-wrapper li span {
+    margin: 0 9px !important;
   }
   .clear-fix {
     display: flex;
@@ -2635,6 +2678,15 @@ footer .footer-copy-right .copy-right p {
     width: 100%;
     text-align: center !important;
   }
+  .news-menu-box-header {
+    padding: 0 !important;
+  }
+  .news-menu-box-header .list__news-menu-box-header {
+    display: none !important;
+  }
+  .news-menu-box-header .menu-mobile-show {
+    display: block !important;
+  }
   .list__footer-box-news li a {
     font-size: 14px !important;
   }
@@ -2644,8 +2696,13 @@ footer .footer-copy-right .copy-right p {
   .form-search i {
     display: none;
   }
+  .slideshow-wrapper {
+    overflow: scroll;
+  }
   .box-sm {
-    width: 50%;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
   }
   .box-none {
     display: none;
@@ -2655,8 +2712,5 @@ footer .footer-copy-right .copy-right p {
 @media only screen and (max-width: 405px) {
   .search-form {
     display: none;
-  }
-  .list__slideshow-wrapper {
-    white-space: normal !important;
   }
 }/*# sourceMappingURL=style.css.map */

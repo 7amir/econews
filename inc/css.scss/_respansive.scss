@@ -19,19 +19,15 @@
   }
 
   .nav__header-sub {
-    overflow-y: scroll;
+    overflow: auto;
 
     .list__header-sub {
-      flex-wrap: wrap;
       height: 36px;
       margin-right: 11px;
     }
-  }
 
-  .change-hight-1200 {
-    height: 394px;
-    img {
-      height: 394px;
+    &::-webkit-scrollbar {
+      display: none;
     }
   }
 
@@ -67,6 +63,7 @@
     right: 36% !important;
     top: 24% !important;
   }
+
   .header__iran-news {
     .nav__iran-news-red {
       display: none;
@@ -76,6 +73,7 @@
   .dropdown-toggle-hover {
     margin: 0;
     padding: 0;
+
     .dropdown-respansive {
       padding: 8px 16px;
       background: #313131;
@@ -90,17 +88,19 @@
     li {
       display: inline-block;
       width: 49%;
+
       a {
         background: white;
         border-radius: 7px;
         overflow: hidden;
         padding: 5px;
         display: block;
+
         img {
           max-width: 100%;
           margin: 0 auto;
-          display: block;          
-        } 
+          display: block;
+        }
       }
     }
   }
@@ -117,11 +117,12 @@
     padding: 9px !important;
   }
 
-  .little-box-info {
+  .link__little-box-info {
     .box-info-content {
       h3 {
         font-size: 13px;
       }
+
       h2 {
         font-size: 14px;
       }
@@ -145,6 +146,7 @@
       a::before {
         font-size: 7px;
       }
+
       li:last-child a {
         border-bottom: none;
       }
@@ -176,15 +178,45 @@
     .clock {
       display: none;
     }
+  }
 
-    .login {
-      margin: 0 !important;
-    }
+  .login {
+    margin: -4px !important;
+    padding: 5px 6px 4px 8px !important;
   }
 
   .form-login {
     right: 2% !important;
   }
+
+  .header-top-nav-left {
+    width: 51%;
+    display: block !important;
+
+    .nav__header-top {
+      display: block;
+  
+      .list__header-top {
+        border-right: none !important;
+        overflow: auto;
+        width: 100%;
+        white-space: nowrap;
+
+
+        li {
+          font-size: 11px !important;
+        }
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+    }
+    .search-form {
+      display: none !important;
+    }
+  }
+
 
   .noroz-box {
     margin-top: 11.5rem;
@@ -192,9 +224,17 @@
     .tab-768px {
       display: none;
     }
+
     .noroz {
-      width: 40%;
-      margin: 0 auto;
+      display: none;
+    }
+  }
+
+  .list__slideshow-wrapper {
+    li {
+      span {
+        margin: 0 9px !important;
+      }
     }
   }
 
@@ -225,6 +265,17 @@
       }
     }
   }
+
+  .news-menu-box-header {
+    padding: 0 !important;
+    .list__news-menu-box-header {
+      display: none !important;
+    }
+    .menu-mobile-show {
+      display: block !important;
+    }
+  }
+
   .list__footer-box-news li a {
     font-size: 14px !important;
   }
@@ -236,9 +287,16 @@
     display: none;
   }
 
-  .box-sm {
-    width: 50%;
+  .slideshow-wrapper {
+    overflow: scroll;
   }
+
+  .box-sm {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
   .box-none {
     display: none;
   }
@@ -248,9 +306,5 @@
 @media only screen and (max-width: 405px) {
   .search-form {
     display: none;
-  }
-
-  .list__slideshow-wrapper {
-    white-space: normal !important;
   }
 }
