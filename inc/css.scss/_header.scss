@@ -8,6 +8,7 @@ header {
     /* باکس سمت راست هدر  */
     .header-clock {
       display: flex;
+
       span {
         font-size: 12px;
         font-family: yekan;
@@ -179,6 +180,7 @@ header {
       .nav__header-top {
         .list__header-top {
           border-right: 1px solid #ddd;
+          margin-left: 6px;
 
           li {
             font-family: nassim-bold;
@@ -193,7 +195,7 @@ header {
 
             a {
               color: #222;
-              padding: 11px 7px;
+              padding: 10px 7px;
               display: block;
             }
 
@@ -429,6 +431,7 @@ header {
 
       .list__header-sub {
         white-space: nowrap;
+        height: 34px;
 
         .fa.fa-bars {
           color: #b01927;
@@ -457,7 +460,7 @@ header {
           }
 
           a {
-            padding: 6.2px 4px;
+            padding: 6px 4px 5px;
             color: #111;
             font-family: nassim;
             font-size: 16px;
@@ -543,6 +546,74 @@ header {
             background: #bb0000;
             color: #fff;
           }
+
+          /* هاور اکو هدر ساب */
+          .hover-header-sub {
+            background: red;
+            position: absolute;
+            width: 100%;
+            right: 0;
+            padding: 10px 0;
+            text-align: right;
+            background: #d2d2d2;
+            box-shadow: 0 1px 1px #888;
+            visibility: hidden;
+            opacity: 0;
+            transition: all 0.15s ease-in-out;
+
+            .link__hover-sub {
+              display: inline-block;
+              padding: 5px 5px;
+              line-height: 1;
+              color: #444;
+              width: 100%;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              border-left: 1px solid #aaa;
+
+              i {
+                display: inline-block;
+                border-radius: 5px;
+                box-shadow: 0 1px 3px #aaa;
+                margin-left: 2px;
+                background: #FFF;
+                line-height: 1;
+                text-align: center;
+                font-size: 13px;
+                padding: 0 2px;
+              }
+              .fa.fa-rss {
+                color: #f26522;
+              }
+
+              span {
+                width: 18px;
+                height: 18px;
+                display: inline-block;
+                vertical-align: middle;
+              }
+
+              &:hover {
+                background: #006666;
+                color: white;
+
+                i {
+                  color: #000;
+                }
+              }
+            }
+
+            .a-parents:nth-child(6n+6) a {
+              border-left: none;
+            }
+          }
+
+
+        }
+        li:hover .hover-header-sub {
+          visibility: visible;
+          opacity: 1;
         }
       }
     }

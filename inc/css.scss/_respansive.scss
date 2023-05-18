@@ -105,6 +105,14 @@
     }
   }
 
+  .a-parents:nth-child(6n+6) a {
+    border-left: 1px solid #aaa !important;
+  }
+  .a-parents:nth-child(4n+4) a {
+    border-left: none !important;
+  }
+
+
   .tittle-td {
     font-size: 13px !important;
   }
@@ -181,7 +189,7 @@
   }
 
   .login {
-    margin: -4px !important;
+    margin: -10px !important;
     padding: 5px 6px 4px 8px !important;
   }
 
@@ -215,6 +223,13 @@
     .search-form {
       display: none !important;
     }
+  }
+
+  .a-parents:nth-child(4n+4) a {
+    border-left: 1px solid #aaa !important;
+  }
+  .a-parents:nth-child(even) a {
+    border-left: none !important;
   }
 
 
@@ -285,6 +300,10 @@
 @media only screen and (max-width: 576px) {
   .form-search i {
     display: none;
+  }
+
+  .col-lg-2.col-sm-6.col-md-3 {
+    width: 50%;
   }
 
   .slideshow-wrapper {

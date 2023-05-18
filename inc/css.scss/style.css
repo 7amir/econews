@@ -61,6 +61,14 @@ body {
   max-width: 1253px;
 }
 
+.row {
+  --bs-gutter-x: 1rem;
+}
+
+.gx-2 {
+  --bs-gutter-x: 0.5rem !important;
+}
+
 @font-face {
   font-family: fa-solid;
   src: url(/componet/font/fa-solid/fa-solid-900.ttf);
@@ -854,6 +862,7 @@ header .header-top .header-top-nav-left {
 }
 header .header-top .header-top-nav-left .nav__header-top .list__header-top {
   border-right: 1px solid #ddd;
+  margin-left: 6px;
 }
 header .header-top .header-top-nav-left .nav__header-top .list__header-top li {
   font-family: nassim-bold;
@@ -867,7 +876,7 @@ header .header-top .header-top-nav-left .nav__header-top .list__header-top li i 
 }
 header .header-top .header-top-nav-left .nav__header-top .list__header-top li a {
   color: #222;
-  padding: 11px 7px;
+  padding: 10px 7px;
   display: block;
 }
 header .header-top .header-top-nav-left .nav__header-top .list__header-top li:hover {
@@ -1052,6 +1061,7 @@ header .header-sub .nav__header-sub {
 }
 header .header-sub .nav__header-sub .list__header-sub {
   white-space: nowrap;
+  height: 34px;
 }
 header .header-sub .nav__header-sub .list__header-sub .fa.fa-bars {
   color: #b01927;
@@ -1062,6 +1072,7 @@ header .header-sub .nav__header-sub .list__header-sub .fa.fa-bars {
 header .header-sub .nav__header-sub .list__header-sub li {
   display: inline-block;
   /* هاور های لینک 1 تا 16 */
+  /* هاور اکو هدر ساب */
 }
 header .header-sub .nav__header-sub .list__header-sub li::after {
   width: 1px;
@@ -1077,7 +1088,7 @@ header .header-sub .nav__header-sub .list__header-sub li:last-child::after, head
   border: none;
 }
 header .header-sub .nav__header-sub .list__header-sub li a {
-  padding: 6.2px 4px;
+  padding: 6px 4px 5px;
   color: #111;
   font-family: nassim;
   font-size: 16px;
@@ -1145,6 +1156,64 @@ header .header-sub .nav__header-sub .list__header-sub li .a15:hover {
 header .header-sub .nav__header-sub .list__header-sub li .a16:hover {
   background: #bb0000;
   color: #fff;
+}
+header .header-sub .nav__header-sub .list__header-sub li .hover-header-sub {
+  background: red;
+  position: absolute;
+  width: 100%;
+  right: 0;
+  padding: 10px 0;
+  text-align: right;
+  background: #d2d2d2;
+  box-shadow: 0 1px 1px #888;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.15s ease-in-out;
+}
+header .header-sub .nav__header-sub .list__header-sub li .hover-header-sub .link__hover-sub {
+  display: inline-block;
+  padding: 5px 5px;
+  line-height: 1;
+  color: #444;
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  border-left: 1px solid #aaa;
+}
+header .header-sub .nav__header-sub .list__header-sub li .hover-header-sub .link__hover-sub i {
+  display: inline-block;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px #aaa;
+  margin-left: 2px;
+  background: #FFF;
+  line-height: 1;
+  text-align: center;
+  font-size: 13px;
+  padding: 0 2px;
+}
+header .header-sub .nav__header-sub .list__header-sub li .hover-header-sub .link__hover-sub .fa.fa-rss {
+  color: #f26522;
+}
+header .header-sub .nav__header-sub .list__header-sub li .hover-header-sub .link__hover-sub span {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+}
+header .header-sub .nav__header-sub .list__header-sub li .hover-header-sub .link__hover-sub:hover {
+  background: #006666;
+  color: white;
+}
+header .header-sub .nav__header-sub .list__header-sub li .hover-header-sub .link__hover-sub:hover i {
+  color: #000;
+}
+header .header-sub .nav__header-sub .list__header-sub li .hover-header-sub .a-parents:nth-child(6n+6) a {
+  border-left: none;
+}
+header .header-sub .nav__header-sub .list__header-sub li:hover .hover-header-sub {
+  visibility: visible;
+  opacity: 1;
 }
 
 .main {
@@ -2560,6 +2629,12 @@ footer .footer-copy-right .copy-right p {
     margin: 0 auto;
     display: block;
   }
+  .a-parents:nth-child(6n+6) a {
+    border-left: 1px solid #aaa !important;
+  }
+  .a-parents:nth-child(4n+4) a {
+    border-left: none !important;
+  }
   .tittle-td {
     font-size: 13px !important;
   }
@@ -2616,7 +2691,7 @@ footer .footer-copy-right .copy-right p {
     display: none;
   }
   .login {
-    margin: -4px !important;
+    margin: -10px !important;
     padding: 5px 6px 4px 8px !important;
   }
   .form-login {
@@ -2643,6 +2718,12 @@ footer .footer-copy-right .copy-right p {
   }
   .header-top-nav-left .search-form {
     display: none !important;
+  }
+  .a-parents:nth-child(4n+4) a {
+    border-left: 1px solid #aaa !important;
+  }
+  .a-parents:nth-child(even) a {
+    border-left: none !important;
   }
   .noroz-box {
     margin-top: 11.5rem;
@@ -2695,6 +2776,9 @@ footer .footer-copy-right .copy-right p {
 @media only screen and (max-width: 576px) {
   .form-search i {
     display: none;
+  }
+  .col-lg-2.col-sm-6.col-md-3 {
+    width: 50%;
   }
   .slideshow-wrapper {
     overflow: scroll;

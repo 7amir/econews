@@ -7,6 +7,13 @@ body {
   max-width: 1253px;
 }
 
+.row {
+  --bs-gutter-x: 1rem; 
+}
+.gx-2 {
+  --bs-gutter-x: 0.5rem !important;
+}
+
 @font-face {
   font-family: fa-solid;
   src: url(/componet/font/fa-solid/fa-solid-900.ttf);
