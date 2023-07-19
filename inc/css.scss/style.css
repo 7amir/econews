@@ -327,10 +327,10 @@ a {
 
 /* پایان باکس حاوی اخبار فرهنگ */
 /*شروع عنوان باکس های کوچیک */
-.section-tittle {
+.section-title {
   margin-bottom: 7px;
 }
-.section-tittle .link__section-tittle {
+.section-title .link__section-title {
   border-radius: 0 0 2px 2px;
   background-color: #e8e8e8;
   color: #666;
@@ -343,22 +343,22 @@ a {
   position: relative;
   bottom: -4px;
 }
-.section-tittle .link__section-tittle:hover {
+.section-title .link__section-title:hover {
   background: #555;
   color: #fff;
 }
-.section-tittle h3 {
+.section-title h3 {
   color: #444;
   margin: 0;
   font-size: 15px;
 }
-.section-tittle h3 .link-h3__section-tittle {
+.section-title h3 .link-h3__section-title {
   color: #444;
   font-size: 15px;
   font-family: nassim-bold;
   transition: all 0.3s ease-in-out;
 }
-.section-tittle h3 .link-h3__section-tittle i {
+.section-title h3 .link-h3__section-title i {
   margin-left: 7px;
   font-size: 16px;
   top: 2px;
@@ -441,21 +441,21 @@ a {
   height: 22px;
   transition: all 0.3s ease-in-out;
 }
-.news-menu-box .news-menu-box-header .list-meun-content .news-menu-box-header-tittle {
+.news-menu-box .news-menu-box-header .list-meun-content .news-menu-box-header-title {
   display: inline-block;
 }
-.news-menu-box .news-menu-box-header .list-meun-content .news-menu-box-header-tittle .link__news-menu-box-tittle {
+.news-menu-box .news-menu-box-header .list-meun-content .news-menu-box-header-title .link__news-menu-box-title {
   color: #483d8b;
   font-family: nassim-bold;
   font-size: 20px;
 }
-.news-menu-box .news-menu-box-header .list-meun-content .news-menu-box-header-tittle .link__news-menu-box-tittle i {
+.news-menu-box .news-menu-box-header .list-meun-content .news-menu-box-header-title .link__news-menu-box-title i {
   font-size: 16px;
   margin: 0 0 0 8px;
   position: relative;
   bottom: -2px;
 }
-.news-menu-box .news-menu-box-header .list-meun-content .news-menu-box-header-tittle i {
+.news-menu-box .news-menu-box-header .list-meun-content .news-menu-box-header-title i {
   font-size: 14px;
   margin: 0 7px;
   position: relative;
@@ -651,21 +651,21 @@ a {
   height: 23px;
   transition: all 0.3s ease-in-out;
 }
-.news-menu-box .news-menu-box-header .list-meun-content .news-menu-box-header-tittle {
+.news-menu-box .news-menu-box-header .list-meun-content .news-menu-box-header-title {
   display: inline-block;
 }
-.news-menu-box .news-menu-box-header .list-meun-content .news-menu-box-header-tittle .link__news-menu-box-tittle {
+.news-menu-box .news-menu-box-header .list-meun-content .news-menu-box-header-title .link__news-menu-box-title {
   color: #483d8b;
   font-family: nassim-bold;
   font-size: 20px;
 }
-.news-menu-box .news-menu-box-header .list-meun-content .news-menu-box-header-tittle .link__news-menu-box-tittle i {
+.news-menu-box .news-menu-box-header .list-meun-content .news-menu-box-header-title .link__news-menu-box-title i {
   font-size: 16px;
   margin: 0 0 0 8px;
   position: relative;
   bottom: -2px;
 }
-.news-menu-box .news-menu-box-header .list-meun-content .news-menu-box-header-tittle i {
+.news-menu-box .news-menu-box-header .list-meun-content .news-menu-box-header-title i {
   font-size: 14px;
   margin: 0 7px;
   position: relative;
@@ -1236,64 +1236,64 @@ header .header-sub .nav__header-sub .list__header-sub li:hover .hover-header-sub
   /* هاورهای باکس خبری استان ها */
   /* هاورهای باکس نیازمندی ها */
 }
-.main .all-box .tittle-main {
+.main .all-box .title-main {
   text-align: right;
 }
-.main .all-box .tittle-main #tab {
+.main .all-box .title-main #tab {
   margin-right: -6px;
 }
-.main .all-box .tittle-main .tab {
+.main .all-box .title-main .tab {
   margin: 4px 0 7px 0;
   transition: all 0.3s ease-in-out;
 }
-.main .all-box .tittle-main .tab i {
+.main .all-box .title-main .tab i {
   font-size: 15px;
   color: #444;
   margin-left: 5px;
 }
-.main .all-box .tittle-main .tab .fa.fa-bookmark {
+.main .all-box .title-main .tab .fa.fa-bookmark {
   font-size: 13px;
   margin-right: 4px;
 }
-.main .all-box .tittle-main .tab .link-tittle-main {
+.main .all-box .title-main .tab .link-title-main {
   font-size: 15px;
   font-family: nassim-bold;
   color: #666;
 }
-.main .all-box .tittle-main .tab .link-tittle-main .strong-news {
+.main .all-box .title-main .tab .link-title-main .strong-news {
   font-size: 16px;
   font-family: nassim-bold;
   color: #0040ad;
 }
-.main .all-box .tittle-main .tab .link-tittle-main .p-style {
+.main .all-box .title-main .tab .link-title-main .p-style {
   color: #333;
   font-family: "nassim";
   font-size: 17px;
 }
-.main .all-box .tittle-main .tab .link-tittle-main .p-style:hover {
+.main .all-box .title-main .tab .link-title-main .p-style:hover {
   color: #b71818;
 }
-.main .all-box .tittle-main .tab .link-tittle-main:hover {
+.main .all-box .title-main .tab .link-title-main:hover {
   color: #b71818;
 }
-.main .all-box .tittle-main .tab p {
+.main .all-box .title-main .tab p {
   display: inline-block;
 }
-.main .all-box .tittle-main .tab span {
+.main .all-box .title-main .tab span {
   float: left;
   margin-top: 2px;
   font-size: 20px;
 }
-.main .all-box .tittle-main .p-style {
+.main .all-box .title-main .p-style {
   color: #444;
 }
-.main .all-box .tittle-main .p-style:hover {
+.main .all-box .title-main .p-style:hover {
   color: #b71818;
 }
-.main .all-box .tittle-main #tab:hover {
+.main .all-box .title-main #tab:hover {
   padding-right: 6px;
 }
-.main .all-box .tittle-main #tab:hover .fa.fa-bookmark {
+.main .all-box .title-main #tab:hover .fa.fa-bookmark {
   color: #b71818;
 }
 .main .all-box .slideshow {
@@ -1306,12 +1306,12 @@ header .header-sub .nav__header-sub .list__header-sub li:hover .hover-header-sub
 .main .all-box .box-tag-a {
   margin-top: 6px;
 }
-.main .all-box .box-tag-a .sub-tittle i,
-.main .all-box .box-tag-a .sub-tittle .link-tittle-main {
+.main .all-box .box-tag-a .sub-title i,
+.main .all-box .box-tag-a .sub-title .link-title-main {
   color: #b71818;
 }
-.main .all-box .box-tag-a .sub-tittle i:hover,
-.main .all-box .box-tag-a .sub-tittle .link-tittle-main:hover {
+.main .all-box .box-tag-a .sub-title i:hover,
+.main .all-box .box-tag-a .sub-title .link-title-main:hover {
   color: #b71818;
 }
 .main .all-box .box-tag-a .box-tag-content .tag-list {
@@ -1504,11 +1504,11 @@ header .header-sub .nav__header-sub .list__header-sub li:hover .hover-header-sub
 .main .row-gold-price .section-group .tabpanel .tabpanel-content .tabel__tabpanel tbody tr td .percent {
   color: #333;
 }
-.main .row-gold-price .section-group .tabpanel .tabpanel-content .tabel__tabpanel tbody tr .tittle-td {
+.main .row-gold-price .section-group .tabpanel .tabpanel-content .tabel__tabpanel tbody tr .title-td {
   font-family: nassim;
   font-size: 16px;
 }
-.main .row-gold-price .section-group .tabpanel .tabpanel-content .tabel__tabpanel tbody tr .tittle-td a {
+.main .row-gold-price .section-group .tabpanel .tabpanel-content .tabel__tabpanel tbody tr .title-td a {
   color: #333;
 }
 .main .row-gold-price .section-group .tabpanel .tabpanel-content .tabel__tabpanel tbody tr .before__data-market::before {
@@ -1559,7 +1559,7 @@ header .header-sub .nav__header-sub .list__header-sub li:hover .hover-header-sub
 .main .row-gold-price .section-group .tabpanel .tabpanel-content .tabel__tabpanel tbody tr:hover {
   background: #fff0e5;
 }
-.main .row-gold-price .section-group:hover .link-h3__section-tittle {
+.main .row-gold-price .section-group:hover .link-h3__section-title {
   margin-right: 5px;
 }
 .main .row-gold-price .convertor .convert-chart {
@@ -1639,7 +1639,7 @@ header .header-sub .nav__header-sub .list__header-sub li:hover .hover-header-sub
 .main .row-gold-price .convertor .convert-chart .convert-chart-calculator .btn.btn-danger.link__calulator:hover {
   background: #a51616;
 }
-.main .row-gold-price .convertor:hover .link-h3__section-tittle {
+.main .row-gold-price .convertor:hover .link-h3__section-title {
   margin-right: 5px;
 }
 .main .row-gold-price .all-section-box-news {
@@ -1687,7 +1687,7 @@ header .header-sub .nav__header-sub .list__header-sub li:hover .hover-header-sub
 .main .row-gold-price .all-section-box-news .section__box-news .border-top-info-6:hover h2, .main .row-gold-price .all-section-box-news .section__box-news .border-top-info-6:hover h3 {
   color: #228b22;
 }
-.main .row-gold-price .all-section-box-news .section__box-news:hover .link-h3__section-tittle {
+.main .row-gold-price .all-section-box-news .section__box-news:hover .link-h3__section-title {
   margin-right: 5px;
 }
 .main .row-gold-price .list__all-img-left {
@@ -1729,10 +1729,10 @@ header .header-sub .nav__header-sub .list__header-sub li:hover .hover-header-sub
 .main .box-market-2 .news-menu-box-header {
   border-top-color: #228b22;
 }
-.main .box-market-2 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle .link__news-menu-box-tittle {
+.main .box-market-2 .news-menu-box-header .list-meun-content .news-menu-box-header-title .link__news-menu-box-title {
   color: #228b22;
 }
-.main .box-market-2 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle i {
+.main .box-market-2 .news-menu-box-header .list-meun-content .news-menu-box-header-title i {
   color: #228b22;
 }
 .main .box-market-2 .news-menu-box-header .list__news-menu-box-header li a:hover {
@@ -1759,10 +1759,10 @@ header .header-sub .nav__header-sub .list__header-sub li:hover .hover-header-sub
 .main .box-face-3 .news-menu-box-header {
   border-top-color: #7f05a1;
 }
-.main .box-face-3 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle .link__news-menu-box-tittle {
+.main .box-face-3 .news-menu-box-header .list-meun-content .news-menu-box-header-title .link__news-menu-box-title {
   color: #7f05a1;
 }
-.main .box-face-3 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle i {
+.main .box-face-3 .news-menu-box-header .list-meun-content .news-menu-box-header-title i {
   color: #7f05a1;
 }
 .main .box-face-3 .news-menu-box-header .list__news-menu-box-header li a:hover {
@@ -1790,10 +1790,10 @@ header .header-sub .nav__header-sub .list__header-sub li:hover .hover-header-sub
 .main .box-Knowledge-base-4 .news-menu-box-header {
   border-top-color: #7b68ee;
 }
-.main .box-Knowledge-base-4 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle .link__news-menu-box-tittle {
+.main .box-Knowledge-base-4 .news-menu-box-header .list-meun-content .news-menu-box-header-title .link__news-menu-box-title {
   color: #7b68ee;
 }
-.main .box-Knowledge-base-4 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle i {
+.main .box-Knowledge-base-4 .news-menu-box-header .list-meun-content .news-menu-box-header-title i {
   color: #7b68ee;
 }
 .main .box-Knowledge-base-4 .news-menu-box-header .list__news-menu-box-header li a:hover {
@@ -1828,10 +1828,10 @@ header .header-sub .nav__header-sub .list__header-sub li:hover .hover-header-sub
 .main .box-art-5 .news-menu-box-header {
   border-top-color: #0040ad;
 }
-.main .box-art-5 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle .link__news-menu-box-tittle {
+.main .box-art-5 .news-menu-box-header .list-meun-content .news-menu-box-header-title .link__news-menu-box-title {
   color: #0040ad;
 }
-.main .box-art-5 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle i {
+.main .box-art-5 .news-menu-box-header .list-meun-content .news-menu-box-header-title i {
   color: #0040ad;
 }
 .main .box-art-5 .news-menu-box-header .list__news-menu-box-header li a:hover {
@@ -1859,10 +1859,10 @@ header .header-sub .nav__header-sub .list__header-sub li:hover .hover-header-sub
 .main .box-sport-6 .news-menu-box-header {
   border-top-color: #ff8c00;
 }
-.main .box-sport-6 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle .link__news-menu-box-tittle {
+.main .box-sport-6 .news-menu-box-header .list-meun-content .news-menu-box-header-title .link__news-menu-box-title {
   color: #ff8c00;
 }
-.main .box-sport-6 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle i {
+.main .box-sport-6 .news-menu-box-header .list-meun-content .news-menu-box-header-title i {
   color: #ff8c00;
 }
 .main .box-sport-6 .news-menu-box-header .list__news-menu-box-header li a:hover {
@@ -1890,10 +1890,10 @@ header .header-sub .nav__header-sub .list__header-sub li:hover .hover-header-sub
 .main .box-cars-7 .news-menu-box-header {
   border-top-color: #daa520;
 }
-.main .box-cars-7 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle .link__news-menu-box-tittle {
+.main .box-cars-7 .news-menu-box-header .list-meun-content .news-menu-box-header-title .link__news-menu-box-title {
   color: #daa520;
 }
-.main .box-cars-7 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle i {
+.main .box-cars-7 .news-menu-box-header .list-meun-content .news-menu-box-header-title i {
   color: #daa520;
 }
 .main .box-cars-7 .news-menu-box-header .list__news-menu-box-header li a:hover {
@@ -1921,10 +1921,10 @@ header .header-sub .nav__header-sub .list__header-sub li:hover .hover-header-sub
 .main .box-the-way-8 .news-menu-box-header {
   border-top-color: #283803;
 }
-.main .box-the-way-8 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle .link__news-menu-box-tittle {
+.main .box-the-way-8 .news-menu-box-header .list-meun-content .news-menu-box-header-title .link__news-menu-box-title {
   color: #283803;
 }
-.main .box-the-way-8 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle i {
+.main .box-the-way-8 .news-menu-box-header .list-meun-content .news-menu-box-header-title i {
   color: #283803;
 }
 .main .box-the-way-8 .news-menu-box-header .list__news-menu-box-header li a:hover {
@@ -1959,10 +1959,10 @@ header .header-sub .nav__header-sub .list__header-sub li:hover .hover-header-sub
 .main .box-green-9 .news-menu-box-header {
   border-top-color: #006400;
 }
-.main .box-green-9 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle .link__news-menu-box-tittle {
+.main .box-green-9 .news-menu-box-header .list-meun-content .news-menu-box-header-title .link__news-menu-box-title {
   color: #006400;
 }
-.main .box-green-9 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle i {
+.main .box-green-9 .news-menu-box-header .list-meun-content .news-menu-box-header-title i {
   color: #006400;
 }
 .main .box-green-9 .news-menu-box-header .list__news-menu-box-header li a:hover {
@@ -1990,10 +1990,10 @@ header .header-sub .nav__header-sub .list__header-sub li:hover .hover-header-sub
 .main .box-tourism-10 .news-menu-box-header {
   border-top-color: #008b8b;
 }
-.main .box-tourism-10 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle .link__news-menu-box-tittle {
+.main .box-tourism-10 .news-menu-box-header .list-meun-content .news-menu-box-header-title .link__news-menu-box-title {
   color: #008b8b;
 }
-.main .box-tourism-10 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle i {
+.main .box-tourism-10 .news-menu-box-header .list-meun-content .news-menu-box-header-title i {
   color: #008b8b;
 }
 .main .box-tourism-10 .news-menu-box-header .list__news-menu-box-header li a:hover {
@@ -2021,10 +2021,10 @@ header .header-sub .nav__header-sub .list__header-sub li:hover .hover-header-sub
 .main .box-life-style-11 .news-menu-box-header {
   border-top-color: #c71585;
 }
-.main .box-life-style-11 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle .link__news-menu-box-tittle {
+.main .box-life-style-11 .news-menu-box-header .list-meun-content .news-menu-box-header-title .link__news-menu-box-title {
   color: #c71585;
 }
-.main .box-life-style-11 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle i {
+.main .box-life-style-11 .news-menu-box-header .list-meun-content .news-menu-box-header-title i {
   color: #c71585;
 }
 .main .box-life-style-11 .news-menu-box-header .list__news-menu-box-header li a:hover {
@@ -2052,10 +2052,10 @@ header .header-sub .nav__header-sub .list__header-sub li:hover .hover-header-sub
 .main .box-health-12 .news-menu-box-header {
   border-top-color: #f08080;
 }
-.main .box-health-12 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle .link__news-menu-box-tittle {
+.main .box-health-12 .news-menu-box-header .list-meun-content .news-menu-box-header-title .link__news-menu-box-title {
   color: #f08080;
 }
-.main .box-health-12 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle i {
+.main .box-health-12 .news-menu-box-header .list-meun-content .news-menu-box-header-title i {
   color: #f08080;
 }
 .main .box-health-12 .news-menu-box-header .list__news-menu-box-header li a:hover {
@@ -2090,10 +2090,10 @@ header .header-sub .nav__header-sub .list__header-sub li:hover .hover-header-sub
 .main .box-market-guide-13 .news-menu-box-header {
   border-top-color: #ba55d3;
 }
-.main .box-market-guide-13 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle .link__news-menu-box-tittle {
+.main .box-market-guide-13 .news-menu-box-header .list-meun-content .news-menu-box-header-title .link__news-menu-box-title {
   color: #ba55d3;
 }
-.main .box-market-guide-13 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle i {
+.main .box-market-guide-13 .news-menu-box-header .list-meun-content .news-menu-box-header-title i {
   color: #ba55d3;
 }
 .main .box-market-guide-13 .news-menu-box-header .list__news-menu-box-header li a:hover {
@@ -2121,10 +2121,10 @@ header .header-sub .nav__header-sub .list__header-sub li:hover .hover-header-sub
 .main .box-media-14 .news-menu-box-header {
   border-top-color: #555;
 }
-.main .box-media-14 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle .link__news-menu-box-tittle {
+.main .box-media-14 .news-menu-box-header .list-meun-content .news-menu-box-header-title .link__news-menu-box-title {
   color: #555;
 }
-.main .box-media-14 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle i {
+.main .box-media-14 .news-menu-box-header .list-meun-content .news-menu-box-header-title i {
   color: #555;
 }
 .main .box-media-14 .news-menu-box-header .list__news-menu-box-header li a:hover {
@@ -2194,10 +2194,10 @@ header .header-sub .nav__header-sub .list__header-sub li:hover .hover-header-sub
 .main .box-state-15 .news-menu-box-header {
   border-top-color: #555;
 }
-.main .box-state-15 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle .link__news-menu-box-tittle {
+.main .box-state-15 .news-menu-box-header .list-meun-content .news-menu-box-header-title .link__news-menu-box-title {
   color: #555;
 }
-.main .box-state-15 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle i {
+.main .box-state-15 .news-menu-box-header .list-meun-content .news-menu-box-header-title i {
   color: #555;
 }
 .main .box-state-15 .news-menu-box-header .list__news-menu-box-header li a {
@@ -2304,10 +2304,10 @@ header .header-sub .nav__header-sub .list__header-sub li:hover .hover-header-sub
 .main .box-need-16 .news-menu-box-header {
   border-top-color: #cc4129;
 }
-.main .box-need-16 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle .link__news-menu-box-tittle {
+.main .box-need-16 .news-menu-box-header .list-meun-content .news-menu-box-header-title .link__news-menu-box-title {
   color: #cc4129;
 }
-.main .box-need-16 .news-menu-box-header .list-meun-content .news-menu-box-header-tittle i {
+.main .box-need-16 .news-menu-box-header .list-meun-content .news-menu-box-header-title i {
   color: #cc4129;
 }
 .main .box-need-16 .news-menu-box-header .list__news-menu-box-header li a:hover {
@@ -2583,7 +2583,7 @@ footer .footer-copy-right .copy-right p {
   .box-info-slideshow-content h2 {
     font-size: 23px !important;
   }
-  .tittle-td {
+  .title-td {
     font-size: 13px !important;
   }
   .list__footer-box-news li a {
@@ -2635,7 +2635,7 @@ footer .footer-copy-right .copy-right p {
   .a-parents:nth-child(4n+4) a {
     border-left: none !important;
   }
-  .tittle-td {
+  .title-td {
     font-size: 13px !important;
   }
   .chart {
